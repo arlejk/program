@@ -121,35 +121,35 @@ a:hover { color:var(--color-primary); }
 .table .link a { display:block; width:100%; height:100%; padding: 0.5rem 0.5rem; background:var(--color-default); color:#fff; text-align:center; }
 .table .link a:hover { background:var(--color-inverse); }
 
-.publish_sheet { min-height:100vh; display:flex; flex-direction:column; }
-.publish_sheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }
-.publish_sheet > section { padding:var(--mg-sec-mo) 0; }
-.publish_sheet .head { background:var(--color-inverse-bg); color:#fff; }
-.publish_sheet .head dl dt { float: left; width: 7.5em; }
-.publish_sheet .head dl dt:after { content:' :'; }
-.publish_sheet .head dl dd { padding-left: 7.5em; }
-.publish_sheet .head dl dd ul { padding:0; }
-.publish_sheet .head dl dd ul li + li { margin-top:0.25em; }
-.publish_sheet .body { color:var(--color-tone-700); }
-.publish_sheet .foot { margin-top:auto; background:var(--color-tone-600); text-align:center; color:#fff; }
+.publish_worksheet { min-height:100vh; display:flex; flex-direction:column; }
+.publish_worksheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }
+.publish_worksheet > section { padding:var(--mg-sec-mo) 0; }
+.publish_worksheet .head { background:var(--color-inverse-bg); color:#fff; }
+.publish_worksheet .head dl dt { float: left; width: 7.5em; }
+.publish_worksheet .head dl dt:after { content:' :'; }
+.publish_worksheet .head dl dd { padding-left: 7.5em; }
+.publish_worksheet .head dl dd ul { padding:0; }
+.publish_worksheet .head dl dd ul li + li { margin-top:0.25em; }
+.publish_worksheet .body { color:var(--color-tone-700); }
+.publish_worksheet .foot { margin-top:auto; background:var(--color-tone-600); text-align:center; color:#fff; }
 
 @media screen and (max-width:768px) {
-	.publish_sheet .head dl dt { float:none; width:100%; }
-	.publish_sheet .head dl dd { padding:0; }
+	.publish_worksheet .head dl dt { float:none; width:100%; }
+	.publish_worksheet .head dl dd { padding:0; }
 }
 
-.publish_sheet h2 { font-size:3em; font-weight:800; line-height:1.3; letter-spacing:-0.025em; }
-.publish_sheet h3 { font-size:2em; font-weight:700; line-height:1.3; letter-spacing:-0.025em; }
-.publish_sheet h4 { font-size:1.5em; font-weight:600; line-height:1.3; letter-spacing:-0.01em; }
-.publish_sheet h5 { font-size:1.25em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
-.publish_sheet h6 { font-size:1.125em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
+.publish_worksheet h2 { font-size:3em; font-weight:800; line-height:1.3; letter-spacing:-0.025em; }
+.publish_worksheet h3 { font-size:2em; font-weight:700; line-height:1.3; letter-spacing:-0.025em; }
+.publish_worksheet h4 { font-size:1.5em; font-weight:600; line-height:1.3; letter-spacing:-0.01em; }
+.publish_worksheet h5 { font-size:1.25em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
+.publish_worksheet h6 { font-size:1.125em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
 
 @media screen and (max-width:1000px) {
-	.publish_sheet h2 { font-size:2em; }
-	.publish_sheet h3 { font-size:1.5em; }
-	.publish_sheet h4 { font-size:1.25em; }
-	.publish_sheet h5 { font-size:1.125em; }
-	.publish_sheet h6 { font-size:1.1em; }
+	.publish_worksheet h2 { font-size:2em; }
+	.publish_worksheet h3 { font-size:1.5em; }
+	.publish_worksheet h4 { font-size:1.25em; }
+	.publish_worksheet h5 { font-size:1.125em; }
+	.publish_worksheet h6 { font-size:1.1em; }
 }
 
 @media screen and (max-width:768px) {
@@ -169,7 +169,7 @@ a:hover { color:var(--color-primary); }
 .list_keyword { display:flex; flex-wrap:wrap; }
 .list_keyword li { margin: 0 0.5rem 0.5rem 0; }
 .list_keyword li .key { padding: 0.5em 0.75em; font-family: var(--font-title); font-size: 1.2em; font-weight:500; line-height:1;
-	display: flex; align-items:center; background: #fff; border-radius: 2rem; border:1px solid var(--color-tone-300);
+	display: inline-flex; align-items:center; gap: 6px; background: #fff; border-radius: 2rem; border:1px solid var(--color-tone-300);
 	transition: var(--transition-fast); -webkit-transition: var(--transition-fast); cursor:pointer; }
 .list_keyword li .key:before { content:'# '; color:var(--color-tone-300); transition: var(--transition-fast); -webkit-transition: var(--transition-fast); }
 .list_keyword li:hover .key { border-color:var(--color-point-a); color:var(--color-point-a); }
@@ -177,6 +177,7 @@ a:hover { color:var(--color-primary); }
 .list_keyword li.active .key { background:var(--color-point); border-color:var(--color-point); color:#fff; }
 .list_keyword li.active .key:before { color:#fff; }
 .list_keyword .tab-nav .key:before { content:''; }
+.list_keyword .tab-nav .total { font-size: 0.9em; color:var(--color-tone-500); }
 @media all and (max-width:1200px) {
 	.list_keyword li .key { font-size: 1.1em; }
 }
@@ -196,7 +197,7 @@ a:hover { color:var(--color-primary); }
 
 </head>
 <body>
-	<div class="publish_sheet program">
+	<div class="publish_worksheet program">
 		<section class="head">
 			<div class="inner">
 				<hgroup>
@@ -204,10 +205,8 @@ a:hover { color:var(--color-primary); }
 					<h2>두뇌·추리 / 예능·게임 서바이벌</h2>
 				</hgroup>
 				<dl>
-					<dt>Total Page</dt>
-					<dd id="total"></dd>
 					<dt>Last Update</dt>
-					<dd>2026-01-28</dd>
+					<dd>2026-02-02</dd>
 					<dt>Source</dt>
 					<dd>
 						<a href="https://theqoo.net/yn/3134599866" target="_blank">[ theqoo | 예능 | 스퀘어 ] 두뇌정치추리서바+a 국내예능 정리글 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -233,14 +232,17 @@ a:hover { color:var(--color-primary); }
 		<section class="body">
 			<div class="inner">
 				<ul class="tab-title list_keyword">
-					<li class="tab-nav current" data-tab="tab-cate-01"><span class="key">두뇌·추리 서바</span></li>
-					<li class="tab-nav" data-tab="tab-cate-02"><span class="key">예능·게임 서바</span></li>
+					<li class="tab-nav current" data-tab="tab-cate-01">
+						<span class="key">두뇌·추리 서바 <em class="total" id="total-cate-01"></em></span>
+					</li>
+					<li class="tab-nav" data-tab="tab-cate-02">
+						<span class="key">예능·게임 서바 <em class="total" id="total-cate-02"></em></span>
+					</li>
 				</ul>
 				<section class="tab-panel">
 					<article id="tab-cate-01" class="tab-cont tab-cate-01 current">
 						<table id="table-program-01" class="table table-bordered table-block program">
 							<colgroup>
-								<col>
 								<col>
 								<col>
 								<col>
@@ -256,7 +258,6 @@ a:hover { color:var(--color-primary); }
 									<th scope="col" class="center">스트리밍</th>
 									<th scope="col" class="center">키워드</th>
 									<th scope="col" class="center">비고</th>
-									<th scope="col" class="center">시청</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -267,7 +268,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000106439&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">더 지니어스:룰 브레이커</td>
@@ -276,7 +277,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000125936&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">6화 스트리밍 불가</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr class="table-danger">
 									<td data-label="이름">더 지니어스:블랙가넷</td>
@@ -285,7 +286,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">전회차 스트리밍 불가</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">더 지니어스:그랜드 파이널</td>
@@ -294,7 +295,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000170199&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">방시팝-더 지니어스:외전</td>
@@ -303,7 +304,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000222161&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">두뇌</td>
 									<td data-label="비고">3화만 보면 됨</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								<tr class="table-warning">
 									<td data-label="이름">프로젝트 지니어스</td>
@@ -312,7 +313,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -322,7 +323,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000539540&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
 									<td data-label="비고">웨이브, 왓챠, 쿠팡플레이에서도 시청 가능</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">크라임씬2</td>
@@ -331,7 +332,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000539640&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
 									<td data-label="비고">웨이브, 왓챠, 쿠팡플레이에서도 시청 가능</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">크라임씬3</td>
@@ -340,7 +341,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000539639&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
 									<td data-label="비고">웨이브, 왓챠, 쿠팡플레이에서도 시청 가능</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">크라임씬 리턴즈</td>
@@ -349,7 +350,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001751684&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">크라임씬 제로</td>
@@ -358,16 +359,16 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/title/81950435" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr class="table-primary">
-									<td data-label="이름">크라임신 제로 새시즌</td>
+									<td data-label="이름">크라임씬 제로 새시즌</td>
 									<td data-label="방영년도">2027 예정</td>
 									<td data-label="방송사">NETFLIX</td>
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>									
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -377,7 +378,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000160415&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">두뇌, 퍼즐, 방탈출</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">문제적 남자 시즌2</td>
@@ -386,7 +387,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000160415&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">두뇌, 퍼즐, 방탈출</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">문제적 남자 브레인 유랑단</td>
@@ -395,7 +396,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000160415&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">두뇌, 퍼즐, 방탈출</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -405,7 +406,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tv.jtbc.co.kr/replay/pr10010396/pm10033108" target="_blank">JTBC <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 방탈출</td>
 									<td data-label="비고">U+모바일 TV에서도 시청 가능</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>
 
 								<tr>
@@ -415,7 +416,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000328018&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">소사이어티 게임2</td>
@@ -424,7 +425,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000395031&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -434,7 +435,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/80209553" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">드라마, 미스터리, 게임, 추리, 롤플레잉</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">범인은 바로 너! 시즌2</td>
@@ -443,7 +444,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/80209553" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">드라마, 미스터리, 게임, 추리, 롤플레잉</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">범인은 바로 너! 시즌3</td>
@@ -452,7 +453,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/80209553" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">드라마, 미스터리, 게임, 추리, 롤플레잉</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								
 								<tr>
@@ -462,7 +463,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P000587159" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">대탈출2</td>
@@ -471,7 +472,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P000821660" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
 									<td data-label="비고"><a href="https://www.tving.com/contents/P000900239">감독판 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">대탈출3</td>
@@ -480,7 +481,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001164763&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
 									<td data-label="비고"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001254453&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">스페셜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">대탈출4</td>
@@ -489,7 +490,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001490952&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
 									<td data-label="비고"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001516207&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">스페셜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">대탈출: 더 스토리</td>
@@ -498,7 +499,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001772883" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -508,7 +509,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P000940242" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>								
 
 								<tr>
@@ -518,7 +519,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI" target="_blank">유튜브 채널 십오야 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr class="table-danger">
@@ -528,7 +529,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">전회차 스트리밍 불가</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -538,7 +539,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC" target="_blank">유튜브 진용진 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">정치, 서바이벌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -548,7 +549,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5" target="_blank">유튜브 장지수 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">마피아 게임, 서바이벌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">공범2</td>
@@ -557,7 +558,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5" target="_blank">유튜브 장지수 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">마피아 게임, 서바이벌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -567,7 +568,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001433241&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">어드벤처, 추리, 미스터리, 드라마</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">여고추리반2</td>
@@ -576,7 +577,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001537909&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">어드벤처, 추리, 미스터리, 드라마</td>
 									<td data-label="비고"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001563040&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">코멘터리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">여고추리반3</td>
@@ -585,7 +586,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001754831&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">어드벤처, 추리, 미스터리, 드라마</td>
 									<td data-label="비고"><a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -595,7 +596,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000075&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">피의게임2</td>
@@ -604,7 +605,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000108&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">피의게임3</td>
@@ -613,7 +614,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000149&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr class="table-primary">
 									<td data-label="이름">피의게임 스핀오프</td>
@@ -622,7 +623,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -632,7 +633,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://watcha.com/ko-KR/contents/share/tlYey3V?utm_source%3Dkinolights%26utm_campaign%3Dkinolights%26utm_medium%3Dorganic%26utm_content%3Dtitle_provider" target="_blank">WATCHA <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치, 생존</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -642,7 +643,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://programs.sbs.co.kr/culture/genreismafia/vods/71253" target="_blank">SBS <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 마피아 게임</td>
 									<td data-label="비고">SBS 홈페이지에서 무료 시청 가능</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -652,7 +653,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://watcha.com/ko-KR/contents/share/tR2edNe" target="_blank">WATCHA <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -662,7 +663,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001616289&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 생존</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -672,7 +673,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000089&amp;page=1" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 정치</td>
 									<td data-label="비고"><a href="https://www.ichannela.com/program/detail/program_detail_renew.do?cateCode=0500910001" target="_blank">채널A 홈페이지에서 무료 시청 가능 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -682,7 +683,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc" target="_blank">유튜브 tvN D <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -692,7 +693,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000102&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -702,7 +703,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001623861&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 서바이벌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>
 
 								<tr>
@@ -712,7 +713,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz" target="_blank">유투브 피지컬갤러리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 방탈출</td>
 									<td data-label="비고">벌레 나옴 비위 조심</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -722,7 +723,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=F5701_F57000000001&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -732,7 +733,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001696917&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								
 								<tr>
@@ -742,7 +743,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001691160&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">두뇌, 퍼즐</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -752,7 +753,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo" target="_blank">유튜브 긱블 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 방탈출</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -762,7 +763,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://coupangplay.app.link/YLHDpm63xHb" target="_blank">쿠팡플레이 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">대학전쟁2</td>
@@ -771,7 +772,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3?type=&amp;availability=SVOD&amp;live=&amp;channel=&amp;rowId=d24ea57b-ce91-4ba4-a25e-eab04922f12c&amp;trackId=&amp;src=page_discover_feed%3AContinue-Watching%3AALL&amp;sourceType=&amp;supportLive=" target="_blank">쿠팡플레이 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">대학전쟁3</td>
@@ -780,7 +781,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3" target="_blank">쿠팡플레이 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">●</td>
+									
 								</tr>								
 
 								<tr>
@@ -790,7 +791,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/81653386" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">데블스 플랜: 데스룸</td>
@@ -799,7 +800,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/title/81653386" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr class="table-primary">
 									<td data-label="이름">데블스 플랜3</td>
@@ -808,7 +809,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -818,7 +819,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/watch?v=97WtB7a4-9k&amp;list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt&amp;index=10" target="_blank">유튜브 코다리찜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								
 								<tr>
@@ -828,7 +829,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://motvlnk.uplus.co.kr/?a_rtype=detail_page&amp;vod_type=vod&amp;main_run=Y&amp;backkey_finish=N&amp;is_splash=N&amp;review_yn=N&amp;contents_id=M0124AV077PPV00&amp;category_id=&amp;series_num=1&amp;series_category_id=E25VM&amp;utm_source=kinolights&amp;utm_campaign=kinolights&amp;utm_medium=organic&amp;utm_content=title_provider&amp;packageName=com.kinolights.kinolights" target="_blank">U+모바일tv <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">웨이브, 왓챠에서도 시청가능</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -838,7 +839,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000124&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 사회실험, 정치, 마피아 게임</td>
 									<td data-label="비고"><a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr class="table-primary">
 									<td data-label="이름">사상검증구역: 더 커뮤니티2</td>
@@ -847,7 +848,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">서바이벌, 사회실험, 정치, 마피아 게임</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -857,7 +858,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/81731720" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr class="table-primary">
 									<td data-label="이름">미스터리 수사단2</td>
@@ -866,7 +867,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -876,7 +877,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/watch?v=tfy3EAFxmqY&amp;list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8" target="_blank">유튜브 LG그룹 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">웨이브에서도 시청가능</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 
 								<tr>
@@ -886,7 +887,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9902_C99000000048&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">아무거나보틀 유튜브에서도 시청가능</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr>
@@ -896,7 +897,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/@MINDZEROstudio/videos" target="_blank">유튜브 스튜디오 마인드제로 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">●</td>
+									
 								</tr>
 
 								<tr>
@@ -906,7 +907,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/82679390" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">●</td>
+									
 								</tr>
 
 								<tr class="table-primary">
@@ -916,7 +917,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 
 								<tr class="table-primary">
@@ -926,7 +927,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">　</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 							</tbody>
 						</table>						
@@ -940,7 +941,6 @@ a:hover { color:var(--color-primary); }
 								<col>
 								<col>
 								<col>
-								<col>
 							</colgroup>
 							<thead class="table-light">
 								<tr>
@@ -950,7 +950,6 @@ a:hover { color:var(--color-primary); }
 									<th scope="col" class="center">스트리밍</th>
 									<th scope="col" class="center">키워드</th>
 									<th scope="col" class="center">비고</th>
-									<th scope="col" class="center">시청</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -961,7 +960,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001459427" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 서바이벌, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								<tr class="table-danger">
 									<td data-label="이름">눈치왕</td>
@@ -970,7 +969,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍">　</td>
 									<td data-label="키워드">게임, 서바이벌</td>
 									<td data-label="비고">전회차 스트리밍 불가</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">미추리 8-1000 시즌1</td>
@@ -979,7 +978,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/search?q=%EB%AF%B8%EC%B6%94%EB%A6%AC&amp;jbv=82009029" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 추리</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">미추리 8-1000 시즌2</td>
@@ -988,7 +987,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/search?q=%EB%AF%B8%EC%B6%94%EB%A6%AC&amp;jbv=82009029" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 추리</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">○</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">식스센스 1</td>
@@ -997,7 +996,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001316154" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 추리</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">식스센스 2</td>
@@ -1006,7 +1005,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001483400" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 추리</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">식스센스 3</td>
@@ -1015,7 +1014,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001574198" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 추리</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">　</td>
+									
 								</tr>
 								<tr>
 									<td data-label="이름">신세계로부터</td>
@@ -1024,7 +1023,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/81436207" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 어드벤처, 정치</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>								
 								<tr>
 									<td data-label="이름">아파트404</td>
@@ -1033,7 +1032,7 @@ a:hover { color:var(--color-primary); }
 									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001752153&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
 									<td data-label="키워드">게임, 추리</td>
 									<td data-label="비고">　</td>
-									<td data-label="시청" class="center">△</td>
+									
 								</tr>
 							</tbody>
 						</table>				
@@ -1049,32 +1048,29 @@ a:hover { color:var(--color-primary); }
 	</div>
 </body>
 <script>
-function updateTotal() {
-	const $currentTab = $('.tab-nav.current');
-	const tabId = $currentTab.data('tab'); // tab-cate-01 / tab-cate-02
-	const $table = $('#' + tabId).find('table');
-	const count = $table.find('tbody tr').length;
+function updateTotalsByCategory() {
+	// cate 01
+	const countCate01 = $('#table-program-01 tbody tr').length;
+	$('#total-cate-01').text('(' + countCate01 + ')');
 
-	$('#total').text(count + ' pages');
+	// cate 02
+	const countCate02 = $('#table-program-02 tbody tr').length;
+	$('#total-cate-02').text('(' + countCate02 + ')');
 }
 
 $(function () {
-	// 최초 로드 시
-	updateTotal();
+	// 최초 로드 시 total 세팅
+	updateTotalsByCategory();
 
-	// 탭 클릭
+	// 기존 탭 기능 그대로 유지
 	$('.tab-nav').on('click', function () {
 		const tabId = $(this).data('tab');
 
-		// tab ui 처리
 		$('.tab-nav').removeClass('current');
 		$('.tab-cont').removeClass('current');
 
 		$(this).addClass('current');
 		$('#' + tabId).addClass('current');
-
-		// total 갱신
-		updateTotal();
 	});
 });
 </script>
