@@ -121,35 +121,35 @@ a:hover { color:var(--color-primary); }
 .table .link a { display:block; width:100%; height:100%; padding: 0.5rem 0.5rem; background:var(--color-default); color:#fff; text-align:center; }
 .table .link a:hover { background:var(--color-inverse); }
 
-.publish_worksheet { min-height:100vh; display:flex; flex-direction:column; }
-.publish_worksheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }
-.publish_worksheet > section { padding:var(--mg-sec-mo) 0; }
-.publish_worksheet .head { background:var(--color-inverse-bg); color:#fff; }
-.publish_worksheet .head dl dt { float: left; width: 7.5em; }
-.publish_worksheet .head dl dt:after { content:' :'; }
-.publish_worksheet .head dl dd { padding-left: 7.5em; }
-.publish_worksheet .head dl dd ul { padding:0; }
-.publish_worksheet .head dl dd ul li + li { margin-top:0.25em; }
-.publish_worksheet .body { color:var(--color-tone-700); }
-.publish_worksheet .foot { margin-top:auto; background:var(--color-tone-600); text-align:center; color:#fff; }
+.publish_sheet { min-height:100vh; display:flex; flex-direction:column; }
+.publish_sheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }
+.publish_sheet > section { padding:var(--mg-sec-mo) 0; }
+.publish_sheet .head { background:var(--color-inverse-bg); color:#fff; }
+.publish_sheet .head dl dt { float: left; width: 7.5em; }
+.publish_sheet .head dl dt:after { content:' :'; }
+.publish_sheet .head dl dd { padding-left: 7.5em; }
+.publish_sheet .head dl dd ul { padding:0; }
+.publish_sheet .head dl dd ul li + li { margin-top:0.25em; }
+.publish_sheet .body { color:var(--color-tone-700); }
+.publish_sheet .foot { margin-top:auto; background:var(--color-tone-600); text-align:center; color:#fff; }
 
 @media screen and (max-width:768px) {
-	.publish_worksheet .head dl dt { float:none; width:100%; }
-	.publish_worksheet .head dl dd { padding:0; }
+	.publish_sheet .head dl dt { float:none; width:100%; }
+	.publish_sheet .head dl dd { padding:0; }
 }
 
-.publish_worksheet h2 { font-size:3em; font-weight:800; line-height:1.3; letter-spacing:-0.025em; }
-.publish_worksheet h3 { font-size:2em; font-weight:700; line-height:1.3; letter-spacing:-0.025em; }
-.publish_worksheet h4 { font-size:1.5em; font-weight:600; line-height:1.3; letter-spacing:-0.01em; }
-.publish_worksheet h5 { font-size:1.25em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
-.publish_worksheet h6 { font-size:1.125em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
+.publish_sheet h2 { font-size:3em; font-weight:800; line-height:1.3; letter-spacing:-0.025em; }
+.publish_sheet h3 { font-size:2em; font-weight:700; line-height:1.3; letter-spacing:-0.025em; }
+.publish_sheet h4 { font-size:1.5em; font-weight:600; line-height:1.3; letter-spacing:-0.01em; }
+.publish_sheet h5 { font-size:1.25em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
+.publish_sheet h6 { font-size:1.125em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
 
 @media screen and (max-width:1000px) {
-	.publish_worksheet h2 { font-size:2em; }
-	.publish_worksheet h3 { font-size:1.5em; }
-	.publish_worksheet h4 { font-size:1.25em; }
-	.publish_worksheet h5 { font-size:1.125em; }
-	.publish_worksheet h6 { font-size:1.1em; }
+	.publish_sheet h2 { font-size:2em; }
+	.publish_sheet h3 { font-size:1.5em; }
+	.publish_sheet h4 { font-size:1.25em; }
+	.publish_sheet h5 { font-size:1.125em; }
+	.publish_sheet h6 { font-size:1.1em; }
 }
 
 @media screen and (max-width:768px) {
@@ -196,7 +196,7 @@ a:hover { color:var(--color-primary); }
 
 </head>
 <body>
-	<div class="publish_worksheet program">
+	<div class="publish_sheet program">
 		<section class="head">
 			<div class="inner">
 				<hgroup>
