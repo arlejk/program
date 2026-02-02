@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<title>TV Survival Program</title>
+	<meta property="og:url" content="http://ljg.megaweb1.kr/program.html">
+	<meta property="og:title" content="TV Survival Program">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="두뇌·추리 / 예능·게임 서바이벌">
+	<!-- fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+	<link rel="stylesheet" href="//fonts.cdnfonts.com/css/gotham">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+	<link rel="stylesheet" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@xpressengine/xeicon@2.3.3/xeicon.min.css">
+	<!-- Required Jquery -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+/* === form CSS reset cross browsing === */
+
+select::-ms-expand {display:none}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{display:none;}
+input:-moz-submit-invalid{box-shadow: none;}
+input:-moz-ui-invalid{box-shadow:none;}
+
+/* FONT SMOOTHING */
+body { font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* placholder */
+::-webkit-input-placeholder {color:var(--color-tone-500);} 
+::-moz-placeholder {color:var(--color-tone-500);}
+:-ms-input-placeholder {color:var(--color-tone-500);}
+:-moz-placeholder {color:var(--color-tone-500);}
+::-webkit-input-title {color:var(--color-tone-500);}
+::-moz-title {color:var(--color-tone-500);}
+:-ms-input-title {color:var(--color-tone-500);}
+:-moz-title {color:var(--color-tone-500);}
+
+:root {
+	--color-default-bg: #fafafa;
+	--color-primary-bg: #79a3ff;
+	--color-success-bg: #aacc77;
+	--color-info-bg:	#91dff7;
+	--color-warning-bg: #ffcb80;
+	--color-danger-bg:  #fd93a8;
+	--color-inverse-bg: #444c67;
+	--color-admin-bg:	#d579ff;
+
+	--color-default: #BDC3C7;
+	--color-primary: #4680ff;
+	--color-success: #93BE52;
+	--color-info:	 #62d1f3;
+	--color-warning: #FFB64D;
+	--color-danger:  #FC6180;
+	--color-inverse: #303548;
+	--color-admin:   #c446ff;
+
+	--color-tone-100 : #f8f8f8; 
+	--color-tone-200 : #e9e9e9;
+	--color-tone-300 : #dedede;
+	--color-tone-400 : #cecece; 
+	--color-tone-500 : #adadad; 
+	--color-tone-600 : #6c6c6c;
+	--color-tone-700 : #494949;
+	--color-tone-800 : #343434;
+	--color-tone-900 : #212121;
+
+	--color-trans-wh : rgba(255,255,255,0.9);
+	--color-trans-bk : rgba(0,0,0,0.5);
+
+	--font-title: 'Montserrat', 'Spoqa Han Sans Neo', 'Noto Sans KR', sans-serif;
+	--font-text: 'Roboto', 'Pretendard', 'Noto Sans KR', 'AppleGothic', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, sans-serif;
+	--font-icon : 'Font Awesome 6 free', 'xeicon', 'Pretendard', sans-serif;
+
+	--transition-slow : all .3s ease-in-out;
+	--transition-fast : all .1s ease-in-out;
+
+	--gutter-pc:	50px;
+	--gutter-mo:	20px;
+	--mg-sec-pc:	70px;
+	--mg-sec-mo:	30px;
+}
+
+html, body { font-family: var(--font-text); font-size:14px; }
+h1, h2, h3, h4, h5, h6,
+table th, dl dt { font-family:var(--font-title); word-break:keep-all; }
+ul,ol,li{list-style:none;}
+a { text-decoration:none !important; color:inherit; transition:var(--transition-fast); }
+a:hover { color:var(--color-primary); }
+
+/* table */
+.table { background:#fff; border-color:var(--color-tone-300); }
+.table th,
+.table td { word-break:keep-all; }
+.table thead th { border-bottom:2px solid var(--color-tone-300) !important; position:relative; }
+.table tbody { vertical-align:middle; }
+.table tbody tr { transition:var(--transition-fast); }
+.table tbody tr:hover { background:var(--color-tone-100); }
+.table .left { text-align:left; }
+.table .center { text-align:center; }
+.table .right { text-align:right; }
+.table .status { width:4.5em; color:#fff; }
+.table .status.ing { background:var(--color-primary); }
+.table .status.end { background:var(--color-success); }
+.table .status.hold { background:var(--color-warning); }
+.table .status.reject { background:var(--color-danger); }
+.table.program .link { width:auto; max-width:9em; padding:0; }
+.table .link a { display:block; width:100%; height:100%; padding: 0.5rem 0.5rem; background:var(--color-default); color:#fff; text-align:center; }
+.table .link a:hover { background:var(--color-inverse); }
+
+.publish_worksheet { min-height:100vh; display:flex; flex-direction:column; }
+.publish_worksheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }
+.publish_worksheet > section { padding:var(--mg-sec-mo) 0; }
+.publish_worksheet .head { background:var(--color-inverse-bg); color:#fff; }
+.publish_worksheet .head dl dt { float: left; width: 7.5em; }
+.publish_worksheet .head dl dt:after { content:' :'; }
+.publish_worksheet .head dl dd { padding-left: 7.5em; }
+.publish_worksheet .head dl dd ul { padding:0; }
+.publish_worksheet .head dl dd ul li + li { margin-top:0.25em; }
+.publish_worksheet .body { color:var(--color-tone-700); }
+.publish_worksheet .foot { margin-top:auto; background:var(--color-tone-600); text-align:center; color:#fff; }
+
+@media screen and (max-width:768px) {
+	.publish_worksheet .head dl dt { float:none; width:100%; }
+	.publish_worksheet .head dl dd { padding:0; }
+}
+
+.publish_worksheet h2 { font-size:3em; font-weight:800; line-height:1.3; letter-spacing:-0.025em; }
+.publish_worksheet h3 { font-size:2em; font-weight:700; line-height:1.3; letter-spacing:-0.025em; }
+.publish_worksheet h4 { font-size:1.5em; font-weight:600; line-height:1.3; letter-spacing:-0.01em; }
+.publish_worksheet h5 { font-size:1.25em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
+.publish_worksheet h6 { font-size:1.125em; font-weight:500; line-height:1.3; letter-spacing:-0.01em; }
+
+@media screen and (max-width:1000px) {
+	.publish_worksheet h2 { font-size:2em; }
+	.publish_worksheet h3 { font-size:1.5em; }
+	.publish_worksheet h4 { font-size:1.25em; }
+	.publish_worksheet h5 { font-size:1.125em; }
+	.publish_worksheet h6 { font-size:1.1em; }
+}
+
+@media screen and (max-width:768px) {
+	/*block*/
+	.table-block thead { display:none; }
+	.table-block tr { display:block; }
+	.table-block tbody td,
+	.table-block.table.program tbody td.link { display:block; width:100% !important; max-width:100% !important; position:relative;
+		min-height:35px; padding:0.5em 10px; padding-left:7em; border-width:0 0 1px 0; }
+	.table-block.table.program tbody td.link { padding:0; padding-left:calc(7em - 10px); }
+	.table-block.table.program tbody td.link a { padding:0.5em 0; }
+	.table-block td::before { content: attr(data-label); display:block; position:absolute; left:0; top:0;
+		width:calc(7em - 10px); height:100%; padding:0.5em 10px; text-align:left; color:var(--color-tone-900); font-weight:500; background:var(--color-tone-100); }
+}
+
+/* tab */
+.list_keyword { display:flex; flex-wrap:wrap; }
+.list_keyword li { margin: 0 0.5rem 0.5rem 0; }
+.list_keyword li .key { padding: 0.5em 0.75em; font-family: var(--font-title); font-size: 1.2em; font-weight:500; line-height:1;
+	display: flex; align-items:center; background: #fff; border-radius: 2rem; border:1px solid var(--color-tone-300);
+	transition: var(--transition-fast); -webkit-transition: var(--transition-fast); cursor:pointer; }
+.list_keyword li .key:before { content:'# '; color:var(--color-tone-300); transition: var(--transition-fast); -webkit-transition: var(--transition-fast); }
+.list_keyword li:hover .key { border-color:var(--color-point-a); color:var(--color-point-a); }
+.list_keyword li:hover .key:before { color:var(--color-point-a); }
+.list_keyword li.active .key { background:var(--color-point); border-color:var(--color-point); color:#fff; }
+.list_keyword li.active .key:before { color:#fff; }
+.list_keyword .tab-nav .key:before { content:''; }
+@media all and (max-width:1200px) {
+	.list_keyword li .key { font-size: 1.1em; }
+}
+@media screen and (max-width:768px) {
+	.list_keyword li .key { font-size: 1em; }
+}
+
+.tab-title { margin-bottom:var(--mg-sec-mo); }
+.tab-title.list_keyword { justify-content: center; }
+.tab-title .tab-nav:hover .key { border-color:var(--color-inverse-bg); color:var(--color-inverse-bg); }
+.tab-title .tab-nav.current .key { background:var(--color-inverse-bg); border-color:var(--color-inverse-bg); color:#fff; }
+.tab-title .tab-nav.current .key:before { color:#fff; }
+.tab-panel { width: 100%; position: relative; }
+.tab-panel .tab-cont { display:none; width: 100%; }
+.tab-panel .tab-cont.current { display:block; }
+	</style>
+
+</head>
+<body>
+	<div class="publish_worksheet program">
+		<section class="head">
+			<div class="inner">
+				<hgroup>
+					<h3>TV Survival Program</h3>
+					<h2>두뇌·추리 / 예능·게임 서바이벌</h2>
+				</hgroup>
+				<dl>
+					<dt>Total Page</dt>
+					<dd id="total"></dd>
+					<dt>Last Update</dt>
+					<dd>2026-01-28</dd>
+					<dt>Source</dt>
+					<dd>
+						<a href="https://theqoo.net/yn/3134599866" target="_blank">[ theqoo | 예능 | 스퀘어 ] 두뇌정치추리서바+a 국내예능 정리글 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</dd>
+					<dt>Keyword</dt>
+					<dd>
+						<ul>
+							<li>서바이벌 - 한 명 or 팀이 살아남을 때까지 경쟁하는 방식</li>
+							<li>두뇌 - 대결 방식으로 머리 쓰는 게임이 나오는 경우</li>
+							<li>퍼즐 - 머리 쓰는 게임이 등장</li>
+							<li>추리 - 주어진 단서를 통해 범인을 찾아내는 요소가 있는 경우</li>
+							<li>정치 - 연합, 배신 등의 참가자들 사이에 이해관계가 형성되고 갈등이 일어나는 요소가 있는 경우</li>
+							<li>방탈출 - 다음 단계로 넘어가기 위해 퍼즐을 풀어야하는 방식</li>
+							<li>마피아 게임 - 다수의 시민과 한명의 스파이가 경쟁하는 방식</li>
+							<li>드라마 - 큰 틀의 스토리가 존재하는 경우</li>
+							<li>어드벤처 - 미지의 장소를 출연자가 탐색하는 방식</li>
+							<li>게임 - 보통 버라이어티 게임쇼에서 볼 수 있는 게임이 나올 경우</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</section>
+		<section class="body">
+			<div class="inner">
+				<ul class="tab-title list_keyword">
+					<li class="tab-nav current" data-tab="tab-cate-01"><span class="key">두뇌·추리 서바</span></li>
+					<li class="tab-nav" data-tab="tab-cate-02"><span class="key">예능·게임 서바</span></li>
+				</ul>
+				<section class="tab-panel">
+					<article id="tab-cate-01" class="tab-cont tab-cate-01 current">
+						<table id="table-program-01" class="table table-bordered table-block program">
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead class="table-light">
+								<tr>
+									<th scope="col" class="center">이름</th>
+									<th scope="col" class="center">방영년도</th>
+									<th scope="col" class="center">방송사</th>
+									<th scope="col" class="center">스트리밍</th>
+									<th scope="col" class="center">키워드</th>
+									<th scope="col" class="center">비고</th>
+									<th scope="col" class="center">시청</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="이름">더 지니어스:게임의 법칙</td>
+									<td data-label="방영년도">2013</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000106439&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">더 지니어스:룰 브레이커</td>
+									<td data-label="방영년도">2013~2014</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000125936&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">6화 스트리밍 불가</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr class="table-danger">
+									<td data-label="이름">더 지니어스:블랙가넷</td>
+									<td data-label="방영년도">2014</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">전회차 스트리밍 불가</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">더 지니어스:그랜드 파이널</td>
+									<td data-label="방영년도">2015</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000170199&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">방시팝-더 지니어스:외전</td>
+									<td data-label="방영년도">2015</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000222161&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">두뇌</td>
+									<td data-label="비고">3화만 보면 됨</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								<tr class="table-warning">
+									<td data-label="이름">프로젝트 지니어스</td>
+									<td data-label="방영년도">미정</td>
+									<td data-label="방송사">유튜브 홍진호</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">크라임씬1</td>
+									<td data-label="방영년도">2014</td>
+									<td data-label="방송사">JTBC</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000539540&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
+									<td data-label="비고">웨이브, 왓챠, 쿠팡플레이에서도 시청 가능</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">크라임씬2</td>
+									<td data-label="방영년도">2015</td>
+									<td data-label="방송사">JTBC</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000539640&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
+									<td data-label="비고">웨이브, 왓챠, 쿠팡플레이에서도 시청 가능</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">크라임씬3</td>
+									<td data-label="방영년도">2017</td>
+									<td data-label="방송사">JTBC</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000539639&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
+									<td data-label="비고">웨이브, 왓챠, 쿠팡플레이에서도 시청 가능</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">크라임씬 리턴즈</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001751684&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">크라임씬 제로</td>
+									<td data-label="방영년도">2025</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/title/81950435" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr class="table-primary">
+									<td data-label="이름">크라임신 제로 새시즌</td>
+									<td data-label="방영년도">2027 예정</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>									
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">문제적 남자 시즌1</td>
+									<td data-label="방영년도">2015~2018</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000160415&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">두뇌, 퍼즐, 방탈출</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>
+								<tr>
+									<td data-label="이름">문제적 남자 시즌2</td>
+									<td data-label="방영년도">2018~2019</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000160415&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">두뇌, 퍼즐, 방탈출</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>
+								<tr>
+									<td data-label="이름">문제적 남자 브레인 유랑단</td>
+									<td data-label="방영년도">2019~2020</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000160415&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">두뇌, 퍼즐, 방탈출</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">코드-비밀의 방</td>
+									<td data-label="방영년도">2016</td>
+									<td data-label="방송사">JTBC</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tv.jtbc.co.kr/replay/pr10010396/pm10033108" target="_blank">JTBC <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 방탈출</td>
+									<td data-label="비고">U+모바일 TV에서도 시청 가능</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">소사이어티 게임1</td>
+									<td data-label="방영년도">2016</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000328018&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">소사이어티 게임2</td>
+									<td data-label="방영년도">2017</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P000395031&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">범인은 바로 너! 시즌1</td>
+									<td data-label="방영년도">2018</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/80209553" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">드라마, 미스터리, 게임, 추리, 롤플레잉</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">범인은 바로 너! 시즌2</td>
+									<td data-label="방영년도">2019</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/80209553" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">드라마, 미스터리, 게임, 추리, 롤플레잉</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">범인은 바로 너! 시즌3</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/80209553" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">드라마, 미스터리, 게임, 추리, 롤플레잉</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								
+								<tr>
+									<td data-label="이름">대탈출1</td>
+									<td data-label="방영년도">2018</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P000587159" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">대탈출2</td>
+									<td data-label="방영년도">2019</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P000821660" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
+									<td data-label="비고"><a href="https://www.tving.com/contents/P000900239">감독판 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">대탈출3</td>
+									<td data-label="방영년도">2020</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001164763&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
+									<td data-label="비고"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001254453&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">스페셜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">대탈출4</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001490952&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
+									<td data-label="비고"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001516207&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">스페셜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">대탈출: 더 스토리</td>
+									<td data-label="방영년도">2025</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001772883" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">씬의 퀴즈</td>
+									<td data-label="방영년도">2019</td>
+									<td data-label="방송사">XtvN, tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P000940242" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>								
+
+								<tr>
+									<td data-label="이름">송민호의 분실</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">유튜브 채널 십오야</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI" target="_blank">유튜브 채널 십오야 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr class="table-danger">
+									<td data-label="이름">스틸 얼라이브</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">iHQ</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">전회차 스트리밍 불가</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">머니게임</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">유튜브 진용진</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC" target="_blank">유튜브 진용진 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">정치, 서바이벌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">공범1</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">유튜브 장지수</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5" target="_blank">유튜브 장지수 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">마피아 게임, 서바이벌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								<tr>
+									<td data-label="이름">공범2</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">유튜브 장지수</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5" target="_blank">유튜브 장지수 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">마피아 게임, 서바이벌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">여고추리반</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001433241&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">어드벤처, 추리, 미스터리, 드라마</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">여고추리반2</td>
+									<td data-label="방영년도">2021~2022</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001537909&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">어드벤처, 추리, 미스터리, 드라마</td>
+									<td data-label="비고"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001563040&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">코멘터리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">여고추리반3</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001754831&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">어드벤처, 추리, 미스터리, 드라마</td>
+									<td data-label="비고"><a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">피의게임1</td>
+									<td data-label="방영년도">2021~2022</td>
+									<td data-label="방송사">WAVVE, MBC</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000075&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">피의게임2</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000108&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">피의게임3</td>
+									<td data-label="방영년도">2024~2025</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000149&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr class="table-primary">
+									<td data-label="이름">피의게임 스핀오프</td>
+									<td data-label="방영년도">2026 예정</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">생존남녀: 갈라진 세상</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">카카오TV</td>
+									<td data-label="스트리밍" class="center link"><a href="https://watcha.com/ko-KR/contents/share/tlYey3V?utm_source%3Dkinolights%26utm_campaign%3Dkinolights%26utm_medium%3Dorganic%26utm_content%3Dtitle_provider" target="_blank">WATCHA <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치, 생존</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">검은 양 게임</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">SBS</td>
+									<td data-label="스트리밍" class="center link"><a href="https://programs.sbs.co.kr/culture/genreismafia/vods/71253" target="_blank">SBS <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 마피아 게임</td>
+									<td data-label="비고">SBS 홈페이지에서 무료 시청 가능</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">도둑잡기</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">WATCHA</td>
+									<td data-label="스트리밍" class="center link"><a href="https://watcha.com/ko-KR/contents/share/tR2edNe" target="_blank">WATCHA <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">제로섬게임</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001616289&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 생존</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">입주쟁탈전: 펜트하우스</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">채널A, WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000089&amp;page=1" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 정치</td>
+									<td data-label="비고"><a href="https://www.ichannela.com/program/detail/program_detail_renew.do?cateCode=0500910001" target="_blank">채널A 홈페이지에서 무료 시청 가능 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">파트너 게임</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">유튜브 tvN D</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc" target="_blank">유튜브 tvN D <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">버튼게임</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000102&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">보물찾기</td>
+									<td data-label="방영년도">2022~2023</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001623861&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 서바이벌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">우마게임</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">유투브 피지컬갤러리</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz" target="_blank">유투브 피지컬갤러리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 방탈출</td>
+									<td data-label="비고">벌레 나옴 비위 조심</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">씬캐처</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=F5701_F57000000001&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">추리, 마피아 게임, 롤플레잉</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">더 타임 호텔</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001696917&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								
+								<tr>
+									<td data-label="이름">내친나똑(내 친구들은 나보다 똑똑하다)</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001691160&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">두뇌, 퍼즐</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">육각형게임</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">유튜브 긱블</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo" target="_blank">유튜브 긱블 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 방탈출</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">대학전쟁</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">쿠팡플레이</td>
+									<td data-label="스트리밍" class="center link"><a href="https://coupangplay.app.link/YLHDpm63xHb" target="_blank">쿠팡플레이 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">대학전쟁2</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">쿠팡플레이</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3?type=&amp;availability=SVOD&amp;live=&amp;channel=&amp;rowId=d24ea57b-ce91-4ba4-a25e-eab04922f12c&amp;trackId=&amp;src=page_discover_feed%3AContinue-Watching%3AALL&amp;sourceType=&amp;supportLive=" target="_blank">쿠팡플레이 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">대학전쟁3</td>
+									<td data-label="방영년도">2025~2026</td>
+									<td data-label="방송사">쿠팡플레이</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3" target="_blank">쿠팡플레이 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">●</td>
+								</tr>								
+
+								<tr>
+									<td data-label="이름">데블스 플랜</td>
+									<td data-label="방영년도">2023</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/81653386" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">데블스 플랜: 데스룸</td>
+									<td data-label="방영년도">2025</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/title/81653386" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr class="table-primary">
+									<td data-label="이름">데블스 플랜3</td>
+									<td data-label="방영년도">2026 예정</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">기억을 잊는 밤</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">유튜브 코다리찜</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/watch?v=97WtB7a4-9k&amp;list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt&amp;index=10" target="_blank">유튜브 코다리찜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								
+								<tr>
+									<td data-label="이름">금수저전쟁</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">U+모바일tv</td>
+									<td data-label="스트리밍" class="center link"><a href="https://motvlnk.uplus.co.kr/?a_rtype=detail_page&amp;vod_type=vod&amp;main_run=Y&amp;backkey_finish=N&amp;is_splash=N&amp;review_yn=N&amp;contents_id=M0124AV077PPV00&amp;category_id=&amp;series_num=1&amp;series_category_id=E25VM&amp;utm_source=kinolights&amp;utm_campaign=kinolights&amp;utm_medium=organic&amp;utm_content=title_provider&amp;packageName=com.kinolights.kinolights" target="_blank">U+모바일tv <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">웨이브, 왓챠에서도 시청가능</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">사상검증구역: 더 커뮤니티</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9901_C99000000124&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 사회실험, 정치, 마피아 게임</td>
+									<td data-label="비고"><a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr class="table-primary">
+									<td data-label="이름">사상검증구역: 더 커뮤니티2</td>
+									<td data-label="방영년도">2026 예정</td>
+									<td data-label="방송사">WAVVE</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">서바이벌, 사회실험, 정치, 마피아 게임</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">미스터리 수사단</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/81731720" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">방탈출, 어드벤처, 옴니버스</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr class="table-primary">
+									<td data-label="이름">미스터리 수사단2</td>
+									<td data-label="방영년도">2026 예정</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">Life's Game</td>
+									<td data-label="방영년도">2025</td>
+									<td data-label="방송사">유튜브 LG그룹</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/watch?v=tfy3EAFxmqY&amp;list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8" target="_blank">유튜브 LG그룹 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">웨이브에서도 시청가능</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">NO EXIT GAME ROOM</td>
+									<td data-label="방영년도">2025</td>
+									<td data-label="방송사">아무거나보틀, WAVVE</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.wavve.com/player/vod?programid=C9902_C99000000048&amp;landing=season" target="_blank">WAVVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">아무거나보틀 유튜브에서도 시청가능</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">네가지 소원</td>
+									<td data-label="방영년도">2026</td>
+									<td data-label="방송사">유튜브 스튜디오 마인드제로</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.youtube.com/@MINDZEROstudio/videos" target="_blank">유튜브 스튜디오 마인드제로 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">서바이벌, 두뇌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">●</td>
+								</tr>
+
+								<tr>
+									<td data-label="이름">데스게임: 천만원을 걸어라</td>
+									<td data-label="방영년도">2026</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/82679390" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">●</td>
+								</tr>
+
+								<tr class="table-primary">
+									<td data-label="이름">싱크로 게임</td>
+									<td data-label="방영년도">2026 예정</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+
+								<tr class="table-primary">
+									<td data-label="이름">배신자들 게임</td>
+									<td data-label="방영년도">2026 예정</td>
+									<td data-label="방송사">TVING</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">　</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+							</tbody>
+						</table>						
+					</article>
+					<article id="tab-cate-02" class="tab-cont tab-cate-02">
+						<table id="table-program-02" class="table table-bordered table-block program">
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead class="table-light">
+								<tr>
+									<th scope="col" class="center">이름</th>
+									<th scope="col" class="center">방영년도</th>
+									<th scope="col" class="center">방송사</th>
+									<th scope="col" class="center">스트리밍</th>
+									<th scope="col" class="center">키워드</th>
+									<th scope="col" class="center">비고</th>
+									<th scope="col" class="center">시청</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="이름">박스</td>
+									<td data-label="방영년도">2015</td>
+									<td data-label="방송사">JTBC</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001459427" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 서바이벌, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								<tr class="table-danger">
+									<td data-label="이름">눈치왕</td>
+									<td data-label="방영년도">2015</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍">　</td>
+									<td data-label="키워드">게임, 서바이벌</td>
+									<td data-label="비고">전회차 스트리밍 불가</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								<tr>
+									<td data-label="이름">미추리 8-1000 시즌1</td>
+									<td data-label="방영년도">2018</td>
+									<td data-label="방송사">SBS</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/search?q=%EB%AF%B8%EC%B6%94%EB%A6%AC&amp;jbv=82009029" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 추리</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">미추리 8-1000 시즌2</td>
+									<td data-label="방영년도">2019</td>
+									<td data-label="방송사">SBS</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/search?q=%EB%AF%B8%EC%B6%94%EB%A6%AC&amp;jbv=82009029" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 추리</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">○</td>
+								</tr>
+								<tr>
+									<td data-label="이름">식스센스 1</td>
+									<td data-label="방영년도">2020</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001316154" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 추리</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>
+								<tr>
+									<td data-label="이름">식스센스 2</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001483400" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 추리</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								<tr>
+									<td data-label="이름">식스센스 3</td>
+									<td data-label="방영년도">2022</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.tving.com/contents/P001574198" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 추리</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">　</td>
+								</tr>
+								<tr>
+									<td data-label="이름">신세계로부터</td>
+									<td data-label="방영년도">2021</td>
+									<td data-label="방송사">NETFLIX</td>
+									<td data-label="스트리밍" class="center link"><a href="https://www.netflix.com/kr/title/81436207" target="_blank">NETFLIX <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 어드벤처, 정치</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>								
+								<tr>
+									<td data-label="이름">아파트404</td>
+									<td data-label="방영년도">2024</td>
+									<td data-label="방송사">tvN</td>
+									<td data-label="스트리밍" class="center link"><a href="https://tving.page.link/?link=https://www.tving.com/contents/P001752153&amp;apn=net.cj.cjhv.gs.tving&amp;isi=400101401&amp;ibi=com.tving.iphone001&amp;efr=1" target="_blank">TVING <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+									<td data-label="키워드">게임, 추리</td>
+									<td data-label="비고">　</td>
+									<td data-label="시청" class="center">△</td>
+								</tr>
+							</tbody>
+						</table>				
+					</article>
+				</section>
+			</div>		
+		</section>
+		<section class="foot">
+			<div class="inner">
+				<small>© Content Curated by 무명의더쿠. Published by Joanne.</small>
+			</div>		
+		</section>
+	</div>
+</body>
+<script>
+function updateTotal() {
+	const $currentTab = $('.tab-nav.current');
+	const tabId = $currentTab.data('tab'); // tab-cate-01 / tab-cate-02
+	const $table = $('#' + tabId).find('table');
+	const count = $table.find('tbody tr').length;
+
+	$('#total').text(count + ' pages');
+}
+
+$(function () {
+	// 최초 로드 시
+	updateTotal();
+
+	// 탭 클릭
+	$('.tab-nav').on('click', function () {
+		const tabId = $(this).data('tab');
+
+		// tab ui 처리
+		$('.tab-nav').removeClass('current');
+		$('.tab-cont').removeClass('current');
+
+		$(this).addClass('current');
+		$('#' + tabId).addClass('current');
+
+		// total 갱신
+		updateTotal();
+	});
+});
+</script>
+</html>
