@@ -956,72 +956,119 @@ const programData = {
     ]
 };
 
+// 정렬 상태 관리 객체 (컬럼 키값 & 오름차순/내림차순 여부)
+const sortState = {
+	'tbody-cate-01': { key: null, asc: true },
+	'tbody-cate-02': { key: null, asc: true }
+};
+
 // 2. 테이블 렌더링 함수
 function renderTable(containerId, list) {
-    const $tbody = $(containerId);
-    $tbody.empty(); // 초기화
+	const $tbody = $(containerId);
+	$tbody.empty(); // 초기화
 
-    list.forEach(item => {
-        // 이름 (링크 유무 처리)
-        const nameHtml = item.link 
-            ? `<a href="${item.link}" target="_blank">${item.name}</a>` 
-            : item.name;
+	list.forEach(item => {
+		const nameHtml = item.link 
+			? `<a href="${item.link}" target="_blank">${item.name}</a>` 
+			: item.name;
 
-        // 스트리밍 링크 (링크 유무 처리)
-        let ottHtml = ' ';
-        if (item.ottName && item.ottLink) {
-            ottHtml = `<a href="${item.ottLink}" target="_blank">${item.ottName} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>`;
-        }
+		let ottHtml = ' ';
+		if (item.ottName && item.ottLink) {
+			ottHtml = `<a href="${item.ottLink}" target="_blank">${item.ottName} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>`;
+		}
 
-        // 키워드 배열 문자열 변환
-        const keywordsText = item.keywords.length > 0 ? item.keywords.join(', ') : ' ';
+		const keywordsText = item.keywords.length > 0 ? item.keywords.join(', ') : ' ';
 
-        // <tr> 생성
-        const trHtml = `
-            <tr class="${item.rowClass}">
-                <td data-label="이름">${nameHtml}</td>
-                <td data-label="방영년도">${item.year}</td>
-                <td data-label="방송사">${item.broadcaster}</td>
-                <td data-label="스트리밍" class="center link">${ottHtml}</td>
-                <td data-label="키워드">${keywordsText}</td>
-                <td data-label="비고">${item.note || ' '}</td>
-            </tr>
-        `;
-        $tbody.append(trHtml);
-    });
+		const trHtml = `
+			<tr class="${item.rowClass}">
+				<td data-label="이름">${nameHtml}</td>
+				<td data-label="방영년도">${item.year}</td>
+				<td data-label="방송사">${item.broadcaster}</td>
+				<td data-label="스트리밍" class="center link">${ottHtml}</td>
+				<td data-label="키워드">${keywordsText}</td>
+				<td data-label="비고">${item.note || ' '}</td>
+			</tr>
+		`;
+		$tbody.append(trHtml);
+	});
 }
 
 // 3. 페이지 로드 시 실행
 $(function () {
-    // 1. 테이블 동적 생성 (HTML을 생성함)
-    renderTable('#tbody-cate-01', programData.cate01);
-    renderTable('#tbody-cate-02', programData.cate02);
+	// 1. 테이블 동적 생성
+	renderTable('#tbody-cate-01', programData.cate01);
+	renderTable('#tbody-cate-02', programData.cate02);
 
-    // 2. 테이블 생성이 끝난 직후 tr 개수를 카운트함
-    updateTotalsByCategory();
+	// 2. 카운트 업데이트
+	updateTotalsByCategory();
 
-    // 3. 탭 클릭 이벤트
-    $('.tab-nav').on('click', function (e) {
-        e.preventDefault();
+	// 3. 탭 클릭 이벤트
+	$('.tab-nav').on('click', function (e) {
+		e.preventDefault();
+		const tabId = $(this).data('tab');
 
-        const tabId = $(this).data('tab');
+		$('.tab-nav').removeClass('current');
+		$('.tab-cont').removeClass('current');
 
-        // 모든 탭/컨텐츠에서 current 제거
-        $('.tab-nav').removeClass('current');
-        $('.tab-cont').removeClass('current');
+		$(this).addClass('current');
+		$('#' + tabId).addClass('current');
+	});
 
-        // 선택된 요소에만 current 추가
-        $(this).addClass('current');
-        $('#' + tabId).addClass('current');
-    });
+	// 4. 테이블 헤더 클릭 시 정렬 이벤트 추가
+	$('.table-block thead th').on('click', function () {
+		const $th = $(this);
+		const key = $th.data('sort'); // 정렬할 객체 속성 키 값 (예: name, year)
+		
+		// 정렬 키가 지정되지 않은 컬럼은 무시
+		if (!key) return;
+
+		const $table = $th.closest('table');
+		const $tbody = $table.find('tbody');
+		const tbodyId = $tbody.attr('id'); // 'tbody-cate-01' 또는 'tbody-cate-02'
+		
+		// 해당 카테고리 데이터 선택
+		const cateKey = tbodyId === 'tbody-cate-01' ? 'cate01' : 'cate02';
+		const dataList = programData[cateKey];
+
+		// 정렬 방향 토글 (같은 컬럼 재클릭 시 반대로, 다른 컬럼 클릭 시 오름차순부터)
+		if (sortState[tbodyId].key === key) {
+			sortState[tbodyId].asc = !sortState[tbodyId].asc;
+		} else {
+			sortState[tbodyId].key = key;
+			sortState[tbodyId].asc = true;
+		}
+
+		const isAsc = sortState[tbodyId].asc;
+
+		// 데이터 정렬
+		dataList.sort((a, b) => {
+			let valA = a[key] || '';
+			let valB = b[key] || '';
+
+			// 배열 형태(keywords)일 경우 문자열로 변경
+			if (Array.isArray(valA)) valA = valA.join(', ');
+			if (Array.isArray(valB)) valB = valB.join(', ');
+
+			// 한글/숫자/영문 비교
+			return isAsc 
+				? valA.toString().localeCompare(valB.toString(), 'ko', { numeric: true })
+				: valB.toString().localeCompare(valA.toString(), 'ko', { numeric: true });
+		});
+
+		// UI 아이콘/클래스 변경
+		$table.find('thead th').removeClass('sort-asc sort-desc');
+		$th.addClass(isAsc ? 'sort-asc' : 'sort-desc');
+
+		// 정렬된 데이터로 테이블 재렌더링
+		renderTable('#' + tbodyId, dataList);
+	});
 });
 
-// 카운트 세는 함수 (배열 개수를 직접 읽거나, DOM element 개수 읽기 둘 다 가능)
+// 카운트 세는 함수
 function updateTotalsByCategory() {
-    // [방법 B] 배열 개수로 바로 세기 (DOM을 안 거쳐서 더 빠름)
-    const countCate01 = programData.cate01 ? programData.cate01.length : 0;
-    const countCate02 = programData.cate02 ? programData.cate02.length : 0;
+	const countCate01 = programData.cate01 ? programData.cate01.length : 0;
+	const countCate02 = programData.cate02 ? programData.cate02.length : 0;
 
-    $('#total-cate-01').text('(' + countCate01 + ')');
-    $('#total-cate-02').text('(' + countCate02 + ')');
+	$('#total-cate-01').text('(' + countCate01 + ')');
+	$('#total-cate-02').text('(' + countCate02 + ')');
 }

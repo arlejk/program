@@ -114,6 +114,27 @@ a:hover { color:var(--color-primary); }
 .table.program .link { width:auto; max-width:9em; padding:0; }
 .table .link a { display:block; width:100%; height:100%; padding: 0.5rem 0.5rem; background:var(--color-default); color:#fff; text-align:center; }
 .table .link a:hover { background:var(--color-inverse); }
+.table thead th[data-sort] { /* 테이블 헤더 커서 및 정렬 스타일 */
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	padding-right: 20px; /* 화살표 들어갈 공간 */
+}
+.table thead th[data-sort]::after { /* 정렬 표시 기본 화살표 */
+	content: '\f0dc';
+	font-family:var(--font-icon);
+	position: absolute;
+	right: 6px;
+	opacity: 0.3;
+}
+.table thead th[data-sort].sort-asc::after { /* 오름차순 활성화 */
+	content: '\f0de';
+	opacity: 1;
+}
+.table thead th[data-sort].sort-desc::after { /* 내림차순 활성화 */
+	content: '\f0dd';
+	opacity: 1;
+}
 
 .publish_worksheet { min-height:100vh; display:flex; flex-direction:column; }
 .publish_worksheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }
