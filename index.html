@@ -62,14 +62,27 @@
 				</ul>
 				<section class="tab-panel">
 					<article id="tab-cate-01" class="tab-cont tab-cate-01 current">
+						<!-- 키워드 필터 버튼 영역 (JS가 자동으로 버튼 채워넣음) -->
+						<div class="keyword-filter-wrap mb-3"></div>
+
+						<!-- 모바일 전용 정렬 셀렉트 박스 -->
+						<div class="sort-select-wrap d-md-none mb-2 text-end">
+							<select class="form-select sort-select" style="display:inline-block; width:auto;">
+								<option value="">-- 정렬 선택 --</option>
+								<option value="name_asc">이름 (가나다순)</option>
+								<option value="name_desc">이름 (역순)</option>
+								<option value="year_asc">방영년도 (오래된순)</option>
+								<option value="year_desc">방영년도 (최신순)</option>
+								<option value="broadcaster_asc">방송사 (가나다순)</option>
+								<option value="broadcaster_desc">방송사 (역순)</option>
+								<option value="ottName_asc">스트리밍 (가나다순)</option>
+								<option value="ottName_desc">스트리밍 (역순)</option>
+							</select>
+						</div>
+
 						<table id="table-program-01" class="table table-bordered table-block program">
 							<colgroup>
-								<col>
-								<col>
-								<col>
-								<col>
-								<col>
-								<col>
+								<col><col><col><col><col><col>
 							</colgroup>
 							<thead class="table-light">
 								<tr>
@@ -77,23 +90,36 @@
 									<th scope="col" class="center" data-sort="year">방영년도</th>
 									<th scope="col" class="center" data-sort="broadcaster">방송사</th>
 									<th scope="col" class="center" data-sort="ottName">스트리밍</th>
-									<th scope="col" class="center" data-sort="keywords">키워드</th>
+									<th scope="col" class="center">키워드</th>
 									<th scope="col" class="center" data-sort="note">비고</th>
 								</tr>
 							</thead>
-							<tbody id="tbody-cate-01">								
-							</tbody>
+							<tbody id="tbody-cate-01"></tbody>
 						</table>						
 					</article>
+
 					<article id="tab-cate-02" class="tab-cont tab-cate-02">
+						<!-- 키워드 필터 버튼 영역 -->
+						<div class="keyword-filter-wrap mb-3"></div>
+
+						<!-- 모바일 전용 정렬 셀렉트 박스 -->
+						<div class="sort-select-wrap d-md-none mb-2 text-end">
+							<select class="form-select sort-select" style="display:inline-block; width:auto;">
+								<option value="">-- 정렬 선택 --</option>
+								<option value="name_asc">이름 (가나다순)</option>
+								<option value="name_desc">이름 (역순)</option>
+								<option value="year_asc">방영년도 (오래된순)</option>
+								<option value="year_desc">방영년도 (최신순)</option>
+								<option value="broadcaster_asc">방송사 (가나다순)</option>
+								<option value="broadcaster_desc">방송사 (역순)</option>
+								<option value="ottName_asc">스트리밍 (가나다순)</option>
+								<option value="ottName_desc">스트리밍 (역순)</option>
+							</select>
+						</div>
+
 						<table id="table-program-02" class="table table-bordered table-block program">
 							<colgroup>
-								<col>
-								<col>
-								<col>
-								<col>
-								<col>
-								<col>
+								<col><col><col><col><col><col>
 							</colgroup>
 							<thead class="table-light">
 								<tr>
@@ -101,12 +127,11 @@
 									<th scope="col" class="center" data-sort="year">방영년도</th>
 									<th scope="col" class="center" data-sort="broadcaster">방송사</th>
 									<th scope="col" class="center" data-sort="ottName">스트리밍</th>
-									<th scope="col" class="center" data-sort="keywords">키워드</th>
+									<th scope="col" class="center">키워드</th>
 									<th scope="col" class="center" data-sort="note">비고</th>
 								</tr>
 							</thead>
-							<tbody id="tbody-cate-02">								
-							</tbody>
+							<tbody id="tbody-cate-02"></tbody>
 						</table>
 					</article>
 				</section>

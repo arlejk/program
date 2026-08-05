@@ -956,18 +956,74 @@ const programData = {
     ]
 };
 
-// 정렬 상태 관리 객체 (컬럼 키값 & 오름차순/내림차순 여부)
+// 1. 상태 관리 객체 (정렬 및 키워드 필터)
 const sortState = {
 	'tbody-cate-01': { key: null, asc: true },
 	'tbody-cate-02': { key: null, asc: true }
 };
 
-// 2. 테이블 렌더링 함수
+let currentKeyword = 'all'; // 현재 선택된 키워드
+
+// 2. 키워드 버튼 자동 생성 함수 (빈도수 높은 순 -> 같으면 가나다 순)
+function renderKeywordButtons() {
+	const keywordCounts = {};
+
+	// cate01, cate02 내부의 모든 keywords 빈도 수집
+	Object.keys(programData).forEach(cateKey => {
+		programData[cateKey].forEach(item => {
+			if (Array.isArray(item.keywords)) {
+				item.keywords.forEach(kw => {
+					if (kw && kw.trim() !== '') {
+						const cleanKw = kw.trim();
+						keywordCounts[cleanKw] = (keywordCounts[cleanKw] || 0) + 1;
+					}
+				});
+			}
+		});
+	});
+
+	// 키워드 정렬: 1차 빈도수 내림차순 / 2차 가나다 오름차순
+	const sortedKeywords = Object.keys(keywordCounts).sort((a, b) => {
+		const countA = keywordCounts[a];
+		const countB = keywordCounts[b];
+
+		if (countB !== countA) {
+			return countB - countA; // 개수 많은 순
+		}
+		return a.localeCompare(b, 'ko'); // 같으면 가나다순
+	});
+
+	// 버튼들을 담을 컨테이너 ($('.keyword-filter-wrap') 내부)
+	const $wrap = $('.keyword-filter-wrap');
+	$wrap.empty(); // 기존 버튼 초기화
+
+	// 전체보기 버튼 추가
+	$wrap.append('<button class="btn btn-secondary btn-keyword active" data-keyword="all">전체보기</button> ');
+
+	// 정렬된 키워드로 버튼 동적 생성
+	sortedKeywords.forEach(kw => {
+		$wrap.append(`<button class="btn btn-outline-dark btn-keyword" data-keyword="${kw}">#${kw}</button> `);
+	});
+}
+
+// 3. 테이블 렌더링 함수
 function renderTable(containerId, list) {
 	const $tbody = $(containerId);
 	$tbody.empty(); // 초기화
 
-	list.forEach(item => {
+	// 선택한 키워드가 있을 경우 필터링
+	let filteredList = list;
+	if (currentKeyword !== 'all') {
+		filteredList = list.filter(item => item.keywords && item.keywords.includes(currentKeyword));
+	}
+
+	// 필터링 결과가 없을 때 처리
+	if (filteredList.length === 0) {
+		$tbody.append('<tr><td colspan="6" class="center text-muted py-4">해당 키워드의 프로그램이 없습니다.</td></tr>');
+		return;
+	}
+
+	filteredList.forEach(item => {
 		const nameHtml = item.link 
 			? `<a href="${item.link}" target="_blank">${item.name}</a>` 
 			: item.name;
@@ -977,7 +1033,13 @@ function renderTable(containerId, list) {
 			ottHtml = `<a href="${item.ottLink}" target="_blank">${item.ottName} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>`;
 		}
 
-		const keywordsText = item.keywords.length > 0 ? item.keywords.join(', ') : ' ';
+		// 키워드를 클릭 가능한 태그 형태로 출력
+		let keywordsHtml = ' ';
+		if (item.keywords && item.keywords.length > 0) {
+			keywordsHtml = item.keywords.map(kw => 
+				`<span class="badge bg-light text-dark keyword-tag mr-1" style="cursor:pointer;" data-keyword="${kw}">#${kw}</span>`
+			).join(' ');
+		}
 
 		const trHtml = `
 			<tr class="${item.rowClass}">
@@ -985,7 +1047,7 @@ function renderTable(containerId, list) {
 				<td data-label="방영년도">${item.year}</td>
 				<td data-label="방송사">${item.broadcaster}</td>
 				<td data-label="스트리밍" class="center link">${ottHtml}</td>
-				<td data-label="키워드">${keywordsText}</td>
+				<td data-label="키워드" class="keyword">${keywordsHtml}</td>
 				<td data-label="비고">${item.note || ' '}</td>
 			</tr>
 		`;
@@ -993,16 +1055,71 @@ function renderTable(containerId, list) {
 	});
 }
 
-// 3. 페이지 로드 시 실행
+// 4. [공통] 데이터 정렬 및 재렌더링 함수
+function sortTableData(tbodyId, key, isAsc) {
+	const cateKey = tbodyId === 'tbody-cate-01' ? 'cate01' : 'cate02';
+	const dataList = programData[cateKey];
+
+	if (!dataList || !key) return;
+
+	// 원본 데이터 배열 정렬
+	dataList.sort((a, b) => {
+		let valA = a[key] || '';
+		let valB = b[key] || '';
+
+		if (Array.isArray(valA)) valA = valA.join(', ');
+		if (Array.isArray(valB)) valB = valB.join(', ');
+
+		return isAsc 
+			? valA.toString().localeCompare(valB.toString(), 'ko', { numeric: true })
+			: valB.toString().localeCompare(valA.toString(), 'ko', { numeric: true });
+	});
+
+	// 정렬 적용 후 테이블 렌더링
+	renderTable('#' + tbodyId, dataList);
+}
+
+// 5. 키워드 필터 적용 및 화면 갱신
+function applyKeywordFilter(keyword) {
+	currentKeyword = keyword;
+
+	// 상단 버튼 UI 상태 변경
+	$('.btn-keyword').removeClass('active btn-secondary btn-dark').addClass('btn-outline-dark');
+	
+	const $activeBtn = $(`.btn-keyword[data-keyword="${keyword}"]`);
+	if (keyword === 'all') {
+		$activeBtn.addClass('active btn-secondary').removeClass('btn-outline-dark');
+	} else {
+		$activeBtn.addClass('active btn-dark').removeClass('btn-outline-dark');
+	}
+
+	// 정렬 상태가 유지되도록 정렬 함수 호출 혹은 기본 렌더링
+	['tbody-cate-01', 'tbody-cate-02'].forEach(tbodyId => {
+		if (sortState[tbodyId].key) {
+			sortTableData(tbodyId, sortState[tbodyId].key, sortState[tbodyId].asc);
+		} else {
+			const cateKey = tbodyId === 'tbody-cate-01' ? 'cate01' : 'cate02';
+			renderTable('#' + tbodyId, programData[cateKey]);
+		}
+	});
+
+	// 필터링된 개수로 카운트 업데이트
+	updateTotalsByCategory();
+}
+
+// 6. 페이지 로드 시 실행
 $(function () {
-	// 1. 테이블 동적 생성
+	// 6-1. 키워드 버튼 동적 추출 및 정렬 생성
+	renderKeywordButtons();
+
+	// 6-2. 최초 테이블 생성
 	renderTable('#tbody-cate-01', programData.cate01);
 	renderTable('#tbody-cate-02', programData.cate02);
 
-	// 2. 카운트 업데이트
+	// 6-3. 카운트 업데이트
 	updateTotalsByCategory();
 
-	// 3. 탭 클릭 이벤트
+	// 6-4. 탭 클릭 이벤트
 	$('.tab-nav').on('click', function (e) {
 		e.preventDefault();
 		const tabId = $(this).data('tab');
@@ -1012,25 +1129,21 @@ $(function () {
 
 		$(this).addClass('current');
 		$('#' + tabId).addClass('current');
+
+		$('.sort-select').val('');
 	});
 
-	// 4. 테이블 헤더 클릭 시 정렬 이벤트 추가
+	// 6-5. [PC] 테이블 헤더(th) 클릭 시 정렬
 	$('.table-block thead th').on('click', function () {
 		const $th = $(this);
-		const key = $th.data('sort'); // 정렬할 객체 속성 키 값 (예: name, year)
+		const key = $th.data('sort');
 		
-		// 정렬 키가 지정되지 않은 컬럼은 무시
 		if (!key) return;
 
 		const $table = $th.closest('table');
 		const $tbody = $table.find('tbody');
-		const tbodyId = $tbody.attr('id'); // 'tbody-cate-01' 또는 'tbody-cate-02'
-		
-		// 해당 카테고리 데이터 선택
-		const cateKey = tbodyId === 'tbody-cate-01' ? 'cate01' : 'cate02';
-		const dataList = programData[cateKey];
+		const tbodyId = $tbody.attr('id');
 
-		// 정렬 방향 토글 (같은 컬럼 재클릭 시 반대로, 다른 컬럼 클릭 시 오름차순부터)
 		if (sortState[tbodyId].key === key) {
 			sortState[tbodyId].asc = !sortState[tbodyId].asc;
 		} else {
@@ -1040,35 +1153,52 @@ $(function () {
 
 		const isAsc = sortState[tbodyId].asc;
 
-		// 데이터 정렬
-		dataList.sort((a, b) => {
-			let valA = a[key] || '';
-			let valB = b[key] || '';
-
-			// 배열 형태(keywords)일 경우 문자열로 변경
-			if (Array.isArray(valA)) valA = valA.join(', ');
-			if (Array.isArray(valB)) valB = valB.join(', ');
-
-			// 한글/숫자/영문 비교
-			return isAsc 
-				? valA.toString().localeCompare(valB.toString(), 'ko', { numeric: true })
-				: valB.toString().localeCompare(valA.toString(), 'ko', { numeric: true });
-		});
-
-		// UI 아이콘/클래스 변경
 		$table.find('thead th').removeClass('sort-asc sort-desc');
 		$th.addClass(isAsc ? 'sort-asc' : 'sort-desc');
 
-		// 정렬된 데이터로 테이블 재렌더링
-		renderTable('#' + tbodyId, dataList);
+		sortTableData(tbodyId, key, isAsc);
+	});
+
+	// 6-6. [모바일] 셀렉트 박스(select) 변경 시 정렬
+	$('.sort-select').on('change', function () {
+		const selectedVal = $(this).val();
+		if (!selectedVal) return;
+
+		const [key, dir] = selectedVal.split('_');
+		const isAsc = (dir === 'asc');
+		const tbodyId = $('.tab-cont.current tbody').attr('id');
+
+		if (!key || !tbodyId) return;
+
+		sortState[tbodyId].key = key;
+		sortState[tbodyId].asc = isAsc;
+
+		sortTableData(tbodyId, key, isAsc);
+	});
+
+	// 6-7. 상단 키워드 버튼 클릭 (동적 생성 요소이므로 $(document).on 사용)
+	$(document).on('click', '.btn-keyword', function () {
+		const keyword = $(this).data('keyword');
+		applyKeywordFilter(keyword);
+	});
+
+	// 6-8. 테이블 내부 #키워드 태그 클릭시 필터링
+	$(document).on('click', '.keyword-tag', function () {
+		const keyword = $(this).data('keyword');
+		applyKeywordFilter(keyword);
 	});
 });
 
-// 카운트 세는 함수
+// 7. 카운트 세는 함수 (키워드 필터가 적용된 경우 필터링된 개수 반영)
 function updateTotalsByCategory() {
-	const countCate01 = programData.cate01 ? programData.cate01.length : 0;
-	const countCate02 = programData.cate02 ? programData.cate02.length : 0;
+	let list01 = programData.cate01 || [];
+	let list02 = programData.cate02 || [];
 
-	$('#total-cate-01').text('(' + countCate01 + ')');
-	$('#total-cate-02').text('(' + countCate02 + ')');
+	if (currentKeyword !== 'all') {
+		list01 = list01.filter(item => item.keywords && item.keywords.includes(currentKeyword));
+		list02 = list02.filter(item => item.keywords && item.keywords.includes(currentKeyword));
+	}
+
+	$('#total-cate-01').text('(' + list01.length + ')');
+	$('#total-cate-02').text('(' + list02.length + ')');
 }
