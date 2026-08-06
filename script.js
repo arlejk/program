@@ -806,19 +806,17 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
-		/*
 		{
 			name: "베팅 온 팩트",
 			link: "https://m.kinolights.com/title/151135",
 			year: "2026",
-			broadcaster: "tvN",
+			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000187",
-			keywords: [],
+			keywords: ["서바이벌", "정치", "마피아 게임"],
 			note: "",
 			rowClass: ""
 		},
-		*/
 		{
 			name: "머더클럽",
 			link: "https://m.kinolights.com/season/153749",
@@ -835,6 +833,17 @@ const programData = {
 			link: "",
 			year: "2026 예정",
 			broadcaster: "TVING",
+			ottName: "",
+			ottLink: "",
+			keywords: [],
+			note: "",
+			rowClass: "table-primary"
+		},
+		{
+			name: "술래게임",
+			link: "",
+			year: "2026 예정",
+			broadcaster: "Disney+",
 			ottName: "",
 			ottLink: "",
 			keywords: [],
