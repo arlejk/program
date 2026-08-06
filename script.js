@@ -725,7 +725,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
-			keywords: ["방탈출", "어드벤처", "옴니버스"],
+			keywords: ["방탈출", "어드벤처", "옴니버스", "게임"],
 			note: "",
 			rowClass: ""
 		},
