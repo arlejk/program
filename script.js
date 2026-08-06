@@ -123,7 +123,7 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "크라임씬 제로 새시즌",
+			name: "크라임씬 제로 새 시즌",
 			link: "",
 			year: "2027 예정",
 			broadcaster: "NETFLIX",
@@ -197,7 +197,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000328018",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -208,7 +208,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000395031",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -301,7 +301,7 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "대탈출 시즌 6",
+			name: "대탈출 새 시즌",
 			link: "",
 			year: "2026 예정",
 			broadcaster: "TVING",
@@ -318,7 +318,7 @@ const programData = {
 			broadcaster: "XtvN, tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000940242",
-			keywords: [],
+			keywords: ["퍼즐", "두뇌", "추리", "마피아 게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -373,7 +373,7 @@ const programData = {
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["마피아 게임", "서바이벌", "정치"],
+			keywords: ["마피아 게임", "서바이벌", "정치", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -428,7 +428,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000108",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -439,7 +439,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000149",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -450,7 +450,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000190",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -461,7 +461,7 @@ const programData = {
 			broadcaster: "카카오TV",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tlYey3V",
-			keywords: ["서바이벌", "정치", "생존"],
+			keywords: ["서바이벌", "정치", "생존", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -483,7 +483,7 @@ const programData = {
 			broadcaster: "WATCHA",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tR2edNe",
-			keywords: [],
+			keywords: ["추리", "방탈출", "어드벤처", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -538,7 +538,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001623861",
-			keywords: ["방탈출", "서바이벌", "정치"],
+			keywords: ["방탈출", "서바이벌", "정치", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -549,7 +549,7 @@ const programData = {
 			broadcaster: "유투브 피지컬갤러리",
 			ottName: "유투브 피지컬갤러리",
 			ottLink: "https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz",
-			keywords: ["서바이벌", "방탈출"],
+			keywords: ["서바이벌", "방탈출", "피지컬"],
 			note: "벌레 나옴 비위 조심",
 			rowClass: ""
 		},
@@ -593,7 +593,7 @@ const programData = {
 			broadcaster: "유튜브 긱블",
 			ottName: "유튜브 긱블",
 			ottLink: "https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo",
-			keywords: ["서바이벌", "두뇌", "방탈출"],
+			keywords: ["서바이벌", "두뇌", "방탈출", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -780,7 +780,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001783211",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "정치", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
