@@ -806,6 +806,7 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
+		/*
 		{
 			name: "베팅 온 팩트",
 			link: "https://m.kinolights.com/title/151135",
@@ -817,6 +818,7 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
+		*/
 		{
 			name: "머더클럽",
 			link: "https://m.kinolights.com/season/153749",
