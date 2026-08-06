@@ -303,7 +303,7 @@ const programData = {
 		{
 			name: "대탈출 시즌 6",
 			link: "",
-			year: "예정",
+			year: "2026 예정",
 			broadcaster: "TVING",
 			ottName: "",
 			ottLink: "",

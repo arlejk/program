@@ -111,7 +111,7 @@ a:hover { color:var(--color-primary); }
 .table .status.end { background:var(--color-success); }
 .table .status.hold { background:var(--color-warning); }
 .table .status.reject { background:var(--color-danger); }
-.table.program .link { width:auto; max-width:9em; padding: 0; }
+.table.program .link { width:auto; max-width:10em; padding: 0; }
 .table.program .keyword { padding: 0 0.5rem; }
 .table .link a { display:block; width:100%; height:100%; padding: 0.5rem 0.5rem; background:var(--color-default); color:#fff; text-align:center; }
 .table .link a:hover { background:var(--color-inverse); }
