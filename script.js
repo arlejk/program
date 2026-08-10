@@ -75,7 +75,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539540",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: "웨이브, 왓챠, 쿠팡플레이에서도 시청 가능",
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
@@ -86,7 +86,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539640",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: "웨이브, 왓챠, 쿠팡플레이에서도 시청 가능",
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
@@ -97,7 +97,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539639",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: "웨이브, 왓챠, 쿠팡플레이에서도 시청 가능",
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
@@ -108,7 +108,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001751684",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: "",
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -119,7 +119,7 @@ const programData = {
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81950435",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: "",
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
 			rowClass: ""
 		},
 		{

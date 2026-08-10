@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<title>Crime Scene Episode Database</title>
+	<meta property="og:url" content="https://arlejk.github.io/program/">
+	<meta property="og:title" content="크라임씬 회차별 데이터베이스">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="크라임씬 시즌별 에피소드, 피해자, 탐정, 용의자, 게스트 정보">
+	
+	<!-- Required FontAwesome (OTT 링크 아이콘 등 표시용) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
+	<!-- Required Jquery & Bootstrap 5 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Custom CSS & JS -->
+	<link href="style.css" rel="stylesheet">
+	<script src="script_crime.js"></script>
+</head>
+<body>
+	<div class="publish_worksheet program crime_scene">
+		<!-- 헤더 영역 -->
+		<section class="head">
+			<div class="inner">
+				<hgroup>
+					<h3>Crime Scene Database</h3>
+					<h2>크라임씬 전 시즌 회차별 에피소드 & 출연진 정보</h2>
+				</hgroup>
+				<dl>
+					<dt>Last Update</dt>
+					<dd>2026-08-10</dd>
+					<dt>Note</dt>
+					<dd>
+						출연진 배지 또는 상단 <strong>#출연진</strong> 버튼을 클릭하면 해당 인물이 출연한 회차만 필터링됩니다.
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- 본문 테이블 영역 -->
+		<section class="body">
+			<div class="inner">
+				<section class="tab-panel">
+					<article id="tab-cate-01" class="tab-cont tab-cate-01 current">
+						
+						<!-- 출연진 필터 버튼 영역 (JS가 자동으로 채움) -->
+						<div class="keyword-filter-wrap mb-3"></div>
+
+						<!-- 크라임씬 에피소드 테이블 -->
+						<table id="table-program-01" class="table table-bordered table-block program crime_scene">
+							<colgroup>
+								<col class="col-01">
+								<!--
+								<col class="col-02">
+								<col class="col-03">
+								-->
+								<col class="col-04">
+								<col class="col-05">
+								<col class="col-06">
+								<col class="col-07">
+								<col class="col-08">
+								<col class="col-09">
+							</colgroup>
+							<thead class="table-light">
+								<tr>
+									<th scope="col" class="center">시즌</th>
+									<!--
+									<th scope="col" class="center">방영년도</th>
+									<th scope="col" class="center">방송사</th>
+									-->
+									<th scope="col" class="center">에피소드</th>
+									<th scope="col" class="center">스트리밍</th>
+									<th scope="col" class="center">피해자</th>
+									<th scope="col" class="center">탐정/형사</th>
+									<th scope="col" class="center">용의자</th>
+									<th scope="col" class="center">게스트</th>
+								</tr>
+							</thead>
+							<tbody id="tbody-cate-01">
+								<!-- JS의 renderTable()에 의해 데이터가 동적으로 들어오는 위치 -->
+							</tbody>
+						</table>						
+					</article>
+				</section>
+			</div>		
+		</section>
+
+		<!-- 푸터 영역 -->
+		<section class="foot">
+			<div class="inner">
+				<small>© Crime Scene Fan Database. Published by Joanne.</small>
+			</div>		
+		</section>
+	</div>
+</body>
+</html>
