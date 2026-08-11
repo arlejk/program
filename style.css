@@ -176,7 +176,8 @@ a:hover { color:var(--color-primary); }
 	.list_keyword li .key { font-size: 1em; }
 }
 
-.keyword-filter-wrap { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.keyword-filter-wrap,
+.keyword-filter-wrap #more-keywords { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .keyword-tag { font-size: 0.85em; font-weight: 500; transition: all 0.2s ease; border: 1px solid var(--color-tone-300); cursor: pointer; }
 .keyword-tag:hover { background-color: var(--color-inverse) !important; color: #fff !important; border-color: var(--color-inverse); }
 .crime_scene .keyword-tag { font-size: 1em; }
