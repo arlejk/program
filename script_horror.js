@@ -1948,7 +1948,12 @@ const seasonTabMapping = [
     { seasonKey: "파일럿", tbodyId: "#tbody-pilot", countId: "#total-pilot" }
 ];
 
+// 전역 상태 변수 (현재 선택된 전달자)
+let currentStoryteller = 'all';
+
+// =========================================================
 // HTML 요소 헬퍼 함수들
+// =========================================================
 function getOttHtml(seasonName, otts) {
     if (!Array.isArray(otts) || otts.length === 0) return '-';
     const seasonMap = ottLinkMap[seasonName];
@@ -1966,7 +1971,7 @@ function getGuestsHtml(guests) {
 function getStorytellerHtml(storyteller) {
     if (!storyteller) return '-';
     return storyteller.split(',')
-        .map(name => `<span class="badge bg-light text-dark keyword-tag mr-1">${name.trim()}</span>`)
+        .map(name => `<span class="badge bg-light text-dark keyword-tag mr-1" style="cursor:pointer;">${name.trim()}</span>`)
         .join(' ');
 }
 
@@ -1976,33 +1981,123 @@ function getResultBadgeHtml(story) {
     return '-';
 }
 
-// [추가] 에피소드 제목 및 링크(#1, #2...) 생성 헬퍼 함수
 function getStoryTitleHtml(story) {
-    // 1. links 배열이 존재하고 1개 이상 있을 때
     if (Array.isArray(story.links) && story.links.length > 0) {
-        // 단일 링크일 때
         if (story.links.length === 1) {
             return `<a href="${story.links[0]}" target="_blank" class="story-link">${story.title} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`;
         }
-        // 복수 링크일 때 (#1, #2 표시)
         const linkTags = story.links.map((url, idx) => 
             `<a href="${url}" target="_blank" class="story-link">#${idx + 1} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`
         ).join(' ');
         return `${story.title} (${linkTags})`;
     } 
-    // 2. 단일 link 문자열 형태일 때 (기존 호환)
     else if (story.link) {
         return `<a href="${story.link}" target="_blank" class="story-link">${story.title} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`;
     } 
-    // 3. 링크가 없을 때
     else {
         return story.title;
     }
 }
 
+// =========================================================
+// 1. [신규] 시즌 탭 숫자를 현재 상태(전체 vs 전달자 필터)에 맞게 갱신
+// =========================================================
+function updateSeasonTabCounts() {
+    const dataObj = window.programData || (typeof programData !== 'undefined' ? programData : null);
+    if (!dataObj || !dataObj.midnightHorror) return;
+
+    const allData = dataObj.midnightHorror;
+
+    seasonTabMapping.forEach(tab => {
+        const seasonData = allData.filter(item => item.season === tab.seasonKey);
+        let count = 0;
+
+        if (currentStoryteller === 'all') {
+            // 전체보기일 때: 전체 괴담(에피소드) 총 개수
+            count = seasonData.reduce((acc, cur) => acc + (cur.stories ? cur.stories.length : 0), 0);
+        } else {
+            // 전달자 필터일 때: 선택된 전달자의 우승/완불 사연 개수
+            seasonData.forEach(item => {
+                if (!item.stories) return;
+                item.stories.forEach(story => {
+                    const isWinner = story.isWin || story.isFullCandles;
+                    const names = (story.storyteller || '').split(',').map(n => n.trim());
+                    if (isWinner && names.includes(currentStoryteller)) {
+                        count++;
+                    }
+                });
+            });
+        }
+
+        $(tab.countId).text(`(${count})`);
+    });
+}
+
+// =========================================================
+// 2. 전달자 필터 버튼 렌더링
+// =========================================================
+function renderStorytellerButtons() {
+    const dataObj = window.programData || (typeof programData !== 'undefined' ? programData : null);
+    if (!dataObj || !dataObj.midnightHorror) return;
+
+    const winCounts = {};
+
+    dataObj.midnightHorror.forEach(item => {
+        if (!item.stories) return;
+        item.stories.forEach(story => {
+            if ((story.isWin || story.isFullCandles) && story.storyteller) {
+                const names = story.storyteller.split(',').map(n => n.trim());
+                names.forEach(name => {
+                    if (name) {
+                        winCounts[name] = (winCounts[name] || 0) + 1;
+                    }
+                });
+            }
+        });
+    });
+
+    const sortedStorytellers = Object.keys(winCounts).sort((a, b) => {
+        if (winCounts[b] !== winCounts[a]) {
+            return winCounts[b] - winCounts[a];
+        }
+        return a.localeCompare(b, 'ko');
+    });
+
+    const $wrap = $('.keyword-filter-wrap');
+    if ($wrap.length === 0) return;
+
+    $wrap.empty();
+    $wrap.append('<button class="btn btn-secondary btn-keyword active mb-1 mr-1" data-keyword="all">전체보기</button> ');
+
+    let moreHtml = '<span id="more-keywords" style="display: none;">';
+    let hasMore = false;
+    const SHOW_THRESHOLD = 2;
+
+    sortedStorytellers.forEach(name => {
+        const count = winCounts[name];
+        const btnHtml = `<button class="btn btn-outline-dark btn-keyword mb-1 mr-1" data-keyword="${name}">#${name} <small class="text-muted">(${count})</small></button> `;
+
+        if (count >= SHOW_THRESHOLD) {
+            $wrap.append(btnHtml);
+        } else {
+            moreHtml += btnHtml;
+            hasMore = true;
+        }
+    });
+
+    moreHtml += '</span>';
+
+    if (hasMore) {
+        $wrap.append(moreHtml);
+        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more mb-1 ml-1">+ 더보기</button>');
+    }
+}
+
+// =========================================================
 // 3. 테이블 렌더링 함수
+// =========================================================
 function renderMidnightTable(containerId, list, options = {}) {
-    const { filter = 'all', sort = 'default' } = options; 
+    const { filter = 'all', sort = 'default', storyteller = 'all' } = options; 
 
     const $tbody = $(containerId);
     $tbody.empty();
@@ -2012,7 +2107,6 @@ function renderMidnightTable(containerId, list, options = {}) {
         return;
     }
 
-    // A. 회차 중심 데이터를 에피소드(괴담) 단위 평탄화(Flat)
     let flatStories = [];
     list.forEach(item => {
         if (!item.stories || item.stories.length === 0) return;
@@ -2029,12 +2123,18 @@ function renderMidnightTable(containerId, list, options = {}) {
         });
     });
 
-    // B. 필터링 (우승/완불 사연만 보기)
     if (filter === 'win') {
         flatStories = flatStories.filter(s => s.isWin || s.isFullCandles);
     }
 
-    // C. 정렬
+    if (storyteller !== 'all') {
+        flatStories = flatStories.filter(s => {
+            const isWinner = s.isWin || s.isFullCandles;
+            const names = (s.storyteller || '').split(',').map(n => n.trim());
+            return isWinner && names.includes(storyteller);
+        });
+    }
+
     if (sort === 'candles-desc') {
         flatStories.sort((a, b) => (b.candles || 0) - (a.candles || 0));
     } else if (sort === 'candles-asc') {
@@ -2046,18 +2146,15 @@ function renderMidnightTable(containerId, list, options = {}) {
         return;
     }
 
-    // D. 조건별 테이블 렌더링
-    const isCustomMode = (filter !== 'all' || sort !== 'default');
+    const isCustomMode = (filter !== 'all' || sort !== 'default' || storyteller !== 'all');
 
     if (isCustomMode) {
-        // [필터/정렬 적용 모드] -> rowspan 없이 1줄씩 평탄화 표시
         flatStories.forEach(story => {
             const trClass = story.rowClass ? ` class="${story.rowClass}"` : '';
-            const storyTitleHtml = getStoryTitleHtml(story); // 헬퍼 함수 적용
+            const storyTitleHtml = getStoryTitleHtml(story);
 
             const trHtml = `
                 <tr${trClass}>
-                    <!--<td data-label="시즌" class="align-middle center">${story.season}</td>-->
                     <td data-label="방영년도" class="align-middle center">${story.year}</td>
                     <td data-label="스트리밍" class="align-middle center link">${getOttHtml(story.season, story.otts)}</td>
                     <td data-label="회차" class="align-middle center">EP.${story.epNum}</td>
@@ -2072,7 +2169,6 @@ function renderMidnightTable(containerId, list, options = {}) {
             $tbody.append(trHtml);
         });
     } else {
-        // [기본 모드] -> 기존 rowspan 그룹화 유지
         list.forEach(item => {
             const ottHtml = getOttHtml(item.season, item.otts);
             const guestsHtml = getGuestsHtml(item.guests);
@@ -2080,12 +2176,11 @@ function renderMidnightTable(containerId, list, options = {}) {
             const trClass = item.rowClass ? ` class="${item.rowClass}"` : '';
 
             item.stories.forEach((story, idx) => {
-                const storyTitleHtml = getStoryTitleHtml(story); // 헬퍼 함수 적용
+                const storyTitleHtml = getStoryTitleHtml(story);
 
                 if (idx === 0) {
                     const trHtml = `
                         <tr${trClass}>
-                            <!--<td rowspan="${storiesCount}" data-label="시즌" class="align-middle center">${item.season}</td>-->
                             <td rowspan="${storiesCount}" data-label="방영년도" class="align-middle center">${item.year}</td>
                             <td rowspan="${storiesCount}" data-label="스트리밍" class="align-middle center link">${ottHtml}</td>
                             <td rowspan="${storiesCount}" data-label="회차" class="align-middle center">EP.${item.epNum}</td>
@@ -2115,7 +2210,9 @@ function renderMidnightTable(containerId, list, options = {}) {
     }
 }
 
-// 4. 특정 패널(탭) 갱신 헬퍼 함수
+// =========================================================
+// 4. 활성화된 탭 테이블 갱신
+// =========================================================
 function updateActiveTabTable() {
     const dataObj = window.programData || (typeof programData !== 'undefined' ? programData : null);
     if (!dataObj || !dataObj.midnightHorror) return;
@@ -2130,11 +2227,17 @@ function updateActiveTabTable() {
     const activeMapping = seasonTabMapping.find(m => m.tbodyId === activeTbodyId);
     if (activeMapping) {
         const seasonData = dataObj.midnightHorror.filter(item => item.season === activeMapping.seasonKey);
-        renderMidnightTable(activeTbodyId, seasonData, { filter: filterVal, sort: sortVal });
+        renderMidnightTable(activeTbodyId, seasonData, { 
+            filter: filterVal, 
+            sort: sortVal, 
+            storyteller: currentStoryteller 
+        });
     }
 }
 
+// =========================================================
 // 5. App 초기화
+// =========================================================
 function initMidnightApp() {
     const dataObj = window.programData || (typeof programData !== 'undefined' ? programData : null);
 
@@ -2145,24 +2248,24 @@ function initMidnightApp() {
 
     const allData = dataObj.midnightHorror;
 
-    // 카운트 계산 및 전체 탭 초기 렌더링
+    renderStorytellerButtons();
+    updateSeasonTabCounts(); // 시즌별 탭 숫자 갱신
+
     seasonTabMapping.forEach(tab => {
         const seasonData = allData.filter(item => item.season === tab.seasonKey);
-        const totalEpisodes = seasonData.reduce((acc, cur) => acc + (cur.stories ? cur.stories.length : 0), 0);
-
-        $(tab.countId).text(`(${totalEpisodes})`);
         renderMidnightTable(tab.tbodyId, seasonData);
     });
 }
 
+// =========================================================
+// 6. 이벤트 바인딩
+// =========================================================
 $(function () {
-    // HTML의 class 수정 대응 (ID 중복 문제 방지)
     $('.tab-cont select:first-child').addClass('filter-select');
     $('.tab-cont select:last-child').addClass('sort-select');
 
     initMidnightApp();
 
-    // 탭 클릭 이벤트
     $('.tab-nav').on('click', function (e) {
         e.preventDefault();
         const tabId = $(this).data('tab');
@@ -2173,12 +2276,49 @@ $(function () {
         $(this).addClass('current');
         $('#' + tabId).addClass('current');
 
-        // 탭 전환 시 필터 상태에 맞춰 다시 렌더링
         updateActiveTabTable();
     });
 
-    // 필터/정렬 변경 이벤트 (클래스 기반)
     $(document).on('change', '.filter-select, .sort-select', function() {
         updateActiveTabTable();
+    });
+
+    // 전달자 필터 버튼 클릭 이벤트
+    $(document).on('click', '.btn-keyword', function () {
+        currentStoryteller = $(this).data('keyword');
+
+        $('.btn-keyword').removeClass('active btn-secondary btn-dark').addClass('btn-outline-dark');
+        if (currentStoryteller === 'all') {
+            $(this).addClass('active btn-secondary').removeClass('btn-outline-dark');
+        } else {
+            $(this).addClass('active btn-dark').removeClass('btn-outline-dark');
+        }
+
+        updateSeasonTabCounts(); // 탭 숫자를 클릭된 전달자 기준 개수로 즉시 업데이트
+        updateActiveTabTable();
+    });
+
+    $(document).on('click', '.btn-toggle-more', function () {
+        const $moreContainer = $('#more-keywords');
+        if ($moreContainer.is(':visible')) {
+            $moreContainer.hide();
+            $(this).text('+ 더보기');
+        } else {
+            $moreContainer.show();
+            $(this).text('- 접기');
+        }
+    });
+
+    $(document).on('click', '.keyword-tag', function () {
+        const name = $(this).text().trim();
+        const $targetBtn = $(`.btn-keyword[data-keyword="${name}"]`);
+
+        if ($targetBtn.length > 0) {
+            if ($targetBtn.closest('#more-keywords').length > 0) {
+                $('#more-keywords').show();
+                $('.btn-toggle-more').text('- 접기');
+            }
+            $targetBtn.trigger('click');
+        }
     });
 });
