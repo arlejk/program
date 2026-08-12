@@ -39,8 +39,12 @@
 					<dd>2026-08-12</dd>					
 					<dt>Note</dt>
 					<dd>
-						괴담 제목을 클릭하면 해당 유튜브 영상으로 이동합니다. <br>
-						<b>우승+완불 사연 필터</b> 및 <b>촛불 정렬</b> 이용 시, 회차 묶음이 해제되고 사연 단위로 개별 표시됩니다.
+						<ul class="mb-0 pl-3">
+							<li>괴담 제목을 누르면 해당 유튜브 영상으로 바로 이동합니다.</li>
+							<li><strong>우승+완불 필터</strong>, <strong>촛불순 정렬</strong>, <strong>#우승전달자 필터</strong>를 사용하면 사연이 하나씩 나뉘어 보기 쉽게 정리됩니다.</li>
+							<li>상단에서 선택한 필터와 정렬은 <strong>모든 시즌에 똑같이 적용</strong>되며, 다른 시즌으로 이동해도 <strong>그대로 유지</strong>됩니다.</li>
+							<li>필터를 누르면 각 시즌 탭의 숫자가 <strong>선택한 조건에 맞는 사연 개수</strong>로 바로 바뀝니다.</li>
+						</ul>
 					</dd>
 				</dl>
 			</div>
@@ -64,24 +68,25 @@
 					<!-- JS에서 dynamically 버튼이 들어갑니다 -->
 				</div>
 
+				<div class="d-flex justify-content-end mb-3 gap-2">
+					<!-- 우승/완불 필터 -->
+					<select id="common-filter-select" class="form-select form-select-sm" style="width: auto;">
+						<option value="all">전체 사연 보기</option>
+						<option value="win">우승+완불 사연만 보기</option>
+					</select>
+
+					<!-- 촛불 정렬 -->
+					<select id="common-sort-select" class="form-select form-select-sm" style="width: auto;">
+						<option value="default">회차순 (기본)</option>
+						<option value="candles-desc">촛불 많은 순</option>
+						<option value="candles-asc">촛불 적은 순</option>
+					</select>
+				</div>
+
 				<section class="tab-panel">
 					<!-- 공통 패널 구조 (각 시즌별 마크업) -->
 					<!-- 시즌 6 -->
 					<article id="tab-season-6" class="tab-cont tab-season-6 current">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->
@@ -115,20 +120,6 @@
 
 					<!-- 시즌 5 -->
 					<article id="tab-season-5" class="tab-cont tab-season-5">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->
@@ -162,20 +153,6 @@
 
 					<!-- 시즌 4 -->
 					<article id="tab-season-4" class="tab-cont tab-season-4">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->
@@ -209,20 +186,6 @@
 
 					<!-- 시즌 3 -->
 					<article id="tab-season-3" class="tab-cont tab-season-3">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->
@@ -256,20 +219,6 @@
 
 					<!-- 시즌 2 -->
 					<article id="tab-season-2" class="tab-cont tab-season-2">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->
@@ -303,20 +252,6 @@
 
 					<!-- 시즌 1 -->
 					<article id="tab-season-1" class="tab-cont tab-season-1">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->
@@ -350,20 +285,6 @@
 
 					<!-- 파일럿 -->
 					<article id="tab-pilot" class="tab-cont tab-pilot">
-						<div class="d-flex justify-content-end mb-3 gap-2">
-							<!-- 우승/완불 필터 -->
-							<select class="filter-select form-select form-select-sm" style="width: auto;">
-								<option value="all">전체 사연 보기</option>
-								<option value="win">우승+완불 사연만 보기</option>
-							</select>
-
-							<!-- 촛불 정렬 -->
-							<select class="sort-select form-select form-select-sm" style="width: auto;">
-								<option value="default">회차순 (기본)</option>
-								<option value="candles-desc">촛불 많은 순</option>
-								<option value="candles-asc">촛불 적은 순</option>
-							</select>
-						</div>
 						<table class="table table-bordered table-block program midnight_horror">
 							<colgroup>
 								<!--<col class="col-01">-->

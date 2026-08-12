@@ -1948,8 +1948,10 @@ const seasonTabMapping = [
     { seasonKey: "파일럿", tbodyId: "#tbody-pilot", countId: "#total-pilot" }
 ];
 
-// 전역 상태 변수 (현재 선택된 전달자)
+// 전역 상태 변수
 let currentStoryteller = 'all';
+let currentWinFilter = 'all';
+let currentSort = 'default';
 
 // =========================================================
 // HTML 요소 헬퍼 함수들
@@ -2000,7 +2002,7 @@ function getStoryTitleHtml(story) {
 }
 
 // =========================================================
-// 1. [신규] 시즌 탭 숫자를 현재 상태(전체 vs 전달자 필터)에 맞게 갱신
+// 1. 공통 필터를 반영하여 전체 시즌 탭 숫자 갱신
 // =========================================================
 function updateSeasonTabCounts() {
     const dataObj = window.programData || (typeof programData !== 'undefined' ? programData : null);
@@ -2012,22 +2014,30 @@ function updateSeasonTabCounts() {
         const seasonData = allData.filter(item => item.season === tab.seasonKey);
         let count = 0;
 
-        if (currentStoryteller === 'all') {
-            // 전체보기일 때: 전체 괴담(에피소드) 총 개수
-            count = seasonData.reduce((acc, cur) => acc + (cur.stories ? cur.stories.length : 0), 0);
-        } else {
-            // 전달자 필터일 때: 선택된 전달자의 우승/완불 사연 개수
-            seasonData.forEach(item => {
-                if (!item.stories) return;
-                item.stories.forEach(story => {
-                    const isWinner = story.isWin || story.isFullCandles;
-                    const names = (story.storyteller || '').split(',').map(n => n.trim());
-                    if (isWinner && names.includes(currentStoryteller)) {
-                        count++;
+        seasonData.forEach(item => {
+            if (!item.stories) return;
+            item.stories.forEach(story => {
+                const isWinner = story.isWin || story.isFullCandles;
+                const names = (story.storyteller || '').split(',').map(n => n.trim());
+
+                // 공통 우승/완불 필터 체크
+                if (currentWinFilter === 'win' && !isWinner) {
+                    return;
+                }
+
+                // 공통 전달자 필터 체크
+                if (currentStoryteller !== 'all') {
+                    if (!names.includes(currentStoryteller)) {
+                        return;
                     }
-                });
+                    if (!isWinner) {
+                        return;
+                    }
+                }
+
+                count++;
             });
-        }
+        });
 
         $(tab.countId).text(`(${count})`);
     });
@@ -2220,16 +2230,14 @@ function updateActiveTabTable() {
     const $activeCont = $('.tab-cont.current');
     if ($activeCont.length === 0) return;
 
-    const filterVal = $activeCont.find('.filter-select').val() || 'all';
-    const sortVal = $activeCont.find('.sort-select').val() || 'default';
     const activeTbodyId = '#' + $activeCont.find('tbody').attr('id');
 
     const activeMapping = seasonTabMapping.find(m => m.tbodyId === activeTbodyId);
     if (activeMapping) {
         const seasonData = dataObj.midnightHorror.filter(item => item.season === activeMapping.seasonKey);
         renderMidnightTable(activeTbodyId, seasonData, { 
-            filter: filterVal, 
-            sort: sortVal, 
+            filter: currentWinFilter, 
+            sort: currentSort, 
             storyteller: currentStoryteller 
         });
     }
@@ -2249,7 +2257,7 @@ function initMidnightApp() {
     const allData = dataObj.midnightHorror;
 
     renderStorytellerButtons();
-    updateSeasonTabCounts(); // 시즌별 탭 숫자 갱신
+    updateSeasonTabCounts();
 
     seasonTabMapping.forEach(tab => {
         const seasonData = allData.filter(item => item.season === tab.seasonKey);
@@ -2261,11 +2269,9 @@ function initMidnightApp() {
 // 6. 이벤트 바인딩
 // =========================================================
 $(function () {
-    $('.tab-cont select:first-child').addClass('filter-select');
-    $('.tab-cont select:last-child').addClass('sort-select');
-
     initMidnightApp();
 
+    // 탭 이동 시 (필터 상태가 유지됨)
     $('.tab-nav').on('click', function (e) {
         e.preventDefault();
         const tabId = $(this).data('tab');
@@ -2279,7 +2285,15 @@ $(function () {
         updateActiveTabTable();
     });
 
-    $(document).on('change', '.filter-select, .sort-select', function() {
+    // 공통 필터 / 정렬 변경 이벤트
+    $(document).on('change', '#common-filter-select', function() {
+        currentWinFilter = $(this).val();
+        updateSeasonTabCounts();
+        updateActiveTabTable();
+    });
+
+    $(document).on('change', '#common-sort-select', function() {
+        currentSort = $(this).val();
         updateActiveTabTable();
     });
 
@@ -2294,7 +2308,7 @@ $(function () {
             $(this).addClass('active btn-dark').removeClass('btn-outline-dark');
         }
 
-        updateSeasonTabCounts(); // 탭 숫자를 클릭된 전달자 기준 개수로 즉시 업데이트
+        updateSeasonTabCounts();
         updateActiveTabTable();
     });
 
