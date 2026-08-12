@@ -291,7 +291,8 @@ const programData = {
 			victim: "정동필",
 			detective: "김지훈",
 			suspects: ["박보좌 (박지윤)", "장후보 (장진)", "양알바 (양세형)", "정사모 (정은지)"],
-			guests: ["송대표 (송재림)"]
+			guests: ["송대표 (송재림)"],
+			note: '<a href="https://youtu.be/XErN6PHAsNw" target="_blank">미공개 #1</a>, <a href="https://youtu.be/V3lHmTBf8os" target="_blank">미공개 #2</a>'
 		},
 		{
 			season: "크라임씬 3",
@@ -304,7 +305,8 @@ const programData = {
 			victim: "최우진",
 			detective: "양세형",
 			suspects: ["박배우 (박지윤)", "장막내 (장진)", "김오너 (김지훈)", "정서빙 (정은지)"],
-			guests: ["송부솊 (송재림)"]
+			guests: ["송부솊 (송재림)"],
+			note: '<a href="https://youtu.be/3rJ0NFcx1sg" target="_blank">미공개 #1</a>, <a href="https://youtu.be/w3hr5uzNnes" target="_blank">미공개 #2</a>'
 		},
 		{
 			season: "크라임씬 3",
@@ -317,7 +319,8 @@ const programData = {
 			victim: "정종찬",
 			detective: "장진",
 			suspects: ["박교육 (박지윤)", "김교장 (김지훈)", "양급장 (양세형)"],
-			guests: ["하강사 (하니)", "윤교수 (NS윤지)"]
+			guests: ["하강사 (하니)", "윤교수 (NS윤지)"],
+			note: '<a href="https://youtu.be/cI47yfsmfG8" target="_blank">미공개 #1</a>, <a href="https://youtu.be/_o0KZ6f7hrE" target="_blank">미공개 #2</a>, <a href="https://youtu.be/X240YqkoTRE" target="_blank">미공개 #3</a>, <a href="https://youtu.be/yFEp3zdbP8M" target="_blank">미공개 #4</a>, <a href="https://youtu.be/f0C6xoz0k40" target="_blank">미공개 #5</a>'
 		},
 		{
 			season: "크라임씬 3",
@@ -330,7 +333,8 @@ const programData = {
 			victim: "장영창",
 			detective: "정은지",
 			suspects: ["박형사 (박지윤)", "장비서 (장진)", "김팀장 (김지훈)", "양형사 (양세형)"],
-			guests: ["김동포 (김병옥)"]
+			guests: ["김동포 (김병옥)"],
+			note: '<a href="https://youtu.be/jje7VToCPY0" target="_blank">미공개 #1</a>, <a href="https://youtu.be/b6d8m4JTVHY" target="_blank">미공개 #2</a>'
 		},
 		{
 			season: "크라임씬 3",
@@ -343,7 +347,8 @@ const programData = {
 			victim: "노미오",
 			detective: "양세형",
 			suspects: ["박리엣 (박지윤)", "장감독 (장진)", "김관객 (김지훈)", "정대표 (정은지)"],
-			guests: ["진스타 (진영)"]
+			guests: ["진스타 (진영)"],
+			note: '<a href="https://youtu.be/Ras5qsQYhSc" target="_blank">미공개 #1</a>, <a href="https://youtu.be/yaaggtDR6ds" target="_blank">미공개 #2</a>, <a href="https://youtu.be/sBum4-dZkVY" target="_blank">미공개 #3</a>'
 		},
 		{
 			season: "크라임씬 3",
@@ -357,6 +362,7 @@ const programData = {
 			detective: "박지윤",
 			suspects: ["디제이장 (장진)", "김화백 (김지훈)", "정숙녀 (정은지)"],
 			guests: ["미스소 (소진)", "장당포 (장동민)"],
+			note: '<a href="https://youtu.be/c2CF0ja8PYs" target="_blank">미공개 #1</a>, <a href="https://youtu.be/KIyXvMqk1Gc" target="_blank">미공개 #2</a>, <a href="https://youtu.be/kK_hjz_KP30" target="_blank">미공개 #3</a>, <a href="https://youtu.be/LuLlOT9MT14" target="_blank">미공개 #4</a>, <a href="https://youtu.be/EnuQWqmcm7c" target="_blank">미공개 #5</a>, <a href="https://youtu.be/gaoeKja1tRE" target="_blank">미공개 #6</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -371,6 +377,7 @@ const programData = {
 			detective: "박지윤",
 			suspects: ["장진 (장진)", "김지훈 (김지훈)", "양세형 (양세형)", "정은지 (정은지)"],
 			guests: ["차은우 (차은우)"],
+			note: '<a href="https://youtu.be/QiTelAN4wLg" target="_blank">미공개 #1</a>, <a href="https://youtu.be/LkP2d-MproI" target="_blank">미공개 #2</a>, <a href="https://youtu.be/dp7W_8J_cV8" target="_blank">미공개 #3</a>, <a href="https://youtu.be/YDS63NNe3UI" target="_blank">미공개 #4</a>, <a href="https://youtu.be/eV-NX5SCZcA" target="_blank">미공개 #5</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -385,6 +392,7 @@ const programData = {
 			detective: "홍진호",
 			suspects: ["박지윤 (박지윤)", "장진 (장진)", "김지훈 (김지훈)", "양세형 (양세형)", "정은지 (정은지)"],
 			guests: [],
+			note: '<a href="https://youtu.be/F7y4qneYQ4s" target="_blank">미공개 #1</a>, <a href="https://youtu.be/kbWVBr3sUHE" target="_blank">미공개 #2</a>, <a href="https://youtu.be/Bic-7zrB8-k" target="_blank">미공개 #3</a>, <a href="https://youtu.be/UjuEOG2bQPY" target="_blank">미공개 #4</a>, <a href="https://youtu.be/3LKUzR8O7MI" target="_blank">미공개 #5</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -399,6 +407,7 @@ const programData = {
 			detective: "장진",
 			suspects: ["박케어 (박지윤)", "홍변호 (홍진호)", "양손님 (양세형)", "정손녀 (정은지)"],
 			guests: ["장아들 (장동민)"],
+			note: '<a href="https://youtu.be/-5XJs_n5yw8" target="_blank">미공개 #1</a>, <a href="https://youtu.be/CT03FK8R9EQ" target="_blank">미공개 #2</a>, <a href="https://youtu.be/uyRmeMlsdOM" target="_blank">미공개 #3</a>, <a href="https://youtu.be/jCLwIPXvtyk" target="_blank">미공개 #4</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -413,6 +422,7 @@ const programData = {
 			detective: "표창원",
 			suspects: ["박청소 (박지윤)", "장사업 (장진)", "홍이돌 (홍진호)", "김건반 (김지훈)", "정텐더 (정은지)"],
 			guests: [],
+			note: '<a href="https://youtu.be/pNAhBskSKfQ" target="_blank">미공개 #1</a>, <a href="https://youtu.be/RU1Eh0WkqIo" target="_blank">미공개 #2</a>, <a href="https://youtu.be/2ZQ-uKo566g" target="_blank">미공개 #3</a>, <a href="https://youtu.be/UwzzBdtQCmw" target="_blank">미공개 #4</a>, <a href="https://youtu.be/JuegpzI-8G4" target="_blank">미공개 #5</a>, <a href="https://youtu.be/ghcpXnc2QIs" target="_blank">미공개 #6</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -427,6 +437,7 @@ const programData = {
 			detective: "양세형",
 			suspects: ["박해녀 (박지윤)", "장통통 (장진)", "홍구녕 (홍진호)", "정토박 (정은지)"],
 			guests: ["소이장 (소진)"],
+			note: '<a href="https://youtu.be/VLiajbAm_ps" target="_blank">미공개 #1</a>, <a href="https://youtu.be/fQx1eQEvqxs" target="_blank">미공개 #2</a>, <a href="https://youtu.be/mL9iNd7kZ4o" target="_blank">미공개 #3</a>, <a href="https://youtu.be/JSQNIXXghMU" target="_blank">미공개 #4</a>, <a href="https://youtu.be/ELFyE3qn6_U" target="_blank">미공개 #5</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -440,7 +451,8 @@ const programData = {
 			victim: "최수진",
 			detective: "",
 			suspects: ["박지윤 (박지윤)", "장진 (장진)", "홍진호 (홍진호)", "김지훈 (김지훈)", "양세형 (양세형)", "정은지 (정은지)"],
-			guests: []
+			guests: [],
+			note: '<a href="http://tv.naver.com/v/1858701" target="_blank">미공개 #1</a>, <a href="https://youtu.be/c3JEE2SkXtg" target="_blank">미공개 #2</a>, <a href="http://tv.naver.com/v/1861715" target="_blank">미공개 #3</a>'
 		},
 
 		{
@@ -495,7 +507,8 @@ const programData = {
 			victim: "김재희",
 			detective: "하니",
 			suspects: ["박사업 (박지윤)", "장교포 (장진)", "홍베프 (홍진호)", "장남친 (장동민)"],
-			guests: ["시가수 (시우민)"]
+			guests: ["시가수 (시우민)"],
+			note: '<a href="https://youtu.be/6TOPF9f2YT4" target="_blank">미공개 #1</a>, <a href="https://youtu.be/wa5H03jkp_A" target="_blank">미공개 #2</a>, <a href="https://youtu.be/XVwa6kmayIg" target="_blank">미공개 #3</a>'
 		},
 		{
 			season: "크라임씬 2",
@@ -508,7 +521,8 @@ const programData = {
 			victim: "아이돌",
 			detective: "홍진호",
 			suspects: ["박코디 (박지윤)", "장멤버 (장진)", "장로드 (장동민)", "하회장 (하니)"],
-			guests: ["시보컬 (시우민)", "윤대표 (윤성호)"]
+			guests: ["시보컬 (시우민)", "윤대표 (윤성호)"],
+			note: '<a href="https://youtu.be/UTQ69j3aSTY" target="_blank">미공개 #1</a>, <a href="https://youtu.be/K4RQFsbauGM" target="_blank">미공개 #2</a>'
 		},
 		{
 			season: "크라임씬 2",
@@ -522,6 +536,7 @@ const programData = {
 			detective: "장진",
 			suspects: ["박재즈 (박지윤)", "홍선장 (홍진호)", "장항해 (장동민)", "하승무원 (하니)"],
 			guests: ["시매니저 (시우민)"],
+			note: '<a href="https://youtu.be/lF72ghIOSjk" target="_blank">미공개 #1</a>, <a href="https://youtu.be/rTBNoYj4D2M" target="_blank">미공개 #2</a>, <a href="https://youtu.be/ahHXYDZ-SuM" target="_blank">미공개 #3</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -536,6 +551,7 @@ const programData = {
 			detective: "장진",
 			suspects: ["박재즈 (박지윤)", "장항해 (장동민)", "하승무원 (하니)"],
 			guests: ["윤부인 (NS윤지)", "홍포터 (강민혁)"],
+			note: '<a href="https://youtu.be/OfQFafZEMPI" target="_blank">미공개 #1</a>, <a href="https://youtu.be/Jb8A45PkxiE" target="_blank">미공개 #2</a>, <a href="https://youtu.be/aiIdzW_qS8U" target="_blank">미공개 #3</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -549,7 +565,8 @@ const programData = {
 			victim: "김혜림",
 			detective: "장동민",
 			suspects: ["박사지 (박지윤)", "장옆집 (장진)", "장진호 (홍진호)", "전하니 (하니)"],
-			guests: ["전남편 (전현무)"]
+			guests: ["전남편 (전현무)"],
+			note: '<a href="https://youtu.be/mvpitWJfuNc" target="_blank">미공개 #1</a>, <a href="https://youtu.be/AzQVys-X1fA" target="_blank">미공개 #2</a>'
 		},
 		{
 			season: "크라임씬 2",
@@ -562,7 +579,8 @@ const programData = {
 			victim: "민소영",
 			detective: "박지윤",
 			suspects: ["장순정 (장진)", "홍정비 (홍진호)", "장대리 (장동민)", "하선녀 (하니)"],
-			guests: ["권동기 (권보아)"]
+			guests: ["권동기 (권보아)"],
+			note: '<a href="https://youtu.be/nj6VMPQXEoc" target="_blank">미공개 #1</a>, <a href="https://www.youtube.com/watch?v=AkQfNz8TnB0" target="_blank">미공개 #2</a>'
 		},
 		{
 			season: "크라임씬 2",
@@ -576,6 +594,7 @@ const programData = {
 			detective: "홍진호",
 			suspects: ["박요염 (박지윤)", "장포악 (장진)", "장미숙 (장동민)", "하고독 (하니)"],
 			guests: ["김순진 (김지훈)"],
+			note: '<a href="https://youtu.be/X_CMat-U0Uw" target="_blank">미공개 #1</a>',
 			rowClass: "table-primary"
 		},
 		{
@@ -589,7 +608,8 @@ const programData = {
 			victim: "윤현준",
 			detective: "표창원",
 			suspects: ["박지윤 (박지윤)", "장진 (장진)", "장동민 (장동민)", "홍진호 (홍진호)", "하니 (하니)"],
-			guests: []
+			guests: [],
+			note: '<a href="https://youtu.be/g_-IRrc6gdA" target="_blank">미공개 #1</a>'
 		},
 		{
 			season: "크라임씬 2",
@@ -602,7 +622,8 @@ const programData = {
 			victim: "윤현준",
 			detective: "표창원",
 			suspects: ["박지윤 (박지윤)", "장진 (장진)", "장동민 (장동민)", "홍진호 (홍진호)", "하니 (하니)"],
-			guests: []
+			guests: [],
+			note: '<a href="https://youtu.be/qoUNnOdSfAU" target="_blank">미공개 #1</a>'
 		},
 	
 		{
@@ -616,7 +637,8 @@ const programData = {
 			victim: "이덕만",
 			detective: "",
 			suspects: ["김말순 (박지윤)", "도창수 (홍진호)", "박복남 (전현무)", "최미란 (NS윤지)", "이보은 (임방글)"],
-			guests: ["김필도 (헨리)"]
+			guests: ["김필도 (헨리)"],
+			note: "김성복 교수 살인사건"
 		},
 		{
 			season: "크라임씬 1",
@@ -629,7 +651,8 @@ const programData = {
 			victim: "이덕만",
 			detective: "",
 			suspects: ["김말순 (박지윤)", "도창수 (홍진호)", "박복남 (전현무)", "최미란 (NS윤지)", "이보은 (임방글)"],
-			guests: ["김필도 (헨리)"]
+			guests: ["김필도 (헨리)"],
+			note: "김성복 교수 살인사건"
 		},
 		{
 			season: "크라임씬 1",
@@ -642,7 +665,8 @@ const programData = {
 			victim: "세라",
 			detective: "",
 			suspects: ["매기 (박지윤)", "톰 (홍진호)", "존 (전현무)", "제인 (NS윤지)", "안나 (임방글)"],
-			guests: ["잭 (헨리)"]
+			guests: ["잭 (헨리)"],
+			note: "실제 사건 모티브"
 		},
 		{
 			season: "크라임씬 1",
@@ -655,7 +679,8 @@ const programData = {
 			victim: "세라",
 			detective: "",
 			suspects: ["매기 (박지윤)", "톰 (홍진호)", "존 (전현무)", "제인 (NS윤지)", "안나 (임방글)"],
-			guests: ["잭 (헨리)"]
+			guests: ["잭 (헨리)"],
+			note: "실제 사건 모티브"
 		},
 		{
 			season: "크라임씬 1",
@@ -668,7 +693,8 @@ const programData = {
 			victim: "이상미",
 			detective: "임문규",
 			suspects: ["장대행 (박지윤)", "천보안 (홍진호)", "마이사 (전현무)", "김비서 (NS윤지)", "윤사원 (임방글)"],
-			guests: ["최과장 (강민혁)"]
+			guests: ["최과장 (강민혁)"],
+			note: "실제 사건 모티브"
 		},
 		{
 			season: "크라임씬 1",
@@ -681,7 +707,8 @@ const programData = {
 			victim: "이상미",
 			detective: "",
 			suspects: ["장대행 (박지윤)", "천보안 (홍진호)", "마이사 (전현무)", "김비서 (NS윤지)", "윤사원 (임방글)"],
-			guests: ["최과장 (강민혁)"]
+			guests: ["최과장 (강민혁)"],
+			note: "실제 사건 모티브"
 		},
 		{
 			season: "크라임씬 1",
@@ -694,7 +721,8 @@ const programData = {
 			victim: "이창우",
 			detective: "",
 			suspects: ["박절도 (박지윤)", "홍무기 (홍진호)", "전조폭 (전현무)", "김간수 (NS윤지)", "강소매 (강용석)"],
-			guests: ["김횡령 (김성규)"]
+			guests: ["김횡령 (김성규)"],
+			note: "실제 사건 모티브"
 		},
 		{
 			season: "크라임씬 1",
@@ -707,7 +735,8 @@ const programData = {
 			victim: "고혜진",
 			detective: "",
 			suspects: ["박미인 (박지윤)", "홍원장 (홍진호)", "전시모 (전현무)", "윤가정 (NS윤지)", "강배달 (강용석)"],
-			guests: ["소원무 (소유)"]
+			guests: ["소원무 (소유)"],
+			note: "실제 사건 모티브"
 		},
 		{
 			season: "크라임씬 1",
@@ -720,7 +749,8 @@ const programData = {
 			victim: "신영광",
 			detective: "",
 			suspects: ["박여친 (박지윤)", "홍선수 (홍진호)", "전기자 (전현무)", "윤부심 (NS윤지)", "강키퍼 (강용석)"],
-			guests: ["키감독 (KEY)"]
+			guests: ["키감독 (KEY)"],
+			note: "마라냥 축구 살인사건"
 		},
 		{
 			season: "크라임씬 1",
@@ -734,6 +764,7 @@ const programData = {
 			detective: "임문규",
 			suspects: ["박엔터 (박지윤)", "홍소품 (홍진호)", "전스타 (전현무)", "윤조연 (NS윤지)", "강제작 (강용석)"],
 			guests: ["민감독 (강민혁)"],
+			note: "인도 영화배우 타파 살인사건",
 			rowClass: "table-primary"
 		}
     ]
@@ -978,6 +1009,7 @@ function renderTable(containerId, list) {
                 <td data-label="탐정/형사">${detectiveHtml}</td>
                 <td data-label="용의자">${suspectsHtml}</td>
                 <td data-label="게스트">${guestsHtml}</td>
+				<td data-label="비고">${item.note || ''}</td>
             </tr>
         `;
         $tbody.append(trHtml);

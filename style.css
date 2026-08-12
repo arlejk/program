@@ -127,6 +127,7 @@ a:hover { color:var(--color-primary); }
 .table.crime_scene col.col-07 { width:8em; }
 .table.crime_scene col.col-08 {}
 .table.crime_scene col.col-09 { width:8em; }
+.table.crime_scene col.col-10 { width:15em; }
 .table.midnight_horror col.col-01 { width:4em; }
 .table.midnight_horror col.col-02 { width:4em; }
 .table.midnight_horror col.col-03 { width:5em; }
