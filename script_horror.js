@@ -199,7 +199,7 @@ window.programData = {
 			guests: ["사유리"],
 			stories: [
 				{ storyteller: "허안나", title: "안암동 고시원 끝방", link: "https://youtu.be/fiq_qFFq_Bo", candles: 25, isWin: false, isFullCandles: false },
-				{ storyteller: "김숙", title: "오아마 이자카야", link: "https://youtu.be/WE6TKeZnG5M", candles: 36, isWin: false, isFullCandles: false },
+				{ storyteller: "김숙", title: "오야마 이자카야", link: "https://youtu.be/WE6TKeZnG5M", candles: 36, isWin: false, isFullCandles: false },
 				{ storyteller: "황제성", title: "흙 묻은 신발", link: "https://youtu.be/ZHhDStuv7-I", candles: 37, isWin: true, isFullCandles: false }
 			]
 		},
@@ -417,7 +417,7 @@ window.programData = {
 			epNum: "30",
 			guests: ["김지은", "김복준"],
 			stories: [
-				{ storyteller: "김숙", title: "울산 학생동 월세방", link: "https://www.youtube.com/watch?v=p9wiqKrb6lo", candles: 29, isWin: false, isFullCandles: false },
+				{ storyteller: "김숙", title: "울산 학성동 월세방", link: "https://www.youtube.com/watch?v=p9wiqKrb6lo", candles: 29, isWin: false, isFullCandles: false },
 				{ storyteller: "황제성", title: "도와주세요", link: "https://www.youtube.com/watch?v=mriRnVfvmy0", candles: 30, isWin: true, isFullCandles: false },
 				{ storyteller: "김지은", title: "외갓집에서", link: "https://www.youtube.com/watch?v=25IQ7g4gnEk", candles: 20, isWin: false, isFullCandles: false }
 			]
@@ -1319,7 +1319,7 @@ window.programData = {
 			epNum: "2",
 			guests: ["이무진"],
 			stories: [
-				{ storyteller: "김호영", title: "아짓의 경고", link: "https://youtu.be/PKW3tWJ2Mu4", candles: 37, isWin: true, isFullCandles: false },
+				{ storyteller: "김호영", title: "아팃의 경고", link: "https://youtu.be/PKW3tWJ2Mu4", candles: 37, isWin: true, isFullCandles: false },
 				{ storyteller: "김숙", title: "허수아비 강령술", link: "https://youtu.be/IZhnjWnZPyc", candles: 32, isWin: false, isFullCandles: false },
 				{ storyteller: "이무진", title: "숨통", link: "https://youtu.be/DuvhaGlZa98", candles: 33, isWin: false, isFullCandles: false }
 			]
@@ -1879,7 +1879,7 @@ window.programData = {
 			epNum: "5",
 			guests: ["김규원"],
 			stories: [
-				{ storyteller: "김규원", title: "덧바람", link: "https://youtu.be/cjBIJmrZdBo", candles: 36, isWin: true, isFullCandles: false },
+				{ storyteller: "김규원", title: "텃바람", link: "https://youtu.be/cjBIJmrZdBo", candles: 36, isWin: true, isFullCandles: false },
 				{ storyteller: "김아영", title: "향 나는 팔자", link: "https://youtu.be/t-tWPW8ycT8", candles: 35, isWin: false, isFullCandles: false },
 				{ storyteller: "김호영", title: "야간 알바", link: "https://youtu.be/9Xkprlc4eSI", candles: 28, isWin: false, isFullCandles: false }
 			]
