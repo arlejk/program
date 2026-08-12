@@ -313,7 +313,7 @@ window.programData = {
 			epNum: "22",
 			guests: ["전소미", "유병재", "김복준"],
 			stories: [
-				{ storyteller: "허안나", title: "새벽의 울림", link: "https://youtu.be/KiumJ18-sAc&t=0", candles: 0, isWin: false, isFullCandles: false, note: "유영철" },
+				{ storyteller: "허안나", title: "새벽의 울림", link: "https://youtu.be/KiumJ18-sAc&t=0", candles: 0, isWin: false, isFullCandles: false, note: "유영철, 영상으로만 제작" },
 				{ storyteller: "유병재", title: "하숙집 형", link: "https://www.youtube.com/watch?v=TW6zM0umNyA", candles: 27, isWin: false, isFullCandles: false },
 				{ storyteller: "전소미", title: "어둠 속의 2시 47분", link: "https://www.youtube.com/watch?v=M2rquL3kAz4", candles: 37, isWin: true, isFullCandles: false }
 			]
