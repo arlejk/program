@@ -2035,7 +2035,7 @@ function renderMidnightTable(containerId, list, options = {}) {
 
             const trHtml = `
                 <tr${trClass}>
-                    <td data-label="시즌" class="align-middle center">${story.season}</td>
+                    <!--<td data-label="시즌" class="align-middle center">${story.season}</td>-->
                     <td data-label="방영년도" class="align-middle center">${story.year}</td>
                     <td data-label="스트리밍" class="align-middle center link">${getOttHtml(story.season, story.otts)}</td>
                     <td data-label="회차" class="align-middle center">EP.${story.epNum}</td>
@@ -2065,7 +2065,7 @@ function renderMidnightTable(containerId, list, options = {}) {
                 if (idx === 0) {
                     const trHtml = `
                         <tr${trClass}>
-                            <td rowspan="${storiesCount}" data-label="시즌" class="align-middle center">${item.season}</td>
+                            <!--<td rowspan="${storiesCount}" data-label="시즌" class="align-middle center">${item.season}</td>-->
                             <td rowspan="${storiesCount}" data-label="방영년도" class="align-middle center">${item.year}</td>
                             <td rowspan="${storiesCount}" data-label="스트리밍" class="align-middle center link">${ottHtml}</td>
                             <td rowspan="${storiesCount}" data-label="회차" class="align-middle center">EP.${item.epNum}</td>
