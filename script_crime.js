@@ -972,8 +972,8 @@ function renderTable(containerId, list) {
         const trHtml = `
             <tr${trClass}>
                 <td data-label="시즌">${item.season}</td>
-                <td data-label="에피소드">${epTitleHtml}</td>
                 <td data-label="스트리밍" class="center link">${ottHtml}</td>
+				<td data-label="에피소드">${epTitleHtml}</td>
                 <td data-label="피해자">${victimHtml}</td>
                 <td data-label="탐정/형사">${detectiveHtml}</td>
                 <td data-label="용의자">${suspectsHtml}</td>
