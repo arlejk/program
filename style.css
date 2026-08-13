@@ -118,34 +118,35 @@ a:hover { color:var(--color-primary); }
 .table thead th[data-sort].sort-asc::after { content: '\f0de'; opacity: 1; }
 .table thead th[data-sort].sort-desc::after { content: '\f0dd'; opacity: 1; }
 .table.program .link { width:auto; max-width:10em; padding: 0; }
-.table.crime_scene col.col-01 { width:8em; }
-.table.crime_scene col.col-02 { width:3em; }
-.table.crime_scene col.col-03 { width:5em; }
-.table.crime_scene col.col-04 { width:5em; }
-.table.crime_scene col.col-05 { width:15em; }
-.table.crime_scene col.col-06 { width:8em; }
-.table.crime_scene col.col-07 { width:8em; }
-.table.crime_scene col.col-08 {}
-.table.crime_scene col.col-09 { width:8em; }
-.table.crime_scene col.col-10 { width:18em; }
+.table.crime_scene col.col-01 { width:6em; } /* 시즌 */
+.table.crime_scene col.col-02 {  } /* 방영년도 */
+.table.crime_scene col.col-03 {  } /* 방송사 */
+.table.crime_scene col.col-04 { width:6em; } /* 스트리밍 */
+.table.crime_scene col.col-05 { width:12%; } /* 에피소드 */
+.table.crime_scene col.col-06 { width:8em; } /* 피해자 */
+.table.crime_scene col.col-07 { width:8em; } /* 탐정/형사 */
+.table.crime_scene col.col-08 { width:25%; } /* 용의자 */
+.table.crime_scene col.col-09 { width:8em; } /* 게스트 */
+.table.crime_scene col.col-10 { width:18%; } /* 비고 */
 .table.midnight_horror col.col-01 { width:4em; }
 .table.midnight_horror col.col-02 { width:4em; }
 .table.midnight_horror col.col-03 { width:5em; }
 .table.midnight_horror col.col-04 { width:3em; }
 .table.midnight_horror col.col-05 { width:6em; }
 .table.midnight_horror col.col-06 { width:6em; }
-.table.midnight_horror col.col-07 { width:10em; }
+.table.midnight_horror col.col-07 { width:15%; }
 .table.midnight_horror col.col-08 { width:5em; }
 .table.midnight_horror col.col-09 { width:5em; }
-.table.midnight_horror col.col-10 { width:10em; }
+.table.midnight_horror col.col-10 { width:15%; }
 @media screen and (max-width:768px) {
 	/*block*/
 	.table-block thead { display:none; }
 	.table-block tr { display:block; }
-	.table-block tbody td { display:flex; flex-wrap:wrap; gap:2px; width:100% !important; max-width:100% !important; position:relative;
+	.table-block tbody td { display:flex; flex-wrap:wrap; align-items:center; gap:2px; width:100% !important; max-width:100% !important; position:relative;
 		min-height:28px; padding:0.3em 10px; padding-left:7em; border-width:0 0 1px 0; }
 	.table-block td::before { content: attr(data-label); display:block; position:absolute; left:0; top:0;
 		width:calc(7em - 10px); height:100%; padding:0.3em 10px; text-align:left; color:var(--color-tone-900); font-weight:500; background:var(--color-tone-100); }
+	.table-block tbody td > div { margin:0 !important; width:100%; }
 	.table-block.table.program tbody td.link { padding:0; padding-left:calc(7em - 10px); }
 	.table-block.table.program tbody td.link a { flex:1; padding:0.3em 0; }	
 	.table-block.table.crime_scene col,

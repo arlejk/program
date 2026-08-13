@@ -479,6 +479,7 @@ const programData = {
 			detective: "박지윤",
 			suspects: ["장책방 (장진)", "홍상회 (홍진호)", "장고물 (장동민)", "하부인 (하니)"],
 			guests: ["김일꾼 (김지훈)"],
+			note: "부천 비디오 가게 살인사건",
 			rowClass: "table-primary"
 		},
 		{
@@ -493,6 +494,7 @@ const programData = {
 			detective: "장동민",
 			suspects: ["박미녀 (박지윤)", "장심사 (장진)", "홍기자 (홍진호)", "하백조 (하니)"],
 			guests: ["오원장 (오현경)"],
+			note: "실제 사건 모티브",
 			rowClass: "table-primary"
 		},
 		{
@@ -507,6 +509,7 @@ const programData = {
 			detective: "하니",
 			suspects: ["박사업 (박지윤)", "장교포 (장진)", "홍베프 (홍진호)", "장남친 (장동민)"],
 			guests: ["시가수 (시우민)"],
+			note: "박상은 양 피살사건",
 			unreleased: ["https://youtu.be/6TOPF9f2YT4", "https://youtu.be/wa5H03jkp_A", "https://youtu.be/XVwa6kmayIg"]
 		},
 		{
@@ -998,14 +1001,16 @@ function renderTable(containerId, list) {
         // 2) unreleasedHtml과 item.note 결합 처리
         const noteParts = [];
         if (unreleasedHtml) {
-            noteParts.push(unreleasedHtml);
+            // 클립 버튼들이 감싸지도록 wrapper div 처리
+            noteParts.push(`<div class="unreleased-container mb-1">${unreleasedHtml}</div>`);
         }
         if (item.note && typeof item.note === 'string' && item.note.trim() !== '') {
-            noteParts.push(item.note);
+            // 노트를 다음 줄에 표시
+            noteParts.push(`<div class="note-text">${item.note}</div>`);
         }
 
-        // 둘 다 없으면 '-', 있으면 공백(' ')으로 연결
-        const finalNoteHtml = noteParts.length > 0 ? noteParts.join(' ') : '-';
+        // 구분 기호 없이 그대로 합치기
+        const finalNoteHtml = noteParts.length > 0 ? noteParts.join('') : '-';
 
         // 출연진 태그 생성
         const victimHtml = (item.victim && item.victim.includes('(')) 
