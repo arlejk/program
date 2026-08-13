@@ -128,16 +128,16 @@ a:hover { color:var(--color-primary); }
 .table.crime_scene col.col-08 { width:25%; } /* 용의자 */
 .table.crime_scene col.col-09 { width:8em; } /* 게스트 */
 .table.crime_scene col.col-10 { width:18%; } /* 비고 */
-.table.midnight_horror col.col-01 { width:4em; }
-.table.midnight_horror col.col-02 { width:4em; }
-.table.midnight_horror col.col-03 { width:5em; }
-.table.midnight_horror col.col-04 { width:3em; }
-.table.midnight_horror col.col-05 { width:6em; }
-.table.midnight_horror col.col-06 { width:6em; }
-.table.midnight_horror col.col-07 { width:15%; }
-.table.midnight_horror col.col-08 { width:5em; }
-.table.midnight_horror col.col-09 { width:5em; }
-.table.midnight_horror col.col-10 { width:15%; }
+.table.midnight_horror col.col-01 { width:4em; } /* 시즌 */
+.table.midnight_horror col.col-02 { width:4em; } /* 방영년도 */
+.table.midnight_horror col.col-03 { width:5em; } /* 스트리밍 */
+.table.midnight_horror col.col-04 { width:3em; } /* 회차 */
+.table.midnight_horror col.col-05 { width:6em; } /* 게스트 */
+.table.midnight_horror col.col-06 { width:6em; } /* 전달자 */
+.table.midnight_horror col.col-07 { width:15%; } /* 에피소드 */
+.table.midnight_horror col.col-08 { width:5em; } /* 획득 촛불 */
+.table.midnight_horror col.col-09 { width:5em; } /* 우승 여부 */
+.table.midnight_horror col.col-10 { width:15%; } /* 비고 */
 @media screen and (max-width:768px) {
 	/*block*/
 	.table-block thead { display:none; }
