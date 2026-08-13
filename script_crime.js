@@ -78,6 +78,7 @@ const programData = {
 			detective: "안탐정 (안유진)",
 			suspects: ["박부인 (박지윤)", "장남 (장진)", "장딸 (장동민)", "김연인 (김지훈)"],
 			guests: ["주며늘 (주현영)"],
+			unreleased: ["https://youtu.be/BDMEA0MD10o", "https://www.youtube.com/live/WumdbmnXHxA"],
 			rowClass: "table-primary"
 		},
 		{
@@ -128,6 +129,7 @@ const programData = {
 			detective: "장탐정 (장동민)",
 			suspects: ["박통닭 (박지윤)", "장편돌 (장진)", "김클럽 (김지훈)", "안댄서 (안유진)"],
 			guests: ["하금수 (하석진)"],
+			unreleased: ["https://youtu.be/dbZ8ZAZ9llE", "https://youtu.be/WA3dUxazOUk"],
 			rowClass: "table-primary"
 		},
 		{
@@ -152,7 +154,8 @@ const programData = {
 			victim: "김봉천",
 			detective: "박탐정 (박지윤)",
 			suspects: ["장셰프 (장진)", "장아귀 (장동민)", "김싱어 (김지훈)", "안금방 (안유진)"],
-			guests: ["전시장 (전소민)"]
+			guests: ["전시장 (전소민)"],
+			unreleased: ["https://youtu.be/oHEqJay7g3k", "https://youtu.be/G3M1S_5E-nw", "https://youtu.be/xp42psnS2EE", "https://youtu.be/H1H3lAkgNfM", "https://youtu.be/6vQOE7DocPE"]
 		},
 
 		{
@@ -165,7 +168,8 @@ const programData = {
 			victim: "진예원",
 			detective: "박탐정 (박지윤)",
 			suspects: ["장명품 (장진)", "장풍무 (장동민)", "안비행 (안유진)", "주집착 (주현영)", "키예랑 (KEY)"],
-			guests: []
+			guests: [],
+			unreleased: ["https://youtu.be/FKbIOz-zLU0", "https://youtu.be/VPwp9qk-8DE", "https://youtu.be/t8qe3AfeLIc"]
 		},
 		{
 			season: "크라임씬 리턴즈",
@@ -277,7 +281,8 @@ const programData = {
 			victim: "곽곡두",
 			detective: "박탐정 (박지윤)",
 			suspects: ["장비서 (장진)", "장사모 (장동민)", "곽유진 (안유진)", "주연구 (주현영)", "키사장 (KEY)"],
-			guests: []
+			guests: [],
+			unreleased: ["https://youtu.be/LzS6forfl7Q"]
 		},
 
 		{
@@ -321,7 +326,7 @@ const programData = {
 			suspects: ["박교육 (박지윤)", "김교장 (김지훈)", "양급장 (양세형)"],
 			guests: ["하강사 (하니)", "윤교수 (NS윤지)"],
 			unreleased: ["https://youtu.be/cI47yfsmfG8", "https://youtu.be/_o0KZ6f7hrE", "https://youtu.be/X240YqkoTRE", "https://youtu.be/yFEp3zdbP8M", "https://youtu.be/f0C6xoz0k40"]
-		}, // 👈 [수정됨] 닫는 중괄호와 콤마 추가
+		},
 		{
 			season: "크라임씬 3",
 			broadcaster: "JTBC",
@@ -388,7 +393,7 @@ const programData = {
 			epNum: "8",
 			epTitle: "과학고 연쇄살인사건",
 			link: "https://youtu.be/7d8rFHzsu2Q?si=5hNXPKGoA4mHv4ZY",
-			victim: "김다래 / 김희연 / 김지선",
+			victim: "김다래, 김희연, 김지선",
 			detective: "홍진호",
 			suspects: ["박지윤 (박지윤)", "장진 (장진)", "김지훈 (김지훈)", "양세형 (양세형)", "정은지 (정은지)"],
 			guests: [],
@@ -418,10 +423,10 @@ const programData = {
 			epNum: "10",
 			epTitle: "호텔 살인사건",
 			link: "https://youtu.be/p9wxJIilSIA?si=TRSLRoPsi7jwJPdF",
-			victim: "장성규",
+			victim: "장성규 (장성규)",
 			detective: "표창원",
 			suspects: ["박청소 (박지윤)", "장사업 (장진)", "홍이돌 (홍진호)", "김건반 (김지훈)", "정텐더 (정은지)"],
-			guests: [],
+			guests: ["장성규 (장성규)"],
 			unreleased: ["https://youtu.be/pNAhBskSKfQ", "https://youtu.be/RU1Eh0WkqIo", "https://youtu.be/2ZQ-uKo566g", "https://youtu.be/UwzzBdtQCmw", "https://youtu.be/JuegpzI-8G4", "https://youtu.be/ghcpXnc2QIs"],
 			rowClass: "table-primary"
 		},
@@ -520,7 +525,7 @@ const programData = {
 			epNum: "5",
 			epTitle: "연예기획사 살인사건",
 			link: "https://youtu.be/aP5w315VAys?si=MXlDWeKabEE1chUz",
-			victim: "아이돌",
+			victim: ["아이돌", "윤대표 (윤성호)"],
 			detective: "홍진호",
 			suspects: ["박코디 (박지윤)", "장멤버 (장진)", "장로드 (장동민)", "하회장 (하니)"],
 			guests: ["시보컬 (시우민)", "윤대표 (윤성호)"],
@@ -772,28 +777,28 @@ const programData = {
     ]
 };
 
-// 강조할 역/출연진 명단 목록
+// 1. 강조할 역/출연진 명단 목록
 const highlightedCasts = new Set([
     // 박지윤
     "박재즈", "박미녀", "박요염", "박접신", "박해녀",
-	// 장진
+    // 장진
     "장편돌", "디제이장", "장심사", "장포악", "장멤버",    
     // 장동민
     "장딸", "장항해", "장미숙", "장아들", "장아귀",
     // 홍진호
-	"홍선장", "홍변호", "홍구녕", "홍이돌", "장진호",
-	// 김지훈
+    "홍선장", "홍변호", "홍구녕", "홍이돌", "장진호",
+    // 김지훈
     "김건반", "김순진", "김일꾼", "김연인",    
-	// 안유진
+    // 안유진
     "안댄서", "안비행", "안래퍼", "안메리",
-	// 그밖에
-	"하선녀", "하승무원", "하고독", "정텐더", "정숙녀", "정토박", "양손님", 
-	"주만년", "주모던", "주며늘", "키맹신",
-	// 게스트
-	"오원장", "윤부인", "미스소", "소이장", "하금수" 
+    // 그밖에
+    "하선녀", "하승무원", "하고독", "정텐더", "정숙녀", "정토박", "양손님", 
+    "주만년", "주모던", "주며늘", "키맹신",
+    // 게스트
+    "오원장", "윤부인", "미스소", "소이장", "하금수" 
 ]);
 
-// 3. 출연진 역할/이름 분리 함수
+// 2. 출연진 역할/이름 분리 함수
 function parseCastName(rawText) {
     if (!rawText) return { role: '', actor: '' };
     const match = rawText.match(/^(.*?)\s*\((.*?)\)$/);
@@ -803,7 +808,7 @@ function parseCastName(rawText) {
     return { role: '', actor: rawText.trim() };
 }
 
-// 용의자 출연진 다빈도 순위 계산
+// 3. 용의자 출연진 다빈도 순위 계산
 function getSuspectActorCounts() {
     const actorCounts = {};
     programData.crimeScene.forEach(item => {
@@ -837,7 +842,7 @@ function sortSuspectsByFrequency(suspectList) {
     });
 }
 
-// 5. 출연진 배지 HTML 생성 함수 (epTitle 전달받아 세부 판별)
+// 5. 출연진 배지 HTML 생성 함수
 function renderCastTag(rawText, epTitle) {
     if (!rawText || rawText.trim() === '') return '-';
     const { role, actor } = parseCastName(rawText);
@@ -867,26 +872,33 @@ function renderCastTag(rawText, epTitle) {
     }
 }
 
-// 6. 키워드 필터 버튼 생성 (10회 이상 기본 노출, 10회 미만 더보기 처리)
+// 6. 키워드 필터 버튼 생성 (회차 기준 중복 카운트 방지 적용)
 let currentKeyword = 'all';
 
 function renderKeywordButtons() {
     const actorCounts = {};
 
     programData.crimeScene.forEach(item => {
-        const victimActor = (item.victim && item.victim.includes('(')) ? parseCastName(item.victim).actor : null;
+        // 피해자(victim) 배열 및 문자열 대응
+        const victimList = Array.isArray(item.victim) ? item.victim : (item.victim ? [item.victim] : []);
+        const victimActors = victimList
+            .filter(v => typeof v === 'string' && v.includes('('))
+            .map(v => parseCastName(v).actor);
 
-        const allCasts = [
-            victimActor,
+        // 해당 회차의 모든 출연진 추출
+        const rawCasts = [
+            ...victimActors,
             parseCastName(item.detective).actor,
             ...(item.suspects || []).map(s => parseCastName(s).actor),
             ...(item.guests || []).map(g => parseCastName(g).actor)
         ];
 
-        allCasts.forEach(actor => {
-            if (actor) {
-                actorCounts[actor] = (actorCounts[actor] || 0) + 1;
-            }
+        // Set을 사용하여 한 회차 안에서 동일 인물 중복 제거
+        const uniqueActorsInEpisode = new Set(rawCasts.filter(Boolean));
+
+        // 회차당 1회씩만 카운트
+        uniqueActorsInEpisode.forEach(actor => {
+            actorCounts[actor] = (actorCounts[actor] || 0) + 1;
         });
     });
 
@@ -938,24 +950,27 @@ function renderTable(containerId, list) {
         "크라임씬 1": 5
     };
 
-    // 2) 시즌 순 ➔ epNum 숫자 순 대로 데이터 정렬
+    // 2) 시즌 순 ➔ epNum 숫자 순 정렬
     const sortedList = [...list].sort((a, b) => {
         const orderA = seasonOrder[a.season] || 99;
         const orderB = seasonOrder[b.season] || 99;
 
         if (orderA !== orderB) {
-            return orderA - orderB; // 시즌 순서 정렬
+            return orderA - orderB;
         }
-        return Number(a.epNum) - Number(b.epNum); // 동일 시즌 내 회차(EP) 순서 정렬
+        return Number(a.epNum) - Number(b.epNum);
     });
 
     let filteredList = sortedList;
     if (currentKeyword !== 'all') {
         filteredList = sortedList.filter(item => {
-            const victimActor = (item.victim && item.victim.includes('(')) ? parseCastName(item.victim).actor : null;
+            const victimList = Array.isArray(item.victim) ? item.victim : (item.victim ? [item.victim] : []);
+            const victimActors = victimList
+                .filter(v => typeof v === 'string' && v.includes('('))
+                .map(v => parseCastName(v).actor);
 
             const allCasts = [
-                victimActor,
+                ...victimActors,
                 parseCastName(item.detective).actor,
                 ...(item.suspects || []).map(s => parseCastName(s).actor),
                 ...(item.guests || []).map(g => parseCastName(g).actor)
@@ -998,24 +1013,25 @@ function renderTable(containerId, list) {
             `).join(' ');
         }
 
-        // 2) unreleasedHtml과 item.note 결합 처리
+        // 2) unreleasedHtml과 item.note 줄바꿈 결합 처리
         const noteParts = [];
         if (unreleasedHtml) {
-            // 클립 버튼들이 감싸지도록 wrapper div 처리
             noteParts.push(`<div class="unreleased-container mb-1">${unreleasedHtml}</div>`);
         }
         if (item.note && typeof item.note === 'string' && item.note.trim() !== '') {
-            // 노트를 다음 줄에 표시
             noteParts.push(`<div class="note-text">${item.note}</div>`);
         }
 
-        // 구분 기호 없이 그대로 합치기
         const finalNoteHtml = noteParts.length > 0 ? noteParts.join('') : '-';
 
-        // 출연진 태그 생성
-        const victimHtml = (item.victim && item.victim.includes('(')) 
-            ? renderCastTag(item.victim, item.epTitle) 
-            : (item.victim || '-');
+        // 3) 피해자(victim) 배열 및 일반 텍스트/태그 분리 처리
+        let victimHtml = '-';
+        if (item.victim) {
+            const victimArray = Array.isArray(item.victim) ? item.victim : [item.victim];
+            victimHtml = victimArray.map(v => {
+                return (typeof v === 'string' && v.includes('(')) ? renderCastTag(v, item.epTitle) : v;
+            }).join(', ');
+        }
 
         const detectiveHtml = renderCastTag(item.detective, item.epTitle);
         const sortedSuspects = sortSuspectsByFrequency(item.suspects);
