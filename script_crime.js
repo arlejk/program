@@ -932,7 +932,7 @@ function renderKeywordButtons() {
 
     if (hasMore) {
         $wrap.append(moreHtml);
-        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more ml-1"><i class="fa-solid fa-circle-minus"></i> 더보기</button>');
+        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more ml-1"><i class="fa-solid fa-plus"></i> 더보기</button>');
     }
 }
 
@@ -1063,16 +1063,16 @@ $(function () {
     renderKeywordButtons();
     renderTable('#tbody-cate-01', programData.crimeScene);
 
-    // 더보기 / 접기 토글 이벤트
+    // 더보기 / 접기 토글 이벤트 (.text() -> .html() 수정 완료)
     $(document).on('click', '.btn-toggle-more', function () {
         const $moreBox = $('#more-keywords');
         
         if ($moreBox.is(':visible')) {
             $moreBox.hide();
-            $(this).text('<i class="fa-solid fa-circle-plus"></i> 더보기');
+            $(this).html('<i class="fa-solid fa-plus"></i> 더보기');
         } else {
             $moreBox.css('display', 'flex');
-            $(this).text('<i class="fa-solid fa-circle-minus"></i> 접기');
+            $(this).html('<i class="fa-solid fa-minus"></i> 접기');
         }
     });
 
@@ -1089,13 +1089,14 @@ $(function () {
         renderTable('#tbody-cate-01', programData.crimeScene);
     });
 
+    // 태그 클릭 이벤트 (.text() -> .html() 수정 완료)
     $(document).on('click', '.keyword-tag', function () {
         const keyword = $(this).data('keyword');
         
         const $targetBtn = $(`.btn-keyword[data-keyword="${keyword}"]`);
         if ($targetBtn.closest('#more-keywords').length > 0) {
             $('#more-keywords').css('display', 'flex');
-            $('.btn-toggle-more').text('<i class="fa-solid fa-circle-minus"></i> 접기');
+            $('.btn-toggle-more').html('<i class="fa-solid fa-minus"></i> 접기');
         }
 
         $targetBtn.trigger('click');

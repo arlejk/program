@@ -2099,7 +2099,7 @@ function renderStorytellerButtons() {
 
     if (hasMore) {
         $wrap.append(moreHtml);
-        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more mb-1 ml-1"><i class="fa-solid fa-circle-plus"></i> 더보기</button>');
+        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more mb-1 ml-1"><i class="fa-solid fa-plus"></i> 더보기</button>');
     }
 }
 
@@ -2312,17 +2312,19 @@ $(function () {
         updateActiveTabTable();
     });
 
+    // 더보기 / 접기 버튼 클릭 이벤트 (.text() -> .html() 수정 완료)
     $(document).on('click', '.btn-toggle-more', function () {
         const $moreContainer = $('#more-keywords');
         if ($moreContainer.is(':visible')) {
             $moreContainer.hide();
-            $(this).text('<i class="fa-solid fa-circle-plus"></i> 더보기');
+            $(this).html('<i class="fa-solid fa-plus"></i> 더보기');
         } else {
             $moreContainer.show();
-            $(this).text('<i class="fa-solid fa-circle-minus"></i> 접기');
+            $(this).html('<i class="fa-solid fa-minus"></i> 접기');
         }
     });
 
+    // 태그 클릭 이벤트 (.text() -> .html() 수정 완료)
     $(document).on('click', '.keyword-tag', function () {
         const name = $(this).text().trim();
         const $targetBtn = $(`.btn-keyword[data-keyword="${name}"]`);
@@ -2330,7 +2332,7 @@ $(function () {
         if ($targetBtn.length > 0) {
             if ($targetBtn.closest('#more-keywords').length > 0) {
                 $('#more-keywords').show();
-                $('.btn-toggle-more').text('<i class="fa-solid fa-circle-minus"></i> 접기');
+                $('.btn-toggle-more').html('<i class="fa-solid fa-minus"></i> 접기');
             }
             $targetBtn.trigger('click');
         }
