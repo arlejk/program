@@ -932,7 +932,7 @@ function renderKeywordButtons() {
 
     if (hasMore) {
         $wrap.append(moreHtml);
-        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more ml-1">+ 더보기</button>');
+        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more ml-1"><i class="fa-solid fa-circle-minus"></i> 더보기</button>');
     }
 }
 
@@ -1069,10 +1069,10 @@ $(function () {
         
         if ($moreBox.is(':visible')) {
             $moreBox.hide();
-            $(this).text('+ 더보기');
+            $(this).text('<i class="fa-solid fa-circle-plus"></i> 더보기');
         } else {
             $moreBox.css('display', 'flex');
-            $(this).text('- 접기');
+            $(this).text('<i class="fa-solid fa-circle-minus"></i> 접기');
         }
     });
 
@@ -1095,7 +1095,7 @@ $(function () {
         const $targetBtn = $(`.btn-keyword[data-keyword="${keyword}"]`);
         if ($targetBtn.closest('#more-keywords').length > 0) {
             $('#more-keywords').css('display', 'flex');
-            $('.btn-toggle-more').text('- 접기');
+            $('.btn-toggle-more').text('<i class="fa-solid fa-circle-minus"></i> 접기');
         }
 
         $targetBtn.trigger('click');

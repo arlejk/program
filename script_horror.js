@@ -2099,7 +2099,7 @@ function renderStorytellerButtons() {
 
     if (hasMore) {
         $wrap.append(moreHtml);
-        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more mb-1 ml-1">+ 더보기</button>');
+        $wrap.append('<button class="btn btn-outline-secondary btn-toggle-more mb-1 ml-1"><i class="fa-solid fa-circle-plus"></i> 더보기</button>');
     }
 }
 
@@ -2316,10 +2316,10 @@ $(function () {
         const $moreContainer = $('#more-keywords');
         if ($moreContainer.is(':visible')) {
             $moreContainer.hide();
-            $(this).text('+ 더보기');
+            $(this).text('<i class="fa-solid fa-circle-plus"></i> 더보기');
         } else {
             $moreContainer.show();
-            $(this).text('- 접기');
+            $(this).text('<i class="fa-solid fa-circle-minus"></i> 접기');
         }
     });
 
@@ -2330,7 +2330,7 @@ $(function () {
         if ($targetBtn.length > 0) {
             if ($targetBtn.closest('#more-keywords').length > 0) {
                 $('#more-keywords').show();
-                $('.btn-toggle-more').text('- 접기');
+                $('.btn-toggle-more').text('<i class="fa-solid fa-circle-minus"></i> 접기');
             }
             $targetBtn.trigger('click');
         }
