@@ -1918,9 +1918,9 @@ window.programData = {
 			epNum: "8",
 			guests: ["정수영"],
 			stories: [
-				{ storyteller: "김호영", title: "관상", link: "https://youtu.be/m1GV3bJQhBQ", isWin: false, isFullCandles: false },
-				{ storyteller: "정수영", title: "무연", link: "https://youtu.be/AJ-K6lXIOjM", isWin: false, isFullCandles: false },
-				{ storyteller: "김아영", title: "3시 33분", link: "https://youtu.be/owgmbtc8wik", isWin: false, isFullCandles: false }
+				{ storyteller: "김호영", title: "관상", link: "https://youtu.be/m1GV3bJQhBQ", candles: 38, isWin: true, isFullCandles: false },
+				{ storyteller: "정수영", title: "무연", link: "https://youtu.be/AJ-K6lXIOjM", candles: 33, isWin: false, isFullCandles: false },
+				{ storyteller: "김아영", title: "3시 33분", link: "https://youtu.be/owgmbtc8wik", candles: 25, isWin: false, isFullCandles: false }
 			]
 		}
     ]
