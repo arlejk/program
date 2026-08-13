@@ -127,7 +127,7 @@ a:hover { color:var(--color-primary); }
 .table.crime_scene col.col-07 { width:8em; }
 .table.crime_scene col.col-08 {}
 .table.crime_scene col.col-09 { width:8em; }
-.table.crime_scene col.col-10 { width:15em; }
+.table.crime_scene col.col-10 { width:18em; }
 .table.midnight_horror col.col-01 { width:4em; }
 .table.midnight_horror col.col-02 { width:4em; }
 .table.midnight_horror col.col-03 { width:5em; }
@@ -203,6 +203,28 @@ a:hover { color:var(--color-primary); }
 .tab-panel .tab-cont.current { display: block !important; }
 
 /* layout */
+
+/* header */
+/* header */
+.main-header { width:100%; background:var(--color-inverse-bg); border-bottom:1px solid rgba(255, 255, 255, 0.1); }
+.db-nav-bar { width:100%; padding:calc(var(--gutter-mo) / 2) 0; }
+.db-nav-bar .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); display:flex; align-items:center; }
+.db-nav-toggle { display:none; background:none; border:none; color:#fff; font-size:1.25rem; padding:6px 10px; cursor:pointer; border-radius:6px; transition:var(--transition-fast); }
+.db-nav-toggle:hover { background:rgba(255, 255, 255, 0.1); }
+.db-nav-group { display:inline-flex; gap:8px; background:rgba(0, 0, 0, 0.25); padding:4px; border-radius:8px; border:1px solid rgba(255, 255, 255, 0.1); }
+.db-nav-link { display:inline-flex; align-items:center; gap:8px; padding:8px 16px; font-size:0.95rem; font-weight:500; color:rgba(255, 255, 255, 0.7); text-decoration:none !important; border-radius:6px; transition:var(--transition-fast); white-space:nowrap; }
+.db-nav-link i { font-size:0.9em; opacity:0.85; }
+.db-nav-link:hover { color:#fff; background:rgba(255, 255, 255, 0.12); }
+.db-nav-link.active { color:#fff; background:var(--color-primary); font-weight:600; box-shadow:0 2px 6px rgba(0, 0, 0, 0.2); }
+.db-nav-link.active i { opacity:1; }
+@media screen and (max-width: 768px) {
+	.db-nav-bar { padding: 8px 0; }
+	.db-nav-bar .inner { flex-wrap: wrap; justify-content: flex-end; }
+	.db-nav-toggle { display: inline-flex !important; align-items: center; justify-content: center; }
+	.db-nav-group { display: none !important; flex-direction: column; width: 100%; gap: 4px; padding: 6px; margin-top: 8px; box-sizing: border-box; }
+	.db-nav-group.is-open { display: flex !important; }	
+	.db-nav-link { width: 100%; justify-content: center; padding: 10px 14px; box-sizing: border-box; }
+}
 
 .publish_worksheet { min-height:100vh; display:flex; flex-direction:column; }
 .publish_worksheet .inner { width:100%; max-width:1400px; margin:0 auto; padding:0 var(--gutter-mo); }

@@ -15,9 +15,32 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>	
 	<!-- Custom -->
 	<link href="style.css" rel="stylesheet">
-	<script src="script.js"></script>
+	<script src="script_common.js"></script>
+	<script src="script_survival.js"></script>
 </head>
 <body>
+	<header class="main-header">
+		<nav class="db-nav-bar" aria-label="Database Navigation">
+			<div class="inner">
+				<!-- 모바일용 햄버거 버튼 (PC에서는 CSS로 숨김) -->
+				<button type="button" class="db-nav-toggle" id="dbNavToggle" aria-label="메뉴 열기/닫기">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+
+				<div class="db-nav-group" id="dbNavGroup">
+					<a href="index.html" class="db-nav-link active">
+						<i class="fa-solid fa-tv"></i> 두뇌 추리 서바이벌
+					</a>
+					<a href="crime_scene.html" class="db-nav-link">
+						<i class="fa-solid fa-magnifying-glass"></i> 크라임씬
+					</a>
+					<a href="midnight_horror.html" class="db-nav-link">
+						<i class="fa-solid fa-ghost"></i> 심야괴담회
+					</a>
+				</div>
+			</div>
+		</nav>	
+	</header>
 	<div class="publish_worksheet program">
 		<section class="head">
 			<div class="inner">
@@ -26,12 +49,6 @@
 					<h2>두뇌·추리 / 예능·게임 서바이벌</h2>
 				</hgroup>
 				<dl>
-					<dt>Database</dt>
-					<dd>
-						<a href="index.html" target="_blank">Survival TV Program <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
-						<a href="crime_scene.html" target="_blank">Crime Scene Episode <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
-						<a href="midnight_horror.html" target="_blank">Midnight Horror Story <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-					</dd>
 					<dt>Last Update</dt>
 					<dd>2026-08-06</dd>
 					<dt>Source</dt>
