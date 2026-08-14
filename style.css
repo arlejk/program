@@ -113,6 +113,7 @@ a:hover { color:var(--color-primary); }
 .table .status.reject { background:var(--color-danger); }
 .table .link a { display:block; width:100%; height:100%; padding: 0.6rem 0.5rem; background:var(--color-default); color:#fff; text-align:center; }
 .table .link a:hover { background:var(--color-inverse); }
+.table .badge { font-size: 0.9em; font-weight: 500; }
 .table thead th[data-sort] { cursor: pointer; user-select: none; position: relative; padding-right: 20px; }
 .table thead th[data-sort]::after { content: '\f0dc'; font-family: var(--font-icon); position: absolute; right: 6px; opacity: 0.3; }
 .table thead th[data-sort].sort-asc::after { content: '\f0de'; opacity: 1; }
@@ -138,6 +139,15 @@ a:hover { color:var(--color-primary); }
 .table.midnight_horror col.col-08 { width:5em; } /* 획득 촛불 */
 .table.midnight_horror col.col-09 { width:5em; } /* 우승 여부 */
 .table.midnight_horror col.col-10 { width:15%; } /* 비고 */
+.table.dtcu col.col-01 { width:7em; } /* 시즌 */
+.table.dtcu col.col-02 { width:5em; } /* 방영년도 */
+.table.dtcu col.col-03 { width:5em; } /* 스트리밍 */
+.table.dtcu col.col-04 { } /* 에피소드 */
+.table.dtcu col.col-05 { width:6em; } /* 탈출/해결 */
+.table.dtcu col.col-06 { width:16em; } /* 멤버 */
+.table.dtcu col.col-07 { width:7em; } /* 세계관/NPC */
+.table.dtcu col.col-08 { } /* 키워드 */
+.table.dtcu col.col-09 { width:18%; } /* 비고 */
 @media screen and (max-width:768px) {
 	/*block*/
 	.table-block thead { display:none; }
@@ -147,10 +157,9 @@ a:hover { color:var(--color-primary); }
 	.table-block td::before { content: attr(data-label); display:block; position:absolute; left:0; top:0;
 		width:calc(7em - 10px); height:100%; padding:0.3em 10px; text-align:left; color:var(--color-tone-900); font-weight:500; background:var(--color-tone-100); }
 	.table-block tbody td > div { margin:0 !important; width:100%; }
+	.table-block.table.program col { width:100% !important; }	
 	.table-block.table.program tbody td.link { padding:0; padding-left:calc(7em - 10px); }
 	.table-block.table.program tbody td.link a { flex:1; padding:0.3em 0; }	
-	.table-block.table.crime_scene col,
-	.table-block.table.midnight_horror col { width:100% !important; }	
 }
 
 /* PC 화면에서는 모바일 정렬 셀렉트 박스 숨김 */
@@ -186,12 +195,9 @@ a:hover { color:var(--color-primary); }
 
 .keyword-filter-wrap,
 .keyword-filter-wrap #more-keywords { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
-.keyword-tag { font-size: 0.85em; font-weight: 500; transition: all 0.2s ease; border: 1px solid var(--color-tone-300); cursor: pointer; }
-.keyword-tag:hover { background-color: var(--color-inverse) !important; color: #fff !important; border-color: var(--color-inverse); }
-.crime_scene .keyword-tag { font-size: 1em; }
-@media screen and (max-width: 768px) {
-	.keyword-tag { font-size: 0.9em; }
-}
+.keyword-tag.badge { transition: all 0.2s ease; cursor: pointer; }
+.keyword-tag.badge.bg-light { border:1px solid var(--color-tone-200); }
+.keyword-tag.badge.bg-light:hover { border-color:var(--color-tone-500); }
 
 /* tab */
 .tab-title { margin-bottom:var(--mg-sec-mo); }

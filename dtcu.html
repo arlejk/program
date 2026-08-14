@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<title>DTCU Episode Database</title>
+	<meta property="og:url" content="https://arlejk.github.io/program/">
+	<meta property="og:title" content="DTCU Episode Database">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="대탈출 및 여고추리반 DTCU 에피소드, 회차, 장소, 성공여부, 연관 세계관/NPC 정보">	
+	<!-- Required -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>	
+	<!-- FontAwesome Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Custom -->
+	<link href="style.css" rel="stylesheet">
+	<script src="script_common.js"></script>
+	<script src="script_dtcu.js"></script>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="db-nav-bar" aria-label="Database Navigation">
+			<div class="inner">
+				<!-- 모바일용 햄버거 버튼 -->
+				<button type="button" class="db-nav-toggle" id="dbNavToggle" aria-label="메뉴 열기/닫기">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+
+				<div class="db-nav-group" id="dbNavGroup">
+					<a href="index.html" class="db-nav-link">
+						<i class="fa-solid fa-tv"></i> 두뇌 추리 서바이벌
+					</a>
+					<a href="crime_scene.html" class="db-nav-link">
+						<i class="fa-solid fa-magnifying-glass"></i> 크라임씬
+					</a>
+					<a href="dtcu.html" class="db-nav-link active">
+						<i class="fa-solid fa-key"></i> 대탈출 & 여고추리반
+					</a>
+					<a href="midnight_horror.html" class="db-nav-link">
+						<i class="fa-solid fa-ghost"></i> 심야괴담회
+					</a>					
+				</div>
+			</div>
+		</nav>	
+	</header>
+	<div class="publish_worksheet program dtcu">
+		<!-- 헤더 영역 -->
+		<section class="head">
+			<div class="inner">
+				<hgroup>
+					<h3>DTCU(대탈출 유니버스) Database</h3>
+					<h2>대탈출 & 여고추리반 회차별 에피소드 및 세계관 정보</h2>
+				</hgroup>
+				<dl>
+					<dt>Last Update</dt>
+					<dd>2026-08-13</dd>					
+					<dt>Note</dt>
+					<dd>
+						상단 탭을 통해 <strong>대탈출 시리즈</strong>와 <strong>여고추리반 시리즈</strong>를 전환하여 조회할 수 있습니다.
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- 본문 테이블 영역 -->
+		<section class="body">
+			<div class="inner">
+
+				<!-- 세계관 필터 영역 (JS가 자동으로 채움) -->
+				<div class="keyword-filter-wrap worldview-filter-wrap mb-3"></div>
+
+				<!-- 멤버 필터 영역 (JS가 자동으로 채움) -->
+				<div class="keyword-filter-wrap member-filter-wrap mb-3"></div>
+
+				<table class="table table-bordered table-block program dtcu">
+					<colgroup>
+						<col class="col-01">
+						<col class="col-02">
+						<col class="col-03">
+						<col class="col-04">
+						<col class="col-05">
+						<col class="col-06">
+						<col class="col-07">
+						<col class="col-08">
+						<col class="col-09">
+					</colgroup>
+					<thead class="table-light">
+						<tr>
+							<th scope="col" class="center">시즌</th>
+							<th scope="col" class="center">방영년도</th>
+							<th scope="col" class="center">스트리밍</th>
+							<th scope="col" class="center">에피소드</th>
+							<th scope="col" class="center">탈출/해결</th>
+							<th scope="col" class="center">멤버</th>
+							<th scope="col" class="center">세계관/NPC</th>
+							<th scope="col" class="center">키워드</th>
+							<th scope="col" class="center">비고</th>
+						</tr>
+					</thead>
+					<tbody id="tbody-dtcu">
+						<!-- JavaScript 동적 출력 영역 -->
+					</tbody>
+				</table>
+
+			</div>		
+		</section>
+
+		<!-- 푸터 영역 -->
+		<section class="foot">
+			<div class="inner">
+				<small>© DTCU(대탈출 유니버스) Fan Database. Published by Joanne.</small>
+			</div>		
+		</section>
+	</div>
+</body>
+</html>

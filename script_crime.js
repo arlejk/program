@@ -911,7 +911,7 @@ function renderKeywordButtons() {
 
     const $wrap = $('.keyword-filter-wrap');
     $wrap.empty();
-    $wrap.append('<button class="btn btn-secondary btn-keyword active" data-keyword="all">전체보기</button> ');
+    $wrap.append('<button class="btn btn-secondary btn-keyword active" data-keyword="all">출연진 전체보기</button> ');
 
     let moreHtml = '<span id="more-keywords" style="display: none;">';
     let hasMore = false;
