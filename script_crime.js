@@ -943,11 +943,11 @@ function renderTable(containerId, list) {
 
     // 1) 시즌 우선순위 정의
     const seasonOrder = {
-        "크라임씬 제로": 1,
-        "크라임씬 리턴즈": 2,
+        "크라임씬 제로": 5,
+        "크라임씬 리턴즈": 4,
         "크라임씬 3": 3,
-        "크라임씬 2": 4,
-        "크라임씬 1": 5
+        "크라임씬 2": 2,
+        "크라임씬 1": 1
     };
 
     // 2) 시즌 순 ➔ epNum 숫자 순 정렬
@@ -980,7 +980,8 @@ function renderTable(containerId, list) {
     }
 
     if (filteredList.length === 0) {
-        $tbody.append('<tr><td colspan="8" class="center text-muted py-4">해당 출연진의 회차 정보가 없습니다.</td></tr>');
+        // 방영년도 열이 추가되었으므로 colspan을 8에서 9로 변경했습니다.
+        $tbody.append('<tr><td colspan="9" class="center text-muted py-4">해당 출연진의 회차 정보가 없습니다.</td></tr>');
         return;
     }
 
@@ -1042,15 +1043,19 @@ function renderTable(containerId, list) {
 
         const trClass = item.rowClass ? ` class="${item.rowClass}"` : '';
 
+        // [수정 사항]
+        // 1. <td data-label="방영년도"> 추가
+        // 2. 검색 결과 없을 때 colspan 8 -> 9 수정
         const trHtml = `
             <tr${trClass}>
-                <td data-label="시즌">${item.season}</td>
+                <td data-label="시즌" class="center">${item.season}</td>
+                <td data-label="방영년도" class="center">${item.year || '-'}</td>
                 <td data-label="스트리밍" class="center link">${ottHtml}</td>
                 <td data-label="에피소드">${epTitleHtml}</td>
-                <td data-label="피해자">${victimHtml}</td>
-                <td data-label="탐정/형사">${detectiveHtml}</td>
+                <td data-label="피해자" class="center">${victimHtml}</td>
+                <td data-label="탐정/형사" class="center">${detectiveHtml}</td>
                 <td data-label="용의자">${suspectsHtml}</td>
-                <td data-label="게스트">${guestsHtml}</td>
+                <td data-label="게스트" class="center">${guestsHtml}</td>
                 <td data-label="비고" class="td-note">${finalNoteHtml}</td>
             </tr>
         `;

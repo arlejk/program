@@ -120,7 +120,7 @@ a:hover { color:var(--color-primary); }
 .table thead th[data-sort].sort-desc::after { content: '\f0dd'; opacity: 1; }
 .table.program .link { width:auto; max-width:10em; padding: 0; }
 .table.crime_scene col.col-01 { width:6em; } /* 시즌 */
-.table.crime_scene col.col-02 {  } /* 방영년도 */
+.table.crime_scene col.col-02 { width:5em; } /* 방영년도 */
 .table.crime_scene col.col-03 {  } /* 방송사 */
 .table.crime_scene col.col-04 { width:6em; } /* 스트리밍 */
 .table.crime_scene col.col-05 { width:12%; } /* 에피소드 */

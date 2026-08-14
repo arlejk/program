@@ -708,12 +708,15 @@ $(function () {
 	$(document).on('click', '.btn-keyword-member', function () {
 		currentMember = $(this).data('keyword');
 
-		$('.btn-keyword-member').removeClass('active btn-secondary btn-primary').addClass('btn-outline-primary');
-		if (currentMember === 'all') {
-			$(this).addClass('active btn-secondary').removeClass('btn-outline-primary');
-		} else {
-			$(this).addClass('active btn-primary').removeClass('btn-outline-primary');
-		}
+		// 1. 모든 버튼의 활성화/색상 클래스 초기화 (기본 상태: btn-outline-dark)
+		$('.btn-keyword-member')
+			.removeClass('active btn-secondary')
+			.addClass('btn-outline-dark');
+
+		// 2. 현재 클릭된 버튼만 active 및 btn-secondary 적용
+		$(this)
+			.addClass('active btn-secondary')
+			.removeClass('btn-outline-dark');
 
 		renderTable('#tbody-dtcu', dtcuData);
 	});
