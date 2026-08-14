@@ -139,7 +139,8 @@ const dtcuData = [
 		worldview: "귀신 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["계수상", "태양교", "구하리"],
-		note: "주장: 유병재 / 폐병원 비디오(극중극) 등장"
+		note: "주장: 유병재 / 폐병원 비디오(극중극) 등장",
+		rowClass: "table-primary"
 	},
 
 	// ------------------------------------------
@@ -195,7 +196,8 @@ const dtcuData = [
 		worldview: "좀비 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["PDS 바이러스", "이병실 박사", "최희망"],
-		note: "탈출러 일부 탈출 실패 / PDS 바이러스 명시"
+		note: "탈출러 일부 탈출 실패 / PDS 바이러스 명시",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -221,7 +223,8 @@ const dtcuData = [
 		worldview: "독립",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오", "하석진"],
 		keywords: ["박강두", "하석진", "판주시", "평행세계"],
-		note: "하석진 출연 / '판주시' 가상 지명 첫 등장"
+		note: "하석진 출연 / '판주시' 가상 지명 첫 등장",
+		rowClass: "table-primary"
 	},
 
 	// ------------------------------------------
@@ -251,7 +254,8 @@ const dtcuData = [
 		worldview: "좀비 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["PDS 완치자", "감금", "공장 탈출"],
-		note: "조마테오 정신병원 환자복 착용 완치자 등장"
+		note: "조마테오 정신병원 환자복 착용 완치자 등장",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -264,7 +268,8 @@ const dtcuData = [
 		worldview: "귀신 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["천해명 유골", "암전", "강령술"],
-		note: "천해명 서사 및 조마테오 원장 교신 연계"
+		note: "천해명 서사 및 조마테오 원장 교신 연계",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -277,7 +282,8 @@ const dtcuData = [
 		worldview: "독립",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["박강두", "연쇄살인", "수사 일지"],
-		note: "경찰청 수사 의뢰 계기 (크레이지 하우스 연결)"
+		note: "경찰청 수사 의뢰 계기 (크레이지 하우스 연결)",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -303,7 +309,8 @@ const dtcuData = [
 		worldview: "타임머신 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["독립운동", "조송화", "토끼풀"],
-		note: "조마테오/하석진 조상 NPC 등장 (시간대 교차)"
+		note: "조마테오/하석진 조상 NPC 등장 (시간대 교차)",
+		rowClass: "table-primary"
 	},
 
 	// ------------------------------------------
@@ -333,7 +340,8 @@ const dtcuData = [
 		worldview: "독립",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["안드로이드", "슈퍼 졸리G", "모의 테스트"],
-		note: "SSA 연관 약물 재등장 / AI 안드로이드 실험실"
+		note: "SSA 연관 약물 재등장 / AI 안드로이드 실험실",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -346,7 +354,8 @@ const dtcuData = [
 		worldview: "좀비 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["PDS 변종", "교도소", "탈출 실패"],
-		note: "전원 탈출 실패 / 무간교도소 계보 연장"
+		note: "전원 탈출 실패 / 무간교도소 계보 연장",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -359,7 +368,8 @@ const dtcuData = [
 		worldview: "독립",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["오연두", "무의식", "판주시", "악마의 성"],
-		note: "'판주시' 지명 공유 / 아차랜드 연계 경찰청 의뢰"
+		note: "'판주시' 지명 공유 / 아차랜드 연계 경찰청 의뢰",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",
@@ -385,7 +395,8 @@ const dtcuData = [
 		worldview: "SSA 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["신유희", "백사회", "천수호"],
-		note: "부암동 저택의 백백교 신교단 및 SSA 개입 확인"
+		note: "부암동 저택의 백백교 신교단 및 SSA 개입 확인",
+		rowClass: "table-primary"
 	},
 
 	// ------------------------------------------
@@ -663,8 +674,11 @@ function renderTable(containerId, list) {
 			? item.keywords.map(kw => renderKeywordBadge(kw)).join('')
 			: '-';
 
+		// 8) 행(row) 클래스 처리 (추천 에피소드 배경색 등)
+		const trClass = item.rowClass ? ` class="${item.rowClass}"` : '';
+
 		const trHtml = `
-			<tr>
+			<tr${trClass}>
 				<td data-label="시즌" class="center">${seasonHtml}</td>
 				<td data-label="방영년도" class="center">${item.year}</td>
 				<td data-label="스트리밍" class="center link">${ottHtml}</td>
