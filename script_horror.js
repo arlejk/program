@@ -1922,6 +1922,45 @@ window.programData = {
 				{ storyteller: "정수영", title: "무연", link: "https://youtu.be/AJ-K6lXIOjM", candles: 33, isWin: false, isFullCandles: false },
 				{ storyteller: "김아영", title: "3시 33분", link: "https://youtu.be/owgmbtc8wik", candles: 25, isWin: false, isFullCandles: false }
 			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "9",
+			guests: ["최지수"],
+			stories: [
+				{ storyteller: "김아영", title: "한밤의 빨래", link: "https://youtu.be/BSc8eze4CT0", candles: 26, isWin: false, isFullCandles: false },
+				{ storyteller: "김호영", title: "세 모녀", link: "https://youtu.be/np-2fqN_9IA", candles: 40, isWin: true, isFullCandles: false },
+				{ storyteller: "최지수", title: "도둑비", link: "https://youtu.be/6R8c4l3PWr4", candles: 32, isWin: false, isFullCandles: false }
+			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "10",
+			guests: ["효연"],
+			stories: [
+				{ storyteller: "김아영", title: "올가미", link: "https://youtu.be/dsFQpSwkeOQ", candles: 33, isWin: false, isFullCandles: false },
+				{ storyteller: "김호영", title: "문지기", link: "https://youtu.be/x4vyK6waC2U", candles: 37, isWin: false, isFullCandles: false },
+				{ storyteller: "효연", title: "옥바라지", link: "https://youtu.be/jEX0sxC1gh4", candles: 42, isWin: true, isFullCandles: false }
+			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "11",
+			guests: ["김선영"],
+			stories: [
+				{ storyteller: "김호영", title: "고래불", link: "", candles: 38, isWin: false, isFullCandles: false },
+				{ storyteller: "김선영", title: "미끼", link: "", candles: 41, isWin: true, isFullCandles: false },
+				{ storyteller: "김아영", title: "나랑 놀자", link: "", candles: 26, isWin: false, isFullCandles: false }
+			]
 		}
     ]
 };
