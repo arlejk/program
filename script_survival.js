@@ -697,15 +697,15 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "사상검증구역: 더 커뮤니티 시즌 2",
-			link: "",
-			year: "2026 예정",
+			name: "더 커뮤니티 2: 보이지 않는 손",
+			link: "https://m.kinolights.com/season/154328",
+			year: "2026",
 			broadcaster: "WAVVE",
-			ottName: "",
-			ottLink: "",
+			ottName: "WAVVE",
+			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000192",
 			keywords: ["서바이벌", "사회실험", "정치", "마피아 게임"],
 			note: "",
-			rowClass: "table-primary"
+			rowClass: ""
 		},
 		{
 			name: "미스터리 수사단 시즌 1",
