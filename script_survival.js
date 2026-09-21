@@ -253,7 +253,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000587159",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: "",
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -264,7 +264,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000821660",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: '<a href="https://www.tving.com/contents/P000900239" target="_blank">감독판 <i class="xi-external-link"></i></a>',
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P000900239" target="_blank">감독판 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -275,7 +275,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001164763",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: '<a href="https://www.tving.com/contents/P001254453" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001254453" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -286,7 +286,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001490952",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: '<a href="https://www.tving.com/contents/P001516207" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001516207" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -297,7 +297,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001772883",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: "",
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -385,7 +385,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001433241",
 			keywords: ["어드벤처", "추리", "미스터리", "드라마"],
-			note: "",
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -396,7 +396,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001537909",
 			keywords: ["어드벤처", "추리", "미스터리", "드라마"],
-			note: '<a href="https://www.tving.com/contents/P001563040" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001563040" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -407,7 +407,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001754831",
 			keywords: ["어드벤처", "추리", "미스터리", "드라마"],
-			note: '<a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
+			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
