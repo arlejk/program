@@ -1957,9 +1957,48 @@ window.programData = {
 			epNum: "11",
 			guests: ["김선영"],
 			stories: [
-				{ storyteller: "김호영", title: "고래불", link: "", candles: 38, isWin: false, isFullCandles: false },
-				{ storyteller: "김선영", title: "미끼", link: "", candles: 41, isWin: true, isFullCandles: false },
-				{ storyteller: "김아영", title: "나랑 놀자", link: "", candles: 26, isWin: false, isFullCandles: false }
+				{ storyteller: "김호영", title: "고래불", link: "https://youtu.be/jJV9A-5w2CM", candles: 38, isWin: false, isFullCandles: false },
+				{ storyteller: "김선영", title: "미끼", link: "https://youtu.be/tuhynTWPvrQ", candles: 41, isWin: true, isFullCandles: false },
+				{ storyteller: "김아영", title: "나랑 놀자", link: "https://youtu.be/U7GWtTntzS8", candles: 26, isWin: false, isFullCandles: false }
+			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "12",
+			guests: ["남권아"],
+			stories: [
+				{ storyteller: "김아영", title: "기억의 밤", link: "https://youtu.be/atVsjMTb4k0", candles: 37, isWin: false, isFullCandles: false },
+				{ storyteller: "김호영", title: "혼담", link: "https://youtu.be/eBmuczI4bIE", candles: 22, isWin: false, isFullCandles: false },
+				{ storyteller: "남권아", title: "문턱", link: "https://youtu.be/tZJ7XP9gslM", candles: 41, isWin: true, isFullCandles: false }
+			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "13",
+			guests: ["송옥숙"],
+			stories: [
+				{ storyteller: "김아영", title: "거머리", link: "", candles: null, isWin: false, isFullCandles: false },
+				{ storyteller: "송옥숙", title: "보약", link: "", candles: 42, isWin: true, isFullCandles: false },
+				{ storyteller: "김호영", title: "야간훈련", link: "", candles: null, isWin: false, isFullCandles: false }
+			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "14",
+			guests: ["산(ATEEZ)"],
+			stories: [
+				{ storyteller: "", title: "노숙자 라면 값", link: "", candles: null, isWin: false, isFullCandles: false },
+				{ storyteller: "", title: "수산물 공장", link: "", candles: null, isWin: false, isFullCandles: false },
+				{ storyteller: "", title: "말할 수 없는 비밀", link: "", candles: null, isWin: false, isFullCandles: false }
 			]
 		}
     ]
@@ -2000,7 +2039,7 @@ function getOttHtml(seasonName, otts) {
     const seasonMap = ottLinkMap[seasonName];
     return otts.map(ottName => {
         const link = (seasonMap && seasonMap[ottName]) ? seasonMap[ottName] : '#';
-        return `<a href="${link}" target="_blank" class="mr-1">${ottName} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`;
+        return `<a href="${link}" target="_blank" class="mr-1">${ottName} <i class="xi-external-link"></i></a>`;
     }).join(' ');
 }
 
@@ -2025,15 +2064,15 @@ function getResultBadgeHtml(story) {
 function getStoryTitleHtml(story) {
     if (Array.isArray(story.links) && story.links.length > 0) {
         if (story.links.length === 1) {
-            return `<a href="${story.links[0]}" target="_blank" class="story-link">${story.title} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`;
+            return `<a href="${story.links[0]}" target="_blank" class="story-link">${story.title} <i class="xi-external-link"></i></a>`;
         }
         const linkTags = story.links.map((url, idx) => 
-            `<a href="${url}" target="_blank" class="story-link">#${idx + 1} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`
+            `<a href="${url}" target="_blank" class="story-link">#${idx + 1} <i class="xi-external-link"></i></a>`
         ).join(' ');
         return `${story.title} (${linkTags})`;
     } 
     else if (story.link) {
-        return `<a href="${story.link}" target="_blank" class="story-link">${story.title} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`;
+        return `<a href="${story.link}" target="_blank" class="story-link">${story.title} <i class="xi-external-link"></i></a>`;
     } 
     else {
         return story.title;

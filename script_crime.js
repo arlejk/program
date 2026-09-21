@@ -989,7 +989,7 @@ function renderTable(containerId, list) {
         // 에피소드 링크 처리
         const epContent = `<strong>EP.${item.epNum}</strong> ${item.epTitle}`;
         const epTitleHtml = item.link 
-            ? `<a href="${item.link}" target="_blank" class="ep-link">${epContent} <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>` 
+            ? `<a href="${item.link}" target="_blank" class="ep-link">${epContent} <i class="xi-external-link"></i></a>` 
             : epContent;
 
         // 스트리밍 링크 처리

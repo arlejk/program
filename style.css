@@ -56,9 +56,9 @@ body { font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -moz-os
 	--color-trans-wh : rgba(255,255,255,0.9);
 	--color-trans-bk : rgba(0,0,0,0.5);
 
-	--font-title: 'Montserrat', 'Spoqa Han Sans Neo', 'Noto Sans KR', sans-serif;
+	--font-title: 'Montserrat', 'Spoqa Han Sans Neo', 'Pretendard', 'Noto Sans KR', 'AppleGothic', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, sans-serif;
 	--font-text: 'Roboto', 'Pretendard', 'Noto Sans KR', 'AppleGothic', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, sans-serif;
-	--font-icon : 'Font Awesome 7 free', 'xeicon', 'Pretendard', sans-serif;
+	--font-icon : 'Font Awesome 7 free', 'xeicon', 'Pretendard', 'Noto Sans KR', 'AppleGothic', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, sans-serif;
 
 	--transition-slow : all .3s ease-in-out;
 	--transition-fast : all .1s ease-in-out;

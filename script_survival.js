@@ -75,7 +75,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539540",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
@@ -86,7 +86,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539640",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
@@ -97,7 +97,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539639",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
@@ -108,7 +108,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001751684",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -119,7 +119,7 @@ const programData = {
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81950435",
 			keywords: ["추리", "마피아 게임", "롤플레잉"],
-			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -264,7 +264,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000821660",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: '<a href="https://www.tving.com/contents/P000900239" target="_blank">감독판 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://www.tving.com/contents/P000900239" target="_blank">감독판 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -275,7 +275,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001164763",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: '<a href="https://www.tving.com/contents/P001254453" target="_blank">스페셜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://www.tving.com/contents/P001254453" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -286,7 +286,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001490952",
 			keywords: ["방탈출", "어드벤처", "옴니버스"],
-			note: '<a href="https://www.tving.com/contents/P001516207" target="_blank">스페셜 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://www.tving.com/contents/P001516207" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -396,7 +396,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001537909",
 			keywords: ["어드벤처", "추리", "미스터리", "드라마"],
-			note: '<a href="https://www.tving.com/contents/P001563040" target="_blank">코멘터리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://www.tving.com/contents/P001563040" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -407,7 +407,7 @@ const programData = {
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001754831",
 			keywords: ["어드벤처", "추리", "미스터리", "드라마"],
-			note: '<a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -506,7 +506,7 @@ const programData = {
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000089&page=1",
 			keywords: ["서바이벌", "정치"],
-			note: '<a href="https://www.ichannela.com/program/detail/program_detail_renew.do?cateCode=0500910001" target="_blank">채널A 홈페이지에서 무료 시청 가능 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://www.ichannela.com/program/detail/program_detail_renew.do?cateCode=0500910001" target="_blank">채널A 홈페이지에서 무료 시청 가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -693,7 +693,7 @@ const programData = {
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000124",
 			keywords: ["서바이벌", "사회실험", "정치", "마피아 게임"],
-			note: '<a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>',
+			note: '<a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -1034,7 +1034,7 @@ function renderTable(containerId, list) {
 
 		let ottHtml = ' ';
 		if (item.ottName && item.ottLink) {
-			ottHtml = `<a href="${item.ottLink}" target="_blank">${item.ottName} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>`;
+			ottHtml = `<a href="${item.ottLink}" target="_blank">${item.ottName} <i class="xi-external-link"></i></a>`;
 		}
 
 		let keywordsHtml = ' ';

@@ -547,7 +547,7 @@ function renderWorldviewBadge(worldview) {
 	// worldviewLinkMap에 유튜브 URL이 존재하면 옆에 <a> 태그 아이콘 추가
 	const link = worldviewLinkMap[worldview];
 	if (link) {
-		const iconLinkHtml = ` <a href="${link}" target="_blank" class="ms-1 align-middle text-secondary" title="${worldview} 재생목록 바로가기"><i class="fa-solid fa-arrow-up-right-from-square small"></i></a>`;
+		const iconLinkHtml = ` <a href="${link}" target="_blank" class="ms-1 align-middle text-secondary" title="${worldview} 재생목록 바로가기"><i class="xi-external-link"></i></a>`;
 		return badgeHtml + iconLinkHtml;
 	}
 
