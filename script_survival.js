@@ -806,7 +806,6 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
-		/*
 		{
 			name: "베팅 온 팩트",
 			link: "https://m.kinolights.com/title/151135",
@@ -818,7 +817,6 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
-		*/
 		{
 			name: "머더클럽",
 			link: "https://m.kinolights.com/season/153749",
@@ -830,22 +828,35 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
+		/*
+		{
+			name: "전설의 수사",
+			link: "https://m.kinolights.com/season/154945",
+			year: "2026",
+			broadcaster: "WAVVE",
+			ottName: "WAVVE",
+			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000055",
+			keywords: ["추리", "두뇌", "어드벤처"],
+			note: "",
+			rowClass: ""
+		},
+		*/
+		{
+			name: "술래게임",
+			link: "https://m.kinolights.com/season/154104",
+			year: "2026 예정",
+			broadcaster: "Disney+",
+			ottName: "",
+			ottLink: "",
+			keywords: ["서바이벌", "피지컬", "마피아게임"],
+			note: "",
+			rowClass: "table-primary"
+		},
 		{
 			name: "배신자들 게임",
 			link: "",
 			year: "2026 예정",
 			broadcaster: "TVING",
-			ottName: "",
-			ottLink: "",
-			keywords: [],
-			note: "",
-			rowClass: "table-primary"
-		},
-		{
-			name: "술래게임",
-			link: "",
-			year: "2026 예정",
-			broadcaster: "Disney+",
 			ottName: "",
 			ottLink: "",
 			keywords: [],

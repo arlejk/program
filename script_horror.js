@@ -1983,9 +1983,9 @@ window.programData = {
 			epNum: "13",
 			guests: ["송옥숙"],
 			stories: [
-				{ storyteller: "김아영", title: "거머리", link: "", candles: null, isWin: false, isFullCandles: false },
-				{ storyteller: "송옥숙", title: "보약", link: "", candles: 42, isWin: true, isFullCandles: false },
-				{ storyteller: "김호영", title: "야간훈련", link: "", candles: null, isWin: false, isFullCandles: false }
+				{ storyteller: "김아영", title: "거머리", link: "https://youtu.be/sNMCqvzB50U", candles: 30, isWin: false, isFullCandles: false },
+				{ storyteller: "송옥숙", title: "보약", link: "https://youtu.be/YhDmB3D8o6s", candles: 42, isWin: true, isFullCandles: false },
+				{ storyteller: "김호영", title: "야간훈련", link: "https://youtu.be/eYJj9eSdGBc", candles: 26, isWin: false, isFullCandles: false }
 			]
 		},
 		{
@@ -1996,9 +1996,9 @@ window.programData = {
 			epNum: "14",
 			guests: ["산(ATEEZ)"],
 			stories: [
-				{ storyteller: "", title: "노숙자 라면 값", link: "", candles: null, isWin: false, isFullCandles: false },
-				{ storyteller: "", title: "수산물 공장", link: "", candles: null, isWin: false, isFullCandles: false },
-				{ storyteller: "", title: "말할 수 없는 비밀", link: "", candles: null, isWin: false, isFullCandles: false }
+				{ storyteller: "김아영", title: "노숙자 라면 값", link: "https://youtu.be/4bhMJPHZVSI", candles: 30, isWin: false, isFullCandles: false },
+				{ storyteller: "김호영", title: "수산물 공장", link: "https://youtu.be/3oLymhkGUxk", candles: 44, isWin: true, isFullCandles: true },
+				{ storyteller: "산", title: "말할 수 없는 비밀", link: "https://youtu.be/qLgMDaid3ho", candles: 39, isWin: false, isFullCandles: false }
 			]
 		}
     ]
