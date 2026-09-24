@@ -74,7 +74,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539540",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
@@ -85,7 +85,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539640",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
@@ -96,7 +96,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539639",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
@@ -107,7 +107,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001751684",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -118,7 +118,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81950435",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -129,7 +129,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: "",
 			rowClass: "table-primary"
 		},
@@ -318,7 +318,7 @@ const programData = {
 			broadcaster: "XtvN, tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000940242",
-			keywords: ["퍼즐", "두뇌", "추리", "마피아 게임"],
+			keywords: ["퍼즐", "두뇌", "추리", "마피아게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -329,7 +329,7 @@ const programData = {
 			broadcaster: "유튜브 채널 십오야",
 			ottName: "유튜브 채널 십오야",
 			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
-			keywords: ["추리", "마피아 게임"],
+			keywords: ["추리", "마피아게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -362,7 +362,7 @@ const programData = {
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["마피아 게임", "서바이벌", "정치"],
+			keywords: ["마피아게임", "서바이벌", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -373,7 +373,7 @@ const programData = {
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["마피아 게임", "서바이벌", "정치", "피지컬"],
+			keywords: ["마피아게임", "서바이벌", "정치", "피지컬"],
 			note: "",
 			rowClass: ""
 		},
@@ -472,7 +472,7 @@ const programData = {
 			broadcaster: "SBS",
 			ottName: "SBS",
 			ottLink: "https://programs.sbs.co.kr/culture/genreismafia/vods/71253",
-			keywords: ["서바이벌", "마피아 게임"],
+			keywords: ["서바이벌", "마피아게임"],
 			note: "SBS 홈페이지에서 무료 시청 가능",
 			rowClass: ""
 		},
@@ -560,7 +560,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=F5701_F57000000001",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: "",
 			rowClass: ""
 		},
@@ -692,7 +692,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000124",
-			keywords: ["서바이벌", "사회실험", "정치", "마피아 게임"],
+			keywords: ["서바이벌", "사회실험", "정치", "마피아게임"],
 			note: '<a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -703,7 +703,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000192",
-			keywords: ["서바이벌", "사회실험", "정치", "마피아 게임"],
+			keywords: ["서바이벌", "사회실험", "정치", "마피아게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -774,6 +774,17 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "더 로직",
+			link: "https://m.kinolights.com/season/149628",
+			year: "2026",
+			broadcaster: "WAVVE",
+			ottName: "WAVVE",
+			ottLink: "https://www.wavve.com/player/vod?programid=K02_T2025-0548",
+			keywords: ["서바이벌", "두뇌", "정치", "사회실험"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "싱크로 게임",
 			link: "https://m.kinolights.com/title/150147",
 			year: "2026",
@@ -813,7 +824,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000187",
-			keywords: ["서바이벌", "정치", "마피아 게임"],
+			keywords: ["서바이벌", "정치", "마피아게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -824,11 +835,10 @@ const programData = {
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-02b192fc-8bd3-498e-ac64-65245666fc39",
-			keywords: ["추리", "마피아 게임", "롤플레잉"],
+			keywords: ["추리", "마피아게임", "롤플레잉"],
 			note: "",
 			rowClass: ""
 		},
-		/*
 		{
 			name: "전설의 수사",
 			link: "https://m.kinolights.com/season/154945",
@@ -840,7 +850,6 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
-		*/
 		{
 			name: "술래게임",
 			link: "https://m.kinolights.com/season/154104",
