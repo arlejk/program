@@ -1104,7 +1104,7 @@ function renderKeywordButtons() {
 				class="btn btn-outline-dark btn-keyword"
 				data-keyword="${kw}"
 				data-bs-toggle="tooltip"
-				data-bs-placement="top"
+				data-bs-placement="bottom"
 				data-bs-title="${description}">
 				#${kw}
 			</button>
