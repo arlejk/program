@@ -8,7 +8,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000106439",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -19,7 +19,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000125936",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "6화 스트리밍 불가",
 			rowClass: ""
 		},
@@ -30,7 +30,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "",
 			ottLink: "",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
@@ -41,7 +41,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000170199",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -74,7 +74,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539540",
-			keywords: ["추리", "마피아게임", "롤플레잉", "미스터리", "옴니버스"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
@@ -85,7 +85,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539640",
-			keywords: ["추리", "마피아게임", "롤플레잉", "미스터리", "옴니버스"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
@@ -96,7 +96,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539639",
-			keywords: ["추리", "마피아게임", "롤플레잉", "미스터리", "옴니버스"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
@@ -107,7 +107,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001751684",
-			keywords: ["추리", "마피아게임", "롤플레잉", "미스터리", "옴니버스"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -118,7 +118,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81950435",
-			keywords: ["추리", "마피아게임", "롤플레잉", "미스터리", "옴니버스"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -129,7 +129,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
-			keywords: ["추리", "마피아게임", "롤플레잉", "미스터리", "옴니버스"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
 			note: "",
 			rowClass: "table-primary"
 		},
@@ -186,7 +186,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "JTBC",
 			ottLink: "https://tv.jtbc.co.kr/replay/pr10010396/pm10033108",
-			keywords: ["서바이벌", "두뇌", "전략", "방탈출", "퍼즐"],
+			keywords: ["서바이벌", "두뇌", "전략", "퍼즐", "방탈출"],
 			note: "U+모바일 TV에서도 시청 가능",
 			rowClass: ""
 		},
@@ -197,7 +197,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000328018",
-			keywords: ["서바이벌", "정치", "두뇌", "피지컬", "협동", "사회실험"],
+			keywords: ["서바이벌", "피지컬", "정치", "사회실험", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -208,7 +208,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000395031",
-			keywords: ["서바이벌", "정치", "두뇌", "피지컬", "협동", "사회실험"],
+			keywords: ["서바이벌", "피지컬", "정치", "사회실험", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -219,7 +219,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
-			keywords: ["드라마", "미스터리", "게임", "추리", "롤플레잉", "협동"],
+			keywords: ["게임", "협동", "추리", "미스터리", "롤플레잉", "드라마"],
 			note: "",
 			rowClass: ""
 		},
@@ -230,7 +230,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
-			keywords: ["드라마", "미스터리", "게임", "추리", "롤플레잉", "협동"],
+			keywords: ["게임", "협동", "추리", "미스터리", "롤플레잉", "드라마"],
 			note: "",
 			rowClass: ""
 		},
@@ -241,7 +241,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
-			keywords: ["드라마", "미스터리", "게임", "추리", "롤플레잉", "협동"],
+			keywords: ["게임", "협동", "추리", "미스터리", "롤플레잉", "드라마"],
 			note: "",
 			rowClass: ""
 		},
@@ -252,7 +252,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000587159",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "미스터리", "퍼즐", "협동"],
+			keywords: ["협동", "퍼즐", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -263,7 +263,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000821660",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "미스터리", "퍼즐", "협동"],
+			keywords: ["협동", "퍼즐", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P000900239" target="_blank">감독판 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -274,7 +274,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001164763",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "미스터리", "퍼즐", "협동"],
+			keywords: ["협동", "퍼즐", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001254453" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -285,7 +285,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001490952",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "미스터리", "퍼즐", "협동"],
+			keywords: ["협동", "퍼즐", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001516207" target="_blank">스페셜 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -296,7 +296,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001772883",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "미스터리", "퍼즐", "협동"],
+			keywords: ["협동", "퍼즐", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -307,7 +307,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "",
 			ottLink: "",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "미스터리", "퍼즐", "협동"],
+			keywords: ["협동", "퍼즐", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: "",
 			rowClass: "table-primary"
 		},
@@ -318,7 +318,7 @@ const programData = {
 			broadcaster: "XtvN, tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000940242",
-			keywords: ["퍼즐", "두뇌", "추리", "퀴즈"],
+			keywords: ["두뇌", "퍼즐", "퀴즈", "추리"],
 			note: "",
 			rowClass: ""
 		},
@@ -329,7 +329,7 @@ const programData = {
 			broadcaster: "유튜브 채널 십오야",
 			ottName: "유튜브 채널 십오야",
 			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
-			keywords: ["추리", "미스터리", "롤플레잉", "마피아게임"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉"],
 			note: "",
 			rowClass: ""
 		},
@@ -340,7 +340,7 @@ const programData = {
 			broadcaster: "iHQ",
 			ottName: "",
 			ottLink: "",
-			keywords: ["서바이벌", "생존", "미스터리", "추리", "게임"],
+			keywords: ["서바이벌", "생존", "게임", "추리", "미스터리"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
@@ -351,7 +351,7 @@ const programData = {
 			broadcaster: "유튜브 진용진",
 			ottName: "유튜브 진용진",
 			ottLink: "https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC",
-			keywords: ["서바이벌", "정치", "전략", "심리전", "사회실험"],
+			keywords: ["서바이벌", "정치", "사회실험", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -362,7 +362,7 @@ const programData = {
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["마피아게임", "서바이벌", "정치", "추리", "심리전"],
+			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -373,7 +373,7 @@ const programData = {
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["마피아게임", "서바이벌", "정치", "추리", "심리전"],
+			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -384,7 +384,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001433241",
-			keywords: ["어드벤처", "추리", "미스터리", "드라마", "협동"],
+			keywords: ["협동", "추리", "미스터리", "어드벤처", "드라마"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -395,7 +395,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001537909",
-			keywords: ["어드벤처", "추리", "미스터리", "드라마", "협동"],
+			keywords: ["협동", "추리", "미스터리", "어드벤처", "드라마"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001563040" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -406,7 +406,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001754831",
-			keywords: ["어드벤처", "추리", "미스터리", "드라마", "협동"],
+			keywords: ["협동", "추리", "미스터리", "어드벤처", "드라마"],
 			note: '<a href="dtcu.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, <a href="https://www.tving.com/contents/P001757767" target="_blank">코멘터리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -428,7 +428,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000108",
-			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전", "피지컬"],
+			keywords: ["서바이벌", "피지컬", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -439,7 +439,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000149",
-			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전", "피지컬"],
+			keywords: ["서바이벌", "피지컬", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -450,7 +450,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000190",
-			keywords: ["서바이벌", "정치", "두뇌", "전략", "협동", "피지컬"],
+			keywords: ["서바이벌", "피지컬", "정치", "협동", "두뇌", "전략"],
 			note: "",
 			rowClass: ""
 		},
@@ -461,7 +461,7 @@ const programData = {
 			broadcaster: "카카오TV",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tlYey3V",
-			keywords: ["서바이벌", "정치", "생존", "피지컬"],
+			keywords: ["서바이벌", "생존", "피지컬", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -472,7 +472,7 @@ const programData = {
 			broadcaster: "SBS",
 			ottName: "SBS",
 			ottLink: "https://programs.sbs.co.kr/culture/genreismafia/vods/71253",
-			keywords: ["서바이벌", "마피아게임", "추리", "심리전"],
+			keywords: ["서바이벌", "추리", "마피아게임", "심리전"],
 			note: "SBS 홈페이지에서 무료 시청 가능",
 			rowClass: ""
 		},
@@ -483,7 +483,7 @@ const programData = {
 			broadcaster: "WATCHA",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tR2edNe",
-			keywords: ["추리", "어드벤처", "미스터리", "피지컬", "협동"],
+			keywords: ["피지컬", "협동", "추리", "미스터리", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -516,7 +516,7 @@ const programData = {
 			broadcaster: "유튜브 tvN D",
 			ottName: "유튜브 tvN D",
 			ottLink: "https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc",
-			keywords: ["서바이벌", "두뇌", "정치", "협동"],
+			keywords: ["서바이벌", "정치", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -527,7 +527,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000102",
-			keywords: ["정치", "서바이벌", "심리전"],
+			keywords: ["서바이벌", "정치", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -538,7 +538,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001623861",
-			keywords: ["서바이벌", "정치", "피지컬", "어드벤처"],
+			keywords: ["서바이벌", "피지컬", "정치", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -549,7 +549,7 @@ const programData = {
 			broadcaster: "유투브 피지컬갤러리",
 			ottName: "유투브 피지컬갤러리",
 			ottLink: "https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz",
-			keywords: ["서바이벌", "정치", "피지컬", "게임"],
+			keywords: ["서바이벌", "피지컬", "게임", "정치"],
 			note: "벌레 나옴 비위 조심",
 			rowClass: ""
 		},
@@ -571,7 +571,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001696917",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -582,7 +582,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001691160",
-			keywords: ["두뇌", "퍼즐", "퀴즈", "협동"],
+			keywords: ["협동", "두뇌", "퍼즐", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -593,7 +593,7 @@ const programData = {
 			broadcaster: "유튜브 긱블",
 			ottName: "유튜브 긱블",
 			ottLink: "https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo",
-			keywords: ["서바이벌", "두뇌", "퍼즐", "피지컬", "게임"],
+			keywords: ["서바이벌", "피지컬", "게임", "두뇌", "퍼즐"],
 			note: "",
 			rowClass: ""
 		},
@@ -604,7 +604,7 @@ const programData = {
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "두뇌", "협동"],
+			keywords: ["서바이벌", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -615,7 +615,7 @@ const programData = {
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "두뇌", "협동"],
+			keywords: ["서바이벌", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -626,7 +626,7 @@ const programData = {
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "두뇌", "협동"],
+			keywords: ["서바이벌", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -637,7 +637,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -648,7 +648,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -659,7 +659,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
-			keywords: ["서바이벌", "두뇌", "전략", "정치", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: "table-primary"
 		},
@@ -670,7 +670,7 @@ const programData = {
 			broadcaster: "유튜브 코다리찜",
 			ottName: "유튜브 코다리찜",
 			ottLink: "https://www.youtube.com/watch?v=97WtB7a4-9k&list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt&index=10",
-			keywords: ["방탈출", "어드벤처", "추리", "미스터리", "드라마"],
+			keywords: ["추리", "미스터리", "방탈출", "어드벤처", "드라마"],
 			note: "",
 			rowClass: ""
 		},
@@ -681,7 +681,7 @@ const programData = {
 			broadcaster: "U+모바일tv",
 			ottName: "U+모바일tv",
 			ottLink: "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&vod_type=vod&main_run=Y&backkey_finish=N&is_splash=N&review_yn=N&contents_id=M0124AV077PPV00&category_id=&series_num=1&series_category_id=E25VM&utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider&packageName=com.kinolights.kinolights",
-			keywords: ["서바이벌", "두뇌", "전략", "정치"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략"],
 			note: "웨이브, 왓챠에서도 시청가능",
 			rowClass: ""
 		},
@@ -692,7 +692,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000124",
-			keywords: ["서바이벌", "사회실험", "정치", "마피아게임"],
+			keywords: ["서바이벌", "정치", "사회실험", "마피아게임"],
 			note: '<a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -703,7 +703,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000192",
-			keywords: ["서바이벌", "사회실험", "정치", "마피아게임"],
+			keywords: ["서바이벌", "정치", "사회실험", "마피아게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -714,7 +714,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "추리", "미스터리", "협동"],
+			keywords: ["협동", "추리", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: "",
 			rowClass: ""
 		},
@@ -725,7 +725,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "추리", "미스터리", "협동"],
+			keywords: ["협동", "추리", "미스터리", "방탈출", "어드벤처", "옴니버스"],
 			note: "",
 			rowClass: ""
 		},
@@ -736,7 +736,7 @@ const programData = {
 			broadcaster: "유튜브 LG그룹",
 			ottName: "유튜브 LG그룹",
 			ottLink: "https://www.youtube.com/watch?v=tfy3EAFxmqY&list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "정치", "두뇌"],
 			note: "웨이브에서도 시청가능",
 			rowClass: ""
 		},
@@ -747,7 +747,7 @@ const programData = {
 			broadcaster: "아무거나보틀, WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000048",
-			keywords: ["서바이벌", "두뇌", "정치", "전략", "심리전"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "아무거나보틀 유튜브에서도 시청가능",
 			rowClass: ""
 		},
@@ -769,7 +769,7 @@ const programData = {
 			broadcaster: "유튜브 스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
 			ottLink: "https://www.youtube.com/@MINDZEROstudio/videos",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "정치", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -780,7 +780,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=K02_T2025-0548",
-			keywords: ["서바이벌", "두뇌", "정치", "사회실험"],
+			keywords: ["서바이벌", "정치", "사회실험", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -791,7 +791,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001783211",
-			keywords: ["서바이벌", "두뇌", "정치", "피지컬", "협동"],
+			keywords: ["서바이벌", "피지컬", "정치", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
@@ -824,7 +824,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000187",
-			keywords: ["서바이벌", "정치", "마피아게임", "추리", "심리전"],
+			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -846,7 +846,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000055",
-			keywords: ["추리", "두뇌", "미스터리", "협동"],
+			keywords: ["협동", "두뇌", "추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -892,7 +892,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001459427",
-			keywords: ["게임", "서바이벌", "정치", "심리전"],
+			keywords: ["서바이벌", "게임", "정치", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -903,7 +903,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "",
 			ottLink: "",
-			keywords: ["게임", "서바이벌"],
+			keywords: ["서바이벌", "게임"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
@@ -969,7 +969,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81436207",
-			keywords: ["게임", "어드벤처", "정치"],
+			keywords: ["게임", "정치", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -980,7 +980,7 @@ const programData = {
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=647bf11a-8cfd-4647-96b3-c1847f61b51a",
-			keywords: ["게임", "생존", "협동", "어드벤처"],
+			keywords: ["생존", "게임", "협동", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -991,7 +991,7 @@ const programData = {
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=ef8fa848-a896-4f5d-8fd4-80355bd177e7",
-			keywords: ["게임", "생존", "협동", "어드벤처"],
+			keywords: ["생존", "게임", "협동", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -1002,7 +1002,7 @@ const programData = {
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=8f9a763b-7a9e-4228-8b2f-3b8476be7f97",
-			keywords: ["게임", "생존", "협동", "어드벤처"],
+			keywords: ["생존", "게임", "협동", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -1030,29 +1030,29 @@ let currentKeyword = 'all'; // 현재 선택된 키워드
 
 // 키워드 설명
 const keywordDescriptions = {
-	// 사고·문제 해결
-	'두뇌': '논리, 수리, 기억, 판단 등 사고 능력을 활용하는 것이 핵심',
-	'퍼즐': '논리적 사고를 통해 퍼즐이나 문제를 해결하는 것이 주요 요소',
-	'퀴즈': '지식이나 정보를 바탕으로 문제의 정답을 맞히는 것이 주요 요소',
-	'전략': '정보·자원·규칙 등을 활용해 상황을 유리하게 이끌기 위한 계획과 전략이 핵심',
-
-	// 추리·심리
-	'추리': '단서와 정보를 바탕으로 사건·범인·정답 등을 추론하는 것이 핵심',
-	'미스터리': '사건이나 세계관에 숨겨진 비밀과 의문을 밝혀가는 구조',
-	'마피아게임': '숨겨진 역할이나 정체를 추론하며 배신자·범인 등을 찾아내는 게임',
-	'심리전': '상대의 심리를 읽거나 속임수·블러핑 등을 활용해 유리한 선택을 이끌어내는 대결',
-	'롤플레잉': '참가자가 특정 캐릭터나 역할을 맡아 그 역할에 따라 진행하는 방식',
-
-	// 참가자 관계
-	'정치': '연합·협상·배신·권력 경쟁 등 참가자 간 이해관계를 활용하는 요소',
-	'사회실험': '참가자들의 사회적 행동·관계·집단심리 등을 관찰하는 구조',
-	'협동': '참가자들이 공동의 목표를 달성하기 위해 서로 협력하는 구조',
-
 	// 경쟁·신체
 	'서바이벌': '경쟁과 탈락 과정을 거쳐 최종 생존자 또는 우승자를 가리는 구조',
 	'생존': '제한된 자원·환경·조건 속에서 살아남는 것 자체가 주요 요소',
 	'피지컬': '체력·운동 능력·신체 능력·추격·몸싸움 등을 활용하는 요소',
 	'게임': '버라이어티 예능에서 볼 수 있는 다양한 게임의 진행 자체가 주요 요소',
+
+	// 참가자 관계
+	'정치': '연합·협상·배신·권력 경쟁 등 참가자 간 이해관계를 활용하는 요소',
+	'사회실험': '참가자들의 사회적 행동·관계·집단심리 등을 관찰하는 구조',
+	'협동': '참가자들이 공동의 목표를 달성하기 위해 서로 협력하는 구조',
+	
+	// 사고·문제 해결
+	'두뇌': '논리, 수리, 기억, 판단 등 사고 능력을 활용하는 것이 핵심',
+	'전략': '정보·자원·규칙 등을 활용해 상황을 유리하게 이끌기 위한 계획과 전략이 핵심',
+	'퍼즐': '논리적 사고를 통해 퍼즐이나 문제를 해결하는 것이 주요 요소',
+	'퀴즈': '지식이나 정보를 바탕으로 문제의 정답을 맞히는 것이 주요 요소',	
+
+	// 추리·심리
+	'추리': '단서와 정보를 바탕으로 사건·범인·정답 등을 추론하는 것이 핵심',
+	'미스터리': '사건이나 세계관에 숨겨진 비밀과 의문을 밝혀가는 구조',
+	'마피아게임': '숨겨진 역할이나 정체를 추론하며 배신자·범인 등을 찾아내는 게임',
+	'롤플레잉': '참가자가 특정 캐릭터나 역할을 맡아 그 역할에 따라 진행하는 방식',
+	'심리전': '상대의 심리를 읽거나 속임수·블러핑 등을 활용해 유리한 선택을 이끌어내는 대결',
 
 	// 공간·스토리
 	'방탈출': '공간을 탐색하고 단서와 문제를 해결하며 탈출하거나 다음 단계로 진행',
