@@ -148,7 +148,7 @@ a:hover { color: var(--color-primary); }
 /* tooltip */
 .tooltip .tooltip-inner { padding: 8px 12px; font-family:var(--font-text); font-size: 13px; line-height: 1.5; text-align: left; word-break:keep-all; }
 .program-info { display: none; color:var(--color-tone-500); cursor: pointer; vertical-align: middle; }
-@media all and (max-width:768px) {
+@media all and (max-width:1000px) {
 	.program-info { display: inline-flex; align-items: center; justify-content: center; }
 	.program-info:active { color:var(--color-tone-900); }
 }
@@ -186,11 +186,11 @@ a:hover { color: var(--color-primary); }
 .keyword-tag.badge { transition: all 0.2s ease; cursor: pointer; }
 .keyword-tag.badge.bg-light { border: 1px solid var(--color-tone-200); }
 .keyword-tag.badge.bg-light:hover { border-color: var(--color-tone-500); }
-.keyword-description-list { display: none; margin: 6px 0 0; padding-left: 18px; }
+.keyword-description-list { display: none; margin:0; }
 .keyword-description-list.active { display: block; }
 #keyword-description { line-height: 1.5; }
 .keyword-guide-mobile { display: none; }
-@media all and (max-width:768px) {
+@media all and (max-width:1000px) {
 	.keyword-guide-pc { display: none; }
 	.keyword-guide-mobile { display: inline; }
 }

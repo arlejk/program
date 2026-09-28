@@ -1079,7 +1079,7 @@ function renderKeywordButtons() {
 	});
 
 	// PC에서만 키워드 Tooltip 사용
-	if (window.matchMedia('(min-width: 768px)').matches) {
+	if (window.matchMedia('(min-width: 1000px)').matches) {
 		$wrap.find('[data-bs-toggle="tooltip"]').each(function () {
 			bootstrap.Tooltip.getOrCreateInstance(this, {
 				trigger: 'hover focus'
