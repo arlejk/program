@@ -8,7 +8,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000106439",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -19,7 +19,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000125936",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "6화 스트리밍 불가",
 			rowClass: ""
 		},
@@ -30,7 +30,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "",
 			ottLink: "",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
@@ -41,7 +41,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000170199",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -63,7 +63,7 @@ const programData = {
 			broadcaster: "유튜브 홍진호",
 			ottName: "",
 			ottLink: "",
-			keywords: [],
+			keywords: ["서바이벌", "두뇌"],
 			note: "",
 			rowClass: "table-warning"
 		},
@@ -140,7 +140,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
-			keywords: ["두뇌", "퍼즐", "방탈출"],
+			keywords: ["두뇌", "퍼즐", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -151,7 +151,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
-			keywords: ["두뇌", "퍼즐", "방탈출"],
+			keywords: ["두뇌", "퍼즐", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -162,7 +162,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
-			keywords: ["두뇌", "퍼즐", "방탈출"],
+			keywords: ["두뇌", "퍼즐", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -174,7 +174,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001773171",
-			keywords: ["두뇌", "퍼즐", "방탈출"],
+			keywords: ["두뇌", "퍼즐", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -186,7 +186,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "JTBC",
 			ottLink: "https://tv.jtbc.co.kr/replay/pr10010396/pm10033108",
-			keywords: ["서바이벌", "두뇌", "방탈출"],
+			keywords: ["서바이벌", "두뇌", "전략", "방탈출"],
 			note: "U+모바일 TV에서도 시청 가능",
 			rowClass: ""
 		},
@@ -197,7 +197,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000328018",
-			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬", "사회실험"],
 			note: "",
 			rowClass: ""
 		},
@@ -208,7 +208,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000395031",
-			keywords: ["서바이벌", "정치", "두뇌", "피지컬"],
+			keywords: ["서바이벌", "정치", "두뇌", "피지컬", "사회실험"],
 			note: "",
 			rowClass: ""
 		},
@@ -318,7 +318,7 @@ const programData = {
 			broadcaster: "XtvN, tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000940242",
-			keywords: ["퍼즐", "두뇌", "추리", "마피아게임"],
+			keywords: ["퍼즐", "두뇌", "추리", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -329,7 +329,7 @@ const programData = {
 			broadcaster: "유튜브 채널 십오야",
 			ottName: "유튜브 채널 십오야",
 			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
-			keywords: ["추리", "마피아게임"],
+			keywords: ["추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -340,7 +340,7 @@ const programData = {
 			broadcaster: "iHQ",
 			ottName: "",
 			ottLink: "",
-			keywords: [],
+			keywords: ["서바이벌", "생존", "미스터리", "추리", "게임"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
@@ -351,7 +351,7 @@ const programData = {
 			broadcaster: "유튜브 진용진",
 			ottName: "유튜브 진용진",
 			ottLink: "https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC",
-			keywords: ["정치", "서바이벌"],
+			keywords: ["서바이벌", "정치", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -373,7 +373,7 @@ const programData = {
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["마피아게임", "서바이벌", "정치", "피지컬"],
+			keywords: ["마피아게임", "서바이벌", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -483,7 +483,7 @@ const programData = {
 			broadcaster: "WATCHA",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tR2edNe",
-			keywords: ["추리", "방탈출", "어드벤처", "미스터리"],
+			keywords: ["추리", "어드벤처", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -505,7 +505,7 @@ const programData = {
 			broadcaster: "채널A, WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000089&page=1",
-			keywords: ["서바이벌", "정치"],
+			keywords: ["서바이벌", "정치", "전략", "심리전"],
 			note: '<a href="https://www.ichannela.com/program/detail/program_detail_renew.do?cateCode=0500910001" target="_blank">채널A 홈페이지에서 무료 시청 가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
@@ -516,7 +516,7 @@ const programData = {
 			broadcaster: "유튜브 tvN D",
 			ottName: "유튜브 tvN D",
 			ottLink: "https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "정치", "협동"],
 			note: "",
 			rowClass: ""
 		},
@@ -538,7 +538,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001623861",
-			keywords: ["방탈출", "서바이벌", "정치", "피지컬"],
+			keywords: ["서바이벌", "정치", "피지컬", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -549,7 +549,7 @@ const programData = {
 			broadcaster: "유투브 피지컬갤러리",
 			ottName: "유투브 피지컬갤러리",
 			ottLink: "https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz",
-			keywords: ["서바이벌", "방탈출", "피지컬"],
+			keywords: ["서바이벌", "정치", "피지컬", "게임"],
 			note: "벌레 나옴 비위 조심",
 			rowClass: ""
 		},
@@ -571,7 +571,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001696917",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -582,7 +582,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001691160",
-			keywords: ["두뇌", "퍼즐"],
+			keywords: ["두뇌", "퍼즐", "퀴즈"],
 			note: "",
 			rowClass: ""
 		},
@@ -593,7 +593,7 @@ const programData = {
 			broadcaster: "유튜브 긱블",
 			ottName: "유튜브 긱블",
 			ottLink: "https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo",
-			keywords: ["서바이벌", "두뇌", "방탈출", "피지컬"],
+			keywords: ["서바이벌", "두뇌", "퍼즐", "피지컬", "게임"],
 			note: "",
 			rowClass: ""
 		},
@@ -604,7 +604,7 @@ const programData = {
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "두뇌"],
+			keywords: ["서바이벌", "두뇌", "협동"],
 			note: "",
 			rowClass: ""
 		},
@@ -615,7 +615,7 @@ const programData = {
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "두뇌"],
+			keywords: ["서바이벌", "두뇌", "협동"],
 			note: "",
 			rowClass: ""
 		},
@@ -626,7 +626,7 @@ const programData = {
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "두뇌"],
+			keywords: ["서바이벌", "두뇌", "협동"],
 			note: "",
 			rowClass: ""
 		},
@@ -637,7 +637,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -648,7 +648,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "",
 			rowClass: ""
 		},
@@ -659,7 +659,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "",
 			rowClass: "table-primary"
 		},
@@ -681,7 +681,7 @@ const programData = {
 			broadcaster: "U+모바일tv",
 			ottName: "U+모바일tv",
 			ottLink: "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&vod_type=vod&main_run=Y&backkey_finish=N&is_splash=N&review_yn=N&contents_id=M0124AV077PPV00&category_id=&series_num=1&series_category_id=E25VM&utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider&packageName=com.kinolights.kinolights",
-			keywords: ["서바이벌", "두뇌", "정치"],
+			keywords: ["서바이벌", "두뇌", "전략", "정치"],
 			note: "웨이브, 왓챠에서도 시청가능",
 			rowClass: ""
 		},
@@ -714,7 +714,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
-			keywords: ["방탈출", "어드벤처", "옴니버스"],
+			keywords: ["방탈출", "어드벤처", "옴니버스", "추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -725,7 +725,7 @@ const programData = {
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
-			keywords: ["방탈출", "어드벤처", "옴니버스", "게임"],
+			keywords: ["방탈출", "어드벤처", "옴니버스", "추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -835,7 +835,7 @@ const programData = {
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-02b192fc-8bd3-498e-ac64-65245666fc39",
-			keywords: ["추리", "마피아게임", "롤플레잉"],
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉"],
 			note: "",
 			rowClass: ""
 		},
@@ -846,7 +846,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000055",
-			keywords: ["추리", "두뇌", "어드벤처"],
+			keywords: ["추리", "두뇌", "미스터리", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -892,7 +892,7 @@ const programData = {
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001459427",
-			keywords: ["게임", "서바이벌", "정치"],
+			keywords: ["게임", "서바이벌", "정치", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -914,7 +914,7 @@ const programData = {
 			broadcaster: "SBS",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82009029",
-			keywords: ["게임", "추리"],
+			keywords: ["게임", "추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -925,7 +925,7 @@ const programData = {
 			broadcaster: "SBS",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82009029",
-			keywords: ["게임", "추리"],
+			keywords: ["게임", "추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		},
@@ -980,7 +980,7 @@ const programData = {
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001752153",
-			keywords: ["게임", "추리"],
+			keywords: ["게임", "추리", "미스터리"],
 			note: "",
 			rowClass: ""
 		}
@@ -994,6 +994,39 @@ const sortState = {
 };
 
 let currentKeyword = 'all'; // 현재 선택된 키워드
+
+// 키워드 설명
+const keywordDescriptions = {
+	// 사고·문제 해결
+	'두뇌': '논리, 수리, 기억, 전략 등 사고 능력이 핵심',
+	'퍼즐': '논리적 사고를 통해 퍼즐이나 문제를 해결하는 것이 주요 요소',
+	'퀴즈': '지식이나 정보를 바탕으로 문제의 정답을 맞히는 것이 주요 요소',
+	'전략': '정보·자원·규칙 등을 활용해 상황을 유리하게 이끌기 위한 계획과 전략이 핵심',
+
+	// 추리·심리
+	'추리': '단서와 정보를 바탕으로 사건·범인·정답 등을 추론',
+	'미스터리': '사건이나 세계관에 숨겨진 비밀을 밝혀가는 구조',
+	'마피아게임': '숨겨진 역할이나 정체를 추론하며 배신자·범인 등을 찾아내는 게임',
+	'심리전': '상대의 심리를 읽거나 속임수·블러핑 등을 활용해 유리한 선택을 이끌어내는 대결',
+	'롤플레잉': '참가자가 특정 캐릭터나 역할을 맡아 진행',
+
+	// 참가자 관계
+	'정치': '연합, 협상, 배신, 권력관계 등 참가자 간 이해관계가 형성되는 요소',
+	'사회실험': '참가자들의 사회적 행동·관계·집단심리를 관찰하는 구조',
+	'협동': '참가자들이 공동의 목표를 달성하기 위해 협력하는 구조',
+
+	// 경쟁·신체
+	'서바이벌': '탈락 과정을 거쳐 최종 생존자 또는 우승자를 가리는 경쟁 구조',
+	'생존': '제한된 자원·환경·조건 속에서 살아남는 것 자체가 주요 요소',
+	'피지컬': '체력·운동·신체능력·추격·몸싸움 등이 필요한 경우',
+	'게임': '버라이어티 예능에서 볼 수 있는 다양한 게임의 진행 자체가 주요 요소',
+
+	// 공간·스토리
+	'방탈출': '공간을 탐색하고 문제를 풀어 탈출하거나 다음 단계로 진행',
+	'어드벤처': '미지의 공간·세계·장소를 출연자가 직접 탐험',
+	'드라마': '지속적인 스토리·서사·캐릭터가 중요한 경우',
+	'옴니버스': '여러 개의 독립적인 에피소드나 사건으로 구성'
+};
 
 // 2. 키워드 버튼 자동 생성 함수 (빈도수 높은 순 -> 같으면 가나다 순)
 function renderKeywordButtons() {
@@ -1025,11 +1058,43 @@ function renderKeywordButtons() {
 	const $wrap = $('.keyword-filter-wrap');
 	$wrap.empty();
 
-	$wrap.append('<button class="btn btn-secondary btn-keyword active" data-keyword="all">전체보기</button> ');
+	$wrap.append(
+		'<button class="btn btn-secondary btn-keyword active" data-keyword="all">전체보기</button> '
+	);
 
 	sortedKeywords.forEach(kw => {
-		$wrap.append(`<button class="btn btn-outline-dark btn-keyword" data-keyword="${kw}">#${kw}</button> `);
+		const description = keywordDescriptions[kw] || '';
+
+		$wrap.append(`
+			<button
+				type="button"
+				class="btn btn-outline-dark btn-keyword"
+				data-keyword="${kw}"
+				data-bs-toggle="tooltip"
+				data-bs-placement="top"
+				data-bs-title="${description}">
+				#${kw}
+			</button>
+		`);
 	});
+
+	// PC에서만 키워드 Tooltip 사용
+	if (window.matchMedia('(min-width: 768px)').matches) {
+		$wrap.find('[data-bs-toggle="tooltip"]').each(function () {
+			bootstrap.Tooltip.getOrCreateInstance(this, {
+				trigger: 'hover focus'
+			});
+		});
+	}
+}
+
+function escapeHtml(str) {
+	return String(str ?? '')
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#039;');
 }
 
 // 3. 테이블 렌더링 함수
@@ -1048,9 +1113,18 @@ function renderTable(containerId, list) {
 	}
 
 	filteredList.forEach(item => {
-		const nameHtml = item.link 
-			? `<a href="${item.link}" target="_blank">${item.name}</a>` 
-			: item.name;
+		const description = escapeHtml(item.description || '');
+
+		const tooltipAttr = description
+			? `data-bs-toggle="tooltip"
+			   data-bs-placement="right"
+			   data-bs-custom-class="program-tooltip"
+			   data-bs-title="${description}"`
+			: '';
+
+		const nameHtml = item.link
+			? `<a href="${item.link}" target="_blank" ${tooltipAttr}>${item.name}</a>`
+			: `<span ${tooltipAttr}>${item.name}</span>`;
 
 		let ottHtml = ' ';
 		if (item.ottName && item.ottLink) {
@@ -1075,6 +1149,11 @@ function renderTable(containerId, list) {
 			</tr>
 		`;
 		$tbody.append(trHtml);
+	});
+
+	// 프로그램 설명 Tooltip 초기화
+	$tbody.find('[data-bs-toggle="tooltip"]').each(function () {
+		bootstrap.Tooltip.getOrCreateInstance(this);
 	});
 }
 
@@ -1108,24 +1187,56 @@ function sortTableData(tbodyId, key, dir) {
 }
 
 // 5. 키워드 필터 적용 및 화면 갱신
-function applyKeywordFilter(keyword) {
-	currentKeyword = keyword;
-
-	$('.btn-keyword').removeClass('active btn-secondary btn-dark').addClass('btn-outline-dark');
-	
+function applyKeywordFilter(keyword) { 
+	currentKeyword = keyword; 
+ 
+	$('.btn-keyword')
+		.removeClass('active btn-secondary btn-dark')
+		.addClass('btn-outline-dark'); 
+	 
 	const $activeBtn = $(`.btn-keyword[data-keyword="${keyword}"]`);
-	if (keyword === 'all') {
-		$activeBtn.addClass('active btn-secondary').removeClass('btn-outline-dark');
-	} else {
-		$activeBtn.addClass('active btn-dark').removeClass('btn-outline-dark');
+
+	if (keyword === 'all') { 
+		$activeBtn
+			.addClass('active btn-secondary')
+			.removeClass('btn-outline-dark');
+
+		// 전체보기 → 키워드 설명 제거
+		$('#keyword-description')
+			.empty();
+
+		$('.keyword-description-list')
+			.removeClass('active');
+
+	} else { 
+		$activeBtn
+			.addClass('active btn-dark')
+			.removeClass('btn-outline-dark');
+
+		// 선택한 키워드 설명 표시
+		const description = keywordDescriptions[keyword] || '';
+
+		if (description) {
+			$('#keyword-description')
+				.html(`<strong>#${escapeHtml(keyword)}</strong> : ${escapeHtml(description)}`);
+
+			$('.keyword-description-list')
+				.addClass('active');
+		} else {
+			$('#keyword-description')
+				.empty();
+
+			$('.keyword-description-list')
+				.removeClass('active');
+		}
 	}
-
-	['tbody-cate-01', 'tbody-cate-02'].forEach(tbodyId => {
-		const { key, dir } = sortState[tbodyId];
-		sortTableData(tbodyId, key, dir);
-	});
-
-	updateTotalsByCategory();
+ 
+	['tbody-cate-01', 'tbody-cate-02'].forEach(tbodyId => { 
+		const { key, dir } = sortState[tbodyId]; 
+		sortTableData(tbodyId, key, dir); 
+	}); 
+ 
+	updateTotalsByCategory(); 
 }
 
 // 6. 페이지 로드 시 실행
