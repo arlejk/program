@@ -769,7 +769,7 @@ const programData = {
 			broadcaster: "유튜브 스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
 			ottLink: "https://www.youtube.com/@MINDZEROstudio/videos",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략"],
 			note: "",
 			rowClass: ""
 		},
