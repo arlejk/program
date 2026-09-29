@@ -28,8 +28,8 @@ const programData = {
 			link: "https://m.kinolights.com/title/102026",
 			year: "2014",
 			broadcaster: "tvN",
-			ottName: "",
-			ottLink: "",
+			ottName: "YOUTUBE",
+			ottLink: "https://youtube.com/playlist?list=PLvDaoEdHc684jhiWCqR2vtmYJZVzs0Oje&si=GL7aKQ90P_Wrsp0M",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
@@ -546,8 +546,8 @@ const programData = {
 			name: "우마게임",
 			link: "https://m.kinolights.com/title/118436",
 			year: "2023",
-			broadcaster: "유투브 피지컬갤러리",
-			ottName: "유투브 피지컬갤러리",
+			broadcaster: "유튜브 피지컬갤러리",
+			ottName: "유튜브 피지컬갤러리",
 			ottLink: "https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz",
 			keywords: ["서바이벌", "피지컬", "게임", "정치"],
 			note: "벌레 나옴 비위 조심",
@@ -664,6 +664,17 @@ const programData = {
 			rowClass: "table-primary"
 		},
 		{
+			name: "더 블랙 오닉스 THE BLACK ONYX",
+			link: "",
+			year: "2024",
+			broadcaster: "유튜브 일공일공 스튜디오",
+			ottName: "유튜브 일공일공 스튜디오",
+			ottLink: "https://www.youtube.com/playlist?list=PL71rKDnQ2Y9q3yzPXD3SrYtPNG85_Fb18&si=JQzUA8O4dzq2brHC",
+			keywords: ["서바이벌", "두뇌"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "기억을 잊는 밤",
 			link: "",
 			year: "2024",
@@ -673,7 +684,7 @@ const programData = {
 			keywords: ["추리", "미스터리", "방탈출", "어드벤처", "드라마"],
 			note: "",
 			rowClass: ""
-		},
+		},		
 		{
 			name: "금수저 전쟁",
 			link: "https://m.kinolights.com/title/138553",
@@ -768,7 +779,7 @@ const programData = {
 			year: "2026",
 			broadcaster: "유튜브 스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
-			ottLink: "https://www.youtube.com/@MINDZEROstudio/videos",
+			ottLink: "https://www.youtube.com/watch?v=U9QaqOwrYZo&list=PLimMCLxaXz0Gj-2ueyEdshOaKK9mQzj_0",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
 			note: "",
 			rowClass: ""
@@ -974,6 +985,28 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "플레이유",
+			link: "https://m.kinolights.com/season/104231",
+			year: "2022",
+			broadcaster: "카카오TV",
+			ottName: "유튜브 플레이유",
+			ottLink: "https://www.youtube.com/@playoulevelup/",
+			keywords: ["협동", "두뇌", "방탈출", "어드벤처"],
+			note: "전회차 스트리밍 불가",
+			rowClass: "table-danger"
+		},
+		{
+			name: "플레이유 레벨업: 빌런이 사는 세상",
+			link: "https://m.kinolights.com/season/122583",
+			year: "2023",
+			broadcaster: "카카오TV",
+			ottName: "유튜브 플레이유",
+			ottLink: "https://www.youtube.com/@playoulevelup/",
+			keywords: ["협동", "두뇌", "방탈출", "어드벤처"],
+			note: '전회차 스트리밍 불가, <a href="https://page.kakao.com/content/61505852/" target="_blank">카카오페이지 <i class="xi-external-link"></i></a>',
+			rowClass: "table-danger"
+		},
+		{
 			name: "더 존: 버텨야 산다 시즌 1",
 			link: "https://m.kinolights.com/season/104214",
 			year: "2022",
@@ -998,7 +1031,7 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 3",
 			link: "https://m.kinolights.com/season/135728",
-			year: "2021",
+			year: "2024",
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=8f9a763b-7a9e-4228-8b2f-3b8476be7f97",
