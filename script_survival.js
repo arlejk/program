@@ -991,7 +991,7 @@ const programData = {
 			broadcaster: "카카오TV",
 			ottName: "유튜브 플레이유",
 			ottLink: "https://www.youtube.com/@playoulevelup/",
-			keywords: ["협동", "두뇌", "방탈출", "어드벤처"],
+			keywords: ["게임", "두뇌", "방탈출", "어드벤처"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
@@ -1002,7 +1002,7 @@ const programData = {
 			broadcaster: "카카오TV",
 			ottName: "유튜브 플레이유",
 			ottLink: "https://www.youtube.com/@playoulevelup/",
-			keywords: ["협동", "두뇌", "방탈출", "어드벤처"],
+			keywords: ["게임", "두뇌", "방탈출", "어드벤처"],
 			note: '전회차 스트리밍 불가, <a href="https://page.kakao.com/content/61505852/" target="_blank">카카오페이지 <i class="xi-external-link"></i></a>',
 			rowClass: "table-danger"
 		},
