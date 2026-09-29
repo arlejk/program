@@ -667,7 +667,7 @@ const programData = {
 			name: "더 블랙 오닉스 THE BLACK ONYX",
 			link: "",
 			year: "2024",
-			broadcaster: "유튜브 일공일공 스튜디오",
+			broadcaster: "일공일공 스튜디오, 치지직",
 			ottName: "유튜브 일공일공 스튜디오",
 			ottLink: "https://www.youtube.com/playlist?list=PL71rKDnQ2Y9q3yzPXD3SrYtPNG85_Fb18&si=JQzUA8O4dzq2brHC",
 			keywords: ["서바이벌", "두뇌"],
