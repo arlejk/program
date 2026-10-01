@@ -735,7 +735,7 @@ const programData = {
 			year: "2024", //2024년 11월
 			broadcaster: "U+모바일tv",
 			ottName: "U+모바일tv",
-			ottLink: "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&vod_type=vod&main_run=Y&backkey_finish=N&is_splash=N&review_yn=N&contents_id=M0124AV077PPV00&category_id=&series_num=1&series_category_id=E25VM&utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider&packageName=com.kinolights.kinolights",
+			ottLink: "https://utvmobile.lguplus.co.kr/series/AM0K9",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
 			note: "웨이브, 왓챠에서도 시청가능",
 			rowClass: ""
