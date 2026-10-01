@@ -187,7 +187,7 @@ const programData = {
 			ottName: "JTBC",
 			ottLink: "https://tv.jtbc.co.kr/replay/pr10010396/pm10033108",
 			keywords: ["서바이벌", "두뇌", "전략", "퍼즐", "방탈출"],
-			note: "U+모바일 TV에서도 시청 가능",
+			note: '<a href="https://utvmobile.lguplus.co.kr/series/BN05S" target="_blank">U+모바일 TV에서도 시청 가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -759,7 +759,7 @@ const programData = {
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000048",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
-			note: "아무거나보틀 유튜브에서도 시청가능",
+			note: '<a href="https://www.youtube.com/watch?v=yetVRFrCX0I&list=PL2zSy9h37heW72sfCECYi4_R4B5FrwXTs" target="_blank">아무거나보틀 유튜브에서도 시청가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
