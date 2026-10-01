@@ -187,7 +187,7 @@ const programData = {
 			ottName: "JTBC",
 			ottLink: "https://tv.jtbc.co.kr/replay/pr10010396/pm10033108",
 			keywords: ["서바이벌", "두뇌", "전략", "퍼즐", "방탈출"],
-			note: '<a href="https://utvmobile.lguplus.co.kr/series/BN05S" target="_blank">U+모바일 TV에서도 시청 가능 <i class="xi-external-link"></i></a>',
+			note: '<a href="https://utvmobile.lguplus.co.kr/series/BN05S" target="_blank">U+모바일TV에서도 시청 가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -733,8 +733,8 @@ const programData = {
 			name: "금수저 전쟁",
 			link: "https://m.kinolights.com/title/138553",
 			year: "2024", //2024년 11월
-			broadcaster: "U+모바일tv",
-			ottName: "U+모바일tv",
+			broadcaster: "U+모바일TV",
+			ottName: "U+모바일TV",
 			ottLink: "https://utvmobile.lguplus.co.kr/series/AM0K9",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
 			note: "웨이브, 왓챠에서도 시청가능",
