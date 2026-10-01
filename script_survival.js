@@ -4,7 +4,7 @@ const programData = {
         {
 			name: "더 지니어스: 게임의 법칙",
 			link: "https://m.kinolights.com/title/89901",
-			year: "2013",
+			year: "2013", //2013년 4월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000106439",
@@ -15,7 +15,7 @@ const programData = {
 		{
 			name: "더 지니어스: 룰 브레이커",
 			link: "https://m.kinolights.com/title/87980",
-			year: "2013~2014",
+			year: "2013~2014", //2013년 12월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000125936",
@@ -26,7 +26,7 @@ const programData = {
 		{
 			name: "더 지니어스: 블랙가넷",
 			link: "https://m.kinolights.com/title/102026",
-			year: "2014",
+			year: "2014", //2014년 10월
 			broadcaster: "tvN",
 			ottName: "YOUTUBE",
 			ottLink: "https://youtube.com/playlist?list=PLvDaoEdHc684jhiWCqR2vtmYJZVzs0Oje&si=GL7aKQ90P_Wrsp0M",
@@ -37,7 +37,7 @@ const programData = {
 		{
 			name: "더 지니어스: 그랜드 파이널",
 			link: "https://m.kinolights.com/title/87984",
-			year: "2015",
+			year: "2015", //2015년 6월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000170199",
@@ -46,9 +46,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "방시팝-더 지니어스:외전",
+			name: "방시팝 - 더 지니어스:외전",
 			link: "",
-			year: "2015",
+			year: "2015", //2015년 12월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000222161",
@@ -59,7 +59,7 @@ const programData = {
 		{
 			name: "프로젝트 지니어스",
 			link: "",
-			year: "미정",
+			year: "미정", //2022년 5월 촬영 추정
 			broadcaster: "유튜브 홍진호",
 			ottName: "",
 			ottLink: "",
@@ -70,7 +70,7 @@ const programData = {
 		{
 			name: "크라임씬 1",
 			link: "https://m.kinolights.com/title/87643",
-			year: "2014",
+			year: "2014", //2014년 5월
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539540",
@@ -81,7 +81,7 @@ const programData = {
 		{
 			name: "크라임씬 2",
 			link: "https://m.kinolights.com/title/87646",
-			year: "2015",
+			year: "2015", //2015년 4월
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539640",
@@ -92,7 +92,7 @@ const programData = {
 		{
 			name: "크라임씬 3",
 			link: "https://m.kinolights.com/title/87647",
-			year: "2017",
+			year: "2017", //2017년 4월
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539639",
@@ -103,7 +103,7 @@ const programData = {
 		{
 			name: "크라임씬 리턴즈",
 			link: "https://m.kinolights.com/title/125359",
-			year: "2024",
+			year: "2024", //2024년 2월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001751684",
@@ -114,7 +114,7 @@ const programData = {
 		{
 			name: "크라임씬 제로",
 			link: "https://m.kinolights.com/title/138812",
-			year: "2025",
+			year: "2025", //2025년 9월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81950435",
@@ -134,9 +134,9 @@ const programData = {
 			rowClass: "table-primary"
 		},
 		{
-			name: "문제적 남자 시즌 1",
+			name: "뇌섹시대 문제적 남자 시즌 1",
 			link: "",
-			year: "2015~2018",
+			year: "2015~2018", //2015년 2월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
@@ -145,9 +145,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "문제적 남자 시즌 2",
+			name: "뇌섹시대 문제적 남자 시즌 2",
 			link: "",
-			year: "2018~2019",
+			year: "2018~2019", //2018년 5월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
@@ -158,7 +158,7 @@ const programData = {
 		{
 			name: "문제적 남자: 브레인 유랑단",
 			link: "https://m.kinolights.com/title/87942",
-			year: "2019~2020",
+			year: "2019~2020", //2019년 11월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
@@ -170,7 +170,7 @@ const programData = {
 		{
 			name: "문제적 남자 리부트: 수학편",
 			link: "https://m.kinolights.com/title/144531",
-			year: "2025",
+			year: "2025", //2025년 6월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001773171",
@@ -182,7 +182,7 @@ const programData = {
 		{
 			name: "코드 - 비밀의 방",
 			link: "https://m.kinolights.com/title/90710",
-			year: "2016",
+			year: "2016", //2016년 1월
 			broadcaster: "JTBC",
 			ottName: "JTBC",
 			ottLink: "https://tv.jtbc.co.kr/replay/pr10010396/pm10033108",
@@ -193,7 +193,7 @@ const programData = {
 		{
 			name: "소사이어티 게임 시즌 1",
 			link: "https://m.kinolights.com/title/88036",
-			year: "2016",
+			year: "2016", //2016년 10월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000328018",
@@ -204,7 +204,7 @@ const programData = {
 		{
 			name: "소사이어티 게임 시즌 2",
 			link: "https://m.kinolights.com/title/88037",
-			year: "2017",
+			year: "2017", //2017년 8월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000395031",
@@ -215,7 +215,7 @@ const programData = {
 		{
 			name: "범인은 바로 너! 시즌 1",
 			link: "https://m.kinolights.com/title/87856",
-			year: "2018",
+			year: "2018", //2018년 5월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
@@ -226,7 +226,7 @@ const programData = {
 		{
 			name: "범인은 바로 너! 시즌 2",
 			link: "https://m.kinolights.com/title/87857",
-			year: "2019",
+			year: "2019", //2019년 11월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
@@ -237,7 +237,7 @@ const programData = {
 		{
 			name: "범인은 바로 너! 시즌 3",
 			link: "https://m.kinolights.com/title/87858",
-			year: "2021",
+			year: "2021", //2021년 1월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
@@ -248,7 +248,7 @@ const programData = {
 		{
 			name: "대탈출 시즌 1",
 			link: "https://m.kinolights.com/title/87639",
-			year: "2018",
+			year: "2018", //2018년 7월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000587159",
@@ -259,7 +259,7 @@ const programData = {
 		{
 			name: "대탈출 시즌 2",
 			link: "https://m.kinolights.com/title/87640",
-			year: "2019",
+			year: "2019", //2019년 3월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000821660",
@@ -270,7 +270,7 @@ const programData = {
 		{
 			name: "대탈출 시즌 3",
 			link: "https://m.kinolights.com/title/87641",
-			year: "2020",
+			year: "2020", //2020년 3월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001164763",
@@ -281,7 +281,7 @@ const programData = {
 		{
 			name: "대탈출 시즌 4",
 			link: "https://m.kinolights.com/title/96838",
-			year: "2021",
+			year: "2021", //2021년 7월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001490952",
@@ -292,7 +292,7 @@ const programData = {
 		{
 			name: "대탈출: 더 스토리",
 			link: "https://m.kinolights.com/title/144304",
-			year: "2025",
+			year: "2025", //2025년 7월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001772883",
@@ -314,7 +314,7 @@ const programData = {
 		{
 			name: "씬의 퀴즈",
 			link: "https://m.kinolights.com/title/88616",
-			year: "2019",
+			year: "2019", //2019년 7월
 			broadcaster: "XtvN, tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000940242",
@@ -323,64 +323,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "송민호의 분실",
-			link: "",
-			year: "2021",
-			broadcaster: "유튜브 채널 십오야",
-			ottName: "유튜브 채널 십오야",
-			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
-			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉"],
-			note: "",
-			rowClass: ""
-		},
-		{
-			name: "스틸 얼라이브",
-			link: "",
-			year: "2021",
-			broadcaster: "iHQ",
-			ottName: "",
-			ottLink: "",
-			keywords: ["서바이벌", "생존", "게임", "추리", "미스터리"],
-			note: "전회차 스트리밍 불가",
-			rowClass: "table-danger"
-		},
-		{
-			name: "머니게임",
-			link: "https://m.kinolights.com/title/119151",
-			year: "2021",
-			broadcaster: "유튜브 진용진",
-			ottName: "유튜브 진용진",
-			ottLink: "https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC",
-			keywords: ["서바이벌", "정치", "사회실험", "전략", "심리전"],
-			note: "",
-			rowClass: ""
-		},
-		{
-			name: "공범 시즌 1",
-			link: "https://m.kinolights.com/title/132153",
-			year: "2021",
-			broadcaster: "유튜브 장지수",
-			ottName: "유튜브 장지수",
-			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
-			note: "",
-			rowClass: ""
-		},
-		{
-			name: "공범 시즌 2",
-			link: "https://m.kinolights.com/title/132156",
-			year: "2022",
-			broadcaster: "유튜브 장지수",
-			ottName: "유튜브 장지수",
-			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
-			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
-			note: "",
-			rowClass: ""
-		},
-		{
 			name: "여고추리반 1",
 			link: "https://m.kinolights.com/title/87867",
-			year: "2021",
+			year: "2021", //2021년 1월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001433241",
@@ -391,7 +336,7 @@ const programData = {
 		{
 			name: "여고추리반 2",
 			link: "https://m.kinolights.com/title/100750",
-			year: "2021~2022",
+			year: "2021~2022", //2021년 12월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001537909",
@@ -402,7 +347,7 @@ const programData = {
 		{
 			name: "여고추리반 3",
 			link: "https://m.kinolights.com/title/117484",
-			year: "2024",
+			year: "2024", //2024년 4월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001754831",
@@ -411,9 +356,64 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "머니게임",
+			link: "https://m.kinolights.com/title/119151",
+			year: "2021", //2021년 4월
+			broadcaster: "유튜브 진용진",
+			ottName: "유튜브 진용진",
+			ottLink: "https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC",
+			keywords: ["서바이벌", "정치", "사회실험", "전략", "심리전"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "송민호의 분실",
+			link: "",
+			year: "2021", //2021년 7월
+			broadcaster: "유튜브 채널 십오야",
+			ottName: "유튜브 채널 십오야",
+			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
+			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "스틸 얼라이브",
+			link: "",
+			year: "2021", //2021년 9월
+			broadcaster: "iHQ",
+			ottName: "",
+			ottLink: "",
+			keywords: ["서바이벌", "생존", "게임", "추리", "미스터리"],
+			note: "전회차 스트리밍 불가",
+			rowClass: "table-danger"
+		},
+		{
+			name: "공범 시즌 1",
+			link: "https://m.kinolights.com/title/132153",
+			year: "2021", //2021년 10월
+			broadcaster: "유튜브 장지수",
+			ottName: "유튜브 장지수",
+			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
+			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "공범 시즌 2",
+			link: "https://m.kinolights.com/title/132156",
+			year: "2022", //2022년 12월
+			broadcaster: "유튜브 장지수",
+			ottName: "유튜브 장지수",
+			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
+			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
+			note: "",
+			rowClass: ""
+		},		
+		{
 			name: "피의 게임 시즌 1",
 			link: "https://m.kinolights.com/title/99167",
-			year: "2021~2022",
+			year: "2021~2022", //2021년 11월
 			broadcaster: "WAVVE, MBC",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000075",
@@ -424,7 +424,7 @@ const programData = {
 		{
 			name: "피의 게임 시즌 2",
 			link: "https://m.kinolights.com/title/122124",
-			year: "2023",
+			year: "2023", //2023년 4월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000108",
@@ -435,7 +435,7 @@ const programData = {
 		{
 			name: "피의 게임 시즌 3",
 			link: "https://m.kinolights.com/title/138201",
-			year: "2024~2025",
+			year: "2024~2025", //2024년 11월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000149",
@@ -446,7 +446,7 @@ const programData = {
 		{
 			name: "피의 게임 X",
 			link: "https://m.kinolights.com/title/153518",
-			year: "2026",
+			year: "2026", //2026년 7월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000190",
@@ -457,7 +457,7 @@ const programData = {
 		{
 			name: "생존남녀: 갈라진 세상",
 			link: "https://m.kinolights.com/title/104274",
-			year: "2022",
+			year: "2022", //2022년 3월
 			broadcaster: "카카오TV",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tlYey3V",
@@ -468,7 +468,7 @@ const programData = {
 		{
 			name: "검은 양 게임",
 			link: "https://m.kinolights.com/title/105515",
-			year: "2022",
+			year: "2022", //2022년 5월
 			broadcaster: "SBS",
 			ottName: "SBS",
 			ottLink: "https://programs.sbs.co.kr/culture/genreismafia/vods/71253",
@@ -477,20 +477,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "도둑잡기",
-			link: "https://m.kinolights.com/title/114853",
-			year: "2022",
-			broadcaster: "WATCHA",
-			ottName: "WATCHA",
-			ottLink: "https://watcha.com/ko-KR/contents/share/tR2edNe",
-			keywords: ["피지컬", "협동", "추리", "미스터리", "어드벤처"],
-			note: "",
-			rowClass: ""
-		},
-		{
 			name: "제로섬게임",
 			link: "https://m.kinolights.com/title/105872",
-			year: "2022",
+			year: "2022", //2022년 7월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001616289",
@@ -501,7 +490,7 @@ const programData = {
 		{
 			name: "입주쟁탈전: 펜트하우스",
 			link: "https://m.kinolights.com/title/105602",
-			year: "2022",
+			year: "2022", //2022년 7월
 			broadcaster: "채널A, WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000089&page=1",
@@ -512,7 +501,7 @@ const programData = {
 		{
 			name: "파트너 게임",
 			link: "https://m.kinolights.com/title/120053",
-			year: "2022",
+			year: "2022", //2022년 9월
 			broadcaster: "유튜브 tvN D",
 			ottName: "유튜브 tvN D",
 			ottLink: "https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc",
@@ -521,9 +510,20 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "도둑잡기",
+			link: "https://m.kinolights.com/title/114853",
+			year: "2022", //2022년 9월
+			broadcaster: "WATCHA",
+			ottName: "WATCHA",
+			ottLink: "https://watcha.com/ko-KR/contents/share/tR2edNe",
+			keywords: ["피지컬", "협동", "추리", "미스터리", "어드벤처"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "버튼게임",
 			link: "https://m.kinolights.com/title/116370",
-			year: "2022",
+			year: "2022", //2022년 11월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000102",
@@ -534,7 +534,7 @@ const programData = {
 		{
 			name: "보물찾기",
 			link: "https://m.kinolights.com/title/109680",
-			year: "2022~2023",
+			year: "2022~2023", //2022년 12월
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001623861",
@@ -545,7 +545,7 @@ const programData = {
 		{
 			name: "우마게임",
 			link: "https://m.kinolights.com/title/118436",
-			year: "2023",
+			year: "2023", //2023년 1월
 			broadcaster: "유튜브 피지컬갤러리",
 			ottName: "유튜브 피지컬갤러리",
 			ottLink: "https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz",
@@ -556,7 +556,7 @@ const programData = {
 		{
 			name: "씬캐처",
 			link: "https://m.kinolights.com/title/118292",
-			year: "2023",
+			year: "2023", //2023년 1월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=F5701_F57000000001",
@@ -565,20 +565,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "더 타임 호텔",
-			link: "https://m.kinolights.com/title/117320",
-			year: "2023",
-			broadcaster: "TVING",
-			ottName: "TVING",
-			ottLink: "https://www.tving.com/contents/P001696917",
-			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
-			note: "",
-			rowClass: ""
-		},
-		{
 			name: "내친나똑 (내 친구들은 나보다 똑똑하다)",
 			link: "https://m.kinolights.com/title/118798",
-			year: "2023",
+			year: "2023", //2023년 1월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001691160",
@@ -587,53 +576,20 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "육각형게임",
-			link: "",
-			year: "2023",
-			broadcaster: "유튜브 긱블",
-			ottName: "유튜브 긱블",
-			ottLink: "https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo",
-			keywords: ["서바이벌", "피지컬", "게임", "두뇌", "퍼즐"],
-			note: "",
-			rowClass: ""
-		},
-		{
-			name: "대학전쟁 시즌 1",
-			link: "https://m.kinolights.com/title/128332",
-			year: "2023",
-			broadcaster: "쿠팡플레이",
-			ottName: "쿠팡플레이",
-			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "협동", "두뇌"],
-			note: "",
-			rowClass: ""
-		},
-		{
-			name: "대학전쟁 시즌 2",
-			link: "https://m.kinolights.com/title/131499",
-			year: "2024",
-			broadcaster: "쿠팡플레이",
-			ottName: "쿠팡플레이",
-			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "협동", "두뇌"],
-			note: "",
-			rowClass: ""
-		},
-		{
-			name: "대학전쟁 시즌 3",
-			link: "https://m.kinolights.com/title/148654",
-			year: "2025~2026",
-			broadcaster: "쿠팡플레이",
-			ottName: "쿠팡플레이",
-			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
-			keywords: ["서바이벌", "협동", "두뇌"],
+			name: "더 타임 호텔",
+			link: "https://m.kinolights.com/title/117320",
+			year: "2023", //2023년 4월
+			broadcaster: "TVING",
+			ottName: "TVING",
+			ottLink: "https://www.tving.com/contents/P001696917",
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "데블스 플랜",
 			link: "https://m.kinolights.com/title/116630",
-			year: "2023",
+			year: "2023", //2023년 09월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
@@ -644,7 +600,7 @@ const programData = {
 		{
 			name: "데블스 플랜: 데스룸",
 			link: "https://m.kinolights.com/title/128769",
-			year: "2025",
+			year: "2025", //2025년 05월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
@@ -664,42 +620,53 @@ const programData = {
 			rowClass: "table-primary"
 		},
 		{
-			name: "더 블랙 오닉스 THE BLACK ONYX",
-			link: "",
-			year: "2024",
-			broadcaster: "일공일공 스튜디오, 치지직",
-			ottName: "유튜브 일공일공 스튜디오",
-			ottLink: "https://www.youtube.com/playlist?list=PL71rKDnQ2Y9q3yzPXD3SrYtPNG85_Fb18&si=JQzUA8O4dzq2brHC",
-			keywords: ["서바이벌", "두뇌"],
+			name: "대학전쟁 시즌 1",
+			link: "https://m.kinolights.com/title/128332",
+			year: "2023", //2023년 11월
+			broadcaster: "쿠팡플레이",
+			ottName: "쿠팡플레이",
+			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
+			keywords: ["서바이벌", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
 		},
 		{
-			name: "기억을 잊는 밤",
-			link: "",
-			year: "2024",
-			broadcaster: "유튜브 코다리찜",
-			ottName: "유튜브 코다리찜",
-			ottLink: "https://www.youtube.com/watch?v=97WtB7a4-9k&list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt&index=10",
-			keywords: ["추리", "미스터리", "방탈출", "어드벤처", "드라마"],
+			name: "대학전쟁 시즌 2",
+			link: "https://m.kinolights.com/title/131499",
+			year: "2024", //2024년 11월
+			broadcaster: "쿠팡플레이",
+			ottName: "쿠팡플레이",
+			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
+			keywords: ["서바이벌", "협동", "두뇌"],
 			note: "",
 			rowClass: ""
-		},		
+		},
 		{
-			name: "금수저 전쟁",
-			link: "https://m.kinolights.com/title/138553",
-			year: "2024",
-			broadcaster: "U+모바일tv",
-			ottName: "U+모바일tv",
-			ottLink: "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&vod_type=vod&main_run=Y&backkey_finish=N&is_splash=N&review_yn=N&contents_id=M0124AV077PPV00&category_id=&series_num=1&series_category_id=E25VM&utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider&packageName=com.kinolights.kinolights",
-			keywords: ["서바이벌", "정치", "두뇌", "전략"],
-			note: "웨이브, 왓챠에서도 시청가능",
+			name: "대학전쟁 시즌 3",
+			link: "https://m.kinolights.com/title/148654",
+			year: "2025~2026", //2025년 12월
+			broadcaster: "쿠팡플레이",
+			ottName: "쿠팡플레이",
+			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
+			keywords: ["서바이벌", "협동", "두뇌"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "육각형 게임",
+			link: "",
+			year: "2023", //2023년 11월
+			broadcaster: "유튜브 긱블",
+			ottName: "유튜브 긱블",
+			ottLink: "https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo",
+			keywords: ["서바이벌", "피지컬", "게임", "두뇌", "퍼즐"],
+			note: "",
 			rowClass: ""
 		},
 		{
 			name: "사상검증구역: 더 커뮤니티",
 			link: "https://m.kinolights.com/title/130496",
-			year: "2024",
+			year: "2024", //2024년 1월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000124",
@@ -710,7 +677,7 @@ const programData = {
 		{
 			name: "더 커뮤니티 2: 보이지 않는 손",
 			link: "https://m.kinolights.com/season/154328",
-			year: "2026",
+			year: "2026", //2026년 9월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000192",
@@ -721,7 +688,7 @@ const programData = {
 		{
 			name: "미스터리 수사단 시즌 1",
 			link: "https://m.kinolights.com/title/129009",
-			year: "2024",
+			year: "2024", //2024년 6월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
@@ -732,7 +699,7 @@ const programData = {
 		{
 			name: "미스터리 수사단 시즌 2",
 			link: "https://m.kinolights.com/title/145976",
-			year: "2026",
+			year: "2026", //2026년 2월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
@@ -741,9 +708,42 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "기억을 잊는 밤",
+			link: "",
+			year: "2024", //2024년 7월
+			broadcaster: "유튜브 코다리찜",
+			ottName: "유튜브 코다리찜",
+			ottLink: "https://www.youtube.com/watch?v=97WtB7a4-9k&list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt&index=10",
+			keywords: ["추리", "미스터리", "방탈출", "어드벤처", "드라마"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "더 블랙 오닉스 THE BLACK ONYX",
+			link: "",
+			year: "2024", //2024년 10월
+			broadcaster: "일공일공 스튜디오, 치지직",
+			ottName: "유튜브 일공일공 스튜디오",
+			ottLink: "https://www.youtube.com/playlist?list=PL71rKDnQ2Y9q3yzPXD3SrYtPNG85_Fb18&si=JQzUA8O4dzq2brHC",
+			keywords: ["서바이벌", "두뇌"],
+			note: "",
+			rowClass: ""
+		},		
+		{
+			name: "금수저 전쟁",
+			link: "https://m.kinolights.com/title/138553",
+			year: "2024", //2024년 11월
+			broadcaster: "U+모바일tv",
+			ottName: "U+모바일tv",
+			ottLink: "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&vod_type=vod&main_run=Y&backkey_finish=N&is_splash=N&review_yn=N&contents_id=M0124AV077PPV00&category_id=&series_num=1&series_category_id=E25VM&utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider&packageName=com.kinolights.kinolights",
+			keywords: ["서바이벌", "정치", "두뇌", "전략"],
+			note: "웨이브, 왓챠에서도 시청가능",
+			rowClass: ""
+		},
+		{
 			name: "라이프스 게임 Life's Game",
 			link: "https://m.kinolights.com/title/144601",
-			year: "2025",
+			year: "2025", //2025년 3월
 			broadcaster: "유튜브 LG그룹",
 			ottName: "유튜브 LG그룹",
 			ottLink: "https://www.youtube.com/watch?v=tfy3EAFxmqY&list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
@@ -754,7 +754,7 @@ const programData = {
 		{
 			name: "노엑싯게임룸 NO EXIT GAME ROOM",
 			link: "https://m.kinolights.com/title/148781",
-			year: "2025",
+			year: "2025", //2025년 11월
 			broadcaster: "아무거나보틀, WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000048",
@@ -765,7 +765,7 @@ const programData = {
 		{
 			name: "뇌볼루션: 기억의 지배자",
 			link: "https://m.kinolights.com/title/149102",
-			year: "2025",
+			year: "2025", //2025년 12월
 			broadcaster: "E채널",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001780777",
@@ -774,9 +774,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "네가지 소원",
+			name: "네 가지 소원",
 			link: "",
-			year: "2026",
+			year: "2026", //2026년 1월
 			broadcaster: "유튜브 스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
 			ottLink: "https://www.youtube.com/watch?v=U9QaqOwrYZo&list=PLimMCLxaXz0Gj-2ueyEdshOaKK9mQzj_0",
@@ -787,7 +787,7 @@ const programData = {
 		{
 			name: "더 로직",
 			link: "https://m.kinolights.com/season/149628",
-			year: "2026",
+			year: "2026", //2026년 1월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=K02_T2025-0548",
@@ -796,20 +796,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "싱크로 게임",
-			link: "https://m.kinolights.com/title/150147",
-			year: "2026",
-			broadcaster: "tvN",
-			ottName: "TVING",
-			ottLink: "https://www.tving.com/contents/P001783211",
-			keywords: ["서바이벌", "피지컬", "정치", "협동", "두뇌"],
-			note: "",
-			rowClass: ""
-		},
-		{
 			name: "데스게임 시즌 1: 천만원을 걸어라",
 			link: "https://m.kinolights.com/title/149730",
-			year: "2026",
+			year: "2026", //2026년 1월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82679390",
@@ -820,7 +809,7 @@ const programData = {
 		{
 			name: "데스게임 시즌 2: 최후의 승자",
 			link: "https://m.kinolights.com/title/152207",
-			year: "2026",
+			year: "2026", //2026년 4월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82679390",
@@ -829,9 +818,20 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "싱크로 게임",
+			link: "https://m.kinolights.com/title/150147",
+			year: "2026", //2026년 2월
+			broadcaster: "tvN",
+			ottName: "TVING",
+			ottLink: "https://www.tving.com/contents/P001783211",
+			keywords: ["서바이벌", "피지컬", "정치", "협동", "두뇌"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "베팅 온 팩트",
 			link: "https://m.kinolights.com/title/151135",
-			year: "2026",
+			year: "2026", //2026년 3월
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000187",
@@ -842,7 +842,7 @@ const programData = {
 		{
 			name: "머더클럽",
 			link: "https://m.kinolights.com/season/153749",
-			year: "2026",
+			year: "2026", //2026년 7월
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-02b192fc-8bd3-498e-ac64-65245666fc39",
@@ -851,26 +851,15 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "전설의 수사",
-			link: "https://m.kinolights.com/season/154945",
-			year: "2026",
-			broadcaster: "WAVVE",
-			ottName: "WAVVE",
-			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000055",
-			keywords: ["협동", "두뇌", "추리", "미스터리"],
-			note: "",
-			rowClass: ""
-		},
-		{
 			name: "술래게임",
 			link: "https://m.kinolights.com/season/154104",
-			year: "2026 예정",
+			year: "2026", //2026년 9월
 			broadcaster: "Disney+",
-			ottName: "",
-			ottLink: "",
-			keywords: ["서바이벌", "피지컬", "마피아게임", "심리전"],
+			ottName: "Disney+",
+			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-246585f6-2139-40a3-b7aa-f97abf656589",
+			keywords: ["서바이벌", "피지컬", "정치", "마피아게임", "심리전"],
 			note: "",
-			rowClass: "table-primary"
+			rowClass: ""
 		},
 		{
 			name: "배신자들 게임",
@@ -897,20 +886,9 @@ const programData = {
     ],
     cate02: [
         {
-			name: "박스",
-			link: "https://m.kinolights.com/title/95967",
-			year: "2015",
-			broadcaster: "JTBC",
-			ottName: "TVING",
-			ottLink: "https://www.tving.com/contents/P001459427",
-			keywords: ["서바이벌", "게임", "정치", "심리전"],
-			note: "",
-			rowClass: ""
-		},
-		{
 			name: "눈치왕",
 			link: "https://m.kinolights.com/title/114003",
-			year: "2015",
+			year: "2015", //2015년 1월
 			broadcaster: "tvN",
 			ottName: "",
 			ottLink: "",
@@ -919,9 +897,20 @@ const programData = {
 			rowClass: "table-danger"
 		},
 		{
+			name: "박스",
+			link: "https://m.kinolights.com/title/95967",
+			year: "2015", //2015년 9월
+			broadcaster: "JTBC",
+			ottName: "TVING",
+			ottLink: "https://www.tving.com/contents/P001459427",
+			keywords: ["서바이벌", "게임", "정치", "심리전"],
+			note: "",
+			rowClass: ""
+		},		
+		{
 			name: "미추리 8-1000 시즌 1",
 			link: "https://m.kinolights.com/title/91419",
-			year: "2018",
+			year: "2018", //2018년 11월
 			broadcaster: "SBS",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82009029",
@@ -932,7 +921,7 @@ const programData = {
 		{
 			name: "미추리 8-1000 시즌 2",
 			link: "https://m.kinolights.com/title/91434",
-			year: "2019",
+			year: "2019", //2019년 2월
 			broadcaster: "SBS",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82009029",
@@ -943,7 +932,7 @@ const programData = {
 		{
 			name: "식스센스 1",
 			link: "https://m.kinolights.com/title/86175",
-			year: "2020",
+			year: "2020", //2020년 9월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001316154",
@@ -954,7 +943,7 @@ const programData = {
 		{
 			name: "식스센스 2",
 			link: "https://m.kinolights.com/title/97472",
-			year: "2021",
+			year: "2021", //2021년 6월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001483400",
@@ -965,7 +954,7 @@ const programData = {
 		{
 			name: "식스센스 3",
 			link: "https://m.kinolights.com/title/104228",
-			year: "2022",
+			year: "2022", //2022년 3월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001574198",
@@ -974,9 +963,42 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "식스센스: 시티투어 1",
+			link: "https://m.kinolights.com/season/140251",
+			year: "2025", //2025년 2월
+			broadcaster: "tvN",
+			ottName: "TVING",
+			ottLink: "https://www.tving.com/contents/P001767822",
+			keywords: ["게임", "추리"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "식스센스: 시티투어 2",
+			link: "https://m.kinolights.com/season/147207",
+			year: "2025", //2025년 10월
+			broadcaster: "tvN",
+			ottName: "TVING",
+			ottLink: "https://www.tving.com/contents/P001777923",
+			keywords: ["게임", "추리"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "식스센스: B사이드",
+			link: "https://m.kinolights.com/season/154431",
+			year: "2026", //2026년 9월
+			broadcaster: "tvN",
+			ottName: "TVING",
+			ottLink: "https://www.tving.com/contents/P001790867",
+			keywords: ["게임", "추리"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "신세계로부터",
 			link: "https://m.kinolights.com/title/100127",
-			year: "2021",
+			year: "2021", //2021년 11월
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81436207",
@@ -987,7 +1009,7 @@ const programData = {
 		{
 			name: "플레이유",
 			link: "https://m.kinolights.com/season/104231",
-			year: "2022",
+			year: "2022", //2022년 3월
 			broadcaster: "카카오TV",
 			ottName: "유튜브 플레이유",
 			ottLink: "https://www.youtube.com/@playoulevelup/",
@@ -998,7 +1020,7 @@ const programData = {
 		{
 			name: "플레이유 레벨업: 빌런이 사는 세상",
 			link: "https://m.kinolights.com/season/122583",
-			year: "2023",
+			year: "2023", //2023년 4월
 			broadcaster: "카카오TV",
 			ottName: "유튜브 플레이유",
 			ottLink: "https://www.youtube.com/@playoulevelup/",
@@ -1009,7 +1031,7 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 1",
 			link: "https://m.kinolights.com/season/104214",
-			year: "2022",
+			year: "2022", //2022년 9월
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=647bf11a-8cfd-4647-96b3-c1847f61b51a",
@@ -1020,7 +1042,7 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 2",
 			link: "https://m.kinolights.com/season/117192",
-			year: "2023",
+			year: "2023", //2023년 6월
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=ef8fa848-a896-4f5d-8fd4-80355bd177e7",
@@ -1031,7 +1053,7 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 3",
 			link: "https://m.kinolights.com/season/135728",
-			year: "2024",
+			year: "2024", //2024년 8월
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=8f9a763b-7a9e-4228-8b2f-3b8476be7f97",
@@ -1042,7 +1064,7 @@ const programData = {
 		{
 			name: "아파트404",
 			link: "https://m.kinolights.com/title/129573",
-			year: "2024",
+			year: "2024", //2024년 2월
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001752153",
