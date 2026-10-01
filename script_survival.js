@@ -788,7 +788,7 @@ const programData = {
 			name: "더 로직",
 			link: "https://m.kinolights.com/season/149628",
 			year: "2026", //2026년 1월
-			broadcaster: "WAVVE",
+			broadcaster: "KBS2",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=K02_T2025-0548",
 			keywords: ["서바이벌", "정치", "사회실험", "두뇌"],
