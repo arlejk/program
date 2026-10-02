@@ -102,6 +102,12 @@ a:hover { color: var(--color-primary); }
 .table thead th[data-sort].sort-asc::after { content: '\f0de'; opacity: 1; }
 .table thead th[data-sort].sort-desc::after { content: '\f0dd'; opacity: 1; }
 .table.program .link { width: auto; max-width: 10em; padding: 0; }
+.table.survival col.col-01 { } /* 이름 */
+.table.survival col.col-02 { width: 6em; } /* 방영년도 */
+.table.survival col.col-03 { } /* 방송사 */
+.table.survival col.col-04 { } /* 스트리밍 */
+.table.survival col.col-05 { } /* 키워드 */
+.table.survival col.col-06 { } /* 비고 */
 .table.crime_scene col.col-01 { width: 6em; } /* 시즌 */
 .table.crime_scene col.col-02 { width: 5em; } /* 방영년도 */
 .table.crime_scene col.col-03 { } /* 방송사 */

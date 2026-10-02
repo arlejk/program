@@ -370,7 +370,7 @@ const programData = {
 			name: "송민호의 분실",
 			link: "",
 			year: "2021", //2021년 7월
-			broadcaster: "유튜브 채널 십오야",
+			broadcaster: "채널 십오야",
 			ottName: "유튜브 채널 십오야",
 			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
 			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉"],
@@ -502,7 +502,7 @@ const programData = {
 			name: "테크룸",
 			link: "",
 			year: "2022", //2022년 7월
-			broadcaster: "유튜브 tvN D 트라메",
+			broadcaster: "tvN D 트라메",
 			ottName: "유튜브 tvN D 트라메",
 			ottLink: "https://www.youtube.com/playlist?list=PLGyiRBJQ9X_u_cmERusbnDCS_ejs2McUM",
 			keywords: ["서바이벌", "생존", "게임", "전략"],
@@ -513,7 +513,7 @@ const programData = {
 			name: "파트너 게임",
 			link: "https://m.kinolights.com/title/120053",
 			year: "2022", //2022년 9월
-			broadcaster: "유튜브 tvN D",
+			broadcaster: "tvN D",
 			ottName: "유튜브 tvN D",
 			ottLink: "https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc",
 			keywords: ["서바이벌", "정치", "협동", "두뇌"],
@@ -777,7 +777,7 @@ const programData = {
 			name: "라이프스 게임 Life's Game",
 			link: "https://m.kinolights.com/title/144601",
 			year: "2025", //2025년 3월
-			broadcaster: "유튜브 LG그룹",
+			broadcaster: "LG그룹",
 			ottName: "유튜브 LG그룹",
 			ottLink: "https://www.youtube.com/playlist?list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
 			keywords: ["서바이벌", "정치", "두뇌"],
@@ -810,7 +810,7 @@ const programData = {
 			name: "네 가지 소원",
 			link: "",
 			year: "2026", //2026년 1월
-			broadcaster: "유튜브 스튜디오 마인드제로",
+			broadcaster: "스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
 			ottLink: "https://www.youtube.com/playlist?list=PLimMCLxaXz0Gj-2ueyEdshOaKK9mQzj_0",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
@@ -832,7 +832,7 @@ const programData = {
 			name: "딜레마게임",
 			link: "",
 			year: "2026", //2026년 1월
-			broadcaster: "유튜브 연세대학교",
+			broadcaster: "연세대학교",
 			ottName: "유튜브 연세대학교",
 			ottLink: "https://www.youtube.com/watch?v=b6ZskQZ1Jwo&t=11s",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
@@ -887,7 +887,7 @@ const programData = {
 			name: "D:CODE (디코드)",
 			link: "",
 			year: "2026", //2026년 3월
-			broadcaster: "유튜브 단국대학교",
+			broadcaster: "단국대학교",
 			ottName: "유튜브 단국대학교",
 			ottLink: "https://www.youtube.com/playlist?list=PLJceTV92NxCSumiJFd2m_L4h1j51thGwj",
 			keywords: ["서바이벌", "협동", "두뇌", "전략"],
