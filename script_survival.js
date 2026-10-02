@@ -499,6 +499,17 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "테크룸",
+			link: "",
+			year: "2022", //2022년 7월
+			broadcaster: "유튜브 tvN D 트라메",
+			ottName: "유튜브 tvN D 트라메",
+			ottLink: "https://www.youtube.com/playlist?list=PLGyiRBJQ9X_u_cmERusbnDCS_ejs2McUM",
+			keywords: ["서바이벌", "생존", "게임", "전략"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "파트너 게임",
 			link: "https://m.kinolights.com/title/120053",
 			year: "2022", //2022년 9월
@@ -708,12 +719,23 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "트리키 서바이벌",
+			link: "",
+			year: "2024", //2024년 6월
+			broadcaster: "판타스트릭, 스튜디오 마인드제로",
+			ottName: "유튜브 판타스트릭",
+			ottLink: "https://www.youtube.com/playlist?list=PL2DZVBFf5rb5VKFCEsmdnZhIkl69akwra",
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "기억을 잊는 밤",
 			link: "",
 			year: "2024", //2024년 7월
 			broadcaster: "유튜브 코다리찜",
 			ottName: "유튜브 코다리찜",
-			ottLink: "https://www.youtube.com/watch?v=97WtB7a4-9k&list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt&index=10",
+			ottLink: "https://www.youtube.com/playlist?list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt",
 			keywords: ["추리", "미스터리", "방탈출", "어드벤처", "드라마"],
 			note: "",
 			rowClass: ""
@@ -741,12 +763,23 @@ const programData = {
 			rowClass: ""
 		},
 		{
+			name: "챠니즈플랜",
+			link: "",
+			year: "2025", //2025년 1월
+			broadcaster: "유튜브 명탐정챠니",
+			ottName: "유튜브 명탐정챠니",
+			ottLink: "https://www.youtube.com/playlist?list=PLmgT8NlAbL7OpWLiurW0cBmSHcgfeXfAB",
+			keywords: ["서바이벌", "두뇌", "전략", "심리전"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "라이프스 게임 Life's Game",
 			link: "https://m.kinolights.com/title/144601",
 			year: "2025", //2025년 3월
 			broadcaster: "유튜브 LG그룹",
 			ottName: "유튜브 LG그룹",
-			ottLink: "https://www.youtube.com/watch?v=tfy3EAFxmqY&list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
+			ottLink: "https://www.youtube.com/playlist?list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
 			keywords: ["서바이벌", "정치", "두뇌"],
 			note: "웨이브에서도 시청가능",
 			rowClass: ""
@@ -759,7 +792,7 @@ const programData = {
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000048",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
-			note: '<a href="https://www.youtube.com/watch?v=yetVRFrCX0I&list=PL2zSy9h37heW72sfCECYi4_R4B5FrwXTs" target="_blank">아무거나보틀 유튜브에서도 시청가능 <i class="xi-external-link"></i></a>',
+			note: '<a href="https://www.youtube.com/playlist?list=PL2zSy9h37heW72sfCECYi4_R4B5FrwXTs" target="_blank">아무거나보틀 유튜브에서도 시청가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -779,7 +812,7 @@ const programData = {
 			year: "2026", //2026년 1월
 			broadcaster: "유튜브 스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
-			ottLink: "https://www.youtube.com/watch?v=U9QaqOwrYZo&list=PLimMCLxaXz0Gj-2ueyEdshOaKK9mQzj_0",
+			ottLink: "https://www.youtube.com/playlist?list=PLimMCLxaXz0Gj-2ueyEdshOaKK9mQzj_0",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
 			note: "",
 			rowClass: ""
@@ -792,6 +825,17 @@ const programData = {
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=K02_T2025-0548",
 			keywords: ["서바이벌", "정치", "사회실험", "두뇌"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "딜레마게임",
+			link: "",
+			year: "2026", //2026년 1월
+			broadcaster: "유튜브 연세대학교",
+			ottName: "유튜브 연세대학교",
+			ottLink: "https://www.youtube.com/watch?v=b6ZskQZ1Jwo&t=11s",
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -836,6 +880,17 @@ const programData = {
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000187",
 			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
+			note: "",
+			rowClass: ""
+		},
+		{
+			name: "D:CODE (디코드)",
+			link: "",
+			year: "2026", //2026년 3월
+			broadcaster: "유튜브 단국대학교",
+			ottName: "유튜브 단국대학교",
+			ottLink: "https://www.youtube.com/playlist?list=PLJceTV92NxCSumiJFd2m_L4h1j51thGwj",
+			keywords: ["서바이벌", "협동", "두뇌", "전략"],
 			note: "",
 			rowClass: ""
 		},
@@ -1011,8 +1066,8 @@ const programData = {
 			link: "https://m.kinolights.com/season/104231",
 			year: "2022", //2022년 3월
 			broadcaster: "카카오TV",
-			ottName: "유튜브 플레이유",
-			ottLink: "https://www.youtube.com/@playoulevelup/",
+			ottName: "",
+			ottLink: "",
 			keywords: ["게임", "두뇌", "방탈출", "어드벤처"],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
