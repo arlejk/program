@@ -450,7 +450,7 @@ const programData = {
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000190",
-			keywords: ["서바이벌", "피지컬", "정치", "협동", "두뇌", "전략"],
+			keywords: ["서바이벌", "피지컬", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
 		},
@@ -502,8 +502,8 @@ const programData = {
 			name: "테크룸",
 			link: "",
 			year: "2022", //2022년 7월
-			broadcaster: "tvN D 트라메",
-			ottName: "유튜브 tvN D 트라메",
+			broadcaster: "tvN D, 트라메",
+			ottName: "유튜브 트라메",
 			ottLink: "https://www.youtube.com/playlist?list=PLGyiRBJQ9X_u_cmERusbnDCS_ejs2McUM",
 			keywords: ["서바이벌", "생존", "게임", "전략"],
 			note: "",
@@ -514,7 +514,7 @@ const programData = {
 			link: "https://m.kinolights.com/title/120053",
 			year: "2022", //2022년 9월
 			broadcaster: "tvN D",
-			ottName: "유튜브 tvN D",
+			ottName: "유튜브 tvN D ENT",
 			ottLink: "https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc",
 			keywords: ["서바이벌", "정치", "협동", "두뇌"],
 			note: "",
@@ -549,7 +549,7 @@ const programData = {
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001623861",
-			keywords: ["서바이벌", "피지컬", "정치", "어드벤처"],
+			keywords: ["서바이벌", "피지컬", "정치", "방탈출", "어드벤처"],
 			note: "",
 			rowClass: ""
 		},
@@ -780,7 +780,7 @@ const programData = {
 			broadcaster: "LG그룹",
 			ottName: "유튜브 LG그룹",
 			ottLink: "https://www.youtube.com/playlist?list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
-			keywords: ["서바이벌", "정치", "두뇌"],
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "웨이브에서도 시청가능",
 			rowClass: ""
 		},
