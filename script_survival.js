@@ -884,7 +884,7 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "D:CODE (디코드)",
+			name: "디코드 D:CODE",
 			link: "",
 			year: "2026", //2026년 3월
 			broadcaster: "단국대학교",
