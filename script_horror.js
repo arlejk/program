@@ -2000,6 +2000,19 @@ window.programData = {
 				{ storyteller: "김호영", title: "수산물 공장", link: "https://youtu.be/3oLymhkGUxk", candles: 44, isWin: true, isFullCandles: true },
 				{ storyteller: "산", title: "말할 수 없는 비밀", link: "https://youtu.be/qLgMDaid3ho", candles: 39, isWin: false, isFullCandles: false }
 			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "15",
+			guests: ["수호"],
+			stories: [
+				{ storyteller: "김호영", title: "보호막", link: "https://youtu.be/4tSaPYksd9g", candles: 31, isWin: false, isFullCandles: false },
+				{ storyteller: "수호", title: "경수", link: "https://youtu.be/r_DFC9nrPmU", candles: 38, isWin: true, isFullCandles: false },
+				{ storyteller: "김아영", title: "3865", link: "https://youtu.be/8diHDb-1hgU", candles: 33, isWin: false, isFullCandles: false }
+			]
 		}
     ]
 };
