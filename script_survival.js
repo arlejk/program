@@ -719,7 +719,7 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "트리키 서바이벌",
+			name: "트리키 서바이벌 시즌 1",
 			link: "",
 			year: "2024", //2024년 6월
 			broadcaster: "판타스트릭, 스튜디오 마인드제로",
@@ -728,6 +728,17 @@ const programData = {
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
 			note: "",
 			rowClass: ""
+		},
+		{
+			name: "트리키 서바이벌 시즌 2",
+			link: "",
+			year: "미정", //2025년 촬영 추정
+			broadcaster: "판타스트릭",
+			ottName: "유튜브 판타스트릭",
+			ottLink: "",
+			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			note: "",
+			rowClass: "table-warning"
 		},
 		{
 			name: "기억을 잊는 밤",
