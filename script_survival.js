@@ -620,9 +620,9 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "데블스 플랜 시즌 3",
+			name: "데블스 플랜: 데드 어게인",
 			link: "https://m.kinolights.com/title/149589",
-			year: "2026 예정",
+			year: "2026 예정", //2026년 11월
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
