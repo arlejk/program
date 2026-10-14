@@ -502,8 +502,8 @@ function renderTable(containerId, list) {
 				<td data-label="방영년도" class="center">${item.year}</td>
 				<td data-label="스트리밍" class="center link">${ottHtml}</td>
 				<td data-label="에피소드">${epCombinedHtml}</td>
-				<td data-label="버티기성공" class="center">${successText}</td>
-				<td data-label="멤버(인류대표/AI)">${membersHtml}</td>
+				<td data-label="버티기" class="center">${successText}</td>
+				<td data-label="멤버">${membersHtml}</td>
 				<td data-label="게스트">${guestsHtml}</td>
 				<td data-label="키워드">${keywordsHtml}</td>
 				<td data-label="비고">${item.note || '-'}</td>
