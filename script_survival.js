@@ -1477,7 +1477,7 @@ const programData = {
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=647bf11a-8cfd-4647-96b3-c1847f61b51a",
 			keywords: ["생존", "게임", "협동", "어드벤처"],
-			note: "",
+			note: '<a href="the_zone.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -1489,7 +1489,7 @@ const programData = {
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=ef8fa848-a896-4f5d-8fd4-80355bd177e7",
 			keywords: ["생존", "게임", "협동", "어드벤처"],
-			note: "",
+			note: '<a href="the_zone.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
@@ -1501,7 +1501,7 @@ const programData = {
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=8f9a763b-7a9e-4228-8b2f-3b8476be7f97",
 			keywords: ["생존", "게임", "협동", "어드벤처"],
-			note: "",
+			note: '<a href="the_zone.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
