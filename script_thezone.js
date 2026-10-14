@@ -44,8 +44,8 @@ const theZoneData = [
 		isSuccess: true,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: [],
-		keywords: ["지구냉각설", "안과병원", "눈을떠라", "개안"],
-		note: "음산한 공간에서 시작된 첫 번째 시뮬레이션"
+		keywords: ["지구냉각설", "한파", "추위", "눈모양", "물세례"],
+		note: "한파 속에서 눈과 마주치면 물세례를 맞는 미션"
 	},
 	{
 		program: "더 존: 버텨야 산다",
@@ -57,7 +57,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: ["유민상", "송영길", "이이경"],
-		keywords: ["물부족", "찜질방", "물폭탄", "수영"],
+		keywords: ["물부족", "찜질방", "수질오염", "수위조절", "물폭탄"],
 		note: "진땀 빼는 수중 찜질방 시뮬레이션"
 	},
 	{
@@ -70,7 +70,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: ["태항호"],
-		keywords: ["좀비", "한옥마을", "악귀", "바이러스"],
+		keywords: ["좀비아포칼립스", "한옥마을", "감염", "바이러스"],
 		note: "초가집과 기와가 있는 옛 마을의 좀비 대란",
 		rowClass: "table-primary"
 	},
@@ -84,7 +84,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: [],
-		keywords: ["공포", "가정집", "격리생활", "안전지대", "규칙"],
+		keywords: ["공포", "가정집", "격리생활", "안전지대", "거리두기"],
 		note: "안락한 가정집에서 펼쳐진 슬기로운 격리 생활",
 		rowClass: "table-primary"
 	},
@@ -98,7 +98,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: ["태항호"],
-		keywords: ["브레인", "만찬장", "시식", "감정변화", "두뇌"],
+		keywords: ["브레인", "레스토랑", "두뇌", "감정변화", "감정조절"],
 		note: "고생한 멤버들을 위한 만찬 및 요동치는 만찬장"
 	},
 	{
@@ -108,10 +108,10 @@ const theZoneData = [
 		otts: ["Disney+"],
 		epNum: "6",
 		epTitle: "Money Zone",
-		isSuccess: true,
+		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: ["태항호", "구준엽", "라치카", "HOOK"],
-		keywords: ["도박중독", "1억원", "현찰", "한탕의유혹", "쇼핑"],
+		keywords: ["도박중독", "1억원", "현금", "한탕의유혹", "올인"],
 		note: "손에 쥐어진 현찰 1억 원과 한탕의 유혹",
 		rowClass: "table-primary"
 	},
@@ -125,7 +125,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: [],
-		keywords: ["불지키기", "캠핑", "원시", "화재"],
+		keywords: ["불지키기", "캠핑", "원시", "불씨"],
 		note: "이보다 더 간단한 룰은 없다! 불을 지켜라"
 	},
 	{
@@ -138,7 +138,7 @@ const theZoneData = [
 		isSuccess: true,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: ["진종오", "박은하", "김상욱", "황충원", "프니엘", "줄리엔 강"],
-		keywords: ["전쟁", "서바이벌", "타겟", "최악의재난"],
+		keywords: ["전쟁", "서바이벌", "타겟", "사격"],
 		note: "인류 최악의 재난, 전쟁 서바이벌"
 	},
 
@@ -152,10 +152,10 @@ const theZoneData = [
 		otts: ["Disney+"],
 		epNum: "1",
 		epTitle: "Stress Zone",
-		isSuccess: true,
+		isSuccess: false,
 		members: ["유재석", "이광수", "권유리"],
 		guests: [],
-		keywords: ["당진", "건강", "스트레스", "병원"],
+		keywords: ["건강검진", "스트레스", "수명", "수분공급"],
 		note: "건강하게만 버티면 되는 첫 번째 시뮬레이션",
 		rowClass: "table-primary"
 	},
@@ -169,8 +169,8 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리"],
 		guests: [],
-		keywords: ["인천", "풀등 모래섬", "힐링", "가상공간", "골프장"],
-		note: "힐링의 가상공간에서 펼쳐진 먹고 즐기는 버티기"
+		keywords: ["인천", "풀등모래섬", "골프", "해수면상승", "지구온난화"],
+		note: "힐링의 무인도에서 펼쳐진 먹고 즐기는 버티기"
 	},
 	{
 		program: "더 존: 버텨야 산다",
@@ -179,10 +179,10 @@ const theZoneData = [
 		otts: ["Disney+"],
 		epNum: "3",
 		epTitle: "Automatic Zone",
-		isSuccess: false,
+		isSuccess: true,
 		members: ["유재석", "이광수", "권유리"],
 		guests: ["김종민"],
-		keywords: ["대전", "인공지능침대", "침대만굴러가라", "자율주행"],
+		keywords: ["대전", "인공지능침대", "자율주행", "AI오작동"],
 		note: "움직이는 인공지능 침대 위 환상의 모험"
 	},
 	{
@@ -192,10 +192,10 @@ const theZoneData = [
 		otts: ["Disney+"],
 		epNum: "4",
 		epTitle: "Virus Zone 2",
-		isSuccess: true,
+		isSuccess: false,
 		members: ["유재석", "이광수", "권유리"],
 		guests: [],
-		keywords: ["고양", "라이프가드", "수영장", "바이러스"],
+		keywords: ["고양", "라이프가드", "워터파크", "좀비바이러스"],
 		note: "라이프가드가 된 멤버들 앞의 정체불명의 존재",
 		rowClass: "table-primary"
 	},
@@ -206,10 +206,10 @@ const theZoneData = [
 		otts: ["Disney+"],
 		epNum: "5",
 		epTitle: "Mystery Zone",
-		isSuccess: false,
+		isSuccess: true,
 		members: ["유재석", "이광수", "권유리"],
 		guests: ["박준규", "김현숙", "인교진", "소이현", "엄현경", "신우", "박광재"],
-		keywords: ["문경", "화양촌", "미스테리", "귀신"],
+		keywords: ["문경", "화양촌", "암행어사", "미스터리", "추리"],
 		note: "화창한 마을 화양촌에서 일어난 미스터리한 사건들",
 		rowClass: "table-primary"
 	},
@@ -223,7 +223,7 @@ const theZoneData = [
 		isSuccess: true,
 		members: ["유재석", "이광수", "권유리"],
 		guests: [],
-		keywords: ["원주", "추억의도장깨기", "팀플레이", "놀이"],
+		keywords: ["원주", "도장깨기", "팀워크", "보드게임"],
 		note: "아찔한 장소에서 펼쳐지는 추억의 도장 깨기"
 	},
 	{
@@ -233,10 +233,10 @@ const theZoneData = [
 		otts: ["Disney+"],
 		epNum: "7",
 		epTitle: "Analog Zone",
-		isSuccess: true,
+		isSuccess: false,
 		members: ["유재석", "이광수", "권유리"],
 		guests: ["지석진"],
-		keywords: ["부산", "지하벙커", "아날로그", "수신음"],
+		keywords: ["부산", "지하벙커", "통신장애", "무전통신"],
 		note: "통신시스템이 마비된 지하벙커에서 홀로 버티기"
 	},
 	{
@@ -249,7 +249,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리"],
 		guests: ["조나단", "우기", "박준형", "줄리엔 강", "박은하", "추성훈", "파트리샤", "황재균", "전웅태", "조준호", "조준현"],
-		keywords: ["서울", "배틀", "적진파괴", "올스타게스트"],
+		keywords: ["서울", "팀대결", "진지폭파", "용병", "무기구매"],
 		note: "배틀을 통해 적들의 진지를 무너뜨리는 올스타전"
 	},
 
