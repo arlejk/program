@@ -2013,6 +2013,19 @@ window.programData = {
 				{ storyteller: "수호", title: "경수", link: "https://youtu.be/r_DFC9nrPmU", candles: 38, isWin: true, isFullCandles: false },
 				{ storyteller: "김아영", title: "3865", link: "https://youtu.be/8diHDb-1hgU", candles: 33, isWin: false, isFullCandles: false }
 			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "16",
+			guests: ["천둥"],
+			stories: [
+				{ storyteller: "김아영", title: "노란 수의", link: "https://youtu.be/s-Dsox3Ypvg", candles: 31, isWin: false, isFullCandles: false },
+				{ storyteller: "천둥", title: "비방의 대가", link: "https://youtu.be/OItscnW594s", candles: 40, isWin: true, isFullCandles: false },
+				{ storyteller: "김호영", title: "두 아들", link: "https://youtu.be/dguZrpQ4We4", candles: 38, isWin: false, isFullCandles: false }
+			]
 		}
     ]
 };

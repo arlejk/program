@@ -4,51 +4,72 @@ const programData = {
         {
 			name: "더 지니어스: 게임의 법칙",
 			link: "https://m.kinolights.com/title/89901",
-			year: "2013", //2013년 4월
+			year: "2013",
+			sortYear: "2013-04",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000106439",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "홍진호", result: "우승" },
+				{ name: "김경란", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "더 지니어스: 룰 브레이커",
 			link: "https://m.kinolights.com/title/87980",
-			year: "2013~2014", //2013년 12월
+			year: "2013~2014",
+			sortYear: "2013-12",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000125936",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "이상민", result: "우승" },
+				{ name: "임요한", result: "준우승" }
+			],
 			note: "6화 스트리밍 불가",
 			rowClass: ""
 		},
 		{
 			name: "더 지니어스: 블랙가넷",
 			link: "https://m.kinolights.com/title/102026",
-			year: "2014", //2014년 10월
+			year: "2014",
+			sortYear: "2014-10",
 			broadcaster: "tvN",
 			ottName: "YOUTUBE",
 			ottLink: "https://youtube.com/playlist?list=PLvDaoEdHc684jhiWCqR2vtmYJZVzs0Oje&si=GL7aKQ90P_Wrsp0M",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "장동민", result: "우승" },
+				{ name: "오현민", result: "준우승" }
+			],
 			note: "전회차 스트리밍 불가",
 			rowClass: "table-danger"
 		},
 		{
 			name: "더 지니어스: 그랜드 파이널",
 			link: "https://m.kinolights.com/title/87984",
-			year: "2015", //2015년 6월
+			year: "2015",
+			sortYear: "2015-06",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000170199",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "장동민", result: "우승" },
+				{ name: "김경훈", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "방시팝 - 더 지니어스:외전",
 			link: "",
-			year: "2015", //2015년 12월
+			year: "2015",
+			sortYear: "2015-12",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000222161",
@@ -60,6 +81,7 @@ const programData = {
 			name: "프로젝트 지니어스",
 			link: "",
 			year: "미정", //2022년 5월 촬영 추정
+			sortYear: "",
 			broadcaster: "유튜브 홍진호",
 			ottName: "",
 			ottLink: "",
@@ -70,62 +92,87 @@ const programData = {
 		{
 			name: "크라임씬 1",
 			link: "https://m.kinolights.com/title/87643",
-			year: "2014", //2014년 5월
+			year: "2014",
+			sortYear: "2014-05",
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539540",
 			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
+			players: [
+				{ name: "홍진호", result: "최다상금" },
+				{ name: "박지윤", result: "최다적중률" }
+			],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
 			name: "크라임씬 2",
 			link: "https://m.kinolights.com/title/87646",
-			year: "2015", //2015년 4월
+			year: "2015",
+			sortYear: "2015-04",
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539640",
 			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
+			players: [
+				{ name: "홍진호", result: "최다상금" },
+				{ name: "장진", result: "최다적중률" }
+			],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
 			name: "크라임씬 3",
 			link: "https://m.kinolights.com/title/87647",
-			year: "2017", //2017년 4월
+			year: "2017",
+			sortYear: "2017-04",
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000539639",
 			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
+			players: [
+				{ name: "박지윤", result: "최다상금, 최다적중률" }
+			],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>, 웨이브, 왓챠, 쿠팡플레이에서도 시청 가능',
 			rowClass: ""
 		},
 		{
 			name: "크라임씬 리턴즈",
 			link: "https://m.kinolights.com/title/125359",
-			year: "2024", //2024년 2월
+			year: "2024",
+			sortYear: "2024-02",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001751684",
 			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
+			players: [
+				{ name: "키", result: "최다상금" },
+				{ name: "박지윤", result: "최다적중률" },
+				{ name: "장진", result: "최다적중률" }
+			],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
 			name: "크라임씬 제로",
 			link: "https://m.kinolights.com/title/138812",
-			year: "2025", //2025년 9월
+			year: "2025",
+			sortYear: "2025-09",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81950435",
 			keywords: ["추리", "미스터리", "마피아게임", "롤플레잉", "옴니버스"],
+			players: [
+				{ name: "장진", result: "최다상금, 최다적중률" }
+			],
 			note: '<a href="crime_scene.html" target="_blank">회차별 정리 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
-			name: "크라임씬 제로 새 시즌",
+			name: "크라임씬 새 시즌",
 			link: "",
 			year: "2027 예정",
+			sortYear: "",
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
@@ -136,29 +183,40 @@ const programData = {
 		{
 			name: "뇌섹시대 문제적 남자 시즌 1",
 			link: "",
-			year: "2015~2018", //2015년 2월
+			year: "2015~2018",
+			sortYear: "2015-02",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
 			keywords: ["두뇌", "퍼즐", "퀴즈"],
+			players: [
+				{ name: "타일러", result: "최다MVP" },
+				{ name: "박경", result: "준MVP" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "뇌섹시대 문제적 남자 시즌 2",
 			link: "",
-			year: "2018~2019", //2018년 5월
+			year: "2018~2019",
+			sortYear: "2018-05",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
 			keywords: ["두뇌", "퍼즐", "퀴즈"],
+			players: [
+				{ name: "타일러", result: "최다MVP" },
+				{ name: "박경", result: "준MVP" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "문제적 남자: 브레인 유랑단",
 			link: "https://m.kinolights.com/title/87942",
-			year: "2019~2020", //2019년 11월
+			year: "2019~2020",
+			sortYear: "2019-11",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000160415",
@@ -170,7 +228,8 @@ const programData = {
 		{
 			name: "문제적 남자 리부트: 수학편",
 			link: "https://m.kinolights.com/title/144531",
-			year: "2025", //2025년 6월
+			year: "2025",
+			sortYear: "2025-06",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001773171",
@@ -182,40 +241,64 @@ const programData = {
 		{
 			name: "코드 - 비밀의 방",
 			link: "https://m.kinolights.com/title/90710",
-			year: "2016", //2016년 1월
+			year: "2016",
+			sortYear: "2016-01",
 			broadcaster: "JTBC",
 			ottName: "JTBC",
 			ottLink: "https://tv.jtbc.co.kr/replay/pr10010396/pm10033108",
 			keywords: ["서바이벌", "두뇌", "전략", "퍼즐", "방탈출"],
+			players: [
+				{ name: "오현민", result: "우승" },
+				{ name: "정준하", result: "준우승" }
+			],
 			note: '<a href="https://utvmobile.lguplus.co.kr/series/BN05S" target="_blank">U+모바일TV에서도 시청 가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
 			name: "소사이어티 게임 시즌 1",
 			link: "https://m.kinolights.com/title/88036",
-			year: "2016", //2016년 10월
+			year: "2016",
+			sortYear: "2016-10",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000328018",
 			keywords: ["서바이벌", "피지컬", "정치", "사회실험", "협동", "두뇌"],
+			players: [
+				{ name: "마동 이병관", result: "우승" },
+				{ name: "마동 정인직", result: "우승" },
+				{ name: "마동 현경렬", result: "우승" },
+				{ name: "높동 권아솔", result: "준우승" },
+				{ name: "높동 엠제이킴", result: "준우승" },
+				{ name: "높동 파로", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "소사이어티 게임 시즌 2",
 			link: "https://m.kinolights.com/title/88037",
-			year: "2017", //2017년 8월
+			year: "2017",
+			sortYear: "2017-08",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000395031",
 			keywords: ["서바이벌", "피지컬", "정치", "사회실험", "협동", "두뇌"],
+			players: [
+				{ name: "높동 박현석", result: "우승" },
+				{ name: "높동 장동민", result: "우승" },
+				{ name: "높동 줄리엔강", result: "우승" },
+				{ name: "마동 권민석", result: "준우승" },
+				{ name: "마동 손태호", result: "준우승" },
+				{ name: "마동 조준호", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "범인은 바로 너! 시즌 1",
 			link: "https://m.kinolights.com/title/87856",
-			year: "2018", //2018년 5월
+			year: "2018",
+			sortYear: "2018-05",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
@@ -226,7 +309,8 @@ const programData = {
 		{
 			name: "범인은 바로 너! 시즌 2",
 			link: "https://m.kinolights.com/title/87857",
-			year: "2019", //2019년 11월
+			year: "2019",
+			sortYear: "2019-11",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
@@ -237,7 +321,8 @@ const programData = {
 		{
 			name: "범인은 바로 너! 시즌 3",
 			link: "https://m.kinolights.com/title/87858",
-			year: "2021", //2021년 1월
+			year: "2021",
+			sortYear: "2021-01",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/80209553",
@@ -248,7 +333,8 @@ const programData = {
 		{
 			name: "대탈출 시즌 1",
 			link: "https://m.kinolights.com/title/87639",
-			year: "2018", //2018년 7월
+			year: "2018",
+			sortYear: "2018-07",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000587159",
@@ -259,7 +345,8 @@ const programData = {
 		{
 			name: "대탈출 시즌 2",
 			link: "https://m.kinolights.com/title/87640",
-			year: "2019", //2019년 3월
+			year: "2019",
+			sortYear: "2019-03",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000821660",
@@ -270,7 +357,8 @@ const programData = {
 		{
 			name: "대탈출 시즌 3",
 			link: "https://m.kinolights.com/title/87641",
-			year: "2020", //2020년 3월
+			year: "2020",
+			sortYear: "2020-03",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001164763",
@@ -281,7 +369,8 @@ const programData = {
 		{
 			name: "대탈출 시즌 4",
 			link: "https://m.kinolights.com/title/96838",
-			year: "2021", //2021년 7월
+			year: "2021",
+			sortYear: "2021-07",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001490952",
@@ -292,7 +381,8 @@ const programData = {
 		{
 			name: "대탈출: 더 스토리",
 			link: "https://m.kinolights.com/title/144304",
-			year: "2025", //2025년 7월
+			year: "2025",
+			sortYear: "2025-07",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001772883",
@@ -304,6 +394,7 @@ const programData = {
 			name: "대탈출 새 시즌",
 			link: "",
 			year: "2026 예정",
+			sortYear: "",
 			broadcaster: "TVING",
 			ottName: "",
 			ottLink: "",
@@ -314,7 +405,8 @@ const programData = {
 		{
 			name: "씬의 퀴즈",
 			link: "https://m.kinolights.com/title/88616",
-			year: "2019", //2019년 7월
+			year: "2019",
+			sortYear: "2019-07",
 			broadcaster: "XtvN, tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P000940242",
@@ -325,7 +417,8 @@ const programData = {
 		{
 			name: "여고추리반 1",
 			link: "https://m.kinolights.com/title/87867",
-			year: "2021", //2021년 1월
+			year: "2021",
+			sortYear: "2021-01",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001433241",
@@ -336,7 +429,8 @@ const programData = {
 		{
 			name: "여고추리반 2",
 			link: "https://m.kinolights.com/title/100750",
-			year: "2021~2022", //2021년 12월
+			year: "2021~2022",
+			sortYear: "2021-12",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001537909",
@@ -347,7 +441,8 @@ const programData = {
 		{
 			name: "여고추리반 3",
 			link: "https://m.kinolights.com/title/117484",
-			year: "2024", //2024년 4월
+			year: "2024",
+			sortYear: "2024-04",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001754831",
@@ -358,18 +453,24 @@ const programData = {
 		{
 			name: "머니게임",
 			link: "https://m.kinolights.com/title/119151",
-			year: "2021", //2021년 4월
+			year: "2021",
+			sortYear: "2021-04",
 			broadcaster: "유튜브 진용진",
 			ottName: "유튜브 진용진",
 			ottLink: "https://www.youtube.com/playlist?list=PLkH5IoAQDW0ZRpvuLeBbDccqzXz77AGqC",
 			keywords: ["서바이벌", "정치", "사회실험", "전략", "심리전"],
+			players: [
+				{ name: "이루리", result: "우승" },
+				{ name: "니갸르", result: "우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "송민호의 분실",
 			link: "",
-			year: "2021", //2021년 7월
+			year: "2021",
+			sortYear: "2021-07",
 			broadcaster: "채널 십오야",
 			ottName: "유튜브 채널 십오야",
 			ottLink: "https://www.youtube.com/playlist?list=PLr0T5CaHaPwVYthEkTB9k4lW46JVjS5LI",
@@ -380,7 +481,8 @@ const programData = {
 		{
 			name: "스틸 얼라이브",
 			link: "",
-			year: "2021", //2021년 9월
+			year: "2021",
+			sortYear: "2021-09",
 			broadcaster: "iHQ",
 			ottName: "",
 			ottLink: "",
@@ -391,139 +493,205 @@ const programData = {
 		{
 			name: "공범 시즌 1",
 			link: "https://m.kinolights.com/title/132153",
-			year: "2021", //2021년 10월
+			year: "2021",
+			sortYear: "2021-10",
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
 			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
+			players: [
+				{ name: "곽토리", result: "우승" },
+				{ name: "오현민", result: "우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "공범 시즌 2",
 			link: "https://m.kinolights.com/title/132156",
-			year: "2022", //2022년 12월
+			year: "2022",
+			sortYear: "2022-12",
 			broadcaster: "유튜브 장지수",
 			ottName: "유튜브 장지수",
 			ottLink: "https://www.youtube.com/playlist?list=PLOBfcaHQ3_2X3xpGuwPRFsiqMYKpeAxE5",
 			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
+			players: [
+				{ name: "에이전트H", result: "우승" },
+				{ name: "악어", result: "우승" }
+			],
 			note: "",
 			rowClass: ""
 		},		
 		{
 			name: "피의 게임 시즌 1",
 			link: "https://m.kinolights.com/title/99167",
-			year: "2021~2022", //2021년 11월
+			year: "2021~2022",
+			sortYear: "2021-11",
 			broadcaster: "WAVVE, MBC",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000075",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "이태균", result: "우승" },
+				{ name: "최연승", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "피의 게임 시즌 2",
 			link: "https://m.kinolights.com/title/122124",
-			year: "2023", //2023년 4월
+			year: "2023",
+			sortYear: "2023-04",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000108",
 			keywords: ["서바이벌", "피지컬", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "이진형", result: "우승" },
+				{ name: "덱스", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "피의 게임 시즌 3",
 			link: "https://m.kinolights.com/title/138201",
-			year: "2024~2025", //2024년 11월
+			year: "2024~2025",
+			sortYear: "2024-11",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000149",
 			keywords: ["서바이벌", "피지컬", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "장동민", result: "우승" },
+				{ name: "악어", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "피의 게임 X",
 			link: "https://m.kinolights.com/title/153518",
-			year: "2026", //2026년 7월
+			year: "2026",
+			sortYear: "2026-07",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000190",
 			keywords: ["서바이벌", "피지컬", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "강지후", result: "우승" },
+				{ name: "윤비", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "생존남녀: 갈라진 세상",
 			link: "https://m.kinolights.com/title/104274",
-			year: "2022", //2022년 3월
+			year: "2022",
+			sortYear: "2022-03",
 			broadcaster: "카카오TV",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tlYey3V",
 			keywords: ["서바이벌", "생존", "피지컬", "정치"],
+			players: [
+				{ name: "남자팀 윤비", result: "승리" },
+				{ name: "남자팀 룩삼", result: "승리" },
+				{ name: "남자팀 오킹", result: "승리" },
+				{ name: "남자팀 큐영", result: "승리" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "검은 양 게임",
 			link: "https://m.kinolights.com/title/105515",
-			year: "2022", //2022년 5월
+			year: "2022",
+			sortYear: "2022-05",
 			broadcaster: "SBS",
 			ottName: "SBS",
 			ottLink: "https://programs.sbs.co.kr/culture/genreismafia/vods/71253",
 			keywords: ["서바이벌", "추리", "마피아게임", "심리전"],
+			players: [
+				{ name: "A 호주타잔", result: "승리" },
+				{ name: "B 고인호", result: "승리" },
+				{ name: "C 김나정", result: "승리" },
+				{ name: "F 송하", result: "승리" }
+			],
 			note: "SBS 홈페이지에서 무료 시청 가능",
 			rowClass: ""
 		},
 		{
 			name: "제로섬게임",
 			link: "https://m.kinolights.com/title/105872",
-			year: "2022", //2022년 7월
+			year: "2022",
+			sortYear: "2022-07",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001616289",
 			keywords: ["서바이벌", "정치", "심리전"],
+			players: [
+				{ name: "김병선", result: "우승" },
+				{ name: "전율", result: "생존" },	
+				{ name: "딕헌터", result: "생존" }				
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "입주쟁탈전: 펜트하우스",
 			link: "https://m.kinolights.com/title/105602",
-			year: "2022", //2022년 7월
+			year: "2022",
+			sortYear: "2022-07",
 			broadcaster: "채널A, WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000089&page=1",
 			keywords: ["서바이벌", "정치", "전략", "심리전"],
+			players: [
+				{ name: "장명진", result: "우승" },
+				{ name: "지반", result: "준우승" }				
+			],
 			note: '<a href="https://www.ichannela.com/program/detail/program_detail_renew.do?cateCode=0500910001" target="_blank">채널A 홈페이지에서 무료 시청 가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
 			name: "테크룸",
 			link: "",
-			year: "2022", //2022년 7월
+			year: "2022",
+			sortYear: "2022-07",
 			broadcaster: "tvN D, 트라메",
 			ottName: "유튜브 트라메",
 			ottLink: "https://www.youtube.com/playlist?list=PLGyiRBJQ9X_u_cmERusbnDCS_ejs2McUM",
 			keywords: ["서바이벌", "생존", "게임", "전략"],
+			players: [
+				{ name: "이녕", result: "우승" },
+				{ name: "딕헌터", result: "공동우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "파트너 게임",
 			link: "https://m.kinolights.com/title/120053",
-			year: "2022", //2022년 9월
+			year: "2022",
+			sortYear: "2022-09",
 			broadcaster: "tvN D",
 			ottName: "유튜브 tvN D ENT",
 			ottLink: "https://www.youtube.com/playlist?list=PLTnyq-p4P5n2JQiPKNi8hIWSV3qMWTRpc",
 			keywords: ["서바이벌", "정치", "협동", "두뇌"],
+			players: [
+				{ name: "정선호", result: "우승" },
+				{ name: "예븐", result: "우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "도둑잡기",
 			link: "https://m.kinolights.com/title/114853",
-			year: "2022", //2022년 9월
+			year: "2022",
+			sortYear: "2022-09",
 			broadcaster: "WATCHA",
 			ottName: "WATCHA",
 			ottLink: "https://watcha.com/ko-KR/contents/share/tR2edNe",
@@ -534,40 +702,58 @@ const programData = {
 		{
 			name: "버튼게임",
 			link: "https://m.kinolights.com/title/116370",
-			year: "2022", //2022년 11월
+			year: "2022",
+			sortYear: "2022-11",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000102",
 			keywords: ["서바이벌", "정치", "심리전"],
+			players: [
+				{ name: "유종완", result: "우승" },
+				{ name: "김종서", result: "공동우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "보물찾기",
 			link: "https://m.kinolights.com/title/109680",
-			year: "2022~2023", //2022년 12월
+			year: "2022~2023",
+			sortYear: "2022-12",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001623861",
 			keywords: ["서바이벌", "피지컬", "정치", "방탈출", "어드벤처"],
+			players: [
+				{ name: "맹민호", result: "우승" },
+				{ name: "김태용", result: "생존" },
+				{ name: "송영재", result: "생존" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "우마게임",
 			link: "https://m.kinolights.com/title/118436",
-			year: "2023", //2023년 1월
+			year: "2023",
+			sortYear: "2023-01",
 			broadcaster: "유튜브 피지컬갤러리",
 			ottName: "유튜브 피지컬갤러리",
 			ottLink: "https://www.youtube.com/playlist?list=PLA92lMlT0Ro_yXKFqBTbkQJVHZXFvbzUz",
 			keywords: ["서바이벌", "피지컬", "게임", "정치"],
+			players: [
+				{ name: "안지현", result: "우승" },
+				{ name: "김민교", result: "생존" },
+				{ name: "진용진", result: "생존" }
+			],
 			note: "벌레 나옴 비위 조심",
 			rowClass: ""
 		},
 		{
 			name: "씬캐처",
 			link: "https://m.kinolights.com/title/118292",
-			year: "2023", //2023년 1월
+			year: "2023",
+			sortYear: "2023-01",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=F5701_F57000000001",
@@ -578,7 +764,8 @@ const programData = {
 		{
 			name: "내친나똑 (내 친구들은 나보다 똑똑하다)",
 			link: "https://m.kinolights.com/title/118798",
-			year: "2023", //2023년 1월
+			year: "2023",
+			sortYear: "2023-01",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001691160",
@@ -589,40 +776,57 @@ const programData = {
 		{
 			name: "더 타임 호텔",
 			link: "https://m.kinolights.com/title/117320",
-			year: "2023", //2023년 4월
+			year: "2023",
+			sortYear: "2023-04",
 			broadcaster: "TVING",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001696917",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "존박", result: "우승" },
+				{ name: "홍진호", result: "준우승" },
+				{ name: "황제성", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "데블스 플랜",
 			link: "https://m.kinolights.com/title/116630",
-			year: "2023", //2023년 09월
+			year: "2023",
+			sortYear: "2023-09",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "하석진", result: "우승" },
+				{ name: "궤도", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "데블스 플랜: 데스룸",
 			link: "https://m.kinolights.com/title/128769",
-			year: "2025", //2025년 05월
+			year: "2025",
+			sortYear: "2025-05",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81653386",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "정현규", result: "우승" },
+				{ name: "윤소희", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "데블스 플랜: 데드 어게인",
 			link: "https://m.kinolights.com/title/149589",
-			year: "2026 예정", //2026년 11월
+			year: "2026 예정",
+			sortYear: "2026-11",
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
@@ -633,73 +837,126 @@ const programData = {
 		{
 			name: "대학전쟁 시즌 1",
 			link: "https://m.kinolights.com/title/128332",
-			year: "2023", //2023년 11월
+			year: "2023",
+			sortYear: "2023-11",
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
 			keywords: ["서바이벌", "협동", "두뇌"],
+			players: [
+				{ name: "서울대 경도현", result: "우승" },
+				{ name: "서울대 박현민", result: "우승" },
+				{ name: "서울대 송현석", result: "우승" },
+				{ name: "서울대 정현빈", result: "우승" },
+				{ name: "고려대 김정민", result: "준우승" },
+				{ name: "고려대 이동규", result: "준우승" },
+				{ name: "고려대 이지수", result: "준우승" },
+				{ name: "고려대 채승민", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "대학전쟁 시즌 2",
 			link: "https://m.kinolights.com/title/131499",
-			year: "2024", //2024년 11월
+			year: "2024",
+			sortYear: "2024-11",
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
 			keywords: ["서바이벌", "협동", "두뇌"],
+			players: [
+				{ name: "서울대 김규민", result: "우승" },
+				{ name: "서울대 우수한", result: "우승" },
+				{ name: "서울대 육준형", result: "우승" },
+				{ name: "서울대 조준형", result: "우승" },
+				{ name: "카이스트 박지성", result: "준우승" },
+				{ name: "카이스트 오형석", result: "준우승" },
+				{ name: "카이스트 최유찬", result: "준우승" },
+				{ name: "카이스트 황기현", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "대학전쟁 시즌 3",
 			link: "https://m.kinolights.com/title/148654",
-			year: "2025~2026", //2025년 12월
+			year: "2025~2026",
+			sortYear: "2025-12",
 			broadcaster: "쿠팡플레이",
 			ottName: "쿠팡플레이",
 			ottLink: "https://www.coupangplay.com/titles/2c5c8857-d6c6-40c3-9f27-eef2692d31f3",
 			keywords: ["서바이벌", "협동", "두뇌"],
+			players: [
+				{ name: "서울대 메디컬 김민석", result: "우승" },
+				{ name: "서울대 메디컬 이승현", result: "우승" },
+				{ name: "서울대 메디컬 주민서", result: "우승" },
+				{ name: "서울대 메디컬 한서연", result: "우승" },
+				{ name: "성균관대 강지후", result: "준우승" },
+				{ name: "성균관대 김동연", result: "준우승" },
+				{ name: "성균관대 성태훈", result: "준우승" },
+				{ name: "성균관대 이동재", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "육각형 게임",
 			link: "",
-			year: "2023", //2023년 11월
+			year: "2023",
+			sortYear: "2023-11",
 			broadcaster: "유튜브 긱블",
 			ottName: "유튜브 긱블",
 			ottLink: "https://www.youtube.com/playlist?list=PL_12Raz22R-n3YPSf8EUIQD4QFnIxqPlo",
 			keywords: ["서바이벌", "피지컬", "게임", "두뇌", "퍼즐"],
+			players: [
+				{ name: "성치현", result: "우승" },
+				{ name: "김하얀새", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "사상검증구역: 더 커뮤니티",
 			link: "https://m.kinolights.com/title/130496",
-			year: "2024", //2024년 1월
+			year: "2024",
+			sortYear: "2024-01",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000124",
 			keywords: ["서바이벌", "정치", "사회실험", "마피아게임"],
+			players: [
+				{ name: "슈가 김나정", result: "최다상금" },
+				{ name: "고애신 안근영", result: "상금획득" },
+				{ name: "백곰 박성민", result: "상금획득" },	
+				{ name: "슈퍼맨 김재섭", result: "상금획득" },
+				{ name: "그레이 전민기", result: "상금획득" }
+			],
 			note: '<a href="https://youtu.be/NUviO_w8tVA?si=TF86YvrIJ0nDr3H3" target="_blank">다 본 후에 PD와 테드의 코멘터리 보는 것 강추 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
 			name: "더 커뮤니티 2: 보이지 않는 손",
 			link: "https://m.kinolights.com/season/154328",
-			year: "2026", //2026년 9월
+			year: "2026",
+			sortYear: "2026-09",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000192",
 			keywords: ["서바이벌", "정치", "사회실험", "마피아게임"],
+			players: [
+				{ name: "루나 박세승", result: "최다상금" },
+				{ name: "벡터 정재호", result: "상금획득" },
+				{ name: "동키 박철현", result: "상금획득" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "미스터리 수사단 시즌 1",
 			link: "https://m.kinolights.com/title/129009",
-			year: "2024", //2024년 6월
+			year: "2024",
+			sortYear: "2024-06",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
@@ -710,7 +967,8 @@ const programData = {
 		{
 			name: "미스터리 수사단 시즌 2",
 			link: "https://m.kinolights.com/title/145976",
-			year: "2026", //2026년 2월
+			year: "2026",
+			sortYear: "2026-02",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81731720",
@@ -721,11 +979,15 @@ const programData = {
 		{
 			name: "트리키 서바이벌 시즌 1",
 			link: "",
-			year: "2024", //2024년 6월
+			year: "2024",
+			sortYear: "2024-06",
 			broadcaster: "판타스트릭, 스튜디오 마인드제로",
 			ottName: "유튜브 판타스트릭",
 			ottLink: "https://www.youtube.com/playlist?list=PL2DZVBFf5rb5VKFCEsmdnZhIkl69akwra",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "김훈일", result: "우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
@@ -733,6 +995,7 @@ const programData = {
 			name: "트리키 서바이벌 시즌 2",
 			link: "",
 			year: "미정", //2025년 촬영 추정
+			sortYear: "",
 			broadcaster: "판타스트릭",
 			ottName: "유튜브 판타스트릭",
 			ottLink: "",
@@ -743,7 +1006,8 @@ const programData = {
 		{
 			name: "기억을 잊는 밤",
 			link: "",
-			year: "2024", //2024년 7월
+			year: "2024",
+			sortYear: "2024-07",
 			broadcaster: "유튜브 코다리찜",
 			ottName: "유튜브 코다리찜",
 			ottLink: "https://www.youtube.com/playlist?list=PLwN2bndMSUj5u1xTNkPF2PTr6XVuxWpJt",
@@ -754,62 +1018,89 @@ const programData = {
 		{
 			name: "더 블랙 오닉스 THE BLACK ONYX",
 			link: "",
-			year: "2024", //2024년 10월
+			year: "2024",
+			sortYear: "2024-10",
 			broadcaster: "일공일공 스튜디오, 치지직",
 			ottName: "유튜브 일공일공 스튜디오",
 			ottLink: "https://www.youtube.com/playlist?list=PL71rKDnQ2Y9q3yzPXD3SrYtPNG85_Fb18&si=JQzUA8O4dzq2brHC",
 			keywords: ["서바이벌", "두뇌"],
+			players: [
+				{ name: "당몰이", result: "우승" },
+				{ name: "로에", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},		
 		{
 			name: "금수저 전쟁",
 			link: "https://m.kinolights.com/title/138553",
-			year: "2024", //2024년 11월
+			year: "2024",
+			sortYear: "2024-11",
 			broadcaster: "U+모바일TV",
 			ottName: "U+모바일TV",
 			ottLink: "https://utvmobile.lguplus.co.kr/series/AM0K9",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
+			players: [
+				{ name: "스타크 임재겸", result: "우승" },
+				{ name: "인혜 김경훈", result: "준우승" }
+			],
 			note: "웨이브, 왓챠에서도 시청가능",
 			rowClass: ""
 		},
 		{
 			name: "챠니즈플랜",
 			link: "",
-			year: "2025", //2025년 1월
+			year: "2025",
+			sortYear: "2025-01",
 			broadcaster: "유튜브 명탐정챠니",
 			ottName: "유튜브 명탐정챠니",
 			ottLink: "https://www.youtube.com/playlist?list=PLmgT8NlAbL7OpWLiurW0cBmSHcgfeXfAB",
 			keywords: ["서바이벌", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "이BK", result: "우승" },
+				{ name: "함JH", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "라이프스 게임 Life's Game",
 			link: "https://m.kinolights.com/title/144601",
-			year: "2025", //2025년 3월
+			year: "2025",
+			sortYear: "2025-03",
 			broadcaster: "LG그룹",
 			ottName: "유튜브 LG그룹",
 			ottLink: "https://www.youtube.com/playlist?list=PL9Pxoayn9lmALTdbtGPJdCjDPFqopxCr8",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "공대승부사", result: "우승" },
+				{ name: "쓰리장원", result: "준우승" }
+			],
 			note: "웨이브에서도 시청가능",
 			rowClass: ""
 		},
 		{
 			name: "노엑싯게임룸 NO EXIT GAME ROOM",
 			link: "https://m.kinolights.com/title/148781",
-			year: "2025", //2025년 11월
+			year: "2025",
+			sortYear: "2025-11",
 			broadcaster: "아무거나보틀, WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9902_C99000000048",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "세븐하이", result: "우승" },
+				{ name: "일오팔", result: "우승" },
+				{ name: "오현민", result: "우승" }
+			],
 			note: '<a href="https://www.youtube.com/playlist?list=PL2zSy9h37heW72sfCECYi4_R4B5FrwXTs" target="_blank">아무거나보틀 유튜브에서도 시청가능 <i class="xi-external-link"></i></a>',
 			rowClass: ""
 		},
 		{
 			name: "뇌볼루션: 기억의 지배자",
 			link: "https://m.kinolights.com/title/149102",
-			year: "2025", //2025년 12월
+			year: "2025",
+			sortYear: "2025-12",
 			broadcaster: "E채널",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001780777",
@@ -820,95 +1111,143 @@ const programData = {
 		{
 			name: "네 가지 소원",
 			link: "",
-			year: "2026", //2026년 1월
+			year: "2026",
+			sortYear: "2026-01",
 			broadcaster: "스튜디오 마인드제로",
 			ottName: "유튜브 스튜디오 마인드제로",
 			ottLink: "https://www.youtube.com/playlist?list=PLimMCLxaXz0Gj-2ueyEdshOaKK9mQzj_0",
 			keywords: ["서바이벌", "정치", "두뇌", "전략"],
+			players: [
+				{ name: "배채운", result: "우승" },
+				{ name: "이승은", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "더 로직",
 			link: "https://m.kinolights.com/season/149628",
-			year: "2026", //2026년 1월
+			year: "2026",
+			sortYear: "2026-01",
 			broadcaster: "KBS2",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=K02_T2025-0548",
 			keywords: ["서바이벌", "정치", "사회실험", "두뇌"],
+			players: [
+				{ name: "반대팀 임현서", result: "우승" },
+				{ name: "반대팀 노영희", result: "공동우승" },
+				{ name: "반대팀 원종현", result: "공동우승" },
+				{ name: "반대팀 한정민", result: "공동우승" },
+				{ name: "반대팀 남현종", result: "공동우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
+		/*
 		{
 			name: "딜레마게임",
 			link: "",
-			year: "2026", //2026년 1월
+			year: "2026",
+			sortYear: "2026-01",
 			broadcaster: "연세대학교",
 			ottName: "유튜브 연세대학교",
 			ottLink: "https://www.youtube.com/watch?v=b6ZskQZ1Jwo&t=11s",
 			keywords: ["서바이벌", "정치", "두뇌", "전략", "심리전"],
+			players: [
+				{ name: "비전씩스 신현우", result: "우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
+		*/
 		{
 			name: "데스게임 시즌 1: 천만원을 걸어라",
 			link: "https://m.kinolights.com/title/149730",
-			year: "2026", //2026년 1월
+			year: "2026",
+			sortYear: "2026-01",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82679390",
 			keywords: ["서바이벌", "두뇌"],
+			players: [
+				{ name: "홍진호", result: "최다상금" },
+				{ name: "딘딘", result: "최다상금" },
+				{ name: "가을", result: "최다상금" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "데스게임 시즌 2: 최후의 승자",
 			link: "https://m.kinolights.com/title/152207",
-			year: "2026", //2026년 4월
+			year: "2026",
+			sortYear: "2026-04",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82679390",
 			keywords: ["서바이벌", "두뇌"],
+			players: [
+				{ name: "유리사", result: "우승" },
+				{ name: "박성웅", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "싱크로 게임",
 			link: "https://m.kinolights.com/title/150147",
-			year: "2026", //2026년 2월
+			year: "2026",
+			sortYear: "2026-02",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001783211",
 			keywords: ["서바이벌", "피지컬", "정치", "협동", "두뇌"],
+			players: [
+				{ name: "호영호재 박영호", result: "우승" },
+				{ name: "호영호재 정재호", result: "우승" },
+				{ name: "카이스트듀오 남석우", result: "준우승" },
+				{ name: "카이스트듀오 박지성", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "베팅 온 팩트",
 			link: "https://m.kinolights.com/title/151135",
-			year: "2026", //2026년 3월
+			year: "2026",
+			sortYear: "2026-03",
 			broadcaster: "WAVVE",
 			ottName: "WAVVE",
 			ottLink: "https://www.wavve.com/player/vod?programid=C9901_C99000000187",
 			keywords: ["서바이벌", "정치", "추리", "마피아게임", "심리전"],
+			players: [
+				{ name: "장동민", result: "우승" },
+				{ name: "이용진", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "디코드 D:CODE",
 			link: "",
-			year: "2026", //2026년 3월
+			year: "2026",
+			sortYear: "2026-03",
 			broadcaster: "단국대학교",
 			ottName: "유튜브 단국대학교",
 			ottLink: "https://www.youtube.com/playlist?list=PLJceTV92NxCSumiJFd2m_L4h1j51thGwj",
 			keywords: ["서바이벌", "협동", "두뇌", "전략"],
+			players: [
+				{ name: "공과대 이주성", result: "우승" },
+				{ name: "사범대 이승현", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "머더클럽",
 			link: "https://m.kinolights.com/season/153749",
-			year: "2026", //2026년 7월
+			year: "2026",
+			sortYear: "2026-07",
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-02b192fc-8bd3-498e-ac64-65245666fc39",
@@ -919,7 +1258,8 @@ const programData = {
 		{
 			name: "술래게임",
 			link: "https://m.kinolights.com/season/154104",
-			year: "2026", //2026년 9월
+			year: "2026",
+			sortYear: "2026-09",
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-246585f6-2139-40a3-b7aa-f97abf656589",
@@ -931,6 +1271,7 @@ const programData = {
 			name: "배신자들 게임",
 			link: "",
 			year: "2026 예정",
+			sortYear: "",
 			broadcaster: "TVING",
 			ottName: "",
 			ottLink: "",
@@ -939,9 +1280,10 @@ const programData = {
 			rowClass: "table-primary"
 		},
 		{
-			name: "장동민 제작 서바이벌 게임 (가제)",
+			name: "장동민 서바이벌 게임 (가제)",
 			link: "",
-			year: "2027 예정",
+			year: "2027 예정", //2026년 7월 촬영 추정
+			sortYear: "",
 			broadcaster: "NETFLIX",
 			ottName: "",
 			ottLink: "",
@@ -954,7 +1296,8 @@ const programData = {
         {
 			name: "눈치왕",
 			link: "https://m.kinolights.com/title/114003",
-			year: "2015", //2015년 1월
+			year: "2015",
+			sortYear: "2015-01",
 			broadcaster: "tvN",
 			ottName: "",
 			ottLink: "",
@@ -965,7 +1308,8 @@ const programData = {
 		{
 			name: "박스",
 			link: "https://m.kinolights.com/title/95967",
-			year: "2015", //2015년 9월
+			year: "2015",
+			sortYear: "2015-09",
 			broadcaster: "JTBC",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001459427",
@@ -976,62 +1320,83 @@ const programData = {
 		{
 			name: "미추리 8-1000 시즌 1",
 			link: "https://m.kinolights.com/title/91419",
-			year: "2018", //2018년 11월
+			year: "2018",
+			sortYear: "2018-11",
 			broadcaster: "SBS",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82009029",
 			keywords: ["게임", "추리", "미스터리"],
+			players: [
+				{ name: "장도연", result: "최다상금" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "미추리 8-1000 시즌 2",
 			link: "https://m.kinolights.com/title/91434",
-			year: "2019", //2019년 2월
+			year: "2019",
+			sortYear: "2019-02",
 			broadcaster: "SBS",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/82009029",
 			keywords: ["게임", "추리", "미스터리"],
+			players: [
+				{ name: "강기영", result: "최다상금" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "식스센스 1",
 			link: "https://m.kinolights.com/title/86175",
-			year: "2020", //2020년 9월
+			year: "2020",
+			sortYear: "2020-09",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001316154",
 			keywords: ["게임", "추리"],
+			players: [
+				{ name: "제시", result: "최다적중률" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "식스센스 2",
 			link: "https://m.kinolights.com/title/97472",
-			year: "2021", //2021년 6월
+			year: "2021",
+			sortYear: "2021-06",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001483400",
 			keywords: ["게임", "추리"],
+			players: [
+				{ name: "제시", result: "최다적중률" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "식스센스 3",
 			link: "https://m.kinolights.com/title/104228",
-			year: "2022", //2022년 3월
+			year: "2022",
+			sortYear: "2022-03",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001574198",
 			keywords: ["게임", "추리"],
+			players: [
+				{ name: "제시", result: "최다적중률" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "식스센스: 시티투어 1",
 			link: "https://m.kinolights.com/season/140251",
-			year: "2025", //2025년 2월
+			year: "2025",
+			sortYear: "2025-02",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001767822",
@@ -1042,7 +1407,8 @@ const programData = {
 		{
 			name: "식스센스: 시티투어 2",
 			link: "https://m.kinolights.com/season/147207",
-			year: "2025", //2025년 10월
+			year: "2025",
+			sortYear: "2025-10",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001777923",
@@ -1053,7 +1419,8 @@ const programData = {
 		{
 			name: "식스센스: B사이드",
 			link: "https://m.kinolights.com/season/154431",
-			year: "2026", //2026년 9월
+			year: "2026",
+			sortYear: "2026-09",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001790867",
@@ -1064,18 +1431,24 @@ const programData = {
 		{
 			name: "신세계로부터",
 			link: "https://m.kinolights.com/title/100127",
-			year: "2021", //2021년 11월
+			year: "2021",
+			sortYear: "2021-11",
 			broadcaster: "NETFLIX",
 			ottName: "NETFLIX",
 			ottLink: "https://www.netflix.com/title/81436207",
 			keywords: ["게임", "정치", "어드벤처"],
+			players: [
+				{ name: "카이", result: "우승" },
+				{ name: "이승기", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		},
 		{
 			name: "플레이유",
 			link: "https://m.kinolights.com/season/104231",
-			year: "2022", //2022년 3월
+			year: "2022",
+			sortYear: "2022-03",
 			broadcaster: "카카오TV",
 			ottName: "",
 			ottLink: "",
@@ -1086,7 +1459,8 @@ const programData = {
 		{
 			name: "플레이유 레벨업: 빌런이 사는 세상",
 			link: "https://m.kinolights.com/season/122583",
-			year: "2023", //2023년 4월
+			year: "2023",
+			sortYear: "2023-04",
 			broadcaster: "카카오TV",
 			ottName: "유튜브 플레이유",
 			ottLink: "https://www.youtube.com/@playoulevelup/",
@@ -1097,7 +1471,8 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 1",
 			link: "https://m.kinolights.com/season/104214",
-			year: "2022", //2022년 9월
+			year: "2022",
+			sortYear: "2022-09",
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=647bf11a-8cfd-4647-96b3-c1847f61b51a",
@@ -1108,7 +1483,8 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 2",
 			link: "https://m.kinolights.com/season/117192",
-			year: "2023", //2023년 6월
+			year: "2023",
+			sortYear: "2023-06",
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=ef8fa848-a896-4f5d-8fd4-80355bd177e7",
@@ -1119,7 +1495,8 @@ const programData = {
 		{
 			name: "더 존: 버텨야 산다 시즌 3",
 			link: "https://m.kinolights.com/season/135728",
-			year: "2024", //2024년 8월
+			year: "2024",
+			sortYear: "2024-08",
 			broadcaster: "Disney+",
 			ottName: "Disney+",
 			ottLink: "https://www.disneyplus.com/ko-kr/browse/entity-3ca490d9-ea73-4f61-b341-2de199692040?season=8f9a763b-7a9e-4228-8b2f-3b8476be7f97",
@@ -1130,11 +1507,17 @@ const programData = {
 		{
 			name: "아파트404",
 			link: "https://m.kinolights.com/title/129573",
-			year: "2024", //2024년 2월
+			year: "2024",
+			sortYear: "2024-02",
 			broadcaster: "tvN",
 			ottName: "TVING",
 			ottLink: "https://www.tving.com/contents/P001752153",
 			keywords: ["게임", "추리", "미스터리"],
+			players: [
+				{ name: "오나라", result: "최다우승" },
+				{ name: "제니", result: "준우승" },
+				{ name: "양세찬", result: "준우승" }
+			],
 			note: "",
 			rowClass: ""
 		}
@@ -1318,19 +1701,51 @@ function sortTableData(tbodyId, key, dir) {
 
 	if (!rawList) return;
 
-	// 기본순(default)이거나 키값이 없으면 원본 순서대로 렌더링
 	if (dir === 'default' || !key) {
 		renderTable('#' + tbodyId, rawList);
 		return;
 	}
 
-	// 원본 배열 복사 후 정렬 (원본 훼손 방지)
 	const sortedList = [...rawList].sort((a, b) => {
 		let valA = a[key] || '';
 		let valB = b[key] || '';
 
 		if (Array.isArray(valA)) valA = valA.join(', ');
 		if (Array.isArray(valB)) valB = valB.join(', ');
+
+		// 방영년도(year) 정렬 예외 처리
+		if (key === 'year') {
+			// 값 정제 함수: 우선순위에 따른 비교용 키 생성
+			const getYearKey = (item) => {
+				const rawYear = (item.year || '').toString().trim();
+				const sortYear = (item.sortYear || '').toString().trim();
+
+				// 1. '미정'은 가장 낮은 우선순위
+				if (rawYear === '미정' || sortYear === '미정') {
+					return '9999-99';
+				}
+
+				// 숫지만 추출 (예: '2026 예정' -> '2026', '2025~2026' -> '2025')
+				const baseYear = (sortYear || rawYear).match(/\d{4}/)?.[0] || '0000';
+				const isPending = rawYear.includes('예정');
+
+				// 2. sortYear에 월(MM) 정보가 명시된 경우 (예: '2026-07')
+				if (sortYear && sortYear.includes('-')) {
+					return sortYear;
+				}
+
+				// 3. sortYear 없이 '예정'만 있는 경우 -> 동일 연도 내에서 뒤로 배치
+				if (isPending) {
+					return `${baseYear}-98`;
+				}
+
+				// 4. 월 정보 없는 확정 연도 (예: '2026')
+				return `${baseYear}-00`;
+			};
+
+			valA = getYearKey(a);
+			valB = getYearKey(b);
+		}
 
 		return dir === 'asc' 
 			? valA.toString().localeCompare(valB.toString(), 'ko', { numeric: true })
