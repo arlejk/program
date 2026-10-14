@@ -296,7 +296,8 @@ const dtcuData = [
 		worldview: "SSA 세계관",
 		members: ["강호동", "김종민", "김동현", "신동", "유병재", "피오"],
 		keywords: ["SSA", "슈퍼 졸리G", "불법 노역"],
-		note: "SSA 비밀 요원 및 '슈퍼 졸리G' 최초 등장"
+		note: "SSA 비밀 요원 및 '슈퍼 졸리G' 최초 등장",
+		rowClass: "table-primary"
 	},
 	{
 		program: "대탈출",

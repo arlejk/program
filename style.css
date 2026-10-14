@@ -137,6 +137,15 @@ a:hover { color: var(--color-primary); }
 .table.dtcu col.col-07 { width: 7em; } /* 세계관/NPC */
 .table.dtcu col.col-08 { } /* 키워드 */
 .table.dtcu col.col-09 { width: 18%; } /* 비고 */
+.table.thezone col.col-01 { width: 4em; } /* 시즌 */
+.table.thezone col.col-02 { width: 5em; } /* 방영년도 */
+.table.thezone col.col-03 { width: 5em; } /* 스트리밍 */
+.table.thezone col.col-04 { width: 11em; } /* 에피소드 */
+.table.thezone col.col-05 { width: 4em; } /* 버티기 */
+.table.thezone col.col-06 { width: 9em; } /* 멤버 */
+.table.thezone col.col-07 { } /* 게스트 */
+.table.thezone col.col-08 { width: 15%; } /* 키워드 */
+.table.thezone col.col-09 { width: 15%; } /* 비고 */
 @media all and (max-width:768px) {
 	/*block*/
 	.table-block thead { display: none; }

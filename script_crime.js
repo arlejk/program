@@ -115,8 +115,7 @@ const programData = {
 			victim: "이건미",
 			detective: "장탐정 (장동민)",
 			suspects: ["박통닭 (박지윤)", "장편돌 (장진)", "김클럽 (김지훈)", "안댄서 (안유진)"],
-			guests: ["하금수 (하석진)"],
-			rowClass: "table-primary"
+			guests: ["하금수 (하석진)"]
 		},
 		{
 			season: "크라임씬 제로",
@@ -129,8 +128,7 @@ const programData = {
 			detective: "장탐정 (장동민)",
 			suspects: ["박통닭 (박지윤)", "장편돌 (장진)", "김클럽 (김지훈)", "안댄서 (안유진)"],
 			guests: ["하금수 (하석진)"],
-			unreleased: ["https://youtu.be/dbZ8ZAZ9llE", "https://youtu.be/WA3dUxazOUk"],
-			rowClass: "table-primary"
+			unreleased: ["https://youtu.be/dbZ8ZAZ9llE", "https://youtu.be/WA3dUxazOUk"]
 		},
 		{
 			season: "크라임씬 제로",
@@ -142,7 +140,8 @@ const programData = {
 			victim: "김봉천",
 			detective: "박탐정 (박지윤)",
 			suspects: ["장셰프 (장진)", "장아귀 (장동민)", "김싱어 (김지훈)", "안금방 (안유진)"],
-			guests: ["전시장 (전소민)"]
+			guests: ["전시장 (전소민)"],
+			rowClass: "table-primary"
 		},
 		{
 			season: "크라임씬 제로",
@@ -155,7 +154,8 @@ const programData = {
 			detective: "박탐정 (박지윤)",
 			suspects: ["장셰프 (장진)", "장아귀 (장동민)", "김싱어 (김지훈)", "안금방 (안유진)"],
 			guests: ["전시장 (전소민)"],
-			unreleased: ["https://youtu.be/oHEqJay7g3k", "https://youtu.be/G3M1S_5E-nw", "https://youtu.be/xp42psnS2EE", "https://youtu.be/H1H3lAkgNfM", "https://youtu.be/6vQOE7DocPE"]
+			unreleased: ["https://youtu.be/oHEqJay7g3k", "https://youtu.be/G3M1S_5E-nw", "https://youtu.be/xp42psnS2EE", "https://youtu.be/H1H3lAkgNfM", "https://youtu.be/6vQOE7DocPE"],
+			rowClass: "table-primary"
 		},
 
 		{
