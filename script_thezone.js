@@ -57,7 +57,7 @@ const theZoneData = [
 		isSuccess: false,
 		members: ["유재석", "이광수", "권유리", "AI-U"],
 		guests: ["유민상", "송영길", "이이경"],
-		keywords: ["물부족", "찜질방", "수질오염", "수위조절", "물폭탄"],
+		keywords: ["물부족", "찜질방", "수위조절", "물폭탄"],
 		note: "진땀 빼는 수중 찜질방 시뮬레이션"
 	},
 	{
