@@ -144,8 +144,8 @@ a:hover { color: var(--color-primary); }
 .table.thezone col.col-05 { width: 4em; } /* 버티기 */
 .table.thezone col.col-06 { width: 9em; } /* 멤버 */
 .table.thezone col.col-07 { } /* 게스트 */
-.table.thezone col.col-08 { width: 15%; } /* 키워드 */
-.table.thezone col.col-09 { width: 15%; } /* 비고 */
+.table.thezone col.col-08 { width: 17.5%; } /* 키워드 */
+.table.thezone col.col-09 { width: 17.5%; } /* 비고 */
 @media all and (max-width:768px) {
 	/*block*/
 	.table-block thead { display: none; }
@@ -225,7 +225,7 @@ a:hover { color: var(--color-primary); }
 /* header */
 .main-header { width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.1); background: var(--color-inverse-bg); }
 .db-nav-bar { width: 100%; padding: calc(var(--gutter-mo) / 2) 0; }
-.db-nav-bar .inner { display: flex; align-items: center; width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 var(--gutter-mo); }
+.db-nav-bar .inner { display: flex; align-items: center; width: 100%; max-width: 1600px; margin: 0 auto; padding: 0 var(--gutter-mo); }
 .db-nav-toggle { display: none; padding: 6px 10px; border: none; border-radius: 6px; background: none; cursor: pointer;
 	color: #fff; font-size: 1.25rem; transition: var(--transition-fast); }
 .db-nav-toggle:hover { background: rgba(255, 255, 255, 0.1); }
@@ -246,7 +246,7 @@ a:hover { color: var(--color-primary); }
 }
 
 .publish_worksheet { display: flex; flex-direction: column; min-height: 100vh; }
-.publish_worksheet .inner { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 var(--gutter-mo); }
+.publish_worksheet .inner { width: 100%; max-width: 1600px; margin: 0 auto; padding: 0 var(--gutter-mo); }
 .publish_worksheet > section { padding: var(--mg-sec-mo) 0; }
 .publish_worksheet .head { background: var(--color-inverse-bg); color: #fff; }
 .publish_worksheet .head dl dt { float: left; width: 7.5em; }
