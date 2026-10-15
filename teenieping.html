@@ -44,6 +44,21 @@
 		.publish_worksheet.teenieping .grade-etc { background: #fff !important; color: #6c757d !important; border: 1px dashed #adb5bd; }
 		.publish_worksheet.teenieping .season-block-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .25rem; }
 		.publish_worksheet.teenieping .season-block-desc { color: #495057; }
+		@media all and (max-width: 768px) {
+			/* 테이블 구조 블록화 및 100% 설정 */
+			.publish_worksheet.teenieping table.teenieping-class,
+			.publish_worksheet.teenieping table.teenieping-class tbody,
+			.publish_worksheet.teenieping table.teenieping-class tr,
+			.publish_worksheet.teenieping table.teenieping-class th,
+			.publish_worksheet.teenieping table.teenieping-class td { display: block !important; width: 100% !important; max-width: 100% !important; box-sizing: border-box; }
+			.publish_worksheet.teenieping table.teenieping-class th { border-left:none; border-right:none; }
+			/* 기존 공통 스타일의 가상 라벨(::before) 강제 제거 */
+			.publish_worksheet.teenieping table.teenieping-class td::before { display: none !important; content: none !important; }
+			/* td 패딩 제거 및 100% 정렬 */
+			.publish_worksheet.teenieping table.teenieping-class td { padding: 0 !important; margin: 0 !important; }
+			/* 내부 div 요소 여백 정리 */
+			.publish_worksheet.teenieping table.teenieping-class td > div { padding: 0.5rem; margin: 0 !important; }
+		}
 	</style>
 </head>
 <body>
