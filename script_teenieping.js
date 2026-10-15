@@ -455,7 +455,7 @@ const teenieMovies = [
 ];
 
 // ==========================================
-// 5. 데이터 가공 (회차 객체 생성 + 제목 속 티니핑 추출)
+// 5. 데이터 가공 (회차 객체 생성 + 출연 티니핑 추출)
 // ==========================================
 const teenieNames = Array.from(new Set(teeniepings.map(t => t.name)));
 
@@ -519,7 +519,7 @@ function teenieMovieOnlyList() {
 
 // 현재 선택된 필터
 let currentSeason = 'all';      // 회차 목록: 기수
-let currentTeenie = 'all';      // 회차 목록: 제목 속 티니핑
+let currentTeenie = 'all';      // 회차 목록: 출연 티니핑
 let currentQuery = '';          // 회차 목록: 검색어
 let currentClassSeason = 'all'; // 기수별 분류: 기수
 let currentGrade = 'royal';     // 등급별 분류: 등급
@@ -541,7 +541,7 @@ function renderTeenieBadge(t) {
 	return `<span class="badge teenie-badge teenie-hover grade-${t.grade} me-1 mb-1"${teenieHoverAttrs(t.name, t.form, t.note)}>${escHtml(label)}</span>`;
 }
 
-// 회차 표의 제목 속 티니핑 뱃지
+// 회차 표의 출연 티니핑 뱃지
 function renderTeenieKeywordBadge(name) {
 	if (!name) return '';
 	return `<span class="badge bg-light text-dark keyword-tag teenie-hover me-1 mb-1" data-keyword-type="teenie" data-keyword="${escHtml(name)}"${teenieHoverAttrs(name, '', '')} style="cursor:pointer;">${escHtml(name)}</span>`;
@@ -676,7 +676,7 @@ function renderEpisodeTable() {
 			: '<span class="text-muted">(제목 미공개)</span>';
 		const epCombinedHtml = `<strong>EP.${ep.epNum}</strong> <small class="text-muted">(누적 ${ep.cumNum}화)</small> ${titleHtml}`;
 
-		// 5) 제목 속 티니핑 뱃지
+		// 5) 출연 티니핑 뱃지
 		const teeniesHtml = ep.teenies.length > 0
 			? ep.teenies.map(n => renderTeenieKeywordBadge(n)).join('')
 			: '-';
@@ -689,7 +689,7 @@ function renderEpisodeTable() {
 				<td data-label="방영일" class="center">${dateHtml}</td>
 				<td data-label="스트리밍" class="center link">${ottHtml}</td>
 				<td data-label="에피소드">${epCombinedHtml}</td>
-				<td data-label="제목 속 티니핑">${teeniesHtml}</td>
+				<td data-label="출연 티니핑">${teeniesHtml}</td>
 				<td data-label="비고">${ep.note ? escHtml(ep.note) : '-'}</td>
 			</tr>
 		`;
