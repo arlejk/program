@@ -151,12 +151,12 @@ a:hover { color: var(--color-primary); }
 	.table-block thead { display: none; }
 	.table-block tr { display: block; }
 	.table-block tbody td { display: flex; position: relative; flex-wrap: wrap; align-items: center; gap: 2px;
-		width: 100% !important; max-width: 100% !important; min-height: 28px; padding: 0.3em 10px; padding-left: 7em; border-width: 0 0 1px 0; }
+		width: 100% !important; max-width: 100% !important; min-height: 28px; padding: 0.3em 10px; padding-left: 7.5em; border-width: 0 0 1px 0; }
 	.table-block td::before { content: attr(data-label); display: block; position: absolute; top: 0; left: 0;
-		width: calc(7em - 10px); height: 100%; padding: 0.3em 10px; background: var(--color-tone-100); color: var(--color-tone-900); font-weight: 500; text-align: left; }
+		width: calc(7.5em - 10px); height: 100%; padding: 0.3em 10px; background: var(--color-tone-100); color: var(--color-tone-900); font-weight: 500; text-align: left; }
 	.table-block tbody td > div { width: 100%; margin: 0 !important; }
 	.table-block.table.program col { width: 100% !important; }	
-	.table-block.table.program tbody td.link { padding: 0; padding-left: calc(7em - 10px); }
+	.table-block.table.program tbody td.link { padding: 0; padding-left: calc(7.5em - 10px); }
 	.table-block.table.program tbody td.link a { flex: 1; padding: 0.3em 0; }
 }
 
