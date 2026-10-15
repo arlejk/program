@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<title>Catch! Teenieping Episode Database</title>
+	<meta property="og:url" content="https://arlejk.github.io/program/teenieping.html">
+	<meta property="og:title" content="Catch! Teenieping Episode Database">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="캐치! 티니핑 시리즈 1~7기 회차 목록, 기수별·극장판·등급별 티니핑 분류">	
+	<!-- Required -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>	
+	<!-- Custom -->
+	<link href="style.css" rel="stylesheet">
+	<script src="script_common.js"></script>
+	<script src="db_teenie_img.js"></script>
+	<script src="script_teenieping.js"></script>
+	<style>
+		/* 티니핑 페이지 전용 보조 스타일 */
+		.publish_worksheet.teenieping .center { text-align: center; }
+		.publish_worksheet.teenieping .nav-tabs .nav-link { color: #495057; }
+		.publish_worksheet.teenieping .nav-tabs .nav-link.active { font-weight: 700; color: #212529; }
+		.publish_worksheet.teenieping .keyword-filter-wrap .btn { margin: 0 .25rem .35rem 0; }
+		.publish_worksheet.teenieping .teenie-filter-wrap { max-height: 8.5rem; overflow-y: auto; padding: .5rem .5rem .15rem; border: 1px solid #dee2e6; border-radius: .375rem; }
+		.publish_worksheet.teenieping .overview-row { margin-bottom: .25rem; }
+		.publish_worksheet.teenieping .overview-row strong { display: inline-block; min-width: 4.5rem; margin-right: .5rem; }
+		.publish_worksheet.teenieping table.teenieping .col-01 { width: 9%; }
+		.publish_worksheet.teenieping table.teenieping .col-02 { width: 10%; }
+		.publish_worksheet.teenieping table.teenieping .col-03 { width: 9%; }
+		.publish_worksheet.teenieping table.teenieping .col-04 { width: 33%; }
+		.publish_worksheet.teenieping table.teenieping .col-05 { width: 17%; }
+		.publish_worksheet.teenieping table.teenieping .col-06 { width: 22%; }
+		.publish_worksheet.teenieping table.teenieping tr.season-start > td { border-top: 2px solid #868e96; }
+		.publish_worksheet.teenieping table.teenieping-class .col-class-head { width: 16%; }
+		.publish_worksheet.teenieping table.teenieping-class .col-class-body { width: 84%; }
+		.publish_worksheet.teenieping .grade-head { vertical-align: middle; }
+		.publish_worksheet.teenieping .teenie-badge { font-weight: 500; }
+		.publish_worksheet.teenieping .grade-royal { background: #ffe3ef !important; color: #b0245f !important; }
+		.publish_worksheet.teenieping .grade-legend { background: #ece3ff !important; color: #5a35b5 !important; }
+		.publish_worksheet.teenieping .grade-normal { background: #f1f3f5 !important; color: #343a40 !important; }
+		.publish_worksheet.teenieping .grade-etc { background: #fff !important; color: #6c757d !important; border: 1px dashed #adb5bd; }
+		.publish_worksheet.teenieping .season-block-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .25rem; }
+		.publish_worksheet.teenieping .season-block-desc { color: #495057; }
+	</style>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="db-nav-bar" aria-label="Database Navigation">
+			<div class="inner">
+				<!-- 모바일용 햄버거 버튼 -->
+				<button type="button" class="db-nav-toggle" id="dbNavToggle" aria-label="메뉴 열기/닫기">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+
+				<div class="db-nav-group" id="dbNavGroup">
+					<a href="index.html" class="db-nav-link">
+						<i class="fa-solid fa-tv"></i> 두뇌 추리 서바이벌
+					</a>
+					<a href="crime_scene.html" class="db-nav-link">
+						<i class="fa-solid fa-magnifying-glass"></i> 크라임씬
+					</a>
+					<a href="dtcu.html" class="db-nav-link">
+						<i class="fa-solid fa-key"></i> 대탈출 & 여고추리반
+					</a>
+					<a href="the_zone.html" class="db-nav-link">
+						<i class="fa-regular fa-life-ring"></i> 더 존: 버텨야 산다
+					</a>
+					<a href="midnight_horror.html" class="db-nav-link">
+						<i class="fa-solid fa-ghost"></i> 심야괴담회
+					</a>
+					<a href="teenieping.html" class="db-nav-link active">
+						<i class="fa-solid fa-heart"></i> 캐치! 티니핑
+					</a>
+				</div>
+			</div>
+		</nav>	
+	</header>
+	<div class="publish_worksheet program teenieping">
+		<!-- 헤더 영역 -->
+		<section class="head">
+			<div class="inner">
+				<hgroup>
+					<h3>Catch! Teenieping Database</h3>
+					<h2>캐치! 티니핑 회차 목록 및 시리즈별 티니핑 분류</h2>
+				</hgroup>
+				<dl>
+					<dt>Last Update</dt>
+					<dd>2026-10-15</dd>					
+					<dt>Note</dt>
+					<dd>
+						상단 <strong>기수 필터</strong> 및 <strong>티니핑 필터</strong>를 선택하여 원하는 회차만 모아볼 수 있습니다. 분류 탭에서는 티니핑 뱃지에 마우스를 올리면 비고가 표시됩니다.
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- 본문 영역 -->
+		<section class="body">
+			<div class="inner">
+				<!-- 시리즈 개요 (TVA / 극장판) -->
+				<!--<div id="series-overview" class="mb-3"></div>-->
+
+				<!-- 탭 메뉴 -->
+				<ul class="nav nav-tabs mb-3" id="teenieTabs" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="tab-episodes" data-bs-toggle="tab" data-bs-target="#pane-episodes" type="button" role="tab" aria-controls="pane-episodes" aria-selected="true">회차 목록</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="tab-seasons" data-bs-toggle="tab" data-bs-target="#pane-seasons" type="button" role="tab" aria-controls="pane-seasons" aria-selected="false">기수별 티니핑</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="tab-movies" data-bs-toggle="tab" data-bs-target="#pane-movies" type="button" role="tab" aria-controls="pane-movies" aria-selected="false">극장판 티니핑</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="tab-grades" data-bs-toggle="tab" data-bs-target="#pane-grades" type="button" role="tab" aria-controls="pane-grades" aria-selected="false">등급별 티니핑</button>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+
+					<!-- 1. 회차 목록 -->
+					<div class="tab-pane fade show active" id="pane-episodes" role="tabpanel" aria-labelledby="tab-episodes">
+						<!-- 기수 필터 영역 -->
+						<div class="keyword-filter-wrap season-filter-wrap mb-2"></div>
+						<!-- 티니핑 필터 영역 (제목에 이름이 들어간 티니핑) -->
+						<div class="keyword-filter-wrap teenie-filter-wrap mb-3"></div>
+						<!-- 검색 -->
+						<div class="row g-2 mb-3 align-items-center">
+							<div class="col-sm-6 col-md-5">
+								<input type="search" id="episodeSearch" class="form-control form-control-sm" placeholder="제목 · 비고 · 티니핑 이름으로 검색">
+							</div>
+							<div class="col-auto">
+								<button type="button" id="episodeReset" class="btn btn-sm btn-outline-secondary">필터 초기화</button>
+							</div>
+							<div class="col-auto">
+								<small class="text-muted" id="episodeCount"></small>
+							</div>
+						</div>
+						<table class="table table-bordered table-block program teenieping">
+							<colgroup>
+								<col class="col-01">
+								<col class="col-02">
+								<col class="col-03">
+								<col class="col-04">
+								<col class="col-05">
+								<col class="col-06">
+							</colgroup>
+							<thead class="table-light">
+								<tr>
+									<th scope="col" class="center">기수</th>
+									<th scope="col" class="center">방영일</th>
+									<th scope="col" class="center">스트리밍</th>
+									<th scope="col" class="center">에피소드</th>
+									<th scope="col" class="center">제목 속 티니핑</th>
+									<th scope="col" class="center">비고</th>
+								</tr>
+							</thead>
+							<tbody id="tbody-episodes">
+								<!-- JavaScript 동적 출력 영역 -->
+							</tbody>
+						</table>
+						<ul class="small text-muted mt-2">
+							<li>‘제목 속 티니핑’은 회차 제목에 이름이 그대로 들어간 티니핑만 자동으로 추출한 것이며, 실제 등장 티니핑 전체가 아닙니다.</li>
+							<li>4기 방영일은 티니핑쇼(공식 유튜브) 선행 공개일 기준입니다. (TV 방송판은 매주 수요일 재능TV)</li>
+							<li>스트리밍 링크는 나무위키 회차 목록에 기재된 공식 유튜브 링크이며, 6기 3화 이후와 7기는 링크가 없습니다.</li>
+							<li>7기는 2026년 11월 방영 예정이며, 제목은 공개 전입니다.</li>
+						</ul>
+					</div>
+
+					<!-- 2. 애니메이션 기수별 티니핑 분류 -->
+					<div class="tab-pane fade" id="pane-seasons" role="tabpanel" aria-labelledby="tab-seasons">
+						<div class="keyword-filter-wrap class-season-filter-wrap mb-3"></div>
+						<div id="class-season-wrap"></div>
+					</div>
+
+					<!-- 3. 극장판 시즌별 등장 티니핑 -->
+					<div class="tab-pane fade" id="pane-movies" role="tabpanel" aria-labelledby="tab-movies">
+						<div id="movie-wrap"></div>
+					</div>
+
+					<!-- 4. 등급별 티니핑 분류 -->
+					<div class="tab-pane fade" id="pane-grades" role="tabpanel" aria-labelledby="tab-grades">
+						<div class="keyword-filter-wrap grade-filter-wrap mb-2"></div>
+						<p class="small text-muted mb-3" id="grade-summary"></p>
+						<table class="table table-bordered table-block program teenieping-grade">
+							<colgroup>
+								<col style="width: 12%;">
+								<col style="width: 22%;">
+								<col style="width: 22%;">
+								<col style="width: 44%;">
+							</colgroup>
+							<thead class="table-light">
+								<tr>
+									<th scope="col" class="center">등급</th>
+									<th scope="col" class="center">기수</th>
+									<th scope="col" class="center">티니핑</th>
+									<th scope="col" class="center">비고</th>
+								</tr>
+							</thead>
+							<tbody id="tbody-grades">
+								<!-- JavaScript 동적 출력 영역 -->
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>		
+		</section>
+
+		<!-- 푸터 영역 -->
+		<section class="foot">
+			<div class="inner">
+				<small>© Catch! Teenieping Fan Database. Published by Joanne.</small><br>
+				<small>출처: 나무위키 ‘티니핑’, ‘캐치! 티니핑 시리즈/회차 목록’ (<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/" target="_blank" rel="noopener">CC BY-NC-SA 2.0 KR</a>)</small>
+			</div>		
+		</section>
+	</div>
+</body>
+</html>

@@ -220,6 +220,16 @@ a:hover { color: var(--color-primary); }
 .tab-panel .tab-cont { display: none !important; width: 100%; }
 .tab-panel .tab-cont.current { display: block !important; }
 
+#teenie-tip {
+	position: fixed; display: none; z-index: 2000; pointer-events: none;
+	max-width: 220px; padding: .5rem; text-align: center;
+	background: #fff; border: 1px solid #dee2e6; border-radius: .5rem;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+#teenie-tip img { width: 120px; height: 120px; object-fit: contain; }
+#teenie-tip .tip-name { font-weight: 700; font-size: .9rem; }
+#teenie-tip .tip-note { font-size: .8rem; color: #6c757d; margin-top: .15rem; }
+
 /* === layout === */
 
 /* header */
