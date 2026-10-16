@@ -116,7 +116,10 @@ const teenieImages = {
 	'푸딩핑': 'https://i.namu.wiki/i/SluXVNsmwipM3esk5T1vP8ZbTOrxb6TuCIB9c2I4dVuzFUph5_5qbIXO3Qsc9nxSPSv-rP9j_RSQUytqpfiEJGtrTB9qNIqVEDUQFcqO1fxduGN2e8BCLJOOjxlS7Oy2xjySw80q-1Eqg-51FR6kBw.webp',
 	'멜로핑': 'https://i.namu.wiki/i/QcDd10kj5lkBz19msQdDWMwsDyAnlTtnY8_s8Bl64R4GxO2VZgjfWY2dtoIfIuslXeSES6iPT5zcYzsCjKUn6plrDo6LjbzhkJBdJmuHaM1mwitdPX-6tIONKgNFp1RO7_999Hj4kMWcCKgiqUAjhg.webp',
 	'쪼꼬핑': 'https://i.namu.wiki/i/54ZaAhVMyWq7q-inTbShIg5OCJKhoO6QE3yUczBoNWfcyNIJi0vNSLeiHoAYIlWkO9Luz49KPCGsKOud97fgzvEmX6O5CP6WmxrfegrrPzDSfoHPF4F3uTEPLw85-fdMtErFrn-OegKyPG-THhr5Pg.webp',
-	'뿌뿌핑': 'https://i.namu.wiki/i/mfPaeKOtEUdfnfH71gm9pfyMT_eW1jr-gqdHAaN6lgH8SFGpmAW_BFB9hEhJ8gAP9Q7EcxdIB0lsqhT84xrmsrmH6jA11RoSyBUZKrLwwS4XZIu4KfcSawxUAE5rm2qyw_qHLHv1vfTWDEr4B8Im7w.webp',
+	'뿌뿌핑': [
+		{ label: '데일리', src: 'https://i.namu.wiki/i/mfPaeKOtEUdfnfH71gm9pfyMT_eW1jr-gqdHAaN6lgH8SFGpmAW_BFB9hEhJ8gAP9Q7EcxdIB0lsqhT84xrmsrmH6jA11RoSyBUZKrLwwS4XZIu4KfcSawxUAE5rm2qyw_qHLHv1vfTWDEr4B8Im7w.webp' },
+		{ label: '각성', src: 'https://i.namu.wiki/i/BcUSWUpvsF-RL_CojhO4vGEnjfumuQGeyVBeQpdwf-flFE0hT_D6AohC_OdB1V4A9xLHDZtmu8I27E8wtV4L8Q8h_d8kJnV0jiReYlNBmVP1Nrtgd3heHKkbOMZqoVoUm5Cbo3Pdcc8wJZDO-UOsFg.webp' }
+	],
 
 	// 5기 스타 티니핑
 	'스타 하츄핑': 'https://i.namu.wiki/i/Na2w87fCY-RBCSaMqNF0WeKO_gHgvamlUnIK6C0ZX20AY3098_3UOOiyU1DNhxgobEESeqD_HxNADgqwG5ZxcCSBTWC-lxHzbIYX6lO5lSpMIGIT6_eWePXwZfKMumYCaeSUKQ5TkqT2z7ZvsvCkOA.webp',
