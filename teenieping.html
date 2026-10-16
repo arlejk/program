@@ -17,6 +17,7 @@
 	<link href="style.css" rel="stylesheet">
 	<script src="script_common.js"></script>
 	<script src="db_teenie_img.js"></script>
+	<script src="db_teenie_princess.js"></script>
 	<script src="script_teenieping.js"></script>
 	<style>
 		/* 티니핑 페이지 전용 보조 스타일 */
@@ -29,10 +30,11 @@
 		.publish_worksheet.teenieping .overview-row .badge { font-size: 0.9em; font-weight: 500; }
 		.publish_worksheet.teenieping table.teenieping .col-01 { width: 10%; }
 		.publish_worksheet.teenieping table.teenieping .col-02 { width: 8%; }
-		.publish_worksheet.teenieping table.teenieping .col-03 { width: 7%; }
-		.publish_worksheet.teenieping table.teenieping .col-04 { width: 25%; }
-		.publish_worksheet.teenieping table.teenieping .col-05 { width: 25%; }
-		.publish_worksheet.teenieping table.teenieping .col-06 { width: 25%; }
+		.publish_worksheet.teenieping table.teenieping .col-03 { width: 8%; }
+		.publish_worksheet.teenieping table.teenieping .col-04 { width: 26%; }
+		.publish_worksheet.teenieping table.teenieping .col-05 { width: 16%; }
+		.publish_worksheet.teenieping table.teenieping .col-06 { width: 16%; }
+		.publish_worksheet.teenieping table.teenieping .col-07 { width: 16%; }
 		.publish_worksheet.teenieping table.teenieping tr.season-start { border-top: 2px solid #868e96; }
 		.publish_worksheet.teenieping table.teenieping-class .col-class-head { width: 16%; }
 		.publish_worksheet.teenieping table.teenieping-class .col-class-body { width: 84%; }
@@ -42,6 +44,7 @@
 		.publish_worksheet.teenieping .grade-legend { background: #ece3ff !important; color: #5a35b5 !important; }
 		.publish_worksheet.teenieping .grade-normal { background: #f1f3f5 !important; color: #343a40 !important; }
 		.publish_worksheet.teenieping .grade-etc { background: #fff !important; color: #6c757d !important; border: 1px dashed #adb5bd; }
+		.publish_worksheet.teenieping .grade-princess { background: #fff0f6 !important; color: #c2255c !important; }
 		.publish_worksheet.teenieping .season-block-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .25rem; }
 		.publish_worksheet.teenieping .season-block-desc { color: #495057; }
 		@media all and (max-width: 768px) {
@@ -167,6 +170,7 @@
 								<col class="col-04">
 								<col class="col-05">
 								<col class="col-06">
+								<col class="col-07">
 							</colgroup>
 							<thead class="table-light">
 								<tr>
@@ -175,6 +179,7 @@
 									<th scope="col" class="center">스트리밍</th>
 									<th scope="col" class="center">에피소드</th>
 									<th scope="col" class="center">출연 티니핑</th>
+									<th scope="col" class="center">프린세스</th>
 									<th scope="col" class="center">비고</th>
 								</tr>
 							</thead>

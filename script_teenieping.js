@@ -43,211 +43,221 @@ const teenieGradeLabel = {
 const teenieGradeOrder = ['royal', 'legend', 'normal', 'etc'];
 
 // ==========================================
-// 2. 회차 데이터 [제목, 방영일, 유튜브 ID, 비고]
+// 2. 회차 데이터
+//    title   : 에피소드 제목
+//    date    : 방영일
+//    yt      : 유튜브 ID (없으면 '')
+//    note    : 비고
+//    teenies : 출연 티니핑 (빈 배열이면 제목에서 이름을 자동 추출)
+//    princess: 로미의 프린세스 변신 기록 (나무위키 변신 기록 기준, '프린세스 ' 생략)
+//              - 변신이 없거나 불명이면 [], 한 화에 여러 번 변신하면 순서대로 모두 기재
+//              - 취소선(변신 실패/미완료) 기록은 제외, 같은 화에 완료된 변신이 있으면 그것만 기재
 //    - 누적 회차는 기수별 offset + 회차로 계산
 // ==========================================
 const teenieEpisodeSeeds = {
 	1: [
-		['엉망진창 쿠키 만들기', '2020.03.19', 'pglnkdt-RSk', '', ['키키핑']],
-		['아잉핑이 너무해!', '2020.03.26', 'nFl47Dx1qco', '', []],
-		['부끄러워하지 마~', '2020.04.02', 'FVnAqF_GZYQ', '', ['부끄핑']],
-		['올바름의 티니핑, 바로핑', '2020.04.09', 'CgQnJpGLN-s', '', []],
-		['최고는 누구?', '2020.04.16', 'v5o1XpS2hWg', '', ['부투핑']],
-		['용기를 내, 마야!', '2020.04.23', 'RUHo--AxFtU', '', ['아자핑']],
-		['깜빡할 수도 있지~', '2020.05.07', 'AzoN6-WdLSE', '초기 기획 제목: ‘그럴 수도 있지~’ · 4/30 부처님오신날 특집 편성으로 결방', ['깜빡핑']],
-		['배고플 땐 상상해 봐', '2020.05.14', '_IrjI3Zm-FU', '', ['띠용핑']],
-		['희망아, 어서 와', '2020.05.21', 'S0VM9rRIrfI', '', ['차차핑']],
-		['눈물사탕은 어떤 맛?', '2020.05.28', 'l-dWqcFt2aw', '', ['주르핑']],
-		['차나핑을 찾아라!', '2020.06.04', 'ROqxe8V4AWg', '', []],
-		['즐겁게 노래 불러 봐', '2020.06.11', 'qc9DB9sh0vI', '', ['라라핑']],
-		['날 따라 해봐요', '2020.06.18', 'Oa05QqabEAQ', '초기 기획 제목: ‘따라핑의 팬심’', ['따라핑']],
-		['거울을 보면 안 돼', '2020.06.25', '9Yq1x-lqmF4', '초기 기획 제목: ‘거울을 봐서는 안 돼’', ['나르핑']],
-		['돌아와, 하츄핑', '2020.07.02', 'WrPnyvS5LsY', '초기 기획 제목: ‘하츄핑의 가출’', ['하츄핑']],
-		['무셔핑의 사진 찍기', '2020.07.09', 'zprBK9cvhkA', '초기 기획 제목: ‘무셔무셔 사진 찍기 대소동’', []],
-		['나만 사랑해 줘!', '2020.07.16', '94zttO4-YcE', '', ['투투핑']],
-		['좌충우돌 생일 파티', '2020.07.23', '6zDvlZzz9u8', '초기 기획 제목: ‘좌충우돌, 로미의 생일 파티!’', []],
-		['행운을 부르는 도장', '2020.07.30', 'nMM1Fikslyw', '초기 기획 제목: ‘행운의 스탬프를 찾아라!’', ['차캐핑']],
-		['다 말해 버릴 거야!', '2020.08.06', '1NXR4dVCcfE', '초기 기획 제목: ‘수다쟁이는 도대체 누구야?’', ['떠벌핑']],
-		['풍선껌 대소동', '2020.08.13', '706niqUuXjg', '', []],
-		['욕심쟁이 다조핑', '2020.08.20', 'JxC2fW0MDhQ', '초기 기획 제목: ‘다 줘요! 내 꺼야!’', []],
-		['화내지 말아줘', '2020.08.27', 'jmU5wdysSZw', '', ['화나핑']],
-		['바로핑이 많아졌어요!', '2020.09.03', '50aBoQlQgHQ', '', ['바로핑']],
-		['싫어 싫어, 시러핑!', '2020.09.10', 'jF3HEJENPqI', '초기 기획 제목: ‘시러시러, 시러핑!’', []],
-		['바네핑의 화살', '2020.09.17', 'eKY1k1M02X4', '초기 기획 제목: ‘사랑해! 대소동’', []],
-		['장난이 제일 좋아!', '2020.09.24', 'G4LxgiYC5Vs', '', ['악동핑']],
-		['춥다, 추워! 덜덜핑', '2020.10.08', 'PyfBna37VjM', '10/1 추석 연휴로 휴방', []],
-		['그림이 살아있다?', '2020.10.15', 'ROynsahTutY', '', ['그림핑']],
-		['동화 속 공주님이 되고 싶어', '2020.10.22', 'vT-tUQ8iGec', '', []],
-		['아휴~ 무거워, 무거핑', '2020.10.29', '2TVr0PXstjw', '', []],
-		['뭐든지 거꾸로, 꺼꿀핑', '2020.11.05', 'p5hXhz1n2mY', '', []],
-		['다섯 명의 로미', '2020.11.12', 'R4GV0v2BR6U', '', []],
-		['씽씽핑은 빠른 게 좋아!', '2020.11.19', 'ZxKmHqmORN4', '', []],
-		['아기가 좋아, 베베핑!', '2020.11.26', 'kvFJr2OoOqU', '', []],
-		['하트로즈에 외계인 등장!', '2020.12.03', 'hSB-8RbHZhI', '', []],
-		['잠자는 하트로즈의 공주', '2020.12.10', 'OXhucuyJNFY', '잠자는 숲속의 공주 패러디', ['코자핑']],
-		['로미, 레나랑 딱 붙다?', '2020.12.17', 'oL9-7eus26E', '', ['딱풀핑']],
-		['토끼 괴물이 나타났다!', '2020.12.24', '35txjFsYGT8', '', ['모야핑']],
-		['티니핑 축제', '2020.12.31', '-nhVnbgoM7c', '', ['해핑']],
-		['장난감이 되었어요!', '2021.01.07', 'w-7opR3rVtI', '', ['토이핑']],
-		['하트로즈의 수상한 손님', '2021.01.14', 'Sl7gqg5rtBA', '', ['또까핑']],
-		['꽃 만들기 대소동', '2021.01.21', 'Ky1Z05p5gU4', '', ['플라핑']],
-		['사고뭉치 아기 노리핑', '2021.01.28', 'NVf22BcQrWA', '', ['노라핑','노리핑']],
-		['악동핑의 진실', '2021.02.04', '6Djmlq69_ag', '', []],
-		['프린세스 선샤인', '2021.02.18', 'R9Xl7QiNnlU', '2/11 설 연휴로 휴방', ['해핑', '아휴핑']],
-		['공부할 땐 조용히, 똑똑!', '2021.02.25', 'G7cbVWRP_HM', '', ['똑똑핑']],
-		['다 얼려 버려, 꽁꽁핑', '2021.03.04', 'EJM9t9BlK8k', '', []],
-		['찌릿핑은 짜릿짜릿해', '2021.03.11', 'QWxAqN4wE4c', '시리즈 유일 15세 이상 시청가', []],
-		['바다에서 온 티니핑', '2021.03.18', 'qJ9laZd55fA', '', ['홀로핑']],
-		['로열핑의 이름으로!', '2021.03.25', 'IkZLDHoFeXU', '', ['앙대핑']],
-		['프린세스 베로니카', '2021.04.01', 'DJ998RbjqqQ', '', ['하츄핑', '바로핑', '아자핑', '차차핑', '라라핑', '해핑', '앙대핑']]
+		{ title: '엉망진창 쿠키 만들기', date: '2020.03.19', yt: 'pglnkdt-RSk', note: '', teenies: ['키키핑'], princess: ['하트'] },
+		{ title: '아잉핑이 너무해!', date: '2020.03.26', yt: 'nFl47Dx1qco', note: '', teenies: [], princess: ['하트'] },
+		{ title: '부끄러워하지 마~', date: '2020.04.02', yt: 'FVnAqF_GZYQ', note: '', teenies: ['부끄핑'], princess: ['하트'] },
+		{ title: '올바름의 티니핑, 바로핑', date: '2020.04.09', yt: 'CgQnJpGLN-s', note: '', teenies: [], princess: ['하트'] },
+		{ title: '최고는 누구?', date: '2020.04.16', yt: 'v5o1XpS2hWg', note: '', teenies: ['부투핑'], princess: ['클라우디아'] },
+		{ title: '용기를 내, 마야!', date: '2020.04.23', yt: 'RUHo--AxFtU', note: '', teenies: ['아자핑'], princess: ['하트'] },
+		{ title: '깜빡할 수도 있지~', date: '2020.05.07', yt: 'AzoN6-WdLSE', note: '초기 기획 제목: ‘그럴 수도 있지~’ · 4/30 부처님오신날 특집 편성으로 결방', teenies: ['깜빡핑'], princess: ['클라우디아'] },
+		{ title: '배고플 땐 상상해 봐', date: '2020.05.14', yt: '_IrjI3Zm-FU', note: '', teenies: ['띠용핑'], princess: ['하트'] },
+		{ title: '희망아, 어서 와', date: '2020.05.21', yt: 'S0VM9rRIrfI', note: '', teenies: ['차차핑'], princess: ['하트'] },
+		{ title: '눈물사탕은 어떤 맛?', date: '2020.05.28', yt: 'l-dWqcFt2aw', note: '', teenies: ['주르핑'], princess: ['클로버'] },
+		{ title: '차나핑을 찾아라!', date: '2020.06.04', yt: 'ROqxe8V4AWg', note: '', teenies: [], princess: ['스타'] },
+		{ title: '즐겁게 노래 불러 봐', date: '2020.06.11', yt: 'qc9DB9sh0vI', note: '', teenies: ['라라핑'], princess: ['하트'] },
+		{ title: '날 따라 해봐요', date: '2020.06.18', yt: 'Oa05QqabEAQ', note: '초기 기획 제목: ‘따라핑의 팬심’', teenies: ['따라핑'], princess: ['멜로디'] },
+		{ title: '거울을 보면 안 돼', date: '2020.06.25', yt: '9Yq1x-lqmF4', note: '초기 기획 제목: ‘거울을 봐서는 안 돼’', teenies: ['나르핑'], princess: ['하트', '클라우디아'] },
+		{ title: '돌아와, 하츄핑', date: '2020.07.02', yt: 'WrPnyvS5LsY', note: '초기 기획 제목: ‘하츄핑의 가출’', teenies: ['하츄핑'], princess: [] },
+		{ title: '무셔핑의 사진 찍기', date: '2020.07.09', yt: 'zprBK9cvhkA', note: '초기 기획 제목: ‘무셔무셔 사진 찍기 대소동’', teenies: [], princess: ['스타'] },
+		{ title: '나만 사랑해 줘!', date: '2020.07.16', yt: '94zttO4-YcE', note: '', teenies: ['투투핑'], princess: ['하트'] },
+		{ title: '좌충우돌 생일 파티', date: '2020.07.23', yt: '6zDvlZzz9u8', note: '초기 기획 제목: ‘좌충우돌, 로미의 생일 파티!’', teenies: [], princess: [] },
+		{ title: '행운을 부르는 도장', date: '2020.07.30', yt: 'nMM1Fikslyw', note: '초기 기획 제목: ‘행운의 스탬프를 찾아라!’', teenies: ['차캐핑'], princess: ['클라우디아'] },
+		{ title: '다 말해 버릴 거야!', date: '2020.08.06', yt: '1NXR4dVCcfE', note: '초기 기획 제목: ‘수다쟁이는 도대체 누구야?’', teenies: ['떠벌핑'], princess: ['클로버'] },
+		{ title: '풍선껌 대소동', date: '2020.08.13', yt: '706niqUuXjg', note: '', teenies: [], princess: ['하트'] },
+		{ title: '욕심쟁이 다조핑', date: '2020.08.20', yt: 'JxC2fW0MDhQ', note: '초기 기획 제목: ‘다 줘요! 내 꺼야!’', teenies: [], princess: ['스타'] },
+		{ title: '화내지 말아줘', date: '2020.08.27', yt: 'jmU5wdysSZw', note: '', teenies: ['화나핑'], princess: ['클로버'] },
+		{ title: '바로핑이 많아졌어요!', date: '2020.09.03', yt: '50aBoQlQgHQ', note: '', teenies: ['바로핑'], princess: ['멜로디'] },
+		{ title: '싫어 싫어, 시러핑!', date: '2020.09.10', yt: 'jF3HEJENPqI', note: '초기 기획 제목: ‘시러시러, 시러핑!’', teenies: [], princess: ['하트', '클로버'] },
+		{ title: '바네핑의 화살', date: '2020.09.17', yt: 'eKY1k1M02X4', note: '초기 기획 제목: ‘사랑해! 대소동’', teenies: [], princess: ['하트', '멜로디'] },
+		{ title: '장난이 제일 좋아!', date: '2020.09.24', yt: 'G4LxgiYC5Vs', note: '', teenies: ['악동핑'], princess: ['하트'] },
+		{ title: '춥다, 추워! 덜덜핑', date: '2020.10.08', yt: 'PyfBna37VjM', note: '10/1 추석 연휴로 휴방', teenies: [], princess: ['클로버'] },
+		{ title: '그림이 살아있다?', date: '2020.10.15', yt: 'ROynsahTutY', note: '', teenies: ['그림핑'], princess: ['클로버'] },
+		{ title: '동화 속 공주님이 되고 싶어', date: '2020.10.22', yt: 'vT-tUQ8iGec', note: '', teenies: [], princess: ['클라우디아'] },
+		{ title: '아휴~ 무거워, 무거핑', date: '2020.10.29', yt: '2TVr0PXstjw', note: '', teenies: [], princess: ['스타'] },
+		{ title: '뭐든지 거꾸로, 꺼꿀핑', date: '2020.11.05', yt: 'p5hXhz1n2mY', note: '', teenies: [], princess: ['멜로디'] },
+		{ title: '다섯 명의 로미', date: '2020.11.12', yt: 'R4GV0v2BR6U', note: '프린세스 선샤인을 제외한 5명이 모두 변신', teenies: [], princess: ['하트', '클라우디아', '클로버', '스타', '멜로디'] },
+		{ title: '씽씽핑은 빠른 게 좋아!', date: '2020.11.19', yt: 'ZxKmHqmORN4', note: '', teenies: [], princess: ['클라우디아'] },
+		{ title: '아기가 좋아, 베베핑!', date: '2020.11.26', yt: 'kvFJr2OoOqU', note: '', teenies: [], princess: ['멜로디'] },
+		{ title: '하트로즈에 외계인 등장!', date: '2020.12.03', yt: 'hSB-8RbHZhI', note: '', teenies: [], princess: [] },
+		{ title: '잠자는 하트로즈의 공주', date: '2020.12.10', yt: 'OXhucuyJNFY', note: '잠자는 숲속의 공주 패러디', teenies: ['코자핑'], princess: ['스타'] },
+		{ title: '로미, 레나랑 딱 붙다?', date: '2020.12.17', yt: 'oL9-7eus26E', note: '', teenies: ['딱풀핑'], princess: ['하트'] },
+		{ title: '토끼 괴물이 나타났다!', date: '2020.12.24', yt: '35txjFsYGT8', note: '', teenies: ['모야핑'], princess: ['하트'] },
+		{ title: '티니핑 축제', date: '2020.12.31', yt: '-nhVnbgoM7c', note: '', teenies: ['해핑'], princess: [] },
+		{ title: '장난감이 되었어요!', date: '2021.01.07', yt: 'w-7opR3rVtI', note: '', teenies: ['토이핑'], princess: ['스타'] },
+		{ title: '하트로즈의 수상한 손님', date: '2021.01.14', yt: 'Sl7gqg5rtBA', note: '', teenies: ['또까핑'], princess: ['클라우디아'] },
+		{ title: '꽃 만들기 대소동', date: '2021.01.21', yt: 'Ky1Z05p5gU4', note: '', teenies: ['플라핑'], princess: ['클로버'] },
+		{ title: '사고뭉치 아기 노리핑', date: '2021.01.28', yt: 'NVf22BcQrWA', note: '', teenies: ['노라핑', '노리핑'], princess: ['멜로디'] },
+		{ title: '악동핑의 진실', date: '2021.02.04', yt: '6Djmlq69_ag', note: '', teenies: [], princess: ['스타', '하트'] },
+		{ title: '프린세스 선샤인', date: '2021.02.18', yt: 'R9Xl7QiNnlU', note: '2/11 설 연휴로 휴방', teenies: ['해핑', '아휴핑'], princess: ['선샤인'] },
+		{ title: '공부할 땐 조용히, 똑똑!', date: '2021.02.25', yt: 'G7cbVWRP_HM', note: '', teenies: ['똑똑핑'], princess: ['클라우디아'] },
+		{ title: '다 얼려 버려, 꽁꽁핑', date: '2021.03.04', yt: 'EJM9t9BlK8k', note: '', teenies: [], princess: ['선샤인'] },
+		{ title: '찌릿핑은 짜릿짜릿해', date: '2021.03.11', yt: 'QWxAqN4wE4c', note: '시리즈 유일 15세 이상 시청가', teenies: [], princess: ['클라우디아', '선샤인'] },
+		{ title: '바다에서 온 티니핑', date: '2021.03.18', yt: 'qJ9laZd55fA', note: '', teenies: ['홀로핑'], princess: ['클로버'] },
+		{ title: '로열핑의 이름으로!', date: '2021.03.25', yt: 'IkZLDHoFeXU', note: '', teenies: ['앙대핑'], princess: ['하트', '멜로디'] },
+		{ title: '프린세스 베로니카', date: '2021.04.01', yt: 'DJ998RbjqqQ', note: '', teenies: ['하츄핑', '바로핑', '아자핑', '차차핑', '라라핑', '해핑', '앙대핑'], princess: ['베로니카'] }
 	],
 	2: [
-		['반짝반짝 보석티니핑', '2021.09.22', '_Trni5YhFUw', '', ['방글핑', '조아핑', '믿어핑']],
-		['티니핑 스쿨 개교!', '2021.09.29', 'jKAXq4IJHv8', '', ['방글핑', '조아핑', '믿어핑']],
-		['간지럼을 참아야 해!', '2021.10.06', 'alEFGDOSu60', '', ['까르핑']],
-		['아야아야 엄살은 그만!', '2021.10.13', '5Nf5Gt6ThUU', '', ['아야핑']],
-		['소원핑의 세 가지 소원', '2021.10.20', 'WDY_SuqaN3Q', '', []],
-		['토닥토닥, 따뜻한 위로를 줄게', '2021.10.27', 'QUUXGhWLoDc', '', ['토닥핑']],
-		['사라진 로미', '2021.11.03', 'ezbVkqn_Yrs', '', ['쪼꼼핑']],
-		['반짝반짝하게 싹싹!', '2021.11.10', 'TbcO8leL6eE', '', ['싹싹핑']],
-		['맛나핑은 최고의 요리 선생님', '2021.11.17', 'VEKpAWIuMWY', '', []],
-		['쓰러진 믿어핑', '2021.11.24', 'vQvlazM_Avg', '', []],
-		['뜨개 인형이 된 하츄핑', '2021.12.01', '1qAf2VzYjSo', '', ['다이아 하츄핑', '포근핑']],
-		['곰 인형이 살아있다?', '2021.12.08', '28jVRbD1oQM', '', []],
-		['또 한 명의 프린세스', '2021.12.15', 'lN3ehNt-7mE', '', []],
-		['메모핑의 메모메모', '2021.12.22', '4cci7UNZUU4', '', []],
-		['대결! 로열핑', '2021.12.29', 'mKfAi8jXnwI', '', []],
-		['왕국이 된 하트로즈', '2022.01.05', 'U405uyyJ4-s', '', ['공쥬핑']],
-		['보석핑을 도둑맞았어요!', '2022.01.12', 'yGkzrdnjAJw', '', []],
-		['진짜 하츄핑은 누구?', '2022.01.19', 'JZnlWeDYd8I', '', ['다이아 하츄핑', '짝짝핑']],
-		['선물 상자를 찾아라!', '2022.01.26', 'icrTBeHtCfI', '', ['주네핑']],
-		['조각을 할 거야, 뚝딱!', '2022.02.02', 'IudjMP1aoL8', '', ['뚝딱핑']],
-		['위험한 소풍', '2022.02.09', 'VgtBEZXvXcI', '', []],
-		['핑그르르 티니핑 발레단', '2022.02.16', 'h4AOB0tYt6w', '', ['발레핑']],
-		['히어로 티니핑, 원더핑!', '2022.02.23', 'gND01AXNUZw', '', []],
-		['티니핑 스쿨 졸업식', '2022.03.02', 'aiqqHC84tKs', '', ['가면핑']],
-		['위기의 하츄핑', '2022.03.09', 'dWFD-Ke0UHQ', '', ['다이아 하츄핑', '다해핑', '가면핑']],
-		['돌아온 보석숲', '2022.03.16', '4wQH2kgzmuM', '', ['다해핑']]
+		{ title: '반짝반짝 보석티니핑', date: '2021.09.22', yt: '_Trni5YhFUw', note: '', teenies: ['방글핑', '조아핑', '믿어핑'], princess: ['다이아하트'] },
+		{ title: '티니핑 스쿨 개교!', date: '2021.09.29', yt: 'jKAXq4IJHv8', note: '', teenies: ['방글핑', '조아핑', '믿어핑'], princess: ['다이아하트'] },
+		{ title: '간지럼을 참아야 해!', date: '2021.10.06', yt: 'alEFGDOSu60', note: '', teenies: ['까르핑'], princess: ['루비'] },
+		{ title: '아야아야 엄살은 그만!', date: '2021.10.13', yt: '5Nf5Gt6ThUU', note: '', teenies: ['아야핑'], princess: ['사파이어'] },
+		{ title: '소원핑의 세 가지 소원', date: '2021.10.20', yt: 'WDY_SuqaN3Q', note: '', teenies: [], princess: ['다이아하트'] },
+		{ title: '토닥토닥, 따뜻한 위로를 줄게', date: '2021.10.27', yt: 'QUUXGhWLoDc', note: '', teenies: ['토닥핑'], princess: ['사파이어'] },
+		{ title: '사라진 로미', date: '2021.11.03', yt: 'ezbVkqn_Yrs', note: '', teenies: ['쪼꼼핑'], princess: ['에메랄드'] },
+		{ title: '반짝반짝하게 싹싹!', date: '2021.11.10', yt: 'TbcO8leL6eE', note: '', teenies: ['싹싹핑'], princess: ['다이아하트'] },
+		{ title: '맛나핑은 최고의 요리 선생님', date: '2021.11.17', yt: 'VEKpAWIuMWY', note: '', teenies: [], princess: ['루비'] },
+		{ title: '쓰러진 믿어핑', date: '2021.11.24', yt: 'vQvlazM_Avg', note: '', teenies: [], princess: [] },
+		{ title: '뜨개 인형이 된 하츄핑', date: '2021.12.01', yt: '1qAf2VzYjSo', note: '', teenies: ['다이아 하츄핑', '포근핑'], princess: ['사파이어'] },
+		{ title: '곰 인형이 살아있다?', date: '2021.12.08', yt: '28jVRbD1oQM', note: '', teenies: [], princess: [] },
+		{ title: '또 한 명의 프린세스', date: '2021.12.15', yt: 'lN3ehNt-7mE', note: '', teenies: [], princess: [] },
+		{ title: '메모핑의 메모메모', date: '2021.12.22', yt: '4cci7UNZUU4', note: '', teenies: [], princess: ['다이아하트', '에메랄드'] },
+		{ title: '대결! 로열핑', date: '2021.12.29', yt: 'mKfAi8jXnwI', note: '', teenies: [], princess: [] },
+		{ title: '왕국이 된 하트로즈', date: '2022.01.05', yt: 'U405uyyJ4-s', note: '', teenies: ['공쥬핑'], princess: ['다이아하트'] },
+		{ title: '보석핑을 도둑맞았어요!', date: '2022.01.12', yt: 'yGkzrdnjAJw', note: '', teenies: [], princess: ['루비'] },
+		{ title: '진짜 하츄핑은 누구?', date: '2022.01.19', yt: 'JZnlWeDYd8I', note: '', teenies: ['다이아 하츄핑', '짝짝핑'], princess: ['다이아하트'] },
+		{ title: '선물 상자를 찾아라!', date: '2022.01.26', yt: 'icrTBeHtCfI', note: '', teenies: ['주네핑'], princess: ['에메랄드'] },
+		{ title: '조각을 할 거야, 뚝딱!', date: '2022.02.02', yt: 'IudjMP1aoL8', note: '', teenies: ['뚝딱핑'], princess: ['사파이어'] },
+		{ title: '위험한 소풍', date: '2022.02.09', yt: 'VgtBEZXvXcI', note: '', teenies: [], princess: [] },
+		{ title: '핑그르르 티니핑 발레단', date: '2022.02.16', yt: 'h4AOB0tYt6w', note: '', teenies: ['발레핑'], princess: ['루비'] },
+		{ title: '히어로 티니핑, 원더핑!', date: '2022.02.23', yt: 'gND01AXNUZw', note: '', teenies: [], princess: ['루비'] },
+		{ title: '티니핑 스쿨 졸업식', date: '2022.03.02', yt: 'aiqqHC84tKs', note: '', teenies: ['가면핑'], princess: [] },
+		{ title: '위기의 하츄핑', date: '2022.03.09', yt: 'dWFD-Ke0UHQ', note: '', teenies: ['다이아 하츄핑', '다해핑', '가면핑'], princess: [] },
+		{ title: '돌아온 보석숲', date: '2022.03.16', yt: '4wQH2kgzmuM', note: '', teenies: ['다해핑'], princess: [] }
 	],
 	3: [
-		['알쏭달쏭 열쇠티니핑', '2022.09.14', 'iu_BcpwA_CU', '', ['나나핑', '솔찌핑', '꾸래핑']],
-		['변신! 플로라하트', '2022.09.21', 'REEFFxzbRno', '', ['플로라 하츄핑', '빨리핑']],
-		['과식은 위험해 얌얌', '2022.09.28', 'gL4e1X6FOLY', '', ['얌얌핑']],
-		['뜨거뜨거 캠핑 소동', '2022.10.05', 'diJjBV2lL7M', '', ['뜨거핑']],
-		['치료해줄게 삐뽀', '2022.10.12', 'Iu8DqU3l8lc', '', ['삐뽀핑']],
-		['티니핑 병원이 생겼어요', '2022.10.19', 'mOzmTn5p2IU', '', ['간호핑']],
-		['힘내힘내 응원이 필요해', '2022.10.26', 'wAREoM6c4Bc', '', ['힘내핑']],
-		['고쳐줘요 고쳐핑', '2022.11.02', 'TO9wnBEfZyM', '', []],
-		['로미와 하츄핑이 바뀌었어요', '2022.11.09', '-SVXVzXmH5I', '로미와 하츄핑의 몸이 바뀌는 에피소드', ['플로라 하츄핑', '아라핑']],
-		['백설로미', '2022.11.16', 'kOqF74Gcssw', '백설공주 패러디', []],
-		['패션핑의 옷 만들기', '2022.11.23', 'W7iHxQxgbY0', '', []],
-		['꼼짝 마라 꼼딱핑', '2022.11.30', 'tEB6k_ibCXA', '', []],
-		['행운이 가득 행운과자', '2022.12.07', 'UgahnwcQpS4', '', ['행운핑']],
-		['퐁당퐁당 퐁당핑', '2022.12.14', 'pBWDG38n8-U', '', []],
-		['파티핑과 파티파티', '2022.12.21', 'GTwV4PV1iFE', '', []],
-		['멋진 머리를 꾸며 봐 꾸며핑', '2022.12.28', '56d7kVR1vBI', '', []],
-		['아빠의 카메라', '2023.01.04', 'pJTgeHumFCQ', '감독 장성의 경험담을 담은 에피소드', []],
-		['삐질 거야 삐짐핑', '2023.01.11', 'aUMy-1IMyVs', '', []],
-		['로미의 목걸이를 찾아라', '2023.01.18', 'fCj2QgH-_9k', '', []],
-		['노래하는 아아~핑', '2023.01.25', 'fqSi0HHkyNs', '', []],
-		['다 같이 놀자 티니핑 놀이공원', '2023.02.01', 'ZgN4YSxvd10', '', []],
-		['스케이트 타고 빙글빙글', '2023.02.08', '2JNMvhG3LlU', '', ['빙글핑']],
-		['등장! 행운핑', '2023.02.15', '-SsZh0Jt-Xs', '', []],
-		['티니핑 패션쇼', '2023.02.22', '53wEfCVr5Dc', '', ['패션핑']],
-		['위기일발 미스틱마을', '2023.03.01', 'jcKoAllmJgQ', '', ['행운핑']],
-		['안녕 열쇠티니핑', '2023.03.08', 'xqE5yWIy_XE', '', ['행운핑']]
+		{ title: '알쏭달쏭 열쇠티니핑', date: '2022.09.14', yt: 'iu_BcpwA_CU', note: '', teenies: ['나나핑', '솔찌핑', '꾸래핑'], princess: [] },
+		{ title: '변신! 플로라하트', date: '2022.09.21', yt: 'REEFFxzbRno', note: '', teenies: ['플로라 하츄핑', '빨리핑'], princess: ['플로라하트'] },
+		{ title: '과식은 위험해 얌얌', date: '2022.09.28', yt: 'gL4e1X6FOLY', note: '', teenies: ['얌얌핑'], princess: ['솔라리스'] },
+		{ title: '뜨거뜨거 캠핑 소동', date: '2022.10.05', yt: 'diJjBV2lL7M', note: '', teenies: ['뜨거핑'], princess: ['글로리아'] },
+		{ title: '치료해줄게 삐뽀', date: '2022.10.12', yt: 'Iu8DqU3l8lc', note: '', teenies: ['삐뽀핑'], princess: ['크리스탈'] },
+		{ title: '티니핑 병원이 생겼어요', date: '2022.10.19', yt: 'mOzmTn5p2IU', note: '', teenies: ['간호핑'], princess: ['플로라하트'] },
+		{ title: '힘내힘내 응원이 필요해', date: '2022.10.26', yt: 'wAREoM6c4Bc', note: '', teenies: ['힘내핑'], princess: ['글로리아'] },
+		{ title: '고쳐줘요 고쳐핑', date: '2022.11.02', yt: 'TO9wnBEfZyM', note: '', teenies: [], princess: ['플로라하트'] },
+		{ title: '로미와 하츄핑이 바뀌었어요', date: '2022.11.09', yt: '-SVXVzXmH5I', note: '로미와 하츄핑의 몸이 바뀌는 에피소드', teenies: ['플로라 하츄핑', '아라핑'], princess: ['플로라하트'] },
+		{ title: '백설로미', date: '2022.11.16', yt: 'kOqF74Gcssw', note: '백설공주 패러디', teenies: [], princess: [] },
+		{ title: '패션핑의 옷 만들기', date: '2022.11.23', yt: 'W7iHxQxgbY0', note: '', teenies: [], princess: ['솔라리스'] },
+		{ title: '꼼짝 마라 꼼딱핑', date: '2022.11.30', yt: 'tEB6k_ibCXA', note: '', teenies: [], princess: ['크리스탈'] },
+		{ title: '행운이 가득 행운과자', date: '2022.12.07', yt: 'UgahnwcQpS4', note: '', teenies: ['행운핑'], princess: [] },
+		{ title: '퐁당퐁당 퐁당핑', date: '2022.12.14', yt: 'pBWDG38n8-U', note: '', teenies: [], princess: ['플로라하트'] },
+		{ title: '파티핑과 파티파티', date: '2022.12.21', yt: 'GTwV4PV1iFE', note: '', teenies: [], princess: ['크리스탈'] },
+		{ title: '멋진 머리를 꾸며 봐 꾸며핑', date: '2022.12.28', yt: '56d7kVR1vBI', note: '', teenies: [], princess: ['솔라리스'] },
+		{ title: '아빠의 카메라', date: '2023.01.04', yt: 'pJTgeHumFCQ', note: '감독 장성의 경험담을 담은 에피소드', teenies: [], princess: [] },
+		{ title: '삐질 거야 삐짐핑', date: '2023.01.11', yt: 'aUMy-1IMyVs', note: '', teenies: [], princess: ['글로리아'] },
+		{ title: '로미의 목걸이를 찾아라', date: '2023.01.18', yt: 'fCj2QgH-_9k', note: '', teenies: [], princess: [] },
+		{ title: '노래하는 아아~핑', date: '2023.01.25', yt: 'fqSi0HHkyNs', note: '', teenies: [], princess: ['글로리아'] },
+		{ title: '다 같이 놀자 티니핑 놀이공원', date: '2023.02.01', yt: 'ZgN4YSxvd10', note: '', teenies: [], princess: [] },
+		{ title: '스케이트 타고 빙글빙글', date: '2023.02.08', yt: '2JNMvhG3LlU', note: '', teenies: ['빙글핑'], princess: ['크리스탈'] },
+		{ title: '등장! 행운핑', date: '2023.02.15', yt: '-SsZh0Jt-Xs', note: '', teenies: [], princess: ['크리스탈', '플로라하트'] },
+		{ title: '티니핑 패션쇼', date: '2023.02.22', yt: '53wEfCVr5Dc', note: '', teenies: ['패션핑'], princess: [] },
+		{ title: '위기일발 미스틱마을', date: '2023.03.01', yt: 'jcKoAllmJgQ', note: '', teenies: ['행운핑'], princess: ['트와일라잇', '라비린스'] },
+		{ title: '안녕 열쇠티니핑', date: '2023.03.08', yt: 'xqE5yWIy_XE', note: '', teenies: ['행운핑'], princess: ['트와일라잇', '라비린스'] }
 	],
 	4: [
-		['새콤달콤 디저트티니핑', '2023.09.22', '4zntlZz-KoA', '1~2화 9/22 동시 선행 공개', ['포실핑', '샤샤핑', '말랑핑']],
-		['변신! 프린세스 베리하트', '2023.09.22', 'e3q_qlY9S50', '1~2화 9/22 동시 선행 공개', ['베리 하츄핑', '캔디핑']],
-		['예쁘게 장식할래, 머랭', '2023.10.05', '-TgXo9flZY0', '1주 휴방(추정)', ['머랭핑']],
-		['샌드핑과 샌드쿠키의 비밀', '2023.10.12', 'SceE1U1EynE', '', []],
-		['뿌뿌핑을 잡아라', '2023.10.19', 'JRwIR67vIrQ', '', []],
-		['로열 티니핑이 되고 싶어', '2023.10.26', 'KsexqM-F9aM', '', ['또너핑']],
-		['납작해져라! 와플핑', '2023.11.02', 'nG_DL4vbmxI', '', []],
-		['돌려 돌려~ 롤리핑', '2023.11.09', 'M_7gXX-YnBY', '', []],
-		['포실핑과 작은 친구들', '2023.11.16', 'NQlWe7JV65U', '', []],
-		['알록달록 색칠해요 마카핑', '2023.11.23', 'cIWu0eKYYFI', '', []],
-		['차곡차곡 쌓아줘 핫케핑', '2023.11.30', 'IB9pjBAMwuc', '', []],
-		['말랑핑 마음은 말랑해요', '2023.12.07', 'UlhVKfkuKHs', '', []],
-		['디저트 마을로 간 로미', '2023.12.14', 'bTmHrhJCmkE', '', []],
-		['울면 안 돼! 커핑, 머핑', '2024.01.04', 'qi0iB_R4_Pc', '12/21·12/28 전반부 종료·연말 휴식으로 2주 휴방', []],
-		['아기 돌보기는 힘들어, 또너', '2024.01.11', 'dTDULu2kJ7U', '', ['또너핑', '커핑', '머핑']],
-		['샤샤핑이 낫게 해 줄게', '2024.01.18', 'Y9Q5NJU5mF0', '', []],
-		['잘 자요~를레이! 요거', '2024.01.25', 'TXYu0pKBm2U', '', ['요거핑']],
-		['얼음 공주 눈꽃핑', '2024.02.01', '7T3-sLjSVbQ', '', []],
-		['푸딩푸딩 푸딩댄스', '2024.02.08', 'KdEfsIikVbA', '', ['푸딩핑']],
-		['폭신폭신 마시멜로', '2024.02.15', 'yZivvVZCzZE', '', ['멜로핑']],
-		['쪼꼬모자로 모두 사이좋게', '2024.02.22', 'xjVHQd8TVO8', '', ['쪼꼬핑']],
-		['새콤달콤 레전드 티니핑', '2024.02.29', 'dncyJTi25BQ', '', ['새콤핑', '달콤핑']],
-		['새콤달콤한 디저트 파티', '2024.03.07', '1fsptR3pdOE', '', ['새콤핑', '달콤핑']],
-		['돌아와, 뿌뿌핑', '2024.03.14', 'IBnueSF_8TY', '', ['뿌뿌핑']],
-		['다시, 디저트 마을로', '2024.03.21', 'rRTNEh9_k1o', '', ['새콤핑', '달콤핑', '뿌뿌핑']],
-		['마음을 하나로! 하모니어스', '2024.03.28', 'Pj5C4Jrz8hc', '', ['새콤핑', '달콤핑']]
+		{ title: '새콤달콤 디저트티니핑', date: '2023.09.22', yt: '4zntlZz-KoA', note: '1~2화 9/22 동시 선행 공개', teenies: ['포실핑', '샤샤핑', '말랑핑'], princess: [] },
+		{ title: '변신! 프린세스 베리하트', date: '2023.09.22', yt: 'e3q_qlY9S50', note: '1~2화 9/22 동시 선행 공개', teenies: ['베리 하츄핑', '캔디핑'], princess: ['베리하트'] },
+		{ title: '예쁘게 장식할래, 머랭', date: '2023.10.05', yt: '-TgXo9flZY0', note: '1주 휴방(추정)', teenies: ['머랭핑'], princess: ['스윗플로스'] },
+		{ title: '샌드핑과 샌드쿠키의 비밀', date: '2023.10.12', yt: 'SceE1U1EynE', note: '', teenies: [], princess: ['샤베티나'] },
+		{ title: '뿌뿌핑을 잡아라', date: '2023.10.19', yt: 'JRwIR67vIrQ', note: '', teenies: [], princess: ['젤리스틴'] },
+		{ title: '로열 티니핑이 되고 싶어', date: '2023.10.26', yt: 'KsexqM-F9aM', note: '', teenies: ['또너핑'], princess: ['베리하트'] },
+		{ title: '납작해져라! 와플핑', date: '2023.11.02', yt: 'nG_DL4vbmxI', note: '', teenies: [], princess: ['젤리스틴'] },
+		{ title: '돌려 돌려~ 롤리핑', date: '2023.11.09', yt: 'M_7gXX-YnBY', note: '', teenies: [], princess: ['스윗플로스'] },
+		{ title: '포실핑과 작은 친구들', date: '2023.11.16', yt: 'NQlWe7JV65U', note: '', teenies: [], princess: ['베리하트'] },
+		{ title: '알록달록 색칠해요 마카핑', date: '2023.11.23', yt: 'cIWu0eKYYFI', note: '', teenies: [], princess: ['샤베티나'] },
+		{ title: '차곡차곡 쌓아줘 핫케핑', date: '2023.11.30', yt: 'IB9pjBAMwuc', note: '', teenies: [], princess: ['베리하트'] },
+		{ title: '말랑핑 마음은 말랑해요', date: '2023.12.07', yt: 'UlhVKfkuKHs', note: '', teenies: [], princess: [] },
+		{ title: '디저트 마을로 간 로미', date: '2023.12.14', yt: 'bTmHrhJCmkE', note: '', teenies: [], princess: [] },
+		{ title: '울면 안 돼! 커핑, 머핑', date: '2024.01.04', yt: 'qi0iB_R4_Pc', note: '12/21·12/28 전반부 종료·연말 휴식으로 2주 휴방', teenies: [], princess: ['스윗플로스'] },
+		{ title: '아기 돌보기는 힘들어, 또너', date: '2024.01.11', yt: 'dTDULu2kJ7U', note: '', teenies: ['또너핑', '커핑', '머핑'], princess: [] },
+		{ title: '샤샤핑이 낫게 해 줄게', date: '2024.01.18', yt: 'Y9Q5NJU5mF0', note: '', teenies: [], princess: [] },
+		{ title: '잘 자요~를레이! 요거', date: '2024.01.25', yt: 'TXYu0pKBm2U', note: '', teenies: ['요거핑'], princess: ['스윗플로스'] },
+		{ title: '얼음 공주 눈꽃핑', date: '2024.02.01', yt: '7T3-sLjSVbQ', note: '', teenies: [], princess: ['샤베티나'] },
+		{ title: '푸딩푸딩 푸딩댄스', date: '2024.02.08', yt: 'KdEfsIikVbA', note: '', teenies: ['푸딩핑'], princess: ['젤리스틴'] },
+		{ title: '폭신폭신 마시멜로', date: '2024.02.15', yt: 'yZivvVZCzZE', note: '', teenies: ['멜로핑'], princess: ['베리하트'] },
+		{ title: '쪼꼬모자로 모두 사이좋게', date: '2024.02.22', yt: 'xjVHQd8TVO8', note: '', teenies: ['쪼꼬핑'], princess: ['샤베티나'] },
+		{ title: '새콤달콤 레전드 티니핑', date: '2024.02.29', yt: 'dncyJTi25BQ', note: '', teenies: ['새콤핑', '달콤핑'], princess: [] },
+		{ title: '새콤달콤한 디저트 파티', date: '2024.03.07', yt: '1fsptR3pdOE', note: '', teenies: ['새콤핑', '달콤핑'], princess: [] },
+		{ title: '돌아와, 뿌뿌핑', date: '2024.03.14', yt: 'IBnueSF_8TY', note: '', teenies: ['뿌뿌핑'], princess: ['베리하트', '라비린스'] },
+		{ title: '다시, 디저트 마을로', date: '2024.03.21', yt: 'rRTNEh9_k1o', note: '', teenies: ['새콤핑', '달콤핑', '뿌뿌핑'], princess: ['베리하트'] },
+		{ title: '마음을 하나로! 하모니어스', date: '2024.03.28', yt: 'Pj5C4Jrz8hc', note: '', teenies: ['새콤핑', '달콤핑'], princess: ['하모니어스'] }
 	],
 	5: [
-		['별을 타고 온 소녀', '2024.10.10', 'mAsiA_sld3A', '', ['빛나핑', '초롱핑', '빤짝핑']],
-		['깡총깡총 깡총핑', '2024.10.10', 'QHqtPLZbgio', '1~2화 동일 날짜 방영', []],
-		['훌라후프의 여왕', '2024.10.24', 'JFq1e86-Jtw', '', ['훌라핑']],
-		['빛을 나눠줘 나눔핑', '2024.10.31', '_IQDYCvdDBM', '', []],
-		['택배 왔어요 딩동핑', '2024.11.07', 'ssD1sxMatXo', '', []],
-		['우주 미아가 된 로열핑들', '2024.11.14', 'Zkvw-Qa5RtE', '', ['빛나핑', '초롱핑', '빤짝핑']],
-		['떠돌이 나그네핑', '2024.11.21', 'z11QptPzMM4', '', []],
-		['고고핑은 멈추지 않아', '2024.11.28', 'stwMPiIO_yw', '', []],
-		['스티커를 붙여 뿌쵸핑', '2024.12.05', '0Ky38_lnuFs', '', []],
-		['힘 센 티니핑 고마핑', '2024.12.12', 'nO16PzlzPHk', '', []],
-		['만나고 싶어 아롱핑, 다롱핑', '2024.12.19', '37OtBOn55U0', '', []],
-		['뽀송핑의 뽀송뽀송 세탁소', '2024.12.26', 'LruDE54ANiI', '', []],
-		['투명해질래 유리핑', '2025.01.02', 'eCkFvGJYGkk', '', []],
-		['하트로즈에 온 노아', '2025.02.06', 'xVJQcgssg_U', '1/9~1/30 전반기 종료 휴식(설 연휴 포함)', ['스타 하츄핑']],
-		['함께하자 함께핑', '2025.02.13', '82ryV9CzZbg', '', []],
-		['댄스핑의 댄스는 별이 다섯 개', '2025.02.20', 'KvE8tgG50BE', '', []],
-		['장난꾸러기 여우핑', '2025.02.27', 'JODHq0WPEhM', '', ['여우핑']],
-		['루루핑과 노래해요', '2025.03.06', 'WLHsOWaFQY0', '', []],
-		['나그네핑을 찾아라', '2025.03.13', '1QrXentSl1c', '', []],
-		['티니핑이 된 로미', '2025.03.20', 'hBHTDejucuE', '', ['스타 하츄핑', '로미핑']],
-		['몰래 훔쳐! 몰래핑', '2025.03.27', 'N7NIeskncMY', '', []],
-		['뽀뽀핑 따라 삼만 리', '2025.04.03', 'oTBdec5Lyms', '', []],
-		['별의 기억', '2025.04.10', 'xe60fTXg6mk', '', ['나그네핑']],
-		['스타티니핑, 별의 힘을 모아', '2025.04.17', 'xurB-2BkFJs', '', ['오로라핑', '왕자핑']],
-		['약속의 오로라핑', '2025.04.24', 'U-P9yRx9sWU', '', ['오로라핑', '왕자핑']],
-		['마음을 이어주는 오로라', '2025.05.01', '7w3aS8HH6MA', '', ['오로라핑', '왕자핑']]
+		{ title: '별을 타고 온 소녀', date: '2024.10.10', yt: 'mAsiA_sld3A', note: '', teenies: ['빛나핑', '초롱핑', '빤짝핑'], princess: ['브라잇하트'] },
+		{ title: '깡총깡총 깡총핑', date: '2024.10.10', yt: 'QHqtPLZbgio', note: '1~2화 동일 날짜 방영', teenies: [], princess: ['브라잇하트'] },
+		{ title: '훌라후프의 여왕', date: '2024.10.24', yt: 'JFq1e86-Jtw', note: '', teenies: ['훌라핑'], princess: ['스타라이트'] },
+		{ title: '빛을 나눠줘 나눔핑', date: '2024.10.31', yt: '_IQDYCvdDBM', note: '', teenies: [], princess: ['글램 스타'] },
+		{ title: '택배 왔어요 딩동핑', date: '2024.11.07', yt: 'ssD1sxMatXo', note: '', teenies: [], princess: ['루나 샤인'] },
+		{ title: '우주 미아가 된 로열핑들', date: '2024.11.14', yt: 'Zkvw-Qa5RtE', note: '', teenies: ['빛나핑', '초롱핑', '빤짝핑'], princess: [] },
+		{ title: '떠돌이 나그네핑', date: '2024.11.21', yt: 'z11QptPzMM4', note: '', teenies: [], princess: ['브라잇하트'] },
+		{ title: '고고핑은 멈추지 않아', date: '2024.11.28', yt: 'stwMPiIO_yw', note: '', teenies: [], princess: ['루나 샤인'] },
+		{ title: '스티커를 붙여 뿌쵸핑', date: '2024.12.05', yt: '0Ky38_lnuFs', note: '', teenies: [], princess: ['글램 스타'] },
+		{ title: '힘 센 티니핑 고마핑', date: '2024.12.12', yt: 'nO16PzlzPHk', note: '', teenies: [], princess: ['스타라이트'] },
+		{ title: '만나고 싶어 아롱핑, 다롱핑', date: '2024.12.19', yt: '37OtBOn55U0', note: '', teenies: [], princess: ['브라잇하트'] },
+		{ title: '뽀송핑의 뽀송뽀송 세탁소', date: '2024.12.26', yt: 'LruDE54ANiI', note: '', teenies: [], princess: ['루나 샤인'] },
+		{ title: '투명해질래 유리핑', date: '2025.01.02', yt: 'eCkFvGJYGkk', note: '', teenies: [], princess: ['스타라이트'] },
+		{ title: '하트로즈에 온 노아', date: '2025.02.06', yt: 'xVJQcgssg_U', note: '1/9~1/30 전반기 종료 휴식(설 연휴 포함)', teenies: ['스타 하츄핑'], princess: [] },
+		{ title: '함께하자 함께핑', date: '2025.02.13', yt: '82ryV9CzZbg', note: '', teenies: [], princess: ['글램 스타'] },
+		{ title: '댄스핑의 댄스는 별이 다섯 개', date: '2025.02.20', yt: 'KvE8tgG50BE', note: '', teenies: [], princess: ['스타라이트'] },
+		{ title: '장난꾸러기 여우핑', date: '2025.02.27', yt: 'JODHq0WPEhM', note: '', teenies: ['여우핑'], princess: ['루나 샤인'] },
+		{ title: '루루핑과 노래해요', date: '2025.03.06', yt: 'WLHsOWaFQY0', note: '', teenies: [], princess: ['글램 스타'] },
+		{ title: '나그네핑을 찾아라', date: '2025.03.13', yt: '1QrXentSl1c', note: '', teenies: [], princess: ['브라잇하트'] },
+		{ title: '티니핑이 된 로미', date: '2025.03.20', yt: 'hBHTDejucuE', note: '', teenies: ['스타 하츄핑', '로미핑'], princess: [] },
+		{ title: '몰래 훔쳐! 몰래핑', date: '2025.03.27', yt: 'N7NIeskncMY', note: '', teenies: [], princess: ['루나 샤인'] },
+		{ title: '뽀뽀핑 따라 삼만 리', date: '2025.04.03', yt: 'oTBdec5Lyms', note: '', teenies: [], princess: ['스타라이트'] },
+		{ title: '별의 기억', date: '2025.04.10', yt: 'xe60fTXg6mk', note: '', teenies: ['나그네핑'], princess: [] },
+		{ title: '스타티니핑, 별의 힘을 모아', date: '2025.04.17', yt: 'xurB-2BkFJs', note: '', teenies: ['오로라핑', '왕자핑'], princess: ['브라잇하트'] },
+		{ title: '약속의 오로라핑', date: '2025.04.24', yt: 'U-P9yRx9sWU', note: '', teenies: ['오로라핑', '왕자핑'], princess: ['브라잇하트'] },
+		{ title: '마음을 이어주는 오로라', date: '2025.05.01', yt: '7w3aS8HH6MA', note: '', teenies: ['오로라핑', '왕자핑'], princess: ['브라잇하트', '오로라'] }
 	],
 	6: [
-		['출발! 프린세스 회담행 열차', '2025.10.30', 'JW9xFlZZyvs', '성탄절 특집으로 종영 전 본편 업로드 · 2026.1.2부터 ‘캐치! 티니핑 스페셜’로 변경', ['사뿐핑', '뽀니핑', '아름핑']],
-		['거울 속 너는 누구?', '2025.11.06', 'W5ng4esNuQo', '성탄절 특집으로 종영 전 본편 업로드 · 2026.1.2부터 ‘캐치! 티니핑 스페셜’로 변경', []],
-		['뽀득핑은 뽀득뽀득 뽀드득', '2025.11.13', '', '', []],
-		['매력을 찾아줄게 차밍핑', '2025.11.20', '', '', []],
-		['날개를 달아줘 나비핑', '2025.11.27', '', '', []],
-		['실크핑과 마법 양탄자', '2025.12.04', '', '', []],
-		['삼총사 티니핑', '2025.12.11', '', '', ['샤를핑', '트롯핑', '깨굴핑']],
-		['차갑게 꽁꽁 스노우핑', '2025.12.18', '', '', []],
-		['바느질은 아름핑에게 맡겨줘', '2025.12.25', '', '', []],
-		['스파이 대작전', '2026.01.01', '', '', ['해핑', '포실핑']],
-		['이슬핑의 이슬 한 방울', '2026.01.08', '', '', []],
-		['낮잠 진짜 좋아 쿨쿨핑', '2026.01.15', '', '', []],
-		['이클립스봇의 습격', '2026.01.22', '', '', ['이클립스핑']],
-		['시간을 되돌려 슈슈핑', '2026.02.26', '', '1/29부터 전반기 종료로 4주간 휴방', []],
-		['귀곡산장의 비밀', '2026.03.05', '', '', ['샤를핑', '트롯핑', '깨굴핑']],
-		['긴 머리 휘날리며 롱롱핑', '2026.03.12', '', '', []],
-		['빙빙 도는 거울', '2026.03.19', '', '', []],
-		['유혹의 뽀니핑', '2026.03.26', '', '', []],
-		['속마음 뿅뿅 큐핑', '2026.04.02', '', '', ['큐핑', '트롯핑', '코러스핑']],
-		['하츄핑의 사뿐핑 관찰기', '2026.04.09', '', '', ['프린세스 하츄핑', '사뿐핑']],
-		['이클립스핑을 막아라', '2026.04.16', '', '', []],
-		['이클립스핑의 진실', '2026.04.23', '', '', ['이클립스핑', '젠틀핑']],
-		['꼭꼭 숨어! 야옹핑', '2026.04.30', '', '', []],
-		['프린세스 무도회', '2026.05.07', '', '', []],
-		['거울 저 너머에', '2026.05.14', '', '', ['이클립스핑']],
-		['하나의 마음으로', '2026.05.21', '', '', ['이클립스핑', '다이아나핑', '젠틀핑', '집사 티니핑']]
+		{ title: '출발! 프린세스 회담행 열차', date: '2025.10.30', yt: 'JW9xFlZZyvs', note: '성탄절 특집으로 종영 전 본편 업로드 · 2026.1.2부터 ‘캐치! 티니핑 스페셜’로 변경', teenies: ['사뿐핑', '뽀니핑', '아름핑'], princess: ['팬시하트'] },
+		{ title: '거울 속 너는 누구?', date: '2025.11.06', yt: 'W5ng4esNuQo', note: '성탄절 특집으로 종영 전 본편 업로드 · 2026.1.2부터 ‘캐치! 티니핑 스페셜’로 변경', teenies: [], princess: [] },
+		{ title: '뽀득핑은 뽀득뽀득 뽀드득', date: '2025.11.13', yt: '', note: '', teenies: [], princess: ['쁠리에'] },
+		{ title: '매력을 찾아줄게 차밍핑', date: '2025.11.20', yt: '', note: '', teenies: [], princess: ['보니타'] },
+		{ title: '날개를 달아줘 나비핑', date: '2025.11.27', yt: '', note: '', teenies: [], princess: ['판타나'] },
+		{ title: '실크핑과 마법 양탄자', date: '2025.12.04', yt: '', note: '', teenies: [], princess: ['팬시하트'] },
+		{ title: '삼총사 티니핑', date: '2025.12.11', yt: '', note: '', teenies: ['샤를핑', '트롯핑', '깨굴핑'], princess: ['팬시하트'] },
+		{ title: '차갑게 꽁꽁 스노우핑', date: '2025.12.18', yt: '', note: '', teenies: [], princess: ['쁠리에'] },
+		{ title: '바느질은 아름핑에게 맡겨줘', date: '2025.12.25', yt: '', note: '', teenies: [], princess: [] },
+		{ title: '스파이 대작전', date: '2026.01.01', yt: '', note: '', teenies: ['해핑', '포실핑'], princess: [] },
+		{ title: '이슬핑의 이슬 한 방울', date: '2026.01.08', yt: '', note: '', teenies: [], princess: ['보니타'] },
+		{ title: '낮잠 진짜 좋아 쿨쿨핑', date: '2026.01.15', yt: '', note: '', teenies: [], princess: ['팬시하트'] },
+		{ title: '이클립스봇의 습격', date: '2026.01.22', yt: '', note: '', teenies: ['이클립스핑'], princess: ['팬시하트', '쁠리에', '판타나', '보니타'] },
+		{ title: '시간을 되돌려 슈슈핑', date: '2026.02.26', yt: '', note: '1/29부터 전반기 종료로 4주간 휴방', teenies: [], princess: ['판타나'] },
+		{ title: '귀곡산장의 비밀', date: '2026.03.05', yt: '', note: '', teenies: ['샤를핑', '트롯핑', '깨굴핑'], princess: [] },
+		{ title: '긴 머리 휘날리며 롱롱핑', date: '2026.03.12', yt: '', note: '', teenies: [], princess: ['쁠리에'] },
+		{ title: '빙빙 도는 거울', date: '2026.03.19', yt: '', note: '', teenies: [], princess: ['보니타'] },
+		{ title: '유혹의 뽀니핑', date: '2026.03.26', yt: '', note: '', teenies: [], princess: [] },
+		{ title: '속마음 뿅뿅 큐핑', date: '2026.04.02', yt: '', note: '', teenies: ['큐핑', '트롯핑', '코러스핑'], princess: ['판타나'] },
+		{ title: '하츄핑의 사뿐핑 관찰기', date: '2026.04.09', yt: '', note: '', teenies: ['프린세스 하츄핑', '사뿐핑'], princess: [] },
+		{ title: '이클립스핑을 막아라', date: '2026.04.16', yt: '', note: '', teenies: [], princess: ['보니타'] },
+		{ title: '이클립스핑의 진실', date: '2026.04.23', yt: '', note: '', teenies: ['이클립스핑', '젠틀핑'], princess: ['팬시하트'] },
+		{ title: '꼭꼭 숨어! 야옹핑', date: '2026.04.30', yt: '', note: '', teenies: [], princess: ['판타나'] },
+		{ title: '프린세스 무도회', date: '2026.05.07', yt: '', note: '', teenies: [], princess: [] },
+		{ title: '거울 저 너머에', date: '2026.05.14', yt: '', note: '', teenies: ['이클립스핑'], princess: [] },
+		{ title: '하나의 마음으로', date: '2026.05.21', yt: '', note: '', teenies: ['이클립스핑', '다이아나핑', '젠틀핑', '집사 티니핑'], princess: ['루미너스', '다크니스'] }
 	],
 	// 7기는 2026년 11월 방영 예정 (제목 미공개)
-	7: Array.from({ length: 26 }, (_, i) => [
-		'',
-		i === 0 ? '2026.11 (예정)' : '',
-		'',
-		i === 0 ? '제목 미공개 · 2026년 11월 방영 예정' : ''
-	])
+	7: Array.from({ length: 26 }, (_, i) => ({
+		title: '',
+		date: i === 0 ? '2026.11 (예정)' : '',
+		yt: '',
+		note: i === 0 ? '제목 미공개 · 2026년 11월 방영 예정' : '',
+		teenies: [],
+		princess: []
+	}))
 };
 
 // ==========================================
@@ -495,23 +505,28 @@ teenieSeasonKeys.forEach(no => {
 	const meta = teenieSeasonMeta[no];
 	teenieEpisodeSeeds[no].forEach((seed, i) => {
 		const epNum = i + 1;
-		
-		// [수정 포인트] seed[4]에 수동 지정된 배열이 존재하고 비어있지 않다면 그것을 쓰고, 아니면 제목에서 추출
-		const manualTeenies = seed[4];
-		const resolvedTeenies = (manualTeenies && Array.isArray(manualTeenies) && manualTeenies.length > 0)
-			? manualTeenies 
-			: findTeenieInTitle(seed[0]);
+
+		const resolvedTeenies = (seed.teenies && seed.teenies.length > 0)
+			? seed.teenies
+			: findTeenieInTitle(seed.title);
+
+		const resolvedPrincess = (seed.princess || []).map(n => {
+			const p = teeniePrincess.find(x => x.name === '프린세스 ' + n);
+			if (!p) console.warn(`프린세스 없음: ${meta.label} ${epNum}화 '${n}'`);
+			return p;
+		}).filter(Boolean);
 
 		teenieEpisodes.push({
 			seasonNo: no,
 			season: meta.label,
 			epNum: epNum,
 			cumNum: meta.offset + epNum,
-			title: seed[0],
-			date: seed[1],
-			yt: seed[2],
-			note: seed[3],
-			teenies: resolvedTeenies, // 가공된 티니핑 목록 할당
+			title: seed.title,
+			date: seed.date,
+			yt: seed.yt,
+			note: seed.note,
+			teenies: resolvedTeenies,
+			princesses: resolvedPrincess,
 			rowClass: epNum === 1 ? 'season-start' : ''
 		});
 	});
@@ -570,6 +585,40 @@ function teenieCanonicalName(name) {
 		teeniepings.forEach(t => { if (t.form) _teenieCanonMap[t.form] = t.name; });
 	}
 	return _teenieCanonMap[name] || name;
+}
+
+// 출연 티니핑 이름들 → 해당 프린세스 목록 (중복 제거)
+function findPrincessByTeenies(names) {
+	const out = [];
+	(names || []).forEach(n => {
+		teeniePrincess.forEach(p => {
+			if (p.keys.includes(n) && !out.includes(p)) out.push(p);
+		});
+	});
+	return out;
+}
+ 
+// 프린세스 뱃지 (로열/레전드 색 자동, 이미지 + 이름 + 내용 툴팁)
+// 같은 이름의 항목이 여러 개면(예: 라비린스 3기·4기) 이미지를 모두 모아 보여줌
+function renderPrincessBadge(p) {
+	const grade = p.grade || ((p.keys && p.keys[0]) ? getTeenieInfo(p.keys[0]).grade : 'royal');
+	const variants = teeniePrincess.filter(x => x.name === p.name);
+	const multi = variants.length > 1;
+
+	const noteParts = [];
+	const partnerLabel = { legend: '레전드핑: ', royal: '로열핑: ' }[grade] || '파트너: ';
+	if (p.partner) noteParts.push(partnerLabel + p.partner);
+	const firsts = (multi ? variants : [p]).map(v => v.first).filter(Boolean);
+	if (firsts.length) noteParts.push('첫 변신 ' + firsts.join(' · '));
+	if (p.note) noteParts.push(p.note);
+
+	const esc = s => String(s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+	const imgs = multi
+		? variants.filter(v => v.img).map(v => ({ label: v.label || (v.season + '기'), src: v.img }))
+		: (p.img ? [{ src: p.img }] : []);
+	const attrs = ` data-tip-name="${esc(p.name)}" data-tip-imgs="${esc(JSON.stringify(imgs))}" data-tip-note="${esc(noteParts.join(' · '))}"`;
+
+	return `<span class="badge teenie-badge teenie-hover grade-${grade} me-1 mb-1"${attrs}>${escHtml(p.name)}</span>`;
 }
 
 // 기수 필터 버튼 생성 (회차 목록 / 기수별 분류 공용)
@@ -797,7 +846,7 @@ function renderEpisodeTable() {
 	const filteredList = teenieEpisodes.filter(ep => {
 		const matchesSeason = (currentSeason === 'all') || (ep.season === currentSeason);
 		const matchesTeenie = (currentTeenie === 'all') || ep.teenies.some(n => teenieCanonicalName(n) === currentTeenie);
-		const haystack = [ep.title, ep.note, ep.teenies.join(' ')].join(' ').toLowerCase();
+		const haystack = [ep.title, ep.note, ep.teenies.join(' '), ep.princesses.map(p => p.name).join(' ')].join(' ').toLowerCase();
 		const matchesQuery = !q || haystack.includes(q);
 		return matchesSeason && matchesTeenie && matchesQuery;
 	});
@@ -805,7 +854,7 @@ function renderEpisodeTable() {
 	$('#episodeCount').text(`${filteredList.length}개 표시 (전체 ${teenieEpisodes.length}화)`);
 
 	if (filteredList.length === 0) {
-		$tbody.append('<tr><td colspan="6" class="center text-muted py-4">해당 조건의 회차 정보가 없습니다.</td></tr>');
+		$tbody.append('<tr><td colspan="7" class="center text-muted py-4">해당 조건의 회차 정보가 없습니다.</td></tr>');
 		return;
 	}
 
@@ -834,6 +883,11 @@ function renderEpisodeTable() {
 			? ep.teenies.map(n => renderTeenieKeywordBadge(n)).join('')
 			: '-';
 
+		// 6) 프린세스
+		const princessHtml = ep.princesses.length > 0
+			? ep.princesses.map(p => renderPrincessBadge(p)).join('')
+			: '-';
+
 		const trClass = ep.rowClass ? ` class="${ep.rowClass}"` : '';
 
 		const trHtml = `
@@ -843,6 +897,7 @@ function renderEpisodeTable() {
 				<td data-label="스트리밍" class="center link">${ottHtml}</td>
 				<td data-label="에피소드">${epCombinedHtml}</td>
 				<td data-label="출연 티니핑">${teeniesHtml}</td>
+				<td data-label="프린세스">${princessHtml}</td>
 				<td data-label="비고">${ep.note ? escHtml(ep.note) : '-'}</td>
 			</tr>
 		`;
@@ -898,6 +953,13 @@ function renderSeasonClass() {
 			`;
 		}).join('');
 
+		const princessList = teeniePrincess.filter(p => p.season === no);
+		const princessRow = princessList.length ? `
+			<tr>
+				<th scope="row" class="center grade-head grade-princess">프린세스 (${princessList.length})</th>
+				<td data-label="프린세스"><div class="mb-1">${princessList.map(renderPrincessBadge).join('')}</div></td>
+			</tr>` : '';
+
 		const total = countTeenies(no);
 		const summaryParts = ['royal', 'legend', 'normal']
 			.filter(g => countTeenies(no, g) > 0)
@@ -914,7 +976,7 @@ function renderSeasonClass() {
 						<col class="col-class-head">
 						<col class="col-class-body">
 					</colgroup>
-					<tbody>${rowsHtml}</tbody>
+					<tbody>${rowsHtml}${princessRow}</tbody>
 				</table>
 			</div>
 		`);
@@ -951,6 +1013,15 @@ function renderMovies() {
 					</div>
 				`;
 			}).join('');
+		}
+
+		if (m.groups.length > 0) {
+			const mp = teenieMoviePrincess[m.no] || [];
+			bodyHtml += `
+				<div class="mb-3">
+					<div class="mb-1"><strong>프린세스</strong> <small class="text-muted">(${mp.length})</small></div>
+					<div>${mp.length ? mp.map(renderPrincessBadge).join('') : '<small class="text-muted">아직 정보가 없습니다.</small>'}</div>
+				</div>`;
 		}
 
 		$wrap.append(`
