@@ -55,7 +55,7 @@ const teenieEpisodeSeeds = {
 		['최고는 누구?', '2020.04.16', 'v5o1XpS2hWg', '', ['부투핑']],
 		['용기를 내, 마야!', '2020.04.23', 'RUHo--AxFtU', '', ['아자핑']],
 		['깜빡할 수도 있지~', '2020.05.07', 'AzoN6-WdLSE', '초기 기획 제목: ‘그럴 수도 있지~’ · 4/30 부처님오신날 특집 편성으로 결방', ['깜빡핑']],
-		['배고플 땐 상상해 봐', '2020.05.14', '', '', ['띠용핑']],
+		['배고플 땐 상상해 봐', '2020.05.14', '_IrjI3Zm-FU', '', ['띠용핑']],
 		['희망아, 어서 와', '2020.05.21', 'S0VM9rRIrfI', '', ['차차핑']],
 		['눈물사탕은 어떤 맛?', '2020.05.28', 'l-dWqcFt2aw', '', ['주르핑']],
 		['차나핑을 찾아라!', '2020.06.04', 'ROqxe8V4AWg', '', []],
@@ -68,7 +68,7 @@ const teenieEpisodeSeeds = {
 		['좌충우돌 생일 파티', '2020.07.23', '6zDvlZzz9u8', '초기 기획 제목: ‘좌충우돌, 로미의 생일 파티!’', []],
 		['행운을 부르는 도장', '2020.07.30', 'nMM1Fikslyw', '초기 기획 제목: ‘행운의 스탬프를 찾아라!’', ['차캐핑']],
 		['다 말해 버릴 거야!', '2020.08.06', '1NXR4dVCcfE', '초기 기획 제목: ‘수다쟁이는 도대체 누구야?’', ['떠벌핑']],
-		['풍선껌 대소동', '2020.08.13', '', '', []],
+		['풍선껌 대소동', '2020.08.13', '706niqUuXjg', '', []],
 		['욕심쟁이 다조핑', '2020.08.20', 'JxC2fW0MDhQ', '초기 기획 제목: ‘다 줘요! 내 꺼야!’', []],
 		['화내지 말아줘', '2020.08.27', 'jmU5wdysSZw', '', ['화나핑']],
 		['바로핑이 많아졌어요!', '2020.09.03', '50aBoQlQgHQ', '', ['바로핑']],
@@ -223,7 +223,7 @@ const teenieEpisodeSeeds = {
 		['삼총사 티니핑', '2025.12.11', '', '', []],
 		['차갑게 꽁꽁 스노우핑', '2025.12.18', '', '', []],
 		['바느질은 아름핑에게 맡겨줘', '2025.12.25', '', '', []],
-		['스파이 대작전', '2026.01.01', '', '', []],
+		['스파이 대작전', '2026.01.01', '', '', ['해핑', '포실핑']],
 		['이슬핑의 이슬 한 방울', '2026.01.08', '', '', []],
 		['낮잠 진짜 좋아 쿨쿨핑', '2026.01.15', '', '', []],
 		['이클립스봇의 습격', '2026.01.22', '', '', ['이클립스핑']],
@@ -300,7 +300,7 @@ addTeenie(1, 'normal', [
 
 // ---------- 2기 보석 티니핑 (20) ----------
 addTeenie(2, 'royal', [
-	['하츄핑', '다이아 하츄핑', '2기 초반에는 로열 티니핑 후보생(보석 문양)'],
+	['하츄핑', '다이아 하츄핑', ''],
 	['조아핑', '', '2기 초반에는 로열 티니핑 후보생(보석 문양)'],
 	['방글핑', '', '2기 초반에는 로열 티니핑 후보생(보석 문양)'],
 	['믿어핑', '', '2기 초반에는 로열 티니핑 후보생(보석 문양)']
@@ -338,8 +338,8 @@ addTeenie(4, 'royal', [
 	'말랑핑'
 ]);
 addTeenie(4, 'legend', [
-	['새콤핑', '', '디저트 마을 케이크 궁전 거주 · 시리즈 최초로 레전드가 두 마리 등장'],
-	['달콤핑', '', '디저트 마을 케이크 궁전 거주 · 시리즈 최초로 레전드가 두 마리 등장']
+	['새콤핑', '', '디저트 마을 케이크 궁전 거주 · 시리즈 최초로 레전드가 2명 등장'],
+	['달콤핑', '', '디저트 마을 케이크 궁전 거주 · 시리즈 최초로 레전드가 2명 등장']
 ]);
 addTeenie(4, 'normal', [
 	'뿌뿌핑', '캔디핑', '머랭핑', '샌드핑', '또너핑', '와플핑', '롤리핑', '마카핑', '핫케핑',
@@ -548,7 +548,7 @@ function renderTeenieBadge(t) {
 // 회차 표의 출연 티니핑 뱃지
 function renderTeenieKeywordBadge(name) {
 	if (!name) return '';
-	return `<span class="badge bg-light text-dark keyword-tag teenie-hover me-1 mb-1" data-keyword-type="teenie" data-keyword="${escHtml(name)}"${teenieHoverAttrs(name, '', '')} style="cursor:pointer;">${escHtml(name)}</span>`;
+	return renderTeenieNameBadge(name, { keyword: true, extraClass: 'keyword-tag' });
 }
 
 function countTeenies(seasonNo, grade) {
@@ -583,6 +583,103 @@ function bindFilterButtons(btnClass, onChange) {
 
 		onChange($(this).attr('data-keyword'));
 	});
+}
+
+// ---------------------------------------------------------------------
+// [A] 이름 → 등급/비고 자동 조회 + 툴팁
+// ---------------------------------------------------------------------
+const teenieGradePriority = { legend: 3, royal: 2, normal: 1, etc: 0 };
+let _teenieInfoMap = null;
+ 
+function buildTeenieInfoMap() {
+	const map = {};
+	const put = (key, t) => {
+		if (!key) return;
+		const cur = map[key];
+		if (!cur) {
+			map[key] = { grade: t.grade, note: t.note || '' };
+			return;
+		}
+		// 여러 기수에 걸쳐 있으면 높은 등급 우선 (예: 행운핑, 하츄핑)
+		if (teenieGradePriority[t.grade] > teenieGradePriority[cur.grade]) cur.grade = t.grade;
+		if (!cur.note && t.note) cur.note = t.note;
+	};
+	teeniepings.forEach(t => {
+		put(t.name, t);
+		if (t.form) put(t.form, t);   // '다이아 하츄핑' 같은 폼 이름으로도 조회
+	});
+	// 극장판 전용 티니핑은 일반 티니핑
+	teenieMovieOnlyList().forEach(o => {
+		if (!map[o.name]) map[o.name] = { grade: 'normal', note: o.note || '' };
+	});
+	return map;
+}
+ 
+// 반환: { grade, note }  — 데이터에 없는 이름(예: 병사핑)은 normal
+function getTeenieInfo(name) {
+	if (!_teenieInfoMap) _teenieInfoMap = buildTeenieInfoMap();
+	return _teenieInfoMap[name] || { grade: 'normal', note: '' };
+}
+ 
+// 이름이 들어간 모든 뱃지에 공통으로 쓰는 생성 함수
+function renderTeenieNameBadge(name, opts) {
+	opts = opts || {};
+	const info = getTeenieInfo(name);
+	const note = opts.note || info.note;
+	const extraCls = opts.extraClass ? ' ' + opts.extraClass : '';
+	const dataAttr = opts.keyword ? ` data-keyword-type="teenie" data-keyword="${escHtml(name)}"` : '';
+	const cursor = opts.keyword ? ' style="cursor:pointer;"' : '';
+	return `<span class="badge teenie-badge teenie-hover grade-${info.grade}${extraCls} me-1 mb-1"${dataAttr}${teenieHoverAttrs(name, '', note)}${cursor}>${escHtml(name)}</span>`;
+}
+ 
+// 툴팁 (이미지 + 이름 + 내용). data-tip-name / data-tip-img / data-tip-note 사용
+function initTeenieTooltip() {
+	if (window.__teenieTipBound) return;
+	window.__teenieTipBound = true;
+ 
+	$('<style>').text(`
+		#teenieTip { position: fixed; z-index: 3000; display: none; max-width: 260px; padding: .6rem;
+			background: #fff; color: #212529; border: 1px solid #ced4da; border-radius: .5rem;
+			box-shadow: 0 .4rem 1rem rgba(0,0,0,.18); text-align: center; pointer-events: none; font-size: .85rem; line-height: 1.4; }
+		#teenieTip img { display: block; max-width: 160px; max-height: 160px; margin: 0 auto .4rem; object-fit: contain; }
+		#teenieTip .tip-name { font-weight: 700; margin-bottom: .15rem; }
+		#teenieTip .tip-note { color: #495057; word-break: keep-all; }
+	`).appendTo('head');
+ 
+	const $tip = $('<div id="teenieTip" role="tooltip"></div>').appendTo('body');
+ 
+	function show($el, e) {
+		const name = $el.attr('data-tip-name') || '';
+		const img = $el.attr('data-tip-img') || '';
+		const note = $el.attr('data-tip-note') || '';
+		if (!img && !note) return;
+		$tip.empty();
+		if (img) $tip.append($('<img>').attr({ src: img, alt: name, referrerpolicy: 'no-referrer' }).on('error', function () { $(this).remove(); }));
+		$tip.append($('<div class="tip-name"></div>').text(name));
+		if (note) $tip.append($('<div class="tip-note"></div>').text(note));
+		$tip.show();
+		move(e);
+	}
+	function move(e) {
+		const w = $tip.outerWidth(), h = $tip.outerHeight();
+		let x = e.clientX + 14, y = e.clientY + 14;
+		if (x + w > window.innerWidth - 8) x = e.clientX - w - 14;
+		if (y + h > window.innerHeight - 8) y = e.clientY - h - 14;
+		$tip.css({ left: Math.max(8, x), top: Math.max(8, y) });
+	}
+ 
+	$(document)
+		.on('mouseenter', '.teenie-hover[data-tip-name]', function (e) { show($(this), e); })
+		.on('mousemove', '.teenie-hover[data-tip-name]', move)
+		.on('mouseleave', '.teenie-hover[data-tip-name]', function () { $tip.hide(); })
+		// 모바일: 터치하면 표시, 다른 곳 터치하면 숨김
+		.on('touchstart', '.teenie-hover[data-tip-name]', function (e) {
+			const t = e.originalEvent.touches[0];
+			show($(this), { clientX: t.clientX, clientY: t.clientY });
+		})
+		.on('touchstart', function (e) {
+			if (!$(e.target).closest('.teenie-hover').length) $tip.hide();
+		});
 }
 
 // ==========================================
@@ -791,12 +888,9 @@ function renderMovies() {
 				const badges = g.items.map(it => {
 					const name = Array.isArray(it) ? it[0] : it;
 					const note = Array.isArray(it) ? it[1] : '';
-					return `<span class="badge teenie-badge teenie-hover grade-normal me-1 mb-1"${teenieHoverAttrs(name, '', note)}>${escHtml(name)}</span>`;
+					return renderTeenieNameBadge(name, { note: note });
 				}).join('');
 				const noteLines = g.items
-					.filter(it => Array.isArray(it) && it[1])
-					.map(it => `<small class="text-muted me-2">${escHtml(it[0])}: ${escHtml(it[1])}</small>`)
-					.join('');
 				return `
 					<div class="mb-3">
 						<div class="mb-1"><strong>${escHtml(g.label)}</strong> <small class="text-muted">(${g.items.length})</small></div>
@@ -901,7 +995,7 @@ function renderGradeTable() {
 			<tr>
 				<td data-label="등급" class="center"><span class="badge teenie-badge grade-${r.grade}">${teenieGradeLabel[r.grade].replace(' 티니핑', '')}</span></td>
 				<td data-label="기수" class="center">${r.seasonHtml}</td>
-				<td data-label="티니핑"><strong class="teenie-hover"${teenieHoverAttrs(r.name, '', '')}>${escHtml(r.name)}</strong></td>
+				<td data-label="티니핑"><strong class="teenie-hover"${teenieHoverAttrs(r.name, '', r.note)}>${escHtml(r.name)}</strong></td>
 				<td data-label="비고">${noteHtml}</td>
 			</tr>
 		`);
@@ -929,6 +1023,7 @@ function activateTabFromHash() {
 // 13. 초기화 및 이벤트 등록
 // ==========================================
 $(function () {
+	initTeenieTooltip();
 	renderSeriesOverview();
 
 	// 탭 1: 회차 목록

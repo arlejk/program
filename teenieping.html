@@ -37,7 +37,7 @@
 		.publish_worksheet.teenieping table.teenieping-class .col-class-head { width: 16%; }
 		.publish_worksheet.teenieping table.teenieping-class .col-class-body { width: 84%; }
 		.publish_worksheet.teenieping .grade-head { vertical-align: middle; }
-		.publish_worksheet.teenieping .teenie-badge { font-weight: 500; }
+		.publish_worksheet.teenieping .teenie-badge { font-size: 0.9em; font-weight: 500; }
 		.publish_worksheet.teenieping .grade-royal { background: #ffe3ef !important; color: #b0245f !important; }
 		.publish_worksheet.teenieping .grade-legend { background: #ece3ff !important; color: #5a35b5 !important; }
 		.publish_worksheet.teenieping .grade-normal { background: #f1f3f5 !important; color: #343a40 !important; }
@@ -106,7 +106,12 @@
 					<dd>2026-10-15</dd>					
 					<dt>Note</dt>
 					<dd>
-						상단 <strong>기수 필터</strong> 및 <strong>티니핑 필터</strong>를 선택하여 원하는 회차만 모아볼 수 있습니다. 분류 탭에서는 티니핑 뱃지에 마우스를 올리면 비고가 표시됩니다.
+						<ul>
+							<li>상단 <strong>기수 필터</strong> 및 <strong>티니핑 필터</strong>를 선택하여 원하는 회차만 모아볼 수 있습니다. 분류 탭에서는 티니핑 뱃지에 마우스를 올리면 비고가 표시됩니다.</li>
+							<li>4기 방영일은 공식 유튜브 티니핑쇼 선행 공개일 기준입니다. (TV 방송판은 매주 수요일 재능TV)</li>
+							<li>스트리밍 링크는 공식 유튜브에 기재된 본편 링크이며, 6기 3화 이후와 7기는 링크가 없습니다.</li>
+							<li>7기는 2026년 11월 방영 예정이며, 제목은 공개 전입니다.</li>
+						</ul>
 					</dd>
 				</dl>
 			</div>
@@ -121,16 +126,16 @@
 				<!-- 탭 메뉴 -->
 				<ul class="nav nav-tabs mb-3" id="teenieTabs" role="tablist">
 					<li class="nav-item" role="presentation">
-						<button class="nav-link active" id="tab-episodes" data-bs-toggle="tab" data-bs-target="#pane-episodes" type="button" role="tab" aria-controls="pane-episodes" aria-selected="true">회차 목록</button>
+						<button class="nav-link active" id="tab-episodes" data-bs-toggle="tab" data-bs-target="#pane-episodes" type="button" role="tab" aria-controls="pane-episodes" aria-selected="true">회차<span class="min_ta"> 목록</span></button>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="tab-seasons" data-bs-toggle="tab" data-bs-target="#pane-seasons" type="button" role="tab" aria-controls="pane-seasons" aria-selected="false">기수별 티니핑</button>
+						<button class="nav-link" id="tab-seasons" data-bs-toggle="tab" data-bs-target="#pane-seasons" type="button" role="tab" aria-controls="pane-seasons" aria-selected="false">기수별<span class="min_ta"> 티니핑</span></button>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="tab-movies" data-bs-toggle="tab" data-bs-target="#pane-movies" type="button" role="tab" aria-controls="pane-movies" aria-selected="false">극장판 티니핑</button>
+						<button class="nav-link" id="tab-movies" data-bs-toggle="tab" data-bs-target="#pane-movies" type="button" role="tab" aria-controls="pane-movies" aria-selected="false">극장판<span class="min_ta"> 티니핑</span></button>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="tab-grades" data-bs-toggle="tab" data-bs-target="#pane-grades" type="button" role="tab" aria-controls="pane-grades" aria-selected="false">등급별 티니핑</button>
+						<button class="nav-link" id="tab-grades" data-bs-toggle="tab" data-bs-target="#pane-grades" type="button" role="tab" aria-controls="pane-grades" aria-selected="false">등급별<span class="min_ta"> 티니핑</span></button>
 					</li>
 				</ul>
 
@@ -176,13 +181,7 @@
 							<tbody id="tbody-episodes">
 								<!-- JavaScript 동적 출력 영역 -->
 							</tbody>
-						</table>
-						<ul class="small text-muted mt-2">
-							<!--<li>‘제목 속 티니핑’은 회차 제목에 이름이 그대로 들어간 티니핑만 자동으로 추출한 것이며, 실제 등장 티니핑 전체가 아닙니다.</li>-->
-							<li>4기 방영일은 티니핑쇼(공식 유튜브) 선행 공개일 기준입니다. (TV 방송판은 매주 수요일 재능TV)</li>
-							<li>스트리밍 링크는 나무위키 회차 목록에 기재된 공식 유튜브 링크이며, 6기 3화 이후와 7기는 링크가 없습니다.</li>
-							<li>7기는 2026년 11월 방영 예정이며, 제목은 공개 전입니다.</li>
-						</ul>
+						</table>						
 					</div>
 
 					<!-- 2. 애니메이션 기수별 티니핑 분류 -->

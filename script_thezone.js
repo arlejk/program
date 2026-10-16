@@ -464,7 +464,7 @@ function renderTable(containerId, list) {
 
 			ottHtml = item.otts.map(ottName => {
 				const link = (seasonMap && seasonMap[ottName]) ? seasonMap[ottName] : '#';
-				return `<a href="${link}" target="_blank" class="mr-1">${ottName} <i class="xi-external-link"></i></a>`;
+				return `<a href="${link}" target="_blank" class="mr-1">${ottName}</a>`;
 			}).join(' ');
 		}
 
