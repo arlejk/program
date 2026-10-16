@@ -169,10 +169,22 @@ const teenieImages = {
 	'젠틀핑': 'https://i.namu.wiki/i/PNafMxVIobxzA2h6TuuRDKP2CNVZNUV2XiyhNCRac-9lXF8-5l04CbmMgAg_2FOq9gxQlwvOgLw3esTYcdyexdLR78j1F9-IUtT7FgDFBMmGk_2U-OV6w3QlenWq2zt0Hbnzxwc8A1mHcJzvnfsGYA.webp',
 	
 	// 7기 쥬얼스타 티니핑
-	'??? 하츄핑': 'https://i.namu.wiki/i/2JAXhHqUKoWZeCZCTzldOoIQ69YXrRz9K_0IGi1n27y8bph-MPwT1J5mdUz5W4diuBtlqbkfHfz9mecpRfQ7xasgjMd8VhDasEa1uSYQVwlV2jrr_dVqx6g9YqyPblPXaTvtmUTyBCMMpZlW1SRRPw.webp',
-	'레몬핑': 'https://i.namu.wiki/i/oWAXvWwgBAhx9nG9nTNcxdnMCiVoKBQhMgkXTbHM88iV2ZjbYocHOq8R8DWIm_vjLLb8LfgoxUPbF3IE3tu5sUl8fs1MV1-ktYA8MYu7Z8QqkogUV5QqxdxoZvkouEebft4EdH8PTfh89zaqsuRJww.webp',
-	'체리핑': 'https://i.namu.wiki/i/CzRt8GWtCcrS5D-Oxvg3QSoZbgHPPautuoTaMej6nozgiXMPpImpLT7RCho-G0jGpxZQx--s6EvViYsox-gxM8WkLun1MdxvmCCPEEw2UWHp6mk7yJ61SRAtNxIc_kUN9tR4V0zaWlTEtW_pAEx8uw.webp',
-	'라임핑': 'https://i.namu.wiki/i/Bscv4RypkTYkK5vGFSvAlqgFoQKlO4ZCHi0FCkmukiZ-JsIfHrSQ9LbVu2smnup_yshlJ5JVJVfyIVx91qGs5rF3aFoh1oLRAkhpz3KH-8rDDaKH8Q-dSVgi-wh0kA0X-mt5VFjc8vTx6S-NfRpPtQ.webp',
+	'??? 하츄핑': [
+		{ label: '데일리', src: 'https://i.namu.wiki/i/nOHqI_ZkTmXPJzfljrhRXaoor53StakEo9-8hlp3Be82zGT-JUkt-TR4rdK2YwKaCc1IqyHzYyTEf-dQK-j--2axEziRm8POjdlY-nO-csf7T7GhKWOxQuqY114-CUXmn-Md3qd_Vf-Zf4FQRVfWMw.webp' },
+		{ label: '스테이지', src: 'https://i.namu.wiki/i/2JAXhHqUKoWZeCZCTzldOoIQ69YXrRz9K_0IGi1n27y8bph-MPwT1J5mdUz5W4diuBtlqbkfHfz9mecpRfQ7xasgjMd8VhDasEa1uSYQVwlV2jrr_dVqx6g9YqyPblPXaTvtmUTyBCMMpZlW1SRRPw.webp' }
+	],
+	'레몬핑': [
+		{ label: '데일리', src: '' },
+		{ label: '스테이지', src: 'https://i.namu.wiki/i/oWAXvWwgBAhx9nG9nTNcxdnMCiVoKBQhMgkXTbHM88iV2ZjbYocHOq8R8DWIm_vjLLb8LfgoxUPbF3IE3tu5sUl8fs1MV1-ktYA8MYu7Z8QqkogUV5QqxdxoZvkouEebft4EdH8PTfh89zaqsuRJww.webp' }
+	],
+	'체리핑': [
+		{ label: '데일리', src: '' },
+		{ label: '스테이지', src: 'https://i.namu.wiki/i/CzRt8GWtCcrS5D-Oxvg3QSoZbgHPPautuoTaMej6nozgiXMPpImpLT7RCho-G0jGpxZQx--s6EvViYsox-gxM8WkLun1MdxvmCCPEEw2UWHp6mk7yJ61SRAtNxIc_kUN9tR4V0zaWlTEtW_pAEx8uw.webp' }
+	],
+	'라임핑': [
+		{ label: '데일리', src: '' },
+		{ label: '스테이지', src: 'https://i.namu.wiki/i/Bscv4RypkTYkK5vGFSvAlqgFoQKlO4ZCHi0FCkmukiZ-JsIfHrSQ9LbVu2smnup_yshlJ5JVJVfyIVx91qGs5rF3aFoh1oLRAkhpz3KH-8rDDaKH8Q-dSVgi-wh0kA0X-mt5VFjc8vTx6S-NfRpPtQ.webp' }
+	],
 	'뮤즈핑': '',
 	'디바핑': '',
 	'쏭쏭핑': '',
@@ -191,15 +203,25 @@ const teenieImages = {
 	'타카핑': '',
 	
 	// 극장판 티니핑
+	'사랑의 하츄핑': 'https://i.namu.wiki/i/TdYsvT4Ft2d-QNcLuCnqWm4h354xVN1MFTEOxRlHawyg92PgUOK-TFiKBjLLl4X9SCpkWrFMZMvgYqWOFt5JJMKL48krb5KugsDjMg4MvSUpapVA8OlHq9u-Oxq3ShjV7t_I77Z8DHTdN9V90VCzVQ.webp',
 	'트러핑': 'https://i.namu.wiki/i/eSoXOD4HiAkAja79moYqW6eSHP2E8GathnkSq7iyY147imxL43Uunxwz84HPMGwfi3_dhYHvvDrnao7d46g6-QlSiQSFRcVIVa22U9Co9AQsSD3mHerEackMhfQ7EmscygzMfQvHyv9Ob3IrKdQVrA.webp',
+	'머메이드 하츄핑': 'https://i.namu.wiki/i/qceQUxFX0MsOifHMCel1-A6aCcq7CGyWjVSQw34marXKxRwdtNN6hCEzNDuMORFDXR50Ze3vmck0rW5Ha_XRie7on4A0Nv58ozp9ePUNF7C2bMwGh4OjHIEY_fdM6OmzM3oZNwkKDyLmJvce61ljOw.webp',
 	'방울핑': 'https://i.namu.wiki/i/eJwiJmwAhvLrUtEWNQe3qEyFV7IMu8OS-IHT1f7qvfyah6dFPmLrMSJAHBVtymawBau1Laj2R80XXL0YwFmSpA1Q3K9-x_f6Srx10cj3-DtZZ3Hk06dETFxzwljYGlAFSw3BfoZoejhmuvKw4nx7TA.webp',
 	'찰랑핑': 'https://i.namu.wiki/i/l9H6as0_k00MYG2xQz5KNAYVoQXBatInAipWpf3zpWgrIfr4nXS8uW2tefNwTt73LafQ1o1St4ipf8dSk6fd_Nx2y6LKmO8bY3nDgGxZF8xEXawvQMEtEDAj7LlU9mANCPiYeomTGQOa8ZUXJEcbiA.webp',
 	'소라핑': 'https://i.namu.wiki/i/h3Af-rPqTo9gNGmvI7sUCDvf8KNb-lTWjidsn5R2xXIdxw4DMjcLE4PPRrxSW6CxeZd01o0p41bb9KwdrAuwwxVnRq5te04TyWMs1bhqbdM9cfNEp7lrSfXNuLAN_o9DYfHpxtarpFVM-R3pldFEtg.webp'
 };
 
+// 문자열 또는 [{label, src}] 배열을 그대로 반환
 function getTeenieImg(...keys) {
 	for (const k of keys) {
-		if (k && teenieImages[k]) return teenieImages[k];
+		const v = k && teenieImages[k];
+		if (!v) continue;
+		if (Array.isArray(v)) {
+			const arr = v.filter(x => x && x.src);
+			if (arr.length) return arr;
+		} else {
+			return v;
+		}
 	}
 	return '';
 }
@@ -209,5 +231,6 @@ function teenieHoverAttrs(name, form, note) {
 	const img = getTeenieImg(form, name);
 	if (!img && !note) return '';
 	const esc = s => String(s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-	return ` data-tip-name="${esc(form || name)}" data-tip-img="${esc(img)}" data-tip-note="${esc(note)}"`;
+	const imgs = Array.isArray(img) ? img : (img ? [{ src: img }] : []);
+	return ` data-tip-name="${esc(form || name)}" data-tip-imgs="${esc(JSON.stringify(imgs))}" data-tip-note="${esc(note)}"`;
 }

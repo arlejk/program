@@ -74,13 +74,13 @@ const teenieEpisodeSeeds = {
 		['바로핑이 많아졌어요!', '2020.09.03', '50aBoQlQgHQ', '', ['바로핑']],
 		['싫어 싫어, 시러핑!', '2020.09.10', 'jF3HEJENPqI', '초기 기획 제목: ‘시러시러, 시러핑!’', []],
 		['바네핑의 화살', '2020.09.17', 'eKY1k1M02X4', '초기 기획 제목: ‘사랑해! 대소동’', []],
-		['장난이 제일 좋아!', '2020.09.24', 'G4LxgiYC5Vs', '', []],
+		['장난이 제일 좋아!', '2020.09.24', 'G4LxgiYC5Vs', '', ['악동핑']],
 		['춥다, 추워! 덜덜핑', '2020.10.08', 'PyfBna37VjM', '10/1 추석 연휴로 휴방', []],
 		['그림이 살아있다?', '2020.10.15', 'ROynsahTutY', '', ['그림핑']],
 		['동화 속 공주님이 되고 싶어', '2020.10.22', 'vT-tUQ8iGec', '', []],
 		['아휴~ 무거워, 무거핑', '2020.10.29', '2TVr0PXstjw', '', []],
 		['뭐든지 거꾸로, 꺼꿀핑', '2020.11.05', 'p5hXhz1n2mY', '', []],
-		['다섯 명의 로미', '2020.11.12', 'R4GV0v2BR6U', '', ['짝짝핑']],
+		['다섯 명의 로미', '2020.11.12', 'R4GV0v2BR6U', '', []],
 		['씽씽핑은 빠른 게 좋아!', '2020.11.19', 'ZxKmHqmORN4', '', []],
 		['아기가 좋아, 베베핑!', '2020.11.26', 'kvFJr2OoOqU', '', []],
 		['하트로즈에 외계인 등장!', '2020.12.03', 'hSB-8RbHZhI', '', []],
@@ -89,11 +89,11 @@ const teenieEpisodeSeeds = {
 		['토끼 괴물이 나타났다!', '2020.12.24', '35txjFsYGT8', '', ['모야핑']],
 		['티니핑 축제', '2020.12.31', '-nhVnbgoM7c', '', ['해핑']],
 		['장난감이 되었어요!', '2021.01.07', 'w-7opR3rVtI', '', ['토이핑']],
-		['하트로즈의 수상한 손님', '2021.01.14', 'Sl7gqg5rtBA', '', []],
+		['하트로즈의 수상한 손님', '2021.01.14', 'Sl7gqg5rtBA', '', ['또까핑']],
 		['꽃 만들기 대소동', '2021.01.21', 'Ky1Z05p5gU4', '', ['플라핑']],
-		['사고뭉치 아기 노리핑', '2021.01.28', 'NVf22BcQrWA', '', []],
+		['사고뭉치 아기 노리핑', '2021.01.28', 'NVf22BcQrWA', '', ['노라핑','노리핑']],
 		['악동핑의 진실', '2021.02.04', '6Djmlq69_ag', '', []],
-		['프린세스 선샤인', '2021.02.18', 'R9Xl7QiNnlU', '2/11 설 연휴로 휴방', ['해핑']],
+		['프린세스 선샤인', '2021.02.18', 'R9Xl7QiNnlU', '2/11 설 연휴로 휴방', ['아휴핑','해핑']],
 		['공부할 땐 조용히, 똑똑!', '2021.02.25', 'G7cbVWRP_HM', '', ['똑똑핑']],
 		['다 얼려 버려, 꽁꽁핑', '2021.03.04', 'EJM9t9BlK8k', '', []],
 		['찌릿핑은 짜릿짜릿해', '2021.03.11', 'QWxAqN4wE4c', '시리즈 유일 15세 이상 시청가', []],
@@ -104,8 +104,8 @@ const teenieEpisodeSeeds = {
 	2: [
 		['반짝반짝 보석티니핑', '2021.09.22', '_Trni5YhFUw', '', ['조아핑', '방글핑', '믿어핑']],
 		['티니핑 스쿨 개교!', '2021.09.29', 'jKAXq4IJHv8', '', ['조아핑', '방글핑', '믿어핑']],
-		['간지럼을 참아야 해!', '2021.10.06', 'alEFGDOSu60', '', []],
-		['아야아야 엄살은 그만!', '2021.10.13', '5Nf5Gt6ThUU', '', []],
+		['간지럼을 참아야 해!', '2021.10.06', 'alEFGDOSu60', '', ['까르핑']],
+		['아야아야 엄살은 그만!', '2021.10.13', '5Nf5Gt6ThUU', '', ['아야핑']],
 		['소원핑의 세 가지 소원', '2021.10.20', 'WDY_SuqaN3Q', '', []],
 		['토닥토닥, 따뜻한 위로를 줄게', '2021.10.27', 'QUUXGhWLoDc', '', ['토닥핑']],
 		['사라진 로미', '2021.11.03', 'ezbVkqn_Yrs', '', ['쪼꼼핑']],
@@ -117,10 +117,10 @@ const teenieEpisodeSeeds = {
 		['또 한 명의 프린세스', '2021.12.15', 'lN3ehNt-7mE', '', []],
 		['메모핑의 메모메모', '2021.12.22', '4cci7UNZUU4', '', []],
 		['대결! 로열핑', '2021.12.29', 'mKfAi8jXnwI', '', []],
-		['왕국이 된 하트로즈', '2022.01.05', 'U405uyyJ4-s', '', []],
+		['왕국이 된 하트로즈', '2022.01.05', 'U405uyyJ4-s', '', ['공쥬핑']],
 		['보석핑을 도둑맞았어요!', '2022.01.12', 'yGkzrdnjAJw', '', []],
-		['진짜 하츄핑은 누구?', '2022.01.19', 'JZnlWeDYd8I', '', ['다이아 하츄핑', '다해핑']],
-		['선물 상자를 찾아라!', '2022.01.26', 'icrTBeHtCfI', '', []],
+		['진짜 하츄핑은 누구?', '2022.01.19', 'JZnlWeDYd8I', '', ['다이아 하츄핑', '짝짝핑']],
+		['선물 상자를 찾아라!', '2022.01.26', 'icrTBeHtCfI', '', ['주네핑']],
 		['조각을 할 거야, 뚝딱!', '2022.02.02', 'IudjMP1aoL8', '', ['뚝딱핑']],
 		['위험한 소풍', '2022.02.09', 'VgtBEZXvXcI', '', []],
 		['핑그르르 티니핑 발레단', '2022.02.16', 'h4AOB0tYt6w', '', ['발레핑']],
@@ -131,7 +131,7 @@ const teenieEpisodeSeeds = {
 	],
 	3: [
 		['알쏭달쏭 열쇠티니핑', '2022.09.14', 'iu_BcpwA_CU', '', ['꾸래핑', '나나핑', '솔찌핑']],
-		['변신! 플로라하트', '2022.09.21', 'REEFFxzbRno', '', []],
+		['변신! 플로라하트', '2022.09.21', 'REEFFxzbRno', '', ['플로라 하츄핑']],
 		['과식은 위험해 얌얌', '2022.09.28', 'gL4e1X6FOLY', '', ['얌얌핑']],
 		['뜨거뜨거 캠핑 소동', '2022.10.05', 'diJjBV2lL7M', '', ['뜨거핑']],
 		['치료해줄게 삐뽀', '2022.10.12', 'Iu8DqU3l8lc', '', ['삐뽀핑']],
@@ -272,9 +272,12 @@ function addTeenie(season, grade, list) {
 
 // ---------- 1기 큐브 티니핑 (45) ----------
 addTeenie(1, 'royal', [
-	['하츄핑', '', '로미의 파트너 티니핑'],
-	'바로핑', '아자핑', '차차핑', '라라핑',
-	['해핑', '', '6기 10화에서 주연으로 재등장']
+	['하츄핑', '', '프린세스 하트, 로미의 파트너 티니핑'],
+	['바로핑', '', '프린세스 클라우디아'],
+	['아자핑', '', '프린세스 클로버'],
+	['차차핑', '', '프린세스 스타'],
+	['라라핑', '', '프린세스 멜로디'],
+	['해핑', '', '프린세스 선샤인, 6기 10화에서 주연으로 재등장']
 ]);
 addTeenie(1, 'normal', [
 	'키키핑', '아잉핑', '부끄핑',
@@ -300,14 +303,14 @@ addTeenie(1, 'normal', [
 
 // ---------- 2기 보석 티니핑 (20) ----------
 addTeenie(2, 'royal', [
-	['하츄핑', '다이아 하츄핑', ''],
-	['조아핑', '', '2기 초반에는 로열 티니핑 후보생(보석 문양)'],
-	['방글핑', '', '2기 초반에는 로열 티니핑 후보생(보석 문양)'],
-	['믿어핑', '', '2기 초반에는 로열 티니핑 후보생(보석 문양)']
+	['하츄핑', '다이아 하츄핑', '프린세스 다이아하트'],
+	['방글핑', '', '프린세스 루비, 2기 초반에는 로열 티니핑 후보생(보석 문양)'],
+	['조아핑', '', '프린세스 에메랄드, 2기 초반에는 로열 티니핑 후보생(보석 문양)'],	
+	['믿어핑', '', '프린세스 사파이어, 2기 초반에는 로열 티니핑 후보생(보석 문양)']
 ]);
 addTeenie(2, 'normal', [
 	'까르핑', '아야핑', '소원핑', '토닥핑', '쪼꼼핑', '싹싹핑', '맛나핑', '포근핑', '메모핑',
-	['다해핑', '', '제니의 파트너 티니핑'],
+	['다해핑', '', '프린세스 라비린스, 제니의 파트너 티니핑'],
 	'공쥬핑', '짝짝핑', '주네핑', '뚝딱핑', '발레핑', '원더핑'
 ]);
 addTeenie(2, 'etc', [
@@ -316,13 +319,13 @@ addTeenie(2, 'etc', [
 
 // ---------- 3기 열쇠 티니핑 (21) ----------
 addTeenie(3, 'royal', [
-	['하츄핑', '플로라 하츄핑', '사계절 모티브: 봄(꽃)'],
-	['꾸래핑', '', '사계절 모티브: 겨울(눈송이)'],
-	['솔찌핑', '', '사계절 모티브: 가을(구름)'],
-	['나나핑', '', '사계절 모티브: 여름(태양)']
+	['하츄핑', '플로라 하츄핑', '프린세스 플로라하트, 사계절 모티브: 봄(꽃)'],
+	['나나핑', '', '프린세스 솔라리스, 사계절 모티브: 여름(태양)'],
+	['솔찌핑', '', '프린세스 글로리아, 사계절 모티브: 가을(구름)'],
+	['꾸래핑', '', '프린세스 크리스탈, 사계절 모티브: 겨울(눈송이)']
 ]);
 addTeenie(3, 'legend', [
-	['행운핑', '', '시리즈 최초의 레전드 티니핑']
+	['행운핑', '', '프린세스 트와일라잇, 시리즈 최초의 레전드 티니핑']
 ]);
 addTeenie(3, 'normal', [
 	'빨리핑', '얌얌핑', '뜨거핑', '삐뽀핑',
@@ -332,14 +335,14 @@ addTeenie(3, 'normal', [
 
 // ---------- 4기 디저트 티니핑 (22) ----------
 addTeenie(4, 'royal', [
-	['하츄핑', '베리 하츄핑'],
-	'샤샤핑',
-	['포실핑', '', '6기 10화에서 주연으로 재등장'],
-	'말랑핑'
+	['하츄핑', '베리 하츄핑', '프린세스 베리하트'],
+	['포실핑', '', '프린세스 스윗플로스, 6기 10화에서 주연으로 재등장'],
+	['샤샤핑', '', '프린세스 샤베티나'],
+	['말랑핑', '', '프린세스 젤리스틴']
 ]);
 addTeenie(4, 'legend', [
-	['새콤핑', '', '디저트 마을 케이크 궁전 거주 · 시리즈 최초로 레전드가 2명 등장'],
-	['달콤핑', '', '디저트 마을 케이크 궁전 거주 · 시리즈 최초로 레전드가 2명 등장']
+	['새콤핑', '', '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2명 등장'],
+	['달콤핑', '', '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2명 등장']
 ]);
 addTeenie(4, 'normal', [
 	'뿌뿌핑', '캔디핑', '머랭핑', '샌드핑', '또너핑', '와플핑', '롤리핑', '마카핑', '핫케핑',
@@ -350,12 +353,14 @@ addTeenie(4, 'normal', [
 
 // ---------- 5기 스타 티니핑 (24) ----------
 addTeenie(5, 'royal', [
-	['하츄핑', '스타 하츄핑'],
-	'빛나핑', '초롱핑', '빤짝핑',
+	['하츄핑', '스타 하츄핑', '프린세스 브라잇하트'],
+	['빛나핑', '', '프린세스 스타라이트'],
+	['초롱핑', '', '프린세스 글램스타'],
+	['빤짝핑', '', '프린세스 루나샤인'],
 	['왕자핑', '', '나그네핑과 동일 티니핑(명칭·신체 변화로 각각 집계), 노아의 파트너 티니핑']
 ]);
 addTeenie(5, 'legend', [
-	['오로라핑', '', '거대한 날개 설정의 시작']
+	['오로라핑', '', '프린세스 오로라, 거대한 날개 설정의 시작']
 ]);
 addTeenie(5, 'normal', [
 	'깡총핑', '훌라핑', '나눔핑', '딩동핑',
@@ -371,14 +376,14 @@ addTeenie(5, 'etc', [
 
 // ---------- 6기 프린세스&프린스 티니핑 (21) ----------
 addTeenie(6, 'royal', [
-	['하츄핑', '프린세스 하츄핑'],
-	['사뿐핑', '', '발레의 나라'],
-	['아름핑', '', '패션의 나라'],
-	['뽀니핑', '', '미용의 나라']
+	['하츄핑', '프린세스 하츄핑', '프린세스 팬시하트'],
+	['사뿐핑', '', '프린세스 쁠리에, 발레의 나라'],
+	['뽀니핑', '', '프린세스 보니타, 미용의 나라'],
+	['아름핑', '', '프린세스 판타나, 패션의 나라']	
 ]);
 addTeenie(6, 'legend', [
-	['이클립스핑', '', '거울의 나라 · 메인 빌런(시리즈 최초의 악역 레전드), 다이아나핑의 쌍둥이 자매'],
-	['다이아나핑', '', '거울의 나라 · 이클립스핑의 쌍둥이 자매']
+	['이클립스핑', '', '프린세스 다크니스, 거울의 나라, 다이아나핑의 쌍둥이 자매, 메인 빌런(시리즈 최초의 악역 레전드)'],
+	['다이아나핑', '', '프린세스 루미너스, 거울의 나라, 이클립스핑의 쌍둥이 자매']
 ]);
 addTeenie(6, 'normal', [
 	['뽀득핑', '', '목욕의 나라', '프린세스'],
@@ -404,8 +409,10 @@ addTeenie(6, 'etc', [
 
 // ---------- 7기 쥬얼스타 티니핑 (2026년 10월 기준 공개 개체) ----------
 addTeenie(7, 'royal', [
-	['하츄핑', '??? 하츄핑'],
-	'레몬핑', '체리핑', '라임핑'
+	['하츄핑', '??? 하츄핑', '프린세스 비바하트'],
+	['레몬핑', '', '프린세스 브릴란테'],
+	['체리핑', '', '프린세스 칸타빌레'],
+	['라임핑', '', '프린세스 폴리포니']
 ]);
 addTeenie(7, 'legend', [
 	['뮤즈핑', '', '레전드 티니핑으로 추정(미확정)'],
@@ -431,7 +438,7 @@ const teenieMovies = [
 		only: [['트러핑', '일반 폼 · 흑화 폼, 리암의 파트너 티니핑']],
 		groups: [
 			{ label: '극장판에서만 등장하는 티니핑', items: [['트러핑', '일반 폼 · 흑화 폼, 리암의 파트너 티니핑']] },
-			{ label: '애니메이션 시리즈에도 등장 — 일반 티니핑 시절의 티니핑', items: [['하츄핑', ''], ['라라핑', ''], ['해핑', '']] },
+			{ label: '애니메이션 시리즈에도 등장 — 일반 티니핑 시절의 티니핑', items: [['하츄핑','사랑의 하츄핑','극장판 1기 한정으로 로열핑 문양이 없음'], ['라라핑', ''], ['해핑', '']] },
 			{
 				label: '애니메이션 시리즈에도 등장 — 큐브 티니핑',
 				items: ['딱풀핑', '꽁꽁핑', '덜덜핑', '키키핑', '모야핑', '토이핑', '플라핑', '노라핑', '나르핑', '화나핑', '바네핑', '또까핑', '무거핑', '시러핑', '부끄핑', '씽씽핑', '코자핑'].map(n => [n, ''])
@@ -444,7 +451,7 @@ const teenieMovies = [
 		only: [['방울핑', '카이트의 파트너 티니핑'], ['찰랑핑', '카이트의 파트너 티니핑'], ['소라핑', '카이트의 파트너 티니핑']],
 		groups: [
 			{ label: '극장판에서만 등장하는 티니핑', items: [['방울핑', '카이트의 파트너 티니핑'], ['찰랑핑', '카이트의 파트너 티니핑'], ['소라핑', '카이트의 파트너 티니핑']] },
-			{ label: '애니메이션 시리즈에도 등장', items: [['하츄핑', '']] },
+			{ label: '애니메이션 시리즈에도 등장', items: [['하츄핑','머메이드 하츄핑','고래보석 컴팩트로 스페셜 변신한 폼']] },
 			{
 				label: '애니메이션 시리즈에도 등장 — 스타 티니핑',
 				items: ['빛나핑', '초롱핑', '빤짝핑', '왕자핑', '오로라핑', '깡총핑', '아롱핑', '다롱핑', '루루핑'].map(n => [n, ''])
@@ -624,12 +631,13 @@ function getTeenieInfo(name) {
 // 이름이 들어간 모든 뱃지에 공통으로 쓰는 생성 함수
 function renderTeenieNameBadge(name, opts) {
 	opts = opts || {};
+	const form = opts.form || '';
 	const info = getTeenieInfo(name);
 	const note = opts.note || info.note;
 	const extraCls = opts.extraClass ? ' ' + opts.extraClass : '';
 	const dataAttr = opts.keyword ? ` data-keyword-type="teenie" data-keyword="${escHtml(name)}"` : '';
 	const cursor = opts.keyword ? ' style="cursor:pointer;"' : '';
-	return `<span class="badge teenie-badge teenie-hover grade-${info.grade}${extraCls} me-1 mb-1"${dataAttr}${teenieHoverAttrs(name, '', note)}${cursor}>${escHtml(name)}</span>`;
+	return `<span class="badge teenie-badge teenie-hover grade-${info.grade}${extraCls} me-1 mb-1"${dataAttr}${teenieHoverAttrs(name, form, note)}${cursor}>${escHtml(form || name)}</span>`;
 }
  
 // 툴팁 (이미지 + 이름 + 내용). data-tip-name / data-tip-img / data-tip-note 사용
@@ -638,10 +646,13 @@ function initTeenieTooltip() {
 	window.__teenieTipBound = true;
  
 	$('<style>').text(`
-		#teenieTip { position: fixed; z-index: 3000; display: none; max-width: 260px; padding: .6rem;
+		#teenieTip { position: fixed; z-index: 3000; display: none; max-width: min(360px, calc(100vw - 16px)); padding: .6rem;
 			background: #fff; color: #212529; border: 1px solid #ced4da; border-radius: .5rem;
 			box-shadow: 0 .4rem 1rem rgba(0,0,0,.18); text-align: center; pointer-events: none; font-size: .85rem; line-height: 1.4; }
-		#teenieTip img { display: block; max-width: 160px; max-height: 160px; margin: 0 auto .4rem; object-fit: contain; }
+		#teenieTip .tip-imgs { display: flex; gap: .5rem; justify-content: center; margin-bottom: .4rem; }
+		#teenieTip figure { margin: 0; }
+		#teenieTip figure img { display: block; max-width: 160px; max-height: 160px; object-fit: contain; }
+		#teenieTip figcaption { font-size: .75rem; color: #6c757d; margin-top: .15rem; }
 		#teenieTip .tip-name { font-weight: 700; margin-bottom: .15rem; }
 		#teenieTip .tip-note { color: #495057; word-break: keep-all; }
 	`).appendTo('head');
@@ -650,11 +661,24 @@ function initTeenieTooltip() {
  
 	function show($el, e) {
 		const name = $el.attr('data-tip-name') || '';
-		const img = $el.attr('data-tip-img') || '';
 		const note = $el.attr('data-tip-note') || '';
-		if (!img && !note) return;
+		let imgs = [];
+		try { imgs = JSON.parse($el.attr('data-tip-imgs') || '[]'); } catch (err) {}
+		imgs = imgs.filter(i => i && i.src);
+		if (!imgs.length && !note) return;
+
 		$tip.empty();
-		if (img) $tip.append($('<img>').attr({ src: img, alt: name, referrerpolicy: 'no-referrer' }).on('error', function () { $(this).remove(); }));
+		if (imgs.length) {
+			const $row = $('<div class="tip-imgs"></div>');
+			imgs.forEach(i => {
+				const $fig = $('<figure></figure>');
+				$fig.append($('<img>').attr({ src: i.src, alt: name, referrerpolicy: 'no-referrer' })
+					.on('error', function () { $fig.remove(); }));
+				if (i.label) $fig.append($('<figcaption></figcaption>').text(i.label));
+				$row.append($fig);
+			});
+			$tip.append($row);
+		}
 		$tip.append($('<div class="tip-name"></div>').text(name));
 		if (note) $tip.append($('<div class="tip-note"></div>').text(note));
 		$tip.show();
@@ -886,9 +910,11 @@ function renderMovies() {
 		} else {
 			bodyHtml = m.groups.map(g => {
 				const badges = g.items.map(it => {
-					const name = Array.isArray(it) ? it[0] : it;
-					const note = Array.isArray(it) ? it[1] : '';
-					return renderTeenieNameBadge(name, { note: note });
+					const arr = Array.isArray(it) ? it : [it];
+					const name = arr[0];
+					const form = arr.length >= 3 ? arr[1] : '';
+					const note = arr.length >= 3 ? arr[2] : (arr[1] || '');
+					return renderTeenieNameBadge(name, { form: form, note: note });
 				}).join('');
 				return `
 					<div class="mb-3">
