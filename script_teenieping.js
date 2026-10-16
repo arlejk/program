@@ -744,6 +744,7 @@ function renderSeriesOverview() {
 function renderTeenieFilter() {
 	const counts = {};
 	teenieEpisodes.forEach(ep => {
+		// 폼 이름은 기본 이름으로 합치고, 한 회차 안의 중복은 1회로 계산
 		new Set(ep.teenies.map(teenieCanonicalName)).forEach(n => {
 			counts[n] = (counts[n] || 0) + 1;
 		});
@@ -760,12 +761,29 @@ function renderTeenieFilter() {
 	if (!$wrap.length) return;
 
 	$wrap.empty();
-	$wrap.append('<button class="btn btn-secondary btn-keyword-teenie active" data-keyword="all">티니핑 전체보기</button>');
+	$wrap.append('<button class="btn btn-secondary btn-keyword-teenie active" data-keyword="all">티니핑 전체보기</button> ');
+
+	let moreHtml = '<div id="more-keywords" style="display: none;">';
+	let hasMore = false;
 
 	sorted.forEach(name => {
-		const btnHtml = `<button class="btn btn-outline-dark btn-keyword-teenie" data-keyword="${escHtml(name)}">#${escHtml(name)} <small class="text-muted">(${counts[name]})</small></button>`;
-		$wrap.append(btnHtml);
+		const count = counts[name];
+		const btnHtml = `<button class="btn btn-outline-dark btn-keyword-teenie" data-keyword="${escHtml(name)}">#${escHtml(name)} <small class="text-muted">(${count})</small></button> `;
+
+		if (count >= 3) {
+			$wrap.append(btnHtml);
+		} else {
+			moreHtml += btnHtml;
+			hasMore = true;
+		}
 	});
+
+	moreHtml += '</div>';
+
+	if (hasMore) {
+		$wrap.append(moreHtml);
+		$wrap.append('<button class="btn btn-outline-secondary btn-toggle-more-teenie ms-1"><i class="fa-solid fa-plus"></i> 더보기</button>');
+	}
 }
 
 function renderEpisodeTable() {
@@ -802,7 +820,7 @@ function renderEpisodeTable() {
 
 		// 3) 스트리밍 링크 (공식 유튜브)
 		const ottHtml = ep.yt
-			? `<a href="https://youtu.be/${escHtml(ep.yt)}" target="_blank" rel="noopener" class="me-1">YouTube <i class="xi-external-link"></i></a>`
+			? `<a href="https://youtu.be/${escHtml(ep.yt)}" target="_blank" rel="noopener" class="me-1">YOUTUBE</a>`
 			: '-';
 
 		// 4) 에피소드 + 누적 회차 + 제목
@@ -1115,6 +1133,16 @@ $(function () {
 		$('.btn-keyword-teenie[data-keyword="all"]').trigger('click');
 	});
 
+	// 티니핑 필터 더보기 토글
+	$(document).on('click', '.btn-toggle-more-teenie', function () {
+		const $more = $('#more-keywords');
+		const open = $more.is(':visible');
+		$more.toggle(!open);
+		$(this).html(open
+			? '<i class="fa-solid fa-plus"></i> 더보기'
+			: '<i class="fa-solid fa-minus"></i> 접기');
+	});
+
 	// 뱃지 클릭 필터 연동
 	$(document).on('click', '.keyword-tag', function () {
 		const keyword = teenieCanonicalName($(this).attr('data-keyword'));
@@ -1124,6 +1152,9 @@ $(function () {
 			return $(this).attr('data-keyword') === keyword;
 		});
 		if ($targetBtn.length) {
+			if ($targetBtn.closest('#more-keywords').length && !$('#more-keywords').is(':visible')) {
+				$('.btn-toggle-more-teenie').trigger('click');
+			}
 			$targetBtn.trigger('click');
 		}
 	});
