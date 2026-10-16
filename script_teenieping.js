@@ -297,7 +297,7 @@ function addTeenie(season, grade, list) {
 
 // ---------- 1기 큐브 티니핑 (45) ----------
 addTeenie(1, 'royal', [
-	{ name: '하츄핑', note: '프린세스 하트, 로미의 파트너 티니핑', intro: 'Acrv8EqCa4o' },
+	{ name: '하츄핑', note: '프린세스 하트, 로미의 파트너 티니핑', intro: 'Acrv8EqCa4o', mv: '4LRgcGrix3s' },
 	{ name: '바로핑', note: '프린세스 클라우디아', intro: '_V6o4WlY5jE' },
 	{ name: '아자핑', note: '프린세스 클로버', intro: 'wfGmhORpsmk' },
 	{ name: '차차핑', note: '프린세스 스타', intro: 'BMGBMX8qhZI' },
@@ -396,7 +396,7 @@ addTeenie(3, 'normal', [
 	{ name: '아라핑', intro: '7CK1WIePIoc' },
 	{ name: '패션핑', intro: '8ZNEBOmP64s' },
 	{ name: '꼼딱핑', intro: 'nzJomJ3XWwQ' },
-	{ name: '퐁당핑', intro: 'AdGGc9Yj_PQ' },
+	{ name: '퐁당핑', intro: 'AdGGc9Yj_PQ', mv: 'HUMYQ-4sc6g' },
 	{ name: '파티핑', intro: 'XL8H4m3fzsg' },
 	{ name: '꾸며핑', intro: 'pXo-UM38WIo' },
 	{ name: '삐짐핑', intro: 'ujQ7p-C7NGc' },
@@ -407,13 +407,13 @@ addTeenie(3, 'normal', [
 // ---------- 4기 디저트 티니핑 (22) ----------
 addTeenie(4, 'royal', [
 	{ name: '하츄핑', form: '베리 하츄핑', note: '프린세스 베리하트', intro: 'qBkELAwIlIA' },
-	{ name: '포실핑', note: '프린세스 스윗플로스, 6기 10화에서 주연으로 재등장', intro: 'eqwoFyO4lzA' },
-	{ name: '샤샤핑', note: '프린세스 샤베티나', intro: '6NC6hPAM8Ew' },
-	{ name: '말랑핑', note: '프린세스 젤리스틴', intro: 'fjnzsML3bNw' }
+	{ name: '포실핑', note: '프린세스 스윗플로스, 6기 10화에서 주연으로 재등장', intro: 'eqwoFyO4lzA', mv: 'PU6iQ0B_o5Q' },
+	{ name: '샤샤핑', note: '프린세스 샤베티나', intro: '6NC6hPAM8Ew', mv: 'w0NQierfW1k' },
+	{ name: '말랑핑', note: '프린세스 젤리스틴', intro: 'fjnzsML3bNw', mv: 'DVWry1GW-mU' }
 ]);
 addTeenie(4, 'legend', [
-	{ name: '새콤핑', note: '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장', intro: 'Ros3gi7DlGQ' },
-	{ name: '달콤핑', note: '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장', intro: 'Ros3gi7DlGQ' }
+	{ name: '새콤핑', note: '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장', intro: 'Ros3gi7DlGQ', mv: 'QrGxI5pzqso' },
+	{ name: '달콤핑', note: '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장', intro: 'Ros3gi7DlGQ', mv: 'QrGxI5pzqso' }
 ]);
 addTeenie(4, 'normal', [
 	{ name: '뿌뿌핑', intro: '-eE-r2yKB5k' },
@@ -425,8 +425,8 @@ addTeenie(4, 'normal', [
 	{ name: '롤리핑', intro: 'LFqEPcYFDFk' },
 	{ name: '마카핑', intro: 'cUPHpvLEGqk' },
 	{ name: '핫케핑', intro: 'ItZxr-pjnNc' },
-	{ name: '커핑', note: '머핑과 쌍둥이 남매 · 큐브 공유', intro: 'D7XhvPmBXlQ' },
-	{ name: '머핑', note: '커핑과 쌍둥이 남매 · 큐브 공유', intro: 'D7XhvPmBXlQ' },
+	{ name: '커핑', note: '머핑과 쌍둥이 남매 · 큐브 공유', intro: 'D7XhvPmBXlQ', mv: 'xYdDt1gzNlQ' },
+	{ name: '머핑', note: '커핑과 쌍둥이 남매 · 큐브 공유', intro: 'D7XhvPmBXlQ', mv: 'xYdDt1gzNlQ' },
 	{ name: '요거핑', intro: 'ujg-TEKCb0s' },
 	{ name: '눈꽃핑', intro: '4hhnV8YZht8' },
 	{ name: '푸딩핑', intro: 'HI_cyB_sJvQ' },
@@ -443,7 +443,7 @@ addTeenie(5, 'royal', [
 	{ name: '왕자핑', note: '나그네핑과 동일 티니핑(명칭·신체 변화로 각각 집계), 노아의 파트너 티니핑', intro: 'xZYIWN9slnI' }
 ]);
 addTeenie(5, 'legend', [
-	{ name: '오로라핑', note: '프린세스 오로라, 거대한 날개 설정의 시작', intro: 'Wu7GWmZX0CY' }
+	{ name: '오로라핑', note: '프린세스 오로라, 거대한 날개 설정의 시작', intro: 'Wu7GWmZX0CY', mv: 'OMwG6HYrP3c' }
 ]);
 addTeenie(5, 'normal', [
 	{ name: '깡총핑', intro: 'cC3BCol4-vo' },
@@ -459,9 +459,9 @@ addTeenie(5, 'normal', [
 	{ name: '뽀송핑', intro: 'KyCglgJnUvE' },
 	{ name: '유리핑', intro: 'yuQQrcWsk08' },
 	{ name: '함께핑', intro: '-FEeuSEkyqI' },
-	{ name: '댄스핑', intro: 'zJpw-d80F40' },
+	{ name: '댄스핑', intro: 'zJpw-d80F40', mv: 'q15-zkTRx1M' },
 	{ name: '여우핑', intro: 'DP0UFTGoGhs' },
-	{ name: '루루핑', intro: 'ZiUTEY3T8JU' },
+	{ name: '루루핑', intro: 'ZiUTEY3T8JU', mv: 'pCTUoCOrl1E' },
 	{ name: '몰래핑', intro: 'NMOMyxelsS4' },
 	{ name: '뽀뽀핑', intro: '_wBKAocQ3Fo' }
 ]);
