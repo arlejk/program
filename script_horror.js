@@ -2181,7 +2181,7 @@ function renderStorytellerButtons() {
     if ($wrap.length === 0) return;
 
     $wrap.empty();
-    $wrap.append('<button class="btn btn-secondary btn-keyword active mb-1 mr-1" data-keyword="all">전체보기</button> ');
+    $wrap.append('<button class="btn btn-secondary btn-keyword active mb-1 mr-1" data-keyword="all">우승자 전체보기</button> ');
 
     let moreHtml = '<span id="more-keywords" style="display: none;">';
     let hasMore = false;
