@@ -262,218 +262,356 @@ const teenieEpisodeSeeds = {
 
 // ==========================================
 // 3. 티니핑 분류 데이터
-//    항목: '이름' 또는 [이름, 표기명(폼), 비고, 그룹]
+//    name  : 티니핑 이름
+//    form  : 표기명(폼) — 없으면 생략
+//    note  : 비고
+//    group : 그룹(6기 프린세스/프린스 등) — 없으면 생략
+//    intro : 소개영상 (유튜브 ID 또는 주소) — 없으면 생략
+//    mv    : MV영상 (유튜브 ID 또는 주소) — 없으면 생략
+//    예) { name: '하츄핑', note: '...', intro: 'abcDEF12345', mv: 'https://youtu.be/abcDEF12345' }
 // ==========================================
 const teeniepings = [];
 
+// 유튜브 ID 또는 주소 → ID
+function extractYtId(v) {
+	if (!v) return '';
+	const m = String(v).match(/(?:youtu\.be\/|[?&]v=|\/shorts\/|\/embed\/)([\w-]{11})/);
+	return m ? m[1] : String(v).trim();
+}
+
 function addTeenie(season, grade, list) {
 	list.forEach(item => {
-		const arr = Array.isArray(item) ? item : [item];
+		const t = (typeof item === 'string') ? { name: item } : item;
 		teeniepings.push({
 			season: season,
 			grade: grade,
-			name: arr[0],
-			form: arr[1] || '',
-			note: arr[2] || '',
-			group: arr[3] || ''
+			name: t.name,
+			form: t.form || '',
+			note: t.note || '',
+			group: t.group || '',
+			intro: extractYtId(t.intro),
+			mv: extractYtId(t.mv)
 		});
 	});
 }
 
 // ---------- 1기 큐브 티니핑 (45) ----------
 addTeenie(1, 'royal', [
-	['하츄핑', '', '프린세스 하트, 로미의 파트너 티니핑'],
-	['바로핑', '', '프린세스 클라우디아'],
-	['아자핑', '', '프린세스 클로버'],
-	['차차핑', '', '프린세스 스타'],
-	['라라핑', '', '프린세스 멜로디'],
-	['해핑', '', '프린세스 선샤인, 6기 10화에서 주연으로 재등장']
+	{ name: '하츄핑', note: '프린세스 하트, 로미의 파트너 티니핑' },
+	{ name: '바로핑', note: '프린세스 클라우디아' },
+	{ name: '아자핑', note: '프린세스 클로버' },
+	{ name: '차차핑', note: '프린세스 스타' },
+	{ name: '라라핑', note: '프린세스 멜로디' },
+	{ name: '해핑', note: '프린세스 선샤인, 6기 10화에서 주연으로 재등장' }
 ]);
 addTeenie(1, 'normal', [
-	'키키핑', '아잉핑', '부끄핑',
-	['부투핑', '', '직업: 심판'],
-	'깜빡핑',
-	['띠용핑', '', '직업: 마술사'],
-	'주르핑',
-	['차나핑', '', '코자핑과 사촌 관계'],
-	'따라핑', '나르핑', '무셔핑', '투투핑', '차캐핑', '떠벌핑', '다조핑', '화나핑', '시러핑', '바네핑',
-	['악동핑', '', '해핑과 명칭·신체 변화가 함께 나타나 별도 집계'],
-	'덜덜핑',
-	['그림핑', '', '직업: 화가'],
-	['무거핑', '', '직업: 헬스트레이너'],
-	'꺼꿀핑', '씽씽핑', '베베핑',
-	['코자핑', '', '차나핑과 사촌 관계'],
-	'딱풀핑', '모야핑', '토이핑', '또까핑',
-	['플라핑', '', '직업: 정원사'],
-	['노라핑', '', '노리핑과 형제 · 큐브와 메달 공유'],
-	['노리핑', '', '노라핑과 형제 · 큐브와 메달 공유'],
-	'아휴핑', '똑똑핑', '꽁꽁핑', '찌릿핑', '홀로핑',
-	['앙대핑', '', '빌런 티니핑']
+	{ name: '키키핑' },
+	{ name: '아잉핑' },
+	{ name: '부끄핑' },
+	{ name: '부투핑', note: '직업: 심판' },
+	{ name: '깜빡핑' },
+	{ name: '띠용핑', note: '직업: 마술사' },
+	{ name: '주르핑' },
+	{ name: '차나핑', note: '코자핑과 사촌 관계' },
+	{ name: '따라핑' },
+	{ name: '나르핑' },
+	{ name: '무셔핑' },
+	{ name: '투투핑' },
+	{ name: '차캐핑' },
+	{ name: '떠벌핑' },
+	{ name: '다조핑' },
+	{ name: '화나핑' },
+	{ name: '시러핑' },
+	{ name: '바네핑' },
+	{ name: '악동핑', note: '해핑과 명칭·신체 변화가 함께 나타나 별도 집계' },
+	{ name: '덜덜핑' },
+	{ name: '그림핑', note: '직업: 화가' },
+	{ name: '무거핑', note: '직업: 헬스트레이너' },
+	{ name: '꺼꿀핑' },
+	{ name: '씽씽핑' },
+	{ name: '베베핑' },
+	{ name: '코자핑', note: '차나핑과 사촌 관계' },
+	{ name: '딱풀핑' },
+	{ name: '모야핑' },
+	{ name: '토이핑' },
+	{ name: '또까핑' },
+	{ name: '플라핑', note: '직업: 정원사' },
+	{ name: '노라핑', note: '노리핑과 형제 · 큐브와 메달 공유' },
+	{ name: '노리핑', note: '노라핑과 형제 · 큐브와 메달 공유' },
+	{ name: '아휴핑' },
+	{ name: '똑똑핑' },
+	{ name: '꽁꽁핑' },
+	{ name: '찌릿핑' },
+	{ name: '홀로핑' },
+	{ name: '앙대핑', note: '빌런 티니핑' }
 ]);
 
 // ---------- 2기 보석 티니핑 (20) ----------
 addTeenie(2, 'royal', [
-	['하츄핑', '다이아 하츄핑', '프린세스 다이아하트'],
-	['방글핑', '', '프린세스 루비, 2기 초반에는 로열 티니핑 후보생(보석 문양)'],
-	['조아핑', '', '프린세스 에메랄드, 2기 초반에는 로열 티니핑 후보생(보석 문양)'],	
-	['믿어핑', '', '프린세스 사파이어, 2기 초반에는 로열 티니핑 후보생(보석 문양)']
+	{ name: '하츄핑', form: '다이아 하츄핑', note: '프린세스 다이아하트' },
+	{ name: '방글핑', note: '프린세스 루비, 2기 초반에는 로열 티니핑 후보생(보석 문양)' },
+	{ name: '조아핑', note: '프린세스 에메랄드, 2기 초반에는 로열 티니핑 후보생(보석 문양)' },
+	{ name: '믿어핑', note: '프린세스 사파이어, 2기 초반에는 로열 티니핑 후보생(보석 문양)' }
 ]);
 addTeenie(2, 'normal', [
-	'까르핑', '아야핑', '소원핑', '토닥핑', '쪼꼼핑', '싹싹핑', '맛나핑', '포근핑', '메모핑',
-	['다해핑', '', '프린세스 라비린스, 제니의 파트너 티니핑'],
-	'공쥬핑', '짝짝핑', '주네핑', '뚝딱핑', '발레핑', '원더핑'
+	{ name: '까르핑' },
+	{ name: '아야핑' },
+	{ name: '소원핑' },
+	{ name: '토닥핑' },
+	{ name: '쪼꼼핑' },
+	{ name: '싹싹핑' },
+	{ name: '맛나핑' },
+	{ name: '포근핑' },
+	{ name: '메모핑' },
+	{ name: '다해핑', note: '프린세스 라비린스, 제니의 파트너 티니핑' },
+	{ name: '공쥬핑' },
+	{ name: '짝짝핑' },
+	{ name: '주네핑' },
+	{ name: '뚝딱핑' },
+	{ name: '발레핑' },
+	{ name: '원더핑' }
 ]);
 addTeenie(2, 'etc', [
-	['가면핑', '', '다해핑이 가면을 쓴 모습(집계 제외)']
+	{ name: '가면핑', note: '다해핑이 가면을 쓴 모습(집계 제외)' }
 ]);
 
 // ---------- 3기 열쇠 티니핑 (21) ----------
 addTeenie(3, 'royal', [
-	['하츄핑', '플로라 하츄핑', '프린세스 플로라하트, 사계절 모티브: 봄(꽃)'],
-	['나나핑', '', '프린세스 솔라리스, 사계절 모티브: 여름(태양)'],
-	['솔찌핑', '', '프린세스 글로리아, 사계절 모티브: 가을(구름)'],
-	['꾸래핑', '', '프린세스 크리스탈, 사계절 모티브: 겨울(눈송이)']
+	{ name: '하츄핑', form: '플로라 하츄핑', note: '프린세스 플로라하트, 사계절 모티브: 봄(꽃)' },
+	{ name: '나나핑', note: '프린세스 솔라리스, 사계절 모티브: 여름(태양)' },
+	{ name: '솔찌핑', note: '프린세스 글로리아, 사계절 모티브: 가을(구름)' },
+	{ name: '꾸래핑', note: '프린세스 크리스탈, 사계절 모티브: 겨울(눈송이)' }
 ]);
 addTeenie(3, 'legend', [
-	['행운핑', '', '프린세스 트와일라잇, 시리즈 최초의 레전드 티니핑']
+	{ name: '행운핑', note: '프린세스 트와일라잇, 시리즈 최초의 레전드 티니핑' }
 ]);
 addTeenie(3, 'normal', [
-	'빨리핑', '얌얌핑', '뜨거핑', '삐뽀핑',
-	['간호핑', '', '경광등 색이 다른 4개체(분홍·노랑·초록·파랑)가 있으나 동일 명칭이라 1종으로 집계'],
-	'힘내핑', '고쳐핑', '아라핑', '패션핑', '꼼딱핑', '퐁당핑', '파티핑', '꾸며핑', '삐짐핑', '아아핑', '빙글핑'
+	{ name: '빨리핑' },
+	{ name: '얌얌핑' },
+	{ name: '뜨거핑' },
+	{ name: '삐뽀핑' },
+	{ name: '간호핑', note: '경광등 색이 다른 4개체(분홍·노랑·초록·파랑)가 있으나 동일 명칭이라 1종으로 집계' },
+	{ name: '힘내핑' },
+	{ name: '고쳐핑' },
+	{ name: '아라핑' },
+	{ name: '패션핑' },
+	{ name: '꼼딱핑' },
+	{ name: '퐁당핑' },
+	{ name: '파티핑' },
+	{ name: '꾸며핑' },
+	{ name: '삐짐핑' },
+	{ name: '아아핑' },
+	{ name: '빙글핑' }
 ]);
 
 // ---------- 4기 디저트 티니핑 (22) ----------
 addTeenie(4, 'royal', [
-	['하츄핑', '베리 하츄핑', '프린세스 베리하트'],
-	['포실핑', '', '프린세스 스윗플로스, 6기 10화에서 주연으로 재등장'],
-	['샤샤핑', '', '프린세스 샤베티나'],
-	['말랑핑', '', '프린세스 젤리스틴']
+	{ name: '하츄핑', form: '베리 하츄핑', note: '프린세스 베리하트' },
+	{ name: '포실핑', note: '프린세스 스윗플로스, 6기 10화에서 주연으로 재등장' },
+	{ name: '샤샤핑', note: '프린세스 샤베티나' },
+	{ name: '말랑핑', note: '프린세스 젤리스틴' }
 ]);
 addTeenie(4, 'legend', [
-	['새콤핑', '', '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장'],
-	['달콤핑', '', '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장']
+	{ name: '새콤핑', note: '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장' },
+	{ name: '달콤핑', note: '프린세스 하모니어스, 디저트 마을 케이크 궁전 거주, 시리즈 최초로 레전드가 2마리 등장' }
 ]);
 addTeenie(4, 'normal', [
-	'뿌뿌핑', '캔디핑', '머랭핑', '샌드핑', '또너핑', '와플핑', '롤리핑', '마카핑', '핫케핑',
-	['커핑', '', '머핑과 쌍둥이 남매 · 큐브 공유'],
-	['머핑', '', '커핑과 쌍둥이 남매 · 큐브 공유'],
-	'요거핑', '눈꽃핑', '푸딩핑', '멜로핑', '쪼꼬핑'
+	{ name: '뿌뿌핑' },
+	{ name: '캔디핑' },
+	{ name: '머랭핑' },
+	{ name: '샌드핑' },
+	{ name: '또너핑' },
+	{ name: '와플핑' },
+	{ name: '롤리핑' },
+	{ name: '마카핑' },
+	{ name: '핫케핑' },
+	{ name: '커핑', note: '머핑과 쌍둥이 남매 · 큐브 공유' },
+	{ name: '머핑', note: '커핑과 쌍둥이 남매 · 큐브 공유' },
+	{ name: '요거핑' },
+	{ name: '눈꽃핑' },
+	{ name: '푸딩핑' },
+	{ name: '멜로핑' },
+	{ name: '쪼꼬핑' }
 ]);
 
 // ---------- 5기 스타 티니핑 (24) ----------
 addTeenie(5, 'royal', [
-	['하츄핑', '스타 하츄핑', '프린세스 브라잇하트'],
-	['빛나핑', '', '프린세스 스타라이트'],
-	['초롱핑', '', '프린세스 글램스타'],
-	['빤짝핑', '', '프린세스 루나샤인'],
-	['왕자핑', '', '나그네핑과 동일 티니핑(명칭·신체 변화로 각각 집계), 노아의 파트너 티니핑']
+	{ name: '하츄핑', form: '스타 하츄핑', note: '프린세스 브라잇하트' },
+	{ name: '빛나핑', note: '프린세스 스타라이트' },
+	{ name: '초롱핑', note: '프린세스 글램스타' },
+	{ name: '빤짝핑', note: '프린세스 루나샤인' },
+	{ name: '왕자핑', note: '나그네핑과 동일 티니핑(명칭·신체 변화로 각각 집계), 노아의 파트너 티니핑' }
 ]);
 addTeenie(5, 'legend', [
-	['오로라핑', '', '프린세스 오로라, 거대한 날개 설정의 시작']
+	{ name: '오로라핑', note: '프린세스 오로라, 거대한 날개 설정의 시작' }
 ]);
 addTeenie(5, 'normal', [
-	'깡총핑', '훌라핑', '나눔핑', '딩동핑',
-	['나그네핑', '', '왕자핑과 동일 티니핑(명칭·신체 변화로 각각 집계)'],
-	'고고핑', '뿌쵸핑', '고마핑',
-	['아롱핑', '', '다롱핑과 자매'],
-	['다롱핑', '', '아롱핑과 자매'],
-	'뽀송핑', '유리핑', '함께핑', '댄스핑', '여우핑', '루루핑', '몰래핑', '뽀뽀핑'
+	{ name: '깡총핑' },
+	{ name: '훌라핑' },
+	{ name: '나눔핑' },
+	{ name: '딩동핑' },
+	{ name: '나그네핑', note: '왕자핑과 동일 티니핑(명칭·신체 변화로 각각 집계)' },
+	{ name: '고고핑' },
+	{ name: '뿌쵸핑' },
+	{ name: '고마핑' },
+	{ name: '아롱핑', note: '다롱핑과 자매' },
+	{ name: '다롱핑', note: '아롱핑과 자매' },
+	{ name: '뽀송핑' },
+	{ name: '유리핑' },
+	{ name: '함께핑' },
+	{ name: '댄스핑' },
+	{ name: '여우핑' },
+	{ name: '루루핑' },
+	{ name: '몰래핑' },
+	{ name: '뽀뽀핑' }
 ]);
 addTeenie(5, 'etc', [
-	['로미핑', '', '로미가 티니핑으로 변한 모습(인간)이라 집계 제외']
+	{ name: '로미핑', note: '로미가 티니핑으로 변한 모습(인간)이라 집계 제외' }
 ]);
 
 // ---------- 6기 프린세스&프린스 티니핑 (21) ----------
 addTeenie(6, 'royal', [
-	['하츄핑', '프린세스 하츄핑', '프린세스 팬시하트'],
-	['사뿐핑', '', '프린세스 쁠리에, 발레의 나라'],
-	['뽀니핑', '', '프린세스 보니타, 미용의 나라'],
-	['아름핑', '', '프린세스 판타나, 패션의 나라']	
+	{ name: '하츄핑', form: '프린세스 하츄핑', note: '프린세스 팬시하트' },
+	{ name: '사뿐핑', note: '프린세스 쁠리에, 발레의 나라' },
+	{ name: '뽀니핑', note: '프린세스 보니타, 미용의 나라' },
+	{ name: '아름핑', note: '프린세스 판타나, 패션의 나라' }
 ]);
 addTeenie(6, 'legend', [
-	['이클립스핑', '', '프린세스 다크니스, 거울의 나라, 다이아나핑의 쌍둥이 자매, 메인 빌런(시리즈 최초의 악역 레전드)'],
-	['다이아나핑', '', '프린세스 루미너스, 거울의 나라, 이클립스핑의 쌍둥이 자매']
+	{ name: '이클립스핑', note: '프린세스 다크니스, 거울의 나라, 다이아나핑의 쌍둥이 자매, 메인 빌런(시리즈 최초의 악역 레전드)' },
+	{ name: '다이아나핑', note: '프린세스 루미너스, 거울의 나라, 이클립스핑의 쌍둥이 자매' }
 ]);
 addTeenie(6, 'normal', [
-	['뽀득핑', '', '목욕의 나라', '프린세스'],
-	['차밍핑', '', '이상한 나라', '프린세스'],
-	['나비핑', '', '나비의 나라', '프린세스'],
-	['실크핑', '', '양탄자의 나라(보물의 나라)', '프린세스'],
-	['스노우핑', '', '눈의 나라', '프린세스'],
-	['이슬핑', '', '꽃의 나라', '프린세스'],
-	['쿨쿨핑', '', '꿀잠 나라(잠의 나라)', '프린세스'],
-	['슈슈핑', '', '비비디 나라(진심의 나라)', '프린세스'],
-	['롱롱핑', '', '고운 머릿결의 나라', '프린세스'],
-	['큐핑', '', '백발백중의 나라', '프린세스'],
-	['야옹핑', '', '야옹 나라(고양이 나라)', '프린세스'],
-	['샤를핑', '', '로맨스 나라', '프린스'],
-	['트롯핑', '', '오디션의 나라', '프린스'],
-	['깨굴핑', '', '젠틀핑의 또 다른 폼 · 매너의 나라', '프린스'],
-	['젠틀핑', '', '깨굴핑의 또 다른 폼으로 별도 집계 · 매너의 나라', '프린스']
+	{ name: '뽀득핑', note: '목욕의 나라', group: '프린세스' },
+	{ name: '차밍핑', note: '이상한 나라', group: '프린세스' },
+	{ name: '나비핑', note: '나비의 나라', group: '프린세스' },
+	{ name: '실크핑', note: '양탄자의 나라(보물의 나라)', group: '프린세스' },
+	{ name: '스노우핑', note: '눈의 나라', group: '프린세스' },
+	{ name: '이슬핑', note: '꽃의 나라', group: '프린세스' },
+	{ name: '쿨쿨핑', note: '꿀잠 나라(잠의 나라)', group: '프린세스' },
+	{ name: '슈슈핑', note: '비비디 나라(진심의 나라)', group: '프린세스' },
+	{ name: '롱롱핑', note: '고운 머릿결의 나라', group: '프린세스' },
+	{ name: '큐핑', note: '백발백중의 나라', group: '프린세스' },
+	{ name: '야옹핑', note: '야옹 나라(고양이 나라)', group: '프린세스' },
+	{ name: '샤를핑', note: '로맨스 나라', group: '프린스' },
+	{ name: '트롯핑', note: '오디션의 나라', group: '프린스' },
+	{ name: '깨굴핑', note: '젠틀핑의 또 다른 폼 · 매너의 나라', group: '프린스' },
+	{ name: '젠틀핑', note: '깨굴핑의 또 다른 폼으로 별도 집계 · 매너의 나라', group: '프린스' }
 ]);
 addTeenie(6, 'etc', [
-	['코러스핑', '', '집계 제외'],
-	['집사 티니핑', '', '집계 제외']
+	{ name: '코러스핑', note: '집계 제외' },
+	{ name: '집사 티니핑', note: '집계 제외' }
 ]);
 
 // ---------- 7기 쥬얼스타 티니핑 (2026년 10월 기준 공개 개체) ----------
 addTeenie(7, 'royal', [
-	['하츄핑', '??? 하츄핑', '프린세스 비바하트'],
-	['레몬핑', '', '프린세스 브릴란테'],
-	['체리핑', '', '프린세스 칸타빌레'],
-	['라임핑', '', '프린세스 폴리포니']
+	{ name: '하츄핑', form: '??? 하츄핑', note: '프린세스 비바하트' },
+	{ name: '레몬핑', note: '프린세스 브릴란테' },
+	{ name: '체리핑', note: '프린세스 칸타빌레' },
+	{ name: '라임핑', note: '프린세스 폴리포니' }
 ]);
 addTeenie(7, 'legend', [
-	['뮤즈핑', '', '레전드 티니핑으로 추정(미확정)'],
-	['디바핑', '', '레전드 티니핑으로 추정(미확정)']
+	{ name: '뮤즈핑', note: '레전드 티니핑으로 추정(미확정)' },
+	{ name: '디바핑', note: '레전드 티니핑으로 추정(미확정)' }
 ]);
 addTeenie(7, 'normal', [
-	'쏭쏭핑', '아리아핑', '아서핑', '낭낭핑', '냐냥핑', '폴짝핑', '시고르핑', '코디핑', '잉잉핑', '앙앙핑', '빠밤핑', '팡팡핑', '티키핑', '타카핑'
+	{ name: '쏭쏭핑' },
+	{ name: '아리아핑' },
+	{ name: '아서핑' },
+	{ name: '낭낭핑' },
+	{ name: '냐냥핑' },
+	{ name: '폴짝핑' },
+	{ name: '시고르핑' },
+	{ name: '코디핑' },
+	{ name: '잉잉핑' },
+	{ name: '앙앙핑' },
+	{ name: '빠밤핑' },
+	{ name: '팡팡핑' },
+	{ name: '티키핑' },
+	{ name: '타카핑' }
 ]);
 addTeenie(7, 'etc', [
-	['마린핑', '', 'PLAVE 콜라보 티니핑'],
-	['비타핑', '', 'PLAVE 콜라보 티니핑'],
-	['포포핑', '', 'PLAVE 콜라보 티니핑'],
-	['불꽃핑', '', 'PLAVE 콜라보 티니핑'],
-	['까밍핑', '', 'PLAVE 콜라보 티니핑']
+	{ name: '마린핑', note: 'PLAVE 콜라보 티니핑' },
+	{ name: '비타핑', note: 'PLAVE 콜라보 티니핑' },
+	{ name: '포포핑', note: 'PLAVE 콜라보 티니핑' },
+	{ name: '불꽃핑', note: 'PLAVE 콜라보 티니핑' },
+	{ name: '까밍핑', note: 'PLAVE 콜라보 티니핑' }
 ]);
 
 // ==========================================
 // 4. 극장판 데이터
+//    groups[].exclusive : true면 극장판 전용 → 등급별 탭에 자동 표시
+//    items[].inGrade    : true면 등급별 탭에도 표시 (폼 변형 등)
+//    items[]            : '이름' | [이름, 비고] | [이름, 폼, 비고] | { name, form, note, grade, intro, mv }
+//    intro / mv         : 유튜브 ID 또는 주소 (없으면 생략)
 // ==========================================
 const teenieMovies = [
 	{
 		no: 1, label: '1기', title: '사랑의 하츄핑', year: '2024',
-		only: [['트러핑', '일반 폼 · 흑화 폼, 리암의 파트너 티니핑']],
 		groups: [
-			{ label: '극장판에서만 등장하는 티니핑', items: [['트러핑', '일반 폼 · 흑화 폼, 리암의 파트너 티니핑']] },
-			{ label: '애니메이션 시리즈에도 등장 — 일반 티니핑 시절의 티니핑', items: [['하츄핑','사랑의 하츄핑','극장판 1기 한정으로 로열핑 문양이 없음'], ['라라핑', ''], ['해핑', '']] },
+			{
+				label: '극장판에서만 등장하는 티니핑', exclusive: true,
+				items: [
+					{ name: '트러핑', note: '일반 폼 · 흑화 폼, 리암의 파트너 티니핑', intro: '', mv: '' }
+				]
+			},
+			{
+				label: '애니메이션 시리즈에도 등장 — 일반 티니핑 시절의 티니핑',
+				items: [
+					{ name: '하츄핑', form: '사랑의 하츄핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑', grade: 'normal', inGrade: true, intro: '', mv: '' },
+					{ name: '라라핑', form: '일반 라라핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑, 몬스터 라라핑으로 변신', grade: 'normal', inGrade: false },
+					{ name: '해핑', form: '일반 해핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑, 몬스터 해핑으로 변신', grade: 'normal', inGrade: false }
+				]
+			},
 			{
 				label: '애니메이션 시리즈에도 등장 — 큐브 티니핑',
-				items: ['딱풀핑', '꽁꽁핑', '덜덜핑', '키키핑', '모야핑', '토이핑', '플라핑', '노라핑', '나르핑', '화나핑', '바네핑', '또까핑', '무거핑', '시러핑', '부끄핑', '씽씽핑', '코자핑'].map(n => [n, ''])
+				items: ['딱풀핑', '꽁꽁핑', '덜덜핑', '키키핑', '모야핑', '토이핑', '플라핑', '노라핑', '나르핑', '화나핑', '바네핑', '또까핑', '무거핑', '시러핑', '부끄핑', '씽씽핑', '코자핑']
 			},
-			{ label: '가칭이 사용된 티니핑', items: [['병사핑', '세뇌된 상태로 등장하는 원작 티니핑들']] }
+			{
+				label: '가칭이 사용된 티니핑',
+				items: [['병사핑', '세뇌된 상태로 등장하는 원작 티니핑들']]
+			}
 		]
 	},
 	{
 		no: 2, label: '2기', title: '사랑의 하츄핑: 고래보석의 전설', year: '2026',
-		only: [['방울핑', '카이트의 파트너 티니핑'], ['찰랑핑', '카이트의 파트너 티니핑'], ['소라핑', '카이트의 파트너 티니핑']],
 		groups: [
-			{ label: '극장판에서만 등장하는 티니핑', items: [['방울핑', '카이트의 파트너 티니핑'], ['찰랑핑', '카이트의 파트너 티니핑'], ['소라핑', '카이트의 파트너 티니핑']] },
-			{ label: '애니메이션 시리즈에도 등장', items: [['하츄핑','머메이드 하츄핑','고래보석 컴팩트로 스페셜 변신한 폼']] },
 			{
-				label: '애니메이션 시리즈에도 등장 — 스타 티니핑',
-				items: ['빛나핑', '초롱핑', '빤짝핑', '왕자핑', '오로라핑', '깡총핑', '아롱핑', '다롱핑', '루루핑'].map(n => [n, ''])
+				label: '극장판에서만 등장하는 티니핑', exclusive: true,
+				items: [
+					{ name: '방울핑', note: '카이트의 파트너 티니핑', intro: '', mv: '' },
+					{ name: '찰랑핑', note: '카이트의 파트너 티니핑', intro: '', mv: '' },
+					{ name: '소라핑', note: '카이트의 파트너 티니핑', intro: '', mv: '' }
+				]
+			},
+			{
+				label: '애니메이션 시리즈에도 등장',
+				items: [
+					{ name: '하츄핑', form: '머메이드 하츄핑', note: '고래보석 컴팩트로 스페셜 변신한 폼', grade: 'royal', inGrade: true, intro: '', mv: '' }
+				]
 			},
 			{
 				label: '애니메이션 시리즈에도 등장 — 디저트 티니핑',
-				items: ['샤샤핑', '말랑핑', '포실핑', '새콤핑', '달콤핑', '캔디핑', '머랭핑', '요거핑', '눈꽃핑', '멜로핑', '뿌뿌핑'].map(n => [n, ''])
+				items: ['샤샤핑', '말랑핑', '포실핑', '새콤핑', '달콤핑', '캔디핑', '머랭핑', '요거핑', '눈꽃핑', '멜로핑', '뿌뿌핑']
+			},
+			{
+				label: '애니메이션 시리즈에도 등장 — 스타 티니핑',
+				items: ['빛나핑', '초롱핑', '빤짝핑', '왕자핑', '오로라핑', '깡총핑', '아롱핑', '다롱핑', '루루핑']
 			}
 		]
 	},
-	{ no: 3, label: '3기', title: '기획 중', year: '연도 미정', only: [], groups: [] }
+	{ no: 3, label: '3기', title: '기획 중', year: '연도 미정', groups: [] }
 ];
+
+// 극장판 항목을 객체로 통일
+function normalizeMovieItem(it) {
+	if (typeof it === 'string') return { name: it };
+	if (Array.isArray(it)) {
+		return it.length >= 3
+			? { name: it[0], form: it[1], note: it[2] }
+			: { name: it[0], note: it[1] };
+	}
+	return it;
+}
 
 // ==========================================
 // 5. 데이터 가공 (회차 객체 생성 + 출연 티니핑 추출)
@@ -532,12 +670,24 @@ teenieSeasonKeys.forEach(no => {
 	});
 });
 
-// 극장판 전용 티니핑 (등급별 표에서 일반 티니핑으로 별도 표시)
+// 등급별 표에 올릴 극장판 항목 (극장판 전용 티니핑 + inGrade 표시 항목)
 function teenieMovieOnlyList() {
 	const list = [];
 	teenieMovies.forEach(m => {
-		(m.only || []).forEach(o => {
-			list.push({ movie: m, name: o[0], note: o[1] });
+		m.groups.forEach(g => {
+			g.items.map(normalizeMovieItem).forEach(o => {
+				if (!g.exclusive && !o.inGrade) return;
+				list.push({
+					movie: m,
+					exclusive: !!g.exclusive,
+					name: o.name,
+					form: o.form || '',
+					note: o.note || '',
+					grade: o.grade || 'normal',
+					intro: extractYtId(o.intro),
+					mv: extractYtId(o.mv)
+				});
+			});
 		});
 	});
 	return list;
@@ -674,9 +824,10 @@ function buildTeenieInfoMap() {
 		put(t.name, t);
 		if (t.form) put(t.form, t);   // '다이아 하츄핑' 같은 폼 이름으로도 조회
 	});
-	// 극장판 전용 티니핑은 일반 티니핑
+	// 극장판 항목 (폼 이름이 있으면 폼 이름으로 등록)
 	teenieMovieOnlyList().forEach(o => {
-		if (!map[o.name]) map[o.name] = { grade: 'normal', note: o.note || '' };
+		const key = o.form || o.name;
+		if (!map[key]) map[key] = { grade: o.grade, note: o.note || '' };
 	});
 	return map;
 }
@@ -691,7 +842,7 @@ function getTeenieInfo(name) {
 function renderTeenieNameBadge(name, opts) {
 	opts = opts || {};
 	const form = opts.form || '';
-	const info = getTeenieInfo(name);
+	const info = getTeenieInfo(form || name);
 	const note = opts.note || info.note;
 	const extraCls = opts.extraClass ? ' ' + opts.extraClass : '';
 	const dataAttr = opts.keyword ? ` data-keyword-type="teenie" data-keyword="${escHtml(name)}"` : '';
@@ -999,16 +1150,13 @@ function renderMovies() {
 			bodyHtml = '<p class="text-muted mb-0">기획 중입니다. (연도 미정)</p>';
 		} else {
 			bodyHtml = m.groups.map(g => {
-				const badges = g.items.map(it => {
-					const arr = Array.isArray(it) ? it : [it];
-					const name = arr[0];
-					const form = arr.length >= 3 ? arr[1] : '';
-					const note = arr.length >= 3 ? arr[2] : (arr[1] || '');
-					return renderTeenieNameBadge(name, { form: form, note: note });
-				}).join('');
+				const items = g.items.map(normalizeMovieItem);
+				const badges = items.map(o =>
+					renderTeenieNameBadge(o.name, { form: o.form || '', note: o.note || '' })
+				).join('');
 				return `
 					<div class="mb-3">
-						<div class="mb-1"><strong>${escHtml(g.label)}</strong> <small class="text-muted">(${g.items.length})</small></div>
+						<div class="mb-1"><strong>${escHtml(g.label)}</strong> <small class="text-muted">(${items.length})</small></div>
 						<div>${badges}</div>
 					</div>
 				`;
@@ -1047,21 +1195,25 @@ function getGradeRows() {
 				seasonHtml: `${teenieSeasonMeta[t.season].label} <small class="text-muted">${escHtml(teenieSeasonMeta[t.season].theme)}</small>`,
 				name: t.form || t.name,
 				group: t.group,
-				note: t.note
+				note: t.note,
+				intro: t.intro,
+				mv: t.mv
 			});
 		});
 
-	if (currentGrade === 'all' || currentGrade === 'normal') {
-		teenieMovieOnlyList().forEach(o => {
-			rows.push({
-				grade: 'normal',
-				seasonHtml: `극장판 ${o.movie.label} <small class="text-muted">${escHtml(o.movie.title)}</small>`,
-				name: o.name,
-				group: '',
-				note: o.note
-			});
+	teenieMovieOnlyList()
+	.filter(o => currentGrade === 'all' || o.grade === currentGrade)
+	.forEach(o => {
+		rows.push({
+			grade: o.grade,
+			seasonHtml: `극장판 ${o.movie.label} <small class="text-muted">${escHtml(o.movie.title)}</small>`,
+			name: o.form || o.name,
+			group: '',
+			note: o.note,
+			intro: o.intro,
+			mv: o.mv
 		});
-	}
+	});
 
 	return rows;
 }
@@ -1088,15 +1240,44 @@ function renderGradeSummary() {
 	const $el = $('#grade-summary');
 	if (!$el.length) return;
 
-	const base = teeniepings.filter(t => t.grade !== 'etc' && t.season <= 6);
-	const c = g => base.filter(t => t.grade === g).length;
-	const movieOnly = teenieMovieOnlyList().length;
+	const GRADES = ['royal', 'legend', 'normal'];
+
+	// 목록 → { royal, legend, normal, total }
+	const countBy = list => {
+		const r = { royal: 0, legend: 0, normal: 0, total: list.length };
+		list.forEach(t => { if (r[t.grade] !== undefined) r[t.grade]++; });
+		return r;
+	};
+
+	const valid = teeniepings.filter(t => t.grade !== 'etc');
+	const tva = countBy(valid.filter(t => t.season <= 6));   // 1~6기
+	const s7 = countBy(valid.filter(t => t.season === 7));   // 7기(공개 기준)
+
+	// 극장판: 전용 티니핑 + 폼 변형(inGrade)
+	const movieList = teenieMovieOnlyList();
+	const movie = countBy(movieList);
+	const movieExclusive = movieList.filter(o => o.exclusive).length;
+	const movieForm = movieList.length - movieExclusive;
+
+	const all = { total: tva.total + s7.total + movie.total };
+	GRADES.forEach(g => { all[g] = tva[g] + s7[g] + movie[g]; });
+
+	const fmt = c =>
+		`로열 <strong>${c.royal}</strong>종 · 레전드 <strong>${c.legend}</strong>종 · 일반 <strong>${c.normal}</strong>종 ` +
+		`(총 <strong>${c.total}</strong>종)`;
 
 	$el.html(
-		`1~6기 기준 로열 <strong>${c('royal')}</strong>종 · 레전드 <strong>${c('legend')}</strong>종 · 일반 <strong>${c('normal')}</strong>종 ` +
-		`(총 ${base.length}종) + 극장판 전용 일반 <strong>${movieOnly}</strong>종 = <strong>${base.length + movieOnly}</strong>종. ` +
-		`7기는 2026년 10월 기준 공개된 개체만 함께 표시합니다.`
+		`<div>1~6기: ${fmt(tva)}</div>` +
+		`<div>7기: ${fmt(s7)} <small class="text-muted">· 2026년 10월 기준 공개 개체, 레전드(뮤즈핑·디바핑)는 추정</small></div>` +
+		`<div>극장판: ${fmt(movie)} <small class="text-muted">· 전용 ${movieExclusive}종 + 폼 변형 ${movieForm}종(사랑의 하츄핑·머메이드 하츄핑)</small></div>`
 	);
+}
+
+// 유튜브 링크 셀 (ID 없으면 '-')
+function renderYtLink(id) {
+	return id
+		? `<a href="https://youtu.be/${escHtml(id)}" target="_blank" rel="noopener">YOUTUBE</a>`
+		: '-';
 }
 
 function renderGradeTable() {
@@ -1108,7 +1289,7 @@ function renderGradeTable() {
 	const rows = getGradeRows();
 
 	if (rows.length === 0) {
-		$tbody.append('<tr><td colspan="4" class="center text-muted py-4">해당 등급의 티니핑 정보가 없습니다.</td></tr>');
+		$tbody.append('<tr><td colspan="6" class="center text-muted py-4">해당 등급의 티니핑 정보가 없습니다.</td></tr>');
 		return;
 	}
 
@@ -1119,6 +1300,8 @@ function renderGradeTable() {
 				<td data-label="등급" class="center"><span class="badge teenie-badge grade-${r.grade}">${teenieGradeLabel[r.grade].replace(' 티니핑', '')}</span></td>
 				<td data-label="기수" class="center">${r.seasonHtml}</td>
 				<td data-label="티니핑"><strong class="teenie-hover"${teenieHoverAttrs(r.name, '', r.note)}>${escHtml(r.name)}</strong></td>
+				<td data-label="소개영상" class="center link">${renderYtLink(r.intro)}</td>
+				<td data-label="MV영상" class="center link">${renderYtLink(r.mv)}</td>
 				<td data-label="비고">${noteHtml}</td>
 			</tr>
 		`);
