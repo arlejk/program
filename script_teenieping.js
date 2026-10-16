@@ -890,12 +890,10 @@ function renderMovies() {
 					const note = Array.isArray(it) ? it[1] : '';
 					return renderTeenieNameBadge(name, { note: note });
 				}).join('');
-				const noteLines = g.items
 				return `
 					<div class="mb-3">
 						<div class="mb-1"><strong>${escHtml(g.label)}</strong> <small class="text-muted">(${g.items.length})</small></div>
 						<div>${badges}</div>
-						${noteLines ? `<div>${noteLines}</div>` : ''}
 					</div>
 				`;
 			}).join('');
