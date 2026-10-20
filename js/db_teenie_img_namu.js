@@ -8,7 +8,7 @@ const teenieImagesNamu = {
 	'차차핑': 'https://i.namu.wiki/i/o85qMSn1jXrwY4nOv-2I3sWi4uvhiKZIzJv63CbKRXI5XOm_3nmBzgihPepg6thSGqz0V3MfKeu8RHKrw4Y-mNx-rb09_bhiz8ADSHJm0qZ6nI1Q4kgN86voBWGf0JWM6YDp-LClDgMGgsmdaXRCyw.webp',
 	'라라핑': 'https://i.namu.wiki/i/qsI_IfjvZREABN4ZpZFqH8D2NgFqqIX3D0tSdkJyNSQwGz_fraYZPCxfobmms-jOHz8bVrwl590_pmVdk7FZPltVnO6GISrcL9RFaWIS_zBjFcy47JDu547GpDyFX4iN7iABXaXaUh9FNUsqcW6VJw.webp',
 	'해핑': [
-		{ label: '1기 노멀', src: 'https://i.namu.wiki/i/fXApKS9_g7qvpCczZyQlg7WCGAeAm6lBygye4l2CbiYwOErSmXFFPdWjlSP_WEfQyerLtQW4bfDmU7bti8TK1fGE1hZNLgT0Lq9i2OP5CGJVb_2cd9c2hoD9pqTlHJ-p9Q77yCD8fwAueqh4LD9XDQ.webp' },
+		{ label: '1기 큐브', src: 'https://i.namu.wiki/i/fXApKS9_g7qvpCczZyQlg7WCGAeAm6lBygye4l2CbiYwOErSmXFFPdWjlSP_WEfQyerLtQW4bfDmU7bti8TK1fGE1hZNLgT0Lq9i2OP5CGJVb_2cd9c2hoD9pqTlHJ-p9Q77yCD8fwAueqh4LD9XDQ.webp' },
 		{ label: '6기 프린세스', src: 'https://i.namu.wiki/i/LcV4YGsGM-UY84S1KYqsLMRczoEk7H8IlFtrZBTMSDGOQgasbNtdoYMXwzDHxVnZHHm8edAXFSlfhbaOcouyl_n1S5hhPEnIIaV9asLKSpL2R7_bSrS31rkuYN7e6obNMYb0F4svgoGHcffwhGqifA.webp' }
 	],
 	'키키핑': 'https://i.namu.wiki/i/pVWhTlOgUw5hjy4KV626fhSBhBwisvev4cNReWWMD-0KRi7FUSQcwzyTCEMmdBLTiZvqeVXtTKIa18ZKJX7Uznh_P1DCYjnSuFf4xxSTkWi3GDkEcERC2Oop5PuOoXRv1_ukhxXLbR7vR07r_cSSZQ.webp',
@@ -104,7 +104,7 @@ const teenieImagesNamu = {
 	'베리 하츄핑': 'https://i.namu.wiki/i/tFBa4fV0mq-HCxXMuVJXPMpMHiYVRA-eZd7CLXYZJwh74guPp1D2zRx3XNVVOL4aWgu77HpTdqPT2aUSIaJlZb7A4ZI9Lz3EdGHyucpsVBzpB7U0Z_SfiJiHIx2ZALWlDMTXvcqM-b0k9nDkwrc6Tw.webp',
 	'샤샤핑': 'https://i.namu.wiki/i/o8CWm_cfJxJHvLbx6VsolaJVZLfxK_R9ZOMsiP8ILe4CIrGZfMEfvlYv_XD4y3Bp4bvlgtUsS8WZNZNUMkAXHb53EAjC1inVD7QVtbA_2a5NUhggZQeDXZQo4GR_RuQOnK1iglDwLHLSwht2u834mA.webp',
 	'포실핑': [
-		{ label: '4기 노멀', src: 'https://i.namu.wiki/i/91yYDnNPGO8gSR4GU2H7wytYCqvR-r5Yu5c6Tvr4fzMP0zUgXoAIezKBDjVbbpE6LbaH193jEh1YDpM496X6duJdoe3jb-BygIxBRQyKch7OHfwjGCn11rkA5H5_ihnATXWyb-gY3QinvX4XEQP9QA.webp' },
+		{ label: '4기 디저트', src: 'https://i.namu.wiki/i/91yYDnNPGO8gSR4GU2H7wytYCqvR-r5Yu5c6Tvr4fzMP0zUgXoAIezKBDjVbbpE6LbaH193jEh1YDpM496X6duJdoe3jb-BygIxBRQyKch7OHfwjGCn11rkA5H5_ihnATXWyb-gY3QinvX4XEQP9QA.webp' },
 		{ label: '6기 프린세스', src: 'https://i.namu.wiki/i/dI4xTb6fk_-LM9Uq3ChQzKxL_TZ-Z5Phh66ysqzf0hi-fQoJ5bCvA-HTST2QSYKhd-s5DDlUqPbN7l_Z2NFP1PI5GutuwDZmwNlGqR2dgepPUjPXcBvVH-9YIPXpdCfTOifcmD-kM7xmrMSV6sI7ag.webp' }
 	],
 	'말랑핑': 'https://i.namu.wiki/i/6VQMUDP5qzoLTmhczZaESQ2A2y_jpR5Tg-SwmixFzfNfdetmwFtDLcSHLL_ghyFIuApxZY28g5Y-d0fIOONcCHYvt3VnLVF1NWfmhHCEyKf9p-yhTGfZJ3yBz7MCfp9ZqJI9ERzLpGcwJPF8dHvqsQ.webp',
