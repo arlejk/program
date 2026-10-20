@@ -172,12 +172,12 @@ const teenieImagesNamu = {
 	'아름핑': 'https://i.namu.wiki/i/CtQYFFLiWHBoFgij9lHyeNwt3gMUziLVSdUOV5Inr29S6kKlcglXMmLmdNkidgAnp-o445VWQycsfp2fLD9a9K4mmg-6T71Z__GkPYnxEJexZUqVvrhnVl2a2JCtKd4Krx5FvyKzvQeawp9UWo63YQ.webp',
 	'뽀니핑': 'https://i.namu.wiki/i/r-hx6XVaIeOgKrUO0ycW0D9-e7Sb8jR_jbDaF9QQfV-UI5Y-GqjisjVUFBboTsblKn_dRipGqKqYBsrQqtJ3Z8k3aFKT4Yc0CbNWOInU6-kRD8jMBMvZ0tYkYR_-CSGWAokVtdHo6Zcd2aVyVFYzkA.webp',
 	'이클립스핑': [
-		{ label: '노멀', src: 'https://i.namu.wiki/i/lyg3uVt5a-Oji2bKGghRJUf2r6UIxBYEjAzSM4RAPuOI4m-RCLBCvIGp5P8CtczD886g-CqUQ0PFPsAliavxdpDYMOW1HfHBH1RlbYus5M3cUM1VKE4UmiayfO6NEPyNorE98NeIzswKH04_Pr6eKg.webp' },
+		{ label: '레전드', src: 'https://i.namu.wiki/i/lyg3uVt5a-Oji2bKGghRJUf2r6UIxBYEjAzSM4RAPuOI4m-RCLBCvIGp5P8CtczD886g-CqUQ0PFPsAliavxdpDYMOW1HfHBH1RlbYus5M3cUM1VKE4UmiayfO6NEPyNorE98NeIzswKH04_Pr6eKg.webp' },
 		{ label: '날개', src: 'https://i.namu.wiki/i/8HxuJCjg9OfPlM0CcMPAlsYecLXIykN4qZ51qXthXCdPxCvtM2ngm7ULo7WyNswZZp9XXfXzvZ1YcXwixt9OImcO3QNu2d3VY25sQRTIWthq6GUqWLrJb2N3ZLTAqZdMyznTtLy1W3YCH6-ZrAjtDg.webp' }
 	],
 	'다이아나핑': [
-		{ label: '노멀', src: 'https://i.namu.wiki/i/Eg6ojnPChhHmQNpuBe-VQZ1rLPhpGVBPrgU4NgqH_JUsnzxoELrNzOiNcz6jDnOa1esQ1tgUGFDZLRqL9V5aP_ep-l-QW4KjqIQsWqTfnuENyb8GtdJKBrictJke3E33T9NQmmpvwYZMzdqqlQ7qKA.webp' },
-		{ label: '거울봉인', src: 'https://i.namu.wiki/i/G_sqpo9YGpr0v5bWJwjUZnBgNkRCTF8yNVIufJegdSv2oFAzzDwmYG40bwwMMMIhTu90Mxse_t_Z8TUzCWkzOuYnQN-2tPP3y68PnIO7xwifNx5_inETRfqHpQWAMy8O8XEgtEhLKHo5acuGCZunqQ.webp' }
+		{ label: '레전드', src: 'https://i.namu.wiki/i/Eg6ojnPChhHmQNpuBe-VQZ1rLPhpGVBPrgU4NgqH_JUsnzxoELrNzOiNcz6jDnOa1esQ1tgUGFDZLRqL9V5aP_ep-l-QW4KjqIQsWqTfnuENyb8GtdJKBrictJke3E33T9NQmmpvwYZMzdqqlQ7qKA.webp' },
+		{ label: '거울 봉인', src: 'https://i.namu.wiki/i/G_sqpo9YGpr0v5bWJwjUZnBgNkRCTF8yNVIufJegdSv2oFAzzDwmYG40bwwMMMIhTu90Mxse_t_Z8TUzCWkzOuYnQN-2tPP3y68PnIO7xwifNx5_inETRfqHpQWAMy8O8XEgtEhLKHo5acuGCZunqQ.webp' }
 	],
 	'뽀득핑': 'https://i.namu.wiki/i/mHTA3WIKNVNd4lckcYNVBG00xsA-mykVCQYc1JbwFMyjLoqdoITGLDpjzOegrtT7MywLt-MsQtlqD9RLXLKrxMKV5eZsYJje9UApZsx8Q3FxMYA1t1FALnAI5VdYbXYRqgwZFucHxozI6AqLPDb0gg.webp',
 	'차밍핑': 'https://i.namu.wiki/i/rOhp9Afq6Or-dGh5kYXVwXpfq55MLAAh8rgoE_wQKN189M_C0luyaqVPB-oOfv8LrRy0mRceXx4z2sKwZ5LHo2_mtXIlSWAa3OJzf_MEAEac4GtbnJzABILEMe8y5qz3Z8_fj3N1VHMF5vq4DjGfwg.webp',
@@ -201,15 +201,15 @@ const teenieImagesNamu = {
 		{ label: '스테이지', src: 'https://i.namu.wiki/i/2JAXhHqUKoWZeCZCTzldOoIQ69YXrRz9K_0IGi1n27y8bph-MPwT1J5mdUz5W4diuBtlqbkfHfz9mecpRfQ7xasgjMd8VhDasEa1uSYQVwlV2jrr_dVqx6g9YqyPblPXaTvtmUTyBCMMpZlW1SRRPw.webp' }
 	],
 	'레몬핑': [
-		{ label: '데일리', src: '' },
+		{ label: '데일리', src: 'https://i.namu.wiki/i/BWzNUFU85amx7osOIxiEgyeu8jAv9U2x6SWFsWuEfU2g8y-gofFA8dfsXSkIpExkJoBF-PlHT0bOKjy1j_R7Zb9MFvg31YDlJjbrCIIA_kUurnB_A3zYiIlGZQ542u82Wl7lzn1-rPb6CEpEZvb7xg.webp' },
 		{ label: '스테이지', src: 'https://i.namu.wiki/i/oWAXvWwgBAhx9nG9nTNcxdnMCiVoKBQhMgkXTbHM88iV2ZjbYocHOq8R8DWIm_vjLLb8LfgoxUPbF3IE3tu5sUl8fs1MV1-ktYA8MYu7Z8QqkogUV5QqxdxoZvkouEebft4EdH8PTfh89zaqsuRJww.webp' }
 	],
 	'체리핑': [
-		{ label: '데일리', src: '' },
+		{ label: '데일리', src: 'https://i.namu.wiki/i/XjGmbQ_sRydvzmifGFsLwXWuxb6jiyna7vdm0kVXCou3cKfUyTNm1epCm-sZD_br26lukdghJ-Fom9xXSTkzW4B2hUUhA-KPBvV0-P0SkwzPGdPEKd-LGYaLi8t4UPN5V8V-VSvUiHXrk4tyak6wCw.webp' },
 		{ label: '스테이지', src: 'https://i.namu.wiki/i/CzRt8GWtCcrS5D-Oxvg3QSoZbgHPPautuoTaMej6nozgiXMPpImpLT7RCho-G0jGpxZQx--s6EvViYsox-gxM8WkLun1MdxvmCCPEEw2UWHp6mk7yJ61SRAtNxIc_kUN9tR4V0zaWlTEtW_pAEx8uw.webp' }
 	],
 	'라임핑': [
-		{ label: '데일리', src: '' },
+		{ label: '데일리', src: 'https://i.namu.wiki/i/_2QRcu7LKwmLF3ZPjNfLQ1pBSQkFywKi1SEGmFRvh5QOtuGUbfG_lOVRQbsvNzewPy2dk4F7UkvdxLNoyO0elhCPx80Wk3CtjqIdDysNRE31Y48AlUtFTlPvGzg6--LLRVUP-A99iSnrLhIdDEmUrA.webp' },
 		{ label: '스테이지', src: 'https://i.namu.wiki/i/Bscv4RypkTYkK5vGFSvAlqgFoQKlO4ZCHi0FCkmukiZ-JsIfHrSQ9LbVu2smnup_yshlJ5JVJVfyIVx91qGs5rF3aFoh1oLRAkhpz3KH-8rDDaKH8Q-dSVgi-wh0kA0X-mt5VFjc8vTx6S-NfRpPtQ.webp' }
 	],
 	'뮤즈핑': '',
