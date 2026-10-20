@@ -126,7 +126,7 @@ const teenieImages = {
 	'멜로핑': 'teenie_04_dessert_normal_mallow.webp',
 	'쪼꼬핑': 'teenie_04_dessert_normal_choco.webp',
 	'뿌뿌핑': [
-		{ label: '데일리', src: 'teenie_04_dessert_normal_puff.webp' },
+		{ label: '일반', src: 'teenie_04_dessert_normal_puff.webp' },
 		{ label: '각성', src: 'teenie_04_dessert_villain_puff.webp' }
 	],
 
@@ -144,7 +144,7 @@ const teenieImages = {
 	'훌라핑': 'teenie_05_star_normal_hula.webp',
 	'나눔핑': 'teenie_05_star_normal_giver.webp',
 	'딩동핑': [
-		{ label: '헬멧 쓴', src: 'teenie_05_star_normal_dingdong.webp' },
+		{ label: '일반', src: 'teenie_05_star_normal_dingdong.webp' },
 		{ label: '헬멧 벗은', src: 'teenie_05_star_normal_dingdong_makeover.webp' }
 	],
 	'나그네핑': 'teenie_05_star_normal_petit.webp',
@@ -160,7 +160,7 @@ const teenieImages = {
 	'여우핑': 'teenie_05_star_normal_allure.webp',
 	'루루핑': 'teenie_05_star_normal_doremi.webp',
 	'몰래핑': [
-		{ label: '데일리', src: 'teenie_05_star_normal_sneaky.webp' },
+		{ label: '일반', src: 'teenie_05_star_normal_sneaky.webp' },
 		{ label: '괴도 변신', src: 'teenie_05_star_normal_sneaky_makeover.webp' }
 	],
 	'뽀뽀핑': 'teenie_05_star_normal_kissy.webp',
@@ -230,12 +230,15 @@ const teenieImages = {
 	'타카핑': '',
 	
 	// 극장판 티니핑
-	'사랑의 하츄핑': 'https://i.namu.wiki/i/TdYsvT4Ft2d-QNcLuCnqWm4h354xVN1MFTEOxRlHawyg92PgUOK-TFiKBjLLl4X9SCpkWrFMZMvgYqWOFt5JJMKL48krb5KugsDjMg4MvSUpapVA8OlHq9u-Oxq3ShjV7t_I77Z8DHTdN9V90VCzVQ.webp',
-	'트러핑': 'https://i.namu.wiki/i/eSoXOD4HiAkAja79moYqW6eSHP2E8GathnkSq7iyY147imxL43Uunxwz84HPMGwfi3_dhYHvvDrnao7d46g6-QlSiQSFRcVIVa22U9Co9AQsSD3mHerEackMhfQ7EmscygzMfQvHyv9Ob3IrKdQVrA.webp',
-	'머메이드 하츄핑': 'https://i.namu.wiki/i/qceQUxFX0MsOifHMCel1-A6aCcq7CGyWjVSQw34marXKxRwdtNN6hCEzNDuMORFDXR50Ze3vmck0rW5Ha_XRie7on4A0Nv58ozp9ePUNF7C2bMwGh4OjHIEY_fdM6OmzM3oZNwkKDyLmJvce61ljOw.webp',
-	'방울핑': 'https://i.namu.wiki/i/eJwiJmwAhvLrUtEWNQe3qEyFV7IMu8OS-IHT1f7qvfyah6dFPmLrMSJAHBVtymawBau1Laj2R80XXL0YwFmSpA1Q3K9-x_f6Srx10cj3-DtZZ3Hk06dETFxzwljYGlAFSw3BfoZoejhmuvKw4nx7TA.webp',
-	'찰랑핑': 'https://i.namu.wiki/i/l9H6as0_k00MYG2xQz5KNAYVoQXBatInAipWpf3zpWgrIfr4nXS8uW2tefNwTt73LafQ1o1St4ipf8dSk6fd_Nx2y6LKmO8bY3nDgGxZF8xEXawvQMEtEDAj7LlU9mANCPiYeomTGQOa8ZUXJEcbiA.webp',
-	'소라핑': 'https://i.namu.wiki/i/h3Af-rPqTo9gNGmvI7sUCDvf8KNb-lTWjidsn5R2xXIdxw4DMjcLE4PPRrxSW6CxeZd01o0p41bb9KwdrAuwwxVnRq5te04TyWMs1bhqbdM9cfNEp7lrSfXNuLAN_o9DYfHpxtarpFVM-R3pldFEtg.webp'
+	'사랑의 하츄핑': 'teenie_movie_01_normal_heart.webp',
+	'트러핑': [
+		{ label: '일반', src: '' },
+		{ label: '흑화', src: 'teenie_movie_01_villain_truth.webp' }
+	],
+	'머메이드 하츄핑': 'teenie_movie_02_royal_heart.webp',
+	'방울핑': 'teenie_movie_02_sea_normal_bubble.webp',
+	'찰랑핑': 'teenie_movie_02_sea_normal_wavy.webp',
+	'소라핑': 'teenie_movie_02_sea_normal_shelly.webp'
 };
 
 const TEENIE_IMG_DIR = './img/';   // teenieping.html 기준 상대 경로 (js 폴더 기준이 아님)

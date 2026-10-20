@@ -126,7 +126,7 @@ const teenieImagesNamu = {
 	'멜로핑': 'https://i.namu.wiki/i/QcDd10kj5lkBz19msQdDWMwsDyAnlTtnY8_s8Bl64R4GxO2VZgjfWY2dtoIfIuslXeSES6iPT5zcYzsCjKUn6plrDo6LjbzhkJBdJmuHaM1mwitdPX-6tIONKgNFp1RO7_999Hj4kMWcCKgiqUAjhg.webp',
 	'쪼꼬핑': 'https://i.namu.wiki/i/54ZaAhVMyWq7q-inTbShIg5OCJKhoO6QE3yUczBoNWfcyNIJi0vNSLeiHoAYIlWkO9Luz49KPCGsKOud97fgzvEmX6O5CP6WmxrfegrrPzDSfoHPF4F3uTEPLw85-fdMtErFrn-OegKyPG-THhr5Pg.webp',
 	'뿌뿌핑': [
-		{ label: '데일리', src: 'https://i.namu.wiki/i/mfPaeKOtEUdfnfH71gm9pfyMT_eW1jr-gqdHAaN6lgH8SFGpmAW_BFB9hEhJ8gAP9Q7EcxdIB0lsqhT84xrmsrmH6jA11RoSyBUZKrLwwS4XZIu4KfcSawxUAE5rm2qyw_qHLHv1vfTWDEr4B8Im7w.webp' },
+		{ label: '일반', src: 'https://i.namu.wiki/i/mfPaeKOtEUdfnfH71gm9pfyMT_eW1jr-gqdHAaN6lgH8SFGpmAW_BFB9hEhJ8gAP9Q7EcxdIB0lsqhT84xrmsrmH6jA11RoSyBUZKrLwwS4XZIu4KfcSawxUAE5rm2qyw_qHLHv1vfTWDEr4B8Im7w.webp' },
 		{ label: '각성', src: 'https://i.namu.wiki/i/BcUSWUpvsF-RL_CojhO4vGEnjfumuQGeyVBeQpdwf-flFE0hT_D6AohC_OdB1V4A9xLHDZtmu8I27E8wtV4L8Q8h_d8kJnV0jiReYlNBmVP1Nrtgd3heHKkbOMZqoVoUm5Cbo3Pdcc8wJZDO-UOsFg.webp' }
 	],
 
@@ -144,7 +144,7 @@ const teenieImagesNamu = {
 	'훌라핑': 'https://i.namu.wiki/i/rLkKn3SEAi-axrCMFd-8sXBwcbwrlDWlmCkL9lTu62JhkOraCAu___EPR3XMUyxpr3eb2ws08JZw1CUG9vbDFbmrmD4kLf3aG2SS20894mTHbJ_4fL0h3lOxPiXQ3DWXpt2W1Gt12LenxksUPtb51Q.webp',
 	'나눔핑': 'https://i.namu.wiki/i/35DDQ7EavsiSUvtj0EA60l1QfjKWoefNCsY3dWyZHhfTQ64ww-7c4IuRyMwU8QrTszn65fOUgW1M0O7Pg6nTJMCcIbOpltZ0YcWGsB2FSwKqbz0P7VhBBsMU8Lyb4SJFlofQYTU1jF9RpNBiSQgsjw.webp',
 	'딩동핑': [
-		{ label: '헬멧 쓴', src: 'https://i.namu.wiki/i/ZY6_7pPcOn-fj9kNryh5J02KnLAIjMckdLt2CltPKSwoPF1BADw5EnxP5F-7L8mTas5BE7QfzeSRexiY4LJ2BcLUg_nbCSrEpvgsvyQeUF0rrjIZXSPRuXan4Sc2tqHm2V6b_nGav5ikpOERhD9juA.webp' },
+		{ label: '일반', src: 'https://i.namu.wiki/i/ZY6_7pPcOn-fj9kNryh5J02KnLAIjMckdLt2CltPKSwoPF1BADw5EnxP5F-7L8mTas5BE7QfzeSRexiY4LJ2BcLUg_nbCSrEpvgsvyQeUF0rrjIZXSPRuXan4Sc2tqHm2V6b_nGav5ikpOERhD9juA.webp' },
 		{ label: '헬멧 벗은', src: 'https://i.namu.wiki/i/yXN14JGBqPWGw8_nSMCj6Fwbcj0MZyM65aPi7SfqxFrdQKVcmsp-6WSuSc5SK0TOoxOkdx6swtS0AFAJnW3WMiAPq9-6S2aSKnOORBZRIUv-_DK7M3wn5c3MVa4yiXS6rv8FU8dCgV_doNgRq6cMOg.webp' }
 	],
 	'나그네핑': 'https://i.namu.wiki/i/eGNIgB87LyrXLipPlxrttpfND5K7Rne2CGgDD6HzQ5NqwGCRXRXjtlHzWsSFI-X9C6HHKhoWrjt2_V26JaWanULrmr6T2hkY6TFeUfuwNiXmzX4BAfclJ2lC2JinvUjyeDV0jTHTyDeZj4Hx0CSXoQ.webp',
@@ -160,7 +160,7 @@ const teenieImagesNamu = {
 	'여우핑': 'https://i.namu.wiki/i/jGM8tFkLEY-thUei33FzAHJ0fNabPxAkPVbMadsuh-6hyKtU3KaciR5y_s2z7M2UxXBFBC--6n0bdUY3sIkzxONoE-mfvnWshKf8mEOY0m4ArEz5fQtpDCxCpykobhNTrQkB7CRzR6YpMFt-4W38Cw.webp',
 	'루루핑': 'https://i.namu.wiki/i/QMcOojS_3J1-5oZ1uOA9FZivtm2ek-3dIc6czRN02F_tlfQol8Vy66y4KJLafgbSO3WG0OYhFzBXjPi32HPR-OvObiFy0qR0DVmhIeMFHu6d77BoyieKuqcnZbjuNC6fuMJgmf0x7SYzadbbIrKy3w.webp',
 	'몰래핑': [
-		{ label: '데일리', src: 'https://i.namu.wiki/i/TKUZJFLUsj95rySDjKq49Q-4_2xKvWf3wb__UzlNgS780b_SF3XBn0ep5xC7fcBCNIV7yAyvlTtWKFkTFE3mdmLbwaOuE4vQeOYHeXhsTT_jm-hUPIrGcJpaoY_11dWTLyS1BYVSjJTFg4kG37XwpA.webp' },
+		{ label: '일반', src: 'https://i.namu.wiki/i/TKUZJFLUsj95rySDjKq49Q-4_2xKvWf3wb__UzlNgS780b_SF3XBn0ep5xC7fcBCNIV7yAyvlTtWKFkTFE3mdmLbwaOuE4vQeOYHeXhsTT_jm-hUPIrGcJpaoY_11dWTLyS1BYVSjJTFg4kG37XwpA.webp' },
 		{ label: '괴도 변신', src: 'https://i.namu.wiki/i/irXqRp3FfGYqVqTUILVfaDHiYkPBTHfe4U1y45xuNwVeAe4mHYAuvfdgXzFALXFKucRDKweP4AFsYtqQmmH54UkUp8Vw_1T0tZKHgWGyJrKb2mFVwvluTRs2KOe1V-Zn4uMZGOGl4HpakQyo0fOvSg.webp' }
 	],
 	'뽀뽀핑': 'https://i.namu.wiki/i/9bvC9YnjKZSRzW37wwh4y3edSwOz_fA2HHNsjXSGpt6JESNpO4anmbfVDSrtjm1_Dx0o8VgxZu42qnIXk6ibpOlPMy-ZfIRRnYzKDyWL6aYdMe3Z0TFMsrlXdsIKjuD1o3f4hPqILFbWFyBUinnVkA.webp',
@@ -231,7 +231,10 @@ const teenieImagesNamu = {
 	
 	// 극장판 티니핑
 	'사랑의 하츄핑': 'https://i.namu.wiki/i/TdYsvT4Ft2d-QNcLuCnqWm4h354xVN1MFTEOxRlHawyg92PgUOK-TFiKBjLLl4X9SCpkWrFMZMvgYqWOFt5JJMKL48krb5KugsDjMg4MvSUpapVA8OlHq9u-Oxq3ShjV7t_I77Z8DHTdN9V90VCzVQ.webp',
-	'트러핑': 'https://i.namu.wiki/i/eSoXOD4HiAkAja79moYqW6eSHP2E8GathnkSq7iyY147imxL43Uunxwz84HPMGwfi3_dhYHvvDrnao7d46g6-QlSiQSFRcVIVa22U9Co9AQsSD3mHerEackMhfQ7EmscygzMfQvHyv9Ob3IrKdQVrA.webp',
+	'트러핑': [
+		{ label: '일반', src: '' },
+		{ label: '흑화', src: 'https://i.namu.wiki/i/eSoXOD4HiAkAja79moYqW6eSHP2E8GathnkSq7iyY147imxL43Uunxwz84HPMGwfi3_dhYHvvDrnao7d46g6-QlSiQSFRcVIVa22U9Co9AQsSD3mHerEackMhfQ7EmscygzMfQvHyv9Ob3IrKdQVrA.webp' }
+	],
 	'머메이드 하츄핑': 'https://i.namu.wiki/i/qceQUxFX0MsOifHMCel1-A6aCcq7CGyWjVSQw34marXKxRwdtNN6hCEzNDuMORFDXR50Ze3vmck0rW5Ha_XRie7on4A0Nv58ozp9ePUNF7C2bMwGh4OjHIEY_fdM6OmzM3oZNwkKDyLmJvce61ljOw.webp',
 	'방울핑': 'https://i.namu.wiki/i/eJwiJmwAhvLrUtEWNQe3qEyFV7IMu8OS-IHT1f7qvfyah6dFPmLrMSJAHBVtymawBau1Laj2R80XXL0YwFmSpA1Q3K9-x_f6Srx10cj3-DtZZ3Hk06dETFxzwljYGlAFSw3BfoZoejhmuvKw4nx7TA.webp',
 	'찰랑핑': 'https://i.namu.wiki/i/l9H6as0_k00MYG2xQz5KNAYVoQXBatInAipWpf3zpWgrIfr4nXS8uW2tefNwTt73LafQ1o1St4ipf8dSk6fd_Nx2y6LKmO8bY3nDgGxZF8xEXawvQMEtEDAj7LlU9mANCPiYeomTGQOa8ZUXJEcbiA.webp',
