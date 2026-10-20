@@ -9,7 +9,7 @@ const teenieImages = {
 	'라라핑': 'teenie_01_cube_royal_lala.webp',
 	'해핑': [
 		{ label: '1기 큐브', src: 'teenie_01_cube_royal_happy.webp' },
-		{ label: '6기 프린세스', src: 'https://i.namu.wiki/i/LcV4YGsGM-UY84S1KYqsLMRczoEk7H8IlFtrZBTMSDGOQgasbNtdoYMXwzDHxVnZHHm8edAXFSlfhbaOcouyl_n1S5hhPEnIIaV9asLKSpL2R7_bSrS31rkuYN7e6obNMYb0F4svgoGHcffwhGqifA.webp' }
+		{ label: '6기 프린세스', src: 'teenie_06_princess_royal_happy.webp' }
 	],
 	'키키핑': 'teenie_01_cube_normal_kiki.webp',
 	'아잉핑': 'teenie_01_cube_normal_charm.webp',
@@ -105,7 +105,7 @@ const teenieImages = {
 	'샤샤핑': 'teenie_04_dessert_royal_shasha.webp',
 	'포실핑': [
 		{ label: '4기 디저트', src: 'teenie_04_dessert_royal_fluffy.webp' },
-		{ label: '6기 프린세스', src: 'https://i.namu.wiki/i/dI4xTb6fk_-LM9Uq3ChQzKxL_TZ-Z5Phh66ysqzf0hi-fQoJ5bCvA-HTST2QSYKhd-s5DDlUqPbN7l_Z2NFP1PI5GutuwDZmwNlGqR2dgepPUjPXcBvVH-9YIPXpdCfTOifcmD-kM7xmrMSV6sI7ag.webp' }
+		{ label: '6기 프린세스', src: 'teenie_06_princess_royal_fluffy.webp' }
 	],
 	'말랑핑': 'teenie_04_dessert_royal_jelly.webp',
 	'새콤핑': 'teenie_04_dessert_legend_tangy.webp',
@@ -120,24 +120,27 @@ const teenieImages = {
 	'핫케핑': 'teenie_04_dessert_normal_pancake.webp',
 	'커핑': 'teenie_04_dessert_normal_cup.webp',
 	'머핑': 'teenie_04_dessert_normal_muff.webp',
-	'요거핑': 'https://i.namu.wiki/i/ymIDwrTF7Omr6-qxctZu7uO3YLvk5qnqjCYGA3dmzcvUdm9zZC9nT--icYyyXwIxZhaD_V2NrHVomwz_FrCOJaL6eVK2oGMego3J4zauOAAIgUeYp6zsTQz9xy6h0efBbESo6GgWhQve_ClQSNTC2w.webp',
-	'눈꽃핑': 'https://i.namu.wiki/i/Ya9o8AkDJ6wGnzyVeCcWBZzZ8ckLTFECVHZB2qmHOHDNO0Jg6U2ZD4AAN5g3lFQhQKD3uaW2VFKCymroHT4YNGFx2L79BPQ6XoyewyBLZzd5VP5-c9nwPsgadXYaftnJqhKqiVbSxlyBTSPZYc2rZA.webp',
-	'푸딩핑': 'https://i.namu.wiki/i/SluXVNsmwipM3esk5T1vP8ZbTOrxb6TuCIB9c2I4dVuzFUph5_5qbIXO3Qsc9nxSPSv-rP9j_RSQUytqpfiEJGtrTB9qNIqVEDUQFcqO1fxduGN2e8BCLJOOjxlS7Oy2xjySw80q-1Eqg-51FR6kBw.webp',
-	'멜로핑': 'https://i.namu.wiki/i/QcDd10kj5lkBz19msQdDWMwsDyAnlTtnY8_s8Bl64R4GxO2VZgjfWY2dtoIfIuslXeSES6iPT5zcYzsCjKUn6plrDo6LjbzhkJBdJmuHaM1mwitdPX-6tIONKgNFp1RO7_999Hj4kMWcCKgiqUAjhg.webp',
-	'쪼꼬핑': 'https://i.namu.wiki/i/54ZaAhVMyWq7q-inTbShIg5OCJKhoO6QE3yUczBoNWfcyNIJi0vNSLeiHoAYIlWkO9Luz49KPCGsKOud97fgzvEmX6O5CP6WmxrfegrrPzDSfoHPF4F3uTEPLw85-fdMtErFrn-OegKyPG-THhr5Pg.webp',
+	'요거핑': 'teenie_04_dessert_normal_yogurt.webp',
+	'눈꽃핑': 'teenie_04_dessert_normal_iceflake.webp',
+	'푸딩핑': 'teenie_04_dessert_normal_pudding.webp',
+	'멜로핑': 'teenie_04_dessert_normal_mallow.webp',
+	'쪼꼬핑': 'teenie_04_dessert_normal_choco.webp',
 	'뿌뿌핑': [
-		{ label: '데일리', src: 'https://i.namu.wiki/i/mfPaeKOtEUdfnfH71gm9pfyMT_eW1jr-gqdHAaN6lgH8SFGpmAW_BFB9hEhJ8gAP9Q7EcxdIB0lsqhT84xrmsrmH6jA11RoSyBUZKrLwwS4XZIu4KfcSawxUAE5rm2qyw_qHLHv1vfTWDEr4B8Im7w.webp' },
-		{ label: '각성', src: 'https://i.namu.wiki/i/BcUSWUpvsF-RL_CojhO4vGEnjfumuQGeyVBeQpdwf-flFE0hT_D6AohC_OdB1V4A9xLHDZtmu8I27E8wtV4L8Q8h_d8kJnV0jiReYlNBmVP1Nrtgd3heHKkbOMZqoVoUm5Cbo3Pdcc8wJZDO-UOsFg.webp' }
+		{ label: '데일리', src: 'teenie_04_dessert_normal_puff.webp' },
+		{ label: '각성', src: 'teenie_04_dessert_villain_puff.webp' }
 	],
 
 	// 5기 스타 티니핑
-	'스타 하츄핑': 'https://i.namu.wiki/i/Na2w87fCY-RBCSaMqNF0WeKO_gHgvamlUnIK6C0ZX20AY3098_3UOOiyU1DNhxgobEESeqD_HxNADgqwG5ZxcCSBTWC-lxHzbIYX6lO5lSpMIGIT6_eWePXwZfKMumYCaeSUKQ5TkqT2z7ZvsvCkOA.webp',
-	'빛나핑': 'https://i.namu.wiki/i/L2AYtS3GwgD_8_3nGfmOJbs3_C6R9kEUGr1j34k3t5OhGiQRSlWJiBAICgrH7ypmtI3x78j8SMVDNRsIgvvgrGWXdTSLuvdfW-J8WZU2GG_neFOG5nsp3cKlo4RVAmaS-sgei0SF8HuivD-iHSEViA.webp',
-	'초롱핑': 'https://i.namu.wiki/i/tnBUC-dyamp4Ge4sH3_13Ie98vTrvbm68hexH-F7TqNr7lPEJfiSMddHkbjN3B96A4x6parRooPX7Lgj1vAOHg_H3IzCOFJZC5jrJh0xCf2HMgmde26VZYLwWn718BbQuzdn8zZMOmAoh-BsD9vz0A.webp',
-	'빤짝핑': 'https://i.namu.wiki/i/qQY78DaDyjQ1V8Iq_6xBPTGJRzWfpCwGOy1-tA1dZTV6DGtIKjKoK8YX_m1_2K_OR93v3mSwzv9nd9FA_jV8huxdWzpkQg_fA9-F67wvQx6DqYQ_xMGOfN59MElX7e0i35FyW25fnHm8ls6L9HJGIQ.webp',
-	'왕자핑': 'https://i.namu.wiki/i/SQ29tWYtjADmTlfKZb69-Kd3t4eshMR3FLuR9svJlxivqsB_nlRHIn8CbSvif4DT7HIckVB_F6pLTt_bLC1yxwqnhQ-BbSRX_-vO-WtQUjgAooXQ2NdwPQy-aTavgbGxbkdKntv-xgH2GF_OCBvBOw.webp',
-	'오로라핑': 'https://i.namu.wiki/i/70Uxe8oE000dipBQOcs0efyVOwqX2paMvwVh3aE70fxHEs7ISM6C1A0HVW13S5ZPMzTeBw_zArnAlAzcDU1CijUBhgCAeG7TvS8yn77jTrl5_ORtpY6R0jOkzSEjfpDLoStpNV9nBdpySbih_hcVlw.webp',
-	'깡총핑': 'https://i.namu.wiki/i/iXIaYfwyhfTCA1uOepJ_GKD0ksEKfG2Dx-qM1OD8qazABsHtkmQQSH3CUrQxWG3lSQ-OgsuEOuJEt_z4CrU61cOs19ESUgL3QsIlYk0u1K0vAS6I4c05OnO4HmY_AC6oLk7MJ1Z2N3MJN7_OLkZe_A.webp',
+	'스타 하츄핑': 'teenie_05_star_royal_heart.webp',
+	'빛나핑': 'teenie_05_star_royal_shimmer.webp',
+	'초롱핑': 'teenie_05_star_royal_sparkle.webp',
+	'빤짝핑': 'teenie_05_star_royal_twinkle.webp',
+	'왕자핑': 'teenie_05_star_royal_prince.webp',
+	'오로라핑': 'teenie_05_star_legend_aurora.webp',
+	'깡총핑': [
+		{ label: '5기 스타', src: 'teenie_05_star_normal_hop.webp' },
+		{ label: '6기 프린세스', src: 'teenie_06_princess_normal_hop.webp' }
+	],
 	'훌라핑': 'https://i.namu.wiki/i/rLkKn3SEAi-axrCMFd-8sXBwcbwrlDWlmCkL9lTu62JhkOraCAu___EPR3XMUyxpr3eb2ws08JZw1CUG9vbDFbmrmD4kLf3aG2SS20894mTHbJ_4fL0h3lOxPiXQ3DWXpt2W1Gt12LenxksUPtb51Q.webp',
 	'나눔핑': 'https://i.namu.wiki/i/35DDQ7EavsiSUvtj0EA60l1QfjKWoefNCsY3dWyZHhfTQ64ww-7c4IuRyMwU8QrTszn65fOUgW1M0O7Pg6nTJMCcIbOpltZ0YcWGsB2FSwKqbz0P7VhBBsMU8Lyb4SJFlofQYTU1jF9RpNBiSQgsjw.webp',
 	'딩동핑': 'https://i.namu.wiki/i/ZY6_7pPcOn-fj9kNryh5J02KnLAIjMckdLt2CltPKSwoPF1BADw5EnxP5F-7L8mTas5BE7QfzeSRexiY4LJ2BcLUg_nbCSrEpvgsvyQeUF0rrjIZXSPRuXan4Sc2tqHm2V6b_nGav5ikpOERhD9juA.webp',

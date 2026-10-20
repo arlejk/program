@@ -137,7 +137,10 @@ const teenieImagesNamu = {
 	'빤짝핑': 'https://i.namu.wiki/i/qQY78DaDyjQ1V8Iq_6xBPTGJRzWfpCwGOy1-tA1dZTV6DGtIKjKoK8YX_m1_2K_OR93v3mSwzv9nd9FA_jV8huxdWzpkQg_fA9-F67wvQx6DqYQ_xMGOfN59MElX7e0i35FyW25fnHm8ls6L9HJGIQ.webp',
 	'왕자핑': 'https://i.namu.wiki/i/SQ29tWYtjADmTlfKZb69-Kd3t4eshMR3FLuR9svJlxivqsB_nlRHIn8CbSvif4DT7HIckVB_F6pLTt_bLC1yxwqnhQ-BbSRX_-vO-WtQUjgAooXQ2NdwPQy-aTavgbGxbkdKntv-xgH2GF_OCBvBOw.webp',
 	'오로라핑': 'https://i.namu.wiki/i/70Uxe8oE000dipBQOcs0efyVOwqX2paMvwVh3aE70fxHEs7ISM6C1A0HVW13S5ZPMzTeBw_zArnAlAzcDU1CijUBhgCAeG7TvS8yn77jTrl5_ORtpY6R0jOkzSEjfpDLoStpNV9nBdpySbih_hcVlw.webp',
-	'깡총핑': 'https://i.namu.wiki/i/iXIaYfwyhfTCA1uOepJ_GKD0ksEKfG2Dx-qM1OD8qazABsHtkmQQSH3CUrQxWG3lSQ-OgsuEOuJEt_z4CrU61cOs19ESUgL3QsIlYk0u1K0vAS6I4c05OnO4HmY_AC6oLk7MJ1Z2N3MJN7_OLkZe_A.webp',
+	'깡총핑': [
+		{ label: '5기 스타', src: 'https://i.namu.wiki/i/iXIaYfwyhfTCA1uOepJ_GKD0ksEKfG2Dx-qM1OD8qazABsHtkmQQSH3CUrQxWG3lSQ-OgsuEOuJEt_z4CrU61cOs19ESUgL3QsIlYk0u1K0vAS6I4c05OnO4HmY_AC6oLk7MJ1Z2N3MJN7_OLkZe_A.webp' },
+		{ label: '6기 프린세스', src: 'https://i.namu.wiki/i/WKR1v4fuDXYL1Nw9_v5yJdlpxB7G2BcIjleDaCUhUC9xVtChjK7NIWvfN8soSXeedK2h8NnRDJOgS_rjB51c1zZHVBGVIXc027cXoCPUXtoUTyUlsgf_ovBdfTTUkFaIzW_WGl6T-2uiIe5qFoVn7g.webp' }
+	],
 	'훌라핑': 'https://i.namu.wiki/i/rLkKn3SEAi-axrCMFd-8sXBwcbwrlDWlmCkL9lTu62JhkOraCAu___EPR3XMUyxpr3eb2ws08JZw1CUG9vbDFbmrmD4kLf3aG2SS20894mTHbJ_4fL0h3lOxPiXQ3DWXpt2W1Gt12LenxksUPtb51Q.webp',
 	'나눔핑': 'https://i.namu.wiki/i/35DDQ7EavsiSUvtj0EA60l1QfjKWoefNCsY3dWyZHhfTQ64ww-7c4IuRyMwU8QrTszn65fOUgW1M0O7Pg6nTJMCcIbOpltZ0YcWGsB2FSwKqbz0P7VhBBsMU8Lyb4SJFlofQYTU1jF9RpNBiSQgsjw.webp',
 	'딩동핑': 'https://i.namu.wiki/i/ZY6_7pPcOn-fj9kNryh5J02KnLAIjMckdLt2CltPKSwoPF1BADw5EnxP5F-7L8mTas5BE7QfzeSRexiY4LJ2BcLUg_nbCSrEpvgsvyQeUF0rrjIZXSPRuXan4Sc2tqHm2V6b_nGav5ikpOERhD9juA.webp',
