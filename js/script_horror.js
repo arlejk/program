@@ -2026,6 +2026,19 @@ window.programData = {
 				{ storyteller: "천둥", title: "비방의 대가", link: "https://youtu.be/OItscnW594s", candles: 40, isWin: true, isFullCandles: false },
 				{ storyteller: "김호영", title: "두 아들", link: "https://youtu.be/dguZrpQ4We4", candles: 38, isWin: false, isFullCandles: false }
 			]
+		},
+		{
+			season: "시즌 6",
+			broadcaster: "MBC",
+			year: "2026",
+			otts: ["WAVVE"],
+			epNum: "17",
+			guests: ["임철수"],
+			stories: [
+				{ storyteller: "김아영", title: "손톱", link: "https://youtu.be/vjsB-g4lWfQ", candles: 37, isWin: true, isFullCandles: false },
+				{ storyteller: "김호영", title: "라스트 오더", link: "https://youtu.be/CCTan6V9dZQ", candles: 36, isWin: false, isFullCandles: false },
+				{ storyteller: "임철수", title: "낙원", link: "https://youtu.be/ps0IL5oTfkE", candles: 36, isWin: false, isFullCandles: false }
+			]
 		}
     ]
 };
