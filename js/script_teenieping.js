@@ -558,8 +558,8 @@ const teenieMovies = [
 				label: '애니메이션 시리즈에도 등장 — 일반 티니핑 시절의 티니핑',
 				items: [
 					{ name: '하츄핑', form: '사랑의 하츄핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑', grade: 'normal', inGrade: true, intro: '', mv: '' },
-					{ name: '라라핑', form: '일반 라라핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑, 몬스터 라라핑으로 변신', grade: 'normal', inGrade: false },
-					{ name: '해핑', form: '일반 해핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑, 몬스터 해핑으로 변신', grade: 'normal', inGrade: false }
+					{ name: '라라핑', form: '몬스터 라라핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑, 몬스터 라라핑으로 변신', grade: 'normal', inGrade: false },
+					{ name: '해핑', form: '몬스터 해핑', note: '극장판 1기 한정으로 로열핑이 되기 전 일반 티니핑, 몬스터 해핑으로 변신', grade: 'normal', inGrade: false }
 				]
 			},
 			{
@@ -763,7 +763,7 @@ function renderPrincessBadge(p) {
 	if (p.note) noteParts.push(p.note);
 
 	const esc = s => String(s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-	const imgOf = v => {
+	/* const imgOf = v => {
 		const nm = (typeof teeniePrincessNamu !== 'undefined')
 			? teeniePrincessNamu.find(x => x.name === v.name && x.season === v.season) : null;
 		const local = _teenieImgUrl(v.img);
@@ -773,7 +773,11 @@ function renderPrincessBadge(p) {
 			src: local || namu,
 			fallback: (local && namu && local !== namu) ? namu : ''
 		};
-	};
+	}; */
+	const imgOf = v => ({
+		label: v.label || (multi ? v.season + '기' : ''),
+		src: _teenieImgUrl(v.img)
+	});
 	const imgs = (multi ? variants : [p]).map(imgOf).filter(i => i.src);
 	const attrs = ` data-tip-name="${esc(p.name)}" data-tip-imgs="${esc(JSON.stringify(imgs))}" data-tip-note="${esc(noteParts.join(' · '))}"`;
 

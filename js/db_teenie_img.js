@@ -231,6 +231,8 @@ const teenieImages = {
 	
 	// 극장판 티니핑
 	'사랑의 하츄핑': 'teenie_movie_01_normal_heart.webp',
+	'몬스터 라라핑': 'teenie_movie_01_monster_lala.webp',
+	'몬스터 해핑': 'teenie_movie_01_monster_happy.webp',
 	'트러핑': [
 		{ label: '일반', src: '' },
 		{ label: '흑화', src: 'teenie_movie_01_villain_truth.webp' }
