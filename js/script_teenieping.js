@@ -28,7 +28,7 @@ const teenieSeasonMeta = {
 		stream: { label: 'DISNEY+', url: 'https://www.disneyplus.com/ko-kr/browse/entity-d5413ef2-3233-4bf8-8d3c-2cfa8a0653e1' }
 	},
 	7: {
-		label: '7기', title: '쥬얼스타 캐치! 티니핑', theme: '쥬얼스타 티니핑', year: '2026', offset: 182,
+		label: '7기', title: '쥬얼스타 캐치! 티니핑', theme: '스테이지 티니핑', year: '2026', offset: 182,
 		desc: '2026년 10월 기준 공개된 개체는 대부분 동물 모티프. 로열 티니핑 전원이 폼 체인지를 하며, 티니핑 본인이 직접 변신하는 시스템이다.',
 		caveat: '※ 2026년 10월 기준 공개된 정보이며, 레전드 티니핑(뮤즈핑·디바핑)은 추정입니다.'
 	}
