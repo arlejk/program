@@ -24,7 +24,8 @@ const teenieSeasonMeta = {
 	},
 	6: {
 		label: '6기', title: '프린세스 캐치! 티니핑', theme: '프린세스&프린스 티니핑', year: '2025', offset: 156,
-		desc: '공주·왕자를 모티브로 만들어진 티니핑으로, 각자 특정 나라의 공주·왕자 역할을 맡는다. 성별에 따라 프린세스/프린스로 구분한 첫 시즌이다.'
+		desc: '공주·왕자를 모티브로 만들어진 티니핑으로, 각자 특정 나라의 공주·왕자 역할을 맡는다. 성별에 따라 프린세스/프린스로 구분한 첫 시즌이다.',
+		stream: { label: 'DISNEY+', url: 'https://www.disneyplus.com/ko-kr/browse/entity-d5413ef2-3233-4bf8-8d3c-2cfa8a0653e1' }
 	},
 	7: {
 		label: '7기', title: '쥬얼스타 캐치! 티니핑', theme: '쥬얼스타 티니핑', year: '2026', offset: 182,
@@ -1045,7 +1046,9 @@ function renderEpisodeTable() {
 		// 3) 스트리밍 링크 (공식 유튜브)
 		const ottHtml = ep.yt
 			? `<a href="https://youtu.be/${escHtml(ep.yt)}" target="_blank" rel="noopener" class="me-1">YOUTUBE</a>`
-			: '-';
+			: (ep.title && meta.stream)
+				? `<a href="${escHtml(meta.stream.url)}" target="_blank" rel="noopener" class="me-1">${escHtml(meta.stream.label)}</a>`
+				: '-';
 
 		// 4) 에피소드 + 누적 회차 + 제목
 		const titleHtml = ep.title
