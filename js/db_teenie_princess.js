@@ -72,41 +72,41 @@ const teeniePrincess = [
 	{ season: 5, name: '프린세스 오로라', partner: '오로라핑', keys: ['오로라핑'], first: '5기 26화', grade: 'legend',
 		img: 'teenie_05_star_legend_princess_aurora.webp' },
 
-	// ---------- 6기 (보니타·판타나·루미너스·다크니스 이미지는 아직 확보하지 못함) ----------
+	// ---------- 6기 ----------
 	{ season: 6, name: '프린세스 팬시하트', partner: '프린세스 하츄핑', keys: ['프린세스 하츄핑'], first: '6기 1화',
-		img: 'https://i.namu.wiki/i/UyC8kmo41Rjw7H7CCrKgzfY0vDXgOv-tJpDWW8Z3O2kS4w06b2j4nZYhTHh8St7wypUKYXgr2jjK-1z-ikRKXDfmkDtW1-6Ulfy0ZK9D3bEEuXhPGiKQbT_hnd6QBM-vLC8hz-yfYCZvm7tJ4zb53w.webp' },
+		img: 'teenie_06_princess_royal_princess_fancyheart.webp' },
 	{ season: 6, name: '프린세스 쁠리에', partner: '사뿐핑', keys: ['사뿐핑'], first: '6기 3화',
-		img: 'https://i.namu.wiki/i/H02_1WSS17JwiKhfe7ronOFvvSWmbLXSgmwG-PwaSKrY8YP4vSqsxvlVD0beS8hufvdsOvtVs4dMm3V7FCx0B4azJ1YSwH9B94QB5gOCR3N8hyFi4-gWIpNskLyICXaSiSAvTcldPkLNc-beuHK1kA.webp' },
+		img: 'teenie_06_princess_royal_princess_plie.webp' },
 	{ season: 6, name: '프린세스 보니타', partner: '뽀니핑', keys: ['뽀니핑'], first: '6기 4화',
-		img: 'https://i.namu.wiki/i/Y9vOH4coo2OA2PLPj4wiMdjck0V1ZVIlO5tynjsMHOe_YW3f1OjupMuKhCbxgDOSO1gJUBUo__1K8avpkNarw35WtTfnxfdZ2srwK1MExj-AQcKgAiQ0ZDlWUEUxemGK38nBfras9H2vTWznrhXhaw.webp' },
+		img: 'teenie_06_princess_royal_princess_bonita.webp' },
 	{ season: 6, name: '프린세스 판타나', partner: '아름핑', keys: ['아름핑'], first: '6기 5화',
-		img: 'https://i.namu.wiki/i/y_99qiH5uHD2OrVtOK6O2-HdJWRwtMGfgAaWzOTOu8DyG7IFEFOHlH3ARP3QeFkWyyyaeZTNyGJOFIccAQ4sNKByrJB7j_R2eugPJGc4UBCJdc8GSAMrnZG5QonOb2cindtPIOwi1DXNRhqXZ8qjqQ.webp' },
+		img: 'teenie_06_princess_royal_princess_fantana.webp' },
 	{ season: 6, name: '프린세스 루미너스', partner: '다이아나핑', keys: ['다이아나핑'], first: '6기 26화', grade: 'legend',
-		img: 'https://i.namu.wiki/i/U5Xnkysrgnff05Sgg5xpXWi8L2_Ftc5Lkn0mFLL59vqVjuja2NZujp6Tqduy_KNiRWJcoCEKqvrV1TwmpDL3TIYirkDb7k6-6h9CHzNsEUAZAc_fmAet_1FKxIdEbIl_huryi1LysbA0dHYJZfTh9Q.webp' },
+		img: 'teenie_06_princess_legend_princess_luminous.webp' },
 	{ season: 6, name: '프린세스 다크니스', partner: '이클립스핑', keys: ['이클립스핑'], first: '6기 26화', grade: 'legend',
-		img: 'https://i.namu.wiki/i/f3uU0WcFbP6DLRwFNZ4Pw00mugaIdZQUFIvGOisIP6u2XAVRmwD1lWVlzKn-AZPzVwfkIuuwKxZTy2yS9UUUdgMeSDTlc7efdhCVSZ_avvbbCOhNyx7S0DUd6D1-_Q-ZiwQvUlhQo8cnGk7d73lqcQ.webp' },
+		img: 'teenie_06_princess_legend_princess_darkness.webp' },
 
-	// ---------- 7기 (이미지 미확보) ----------
+	// ---------- 7기 ----------
 	{ season: 7, name: '프린세스 비바하트', partner: '??? 하츄핑', keys: ['??? 하츄핑'],
-		img: 'https://i.namu.wiki/i/Ve0k3lCm29mnuSHEXgSZsCWmYywJRU83-Rh_HJxdMV6bpdQsKQ-Url9ui1nwCweNd9MPhqcVfL_v-fECSRmxfpUaHl-IsG7Nnk4GK0cjlYTJYZly03nCh0vB0_OQvyufZxvyTIUQmhFLYGDlMFghlg.webp' },
+		img: 'teenie_07_jewelstar_royal_princess_vivaheart.webp' },
 	{ season: 7, name: '프린세스 브릴란테', partner: '레몬핑', keys: ['레몬핑'],
-		img: 'https://i.namu.wiki/i/9EiiLcZUjW4muiubLMej_mJ0DLbkUQMIUPXBC1ZpPRueWCVs5o37-ctGRTaM01TdxJwCMccQHno_mulfwaU1Sbe2Rw7NWeYsJIItQQtSJZKsAoM5Dr16vkPwtEG9tPmMjl5ptlp4IetB42c2VX8DEg.webp' },
+		img: 'teenie_07_jewelstar_royal_princess_brillante.webp' },
 	{ season: 7, name: '프린세스 칸타빌레', partner: '체리핑', keys: ['체리핑'],
-		img: 'https://i.namu.wiki/i/FZCt-C-_TNXPG8TUO7fgc4oqoFrvRHSXODPylJ7wMuPv8LUD-zjrW1T8D06JjjAWpSnPbBqfTJw0gmDslqRextA_gcL1e0kEw4OVVrmXCssiqTyiO7-lAlHkE1sOzZFsh9PY_SGLXBHJ6y8SaGEfrQ.webp' },
+		img: 'teenie_07_jewelstar_royal_princess_cantabile.webp' },
 	{ season: 7, name: '프린세스 폴리포니', partner: '라임핑', keys: ['라임핑'],
-		img: 'https://i.namu.wiki/i/wNdTTlgwQ9HjMHaGWTvGfIP9z4sm9TKV3geENrPePjvWlI5D0iIqj1Ks1wwhoqBGeTuPHyO6_0KLHhN6Im25NTSxzPnLb_GRqycTU-En3MkpHkBleRyWgdry-T8e0Ccf1Qdq4eNGekGpnAokIQhlPQ.webp' },
+		img: 'teenie_07_jewelstar_royal_princess_polyphony.webp' },
 	{ season: 7, name: '프린세스 세레나데', partner: '', keys: [''], grade: 'legend',
 		img: '' },
 	{ season: 7, name: '프린세스 엘레간테', partner: '', keys: [''], grade: 'legend',
 		img: '' },
 ];
 
-// 극장판 프린세스 (나무위키에 아직 이름이 없어 비워 둠)
+// 극장판 프린세스
 // 채우는 형식: { name: '프린세스 OOO', partner: 'OO핑', first: '', note: '', grade: 'royal', img: '' }
 const teenieMoviePrincess = {
 	1: [ { name: '프린세스', partner: '사랑의 하츄핑', first: '', grade: 'normal',
-		img: 'https://i.namu.wiki/i/2R1WbaUXlzwaRiQjqJMaqNZLhiO2F9E9wDY0xC0kYscGW8s-xJcXdOHw64O6lWPjHIjWaMQPJvIlMNQaaRTY0vdDuJ7j6M1uEQyvvG6oMddEmuBSFGvuNIwc31rjP0Jr9Y81Df8jWmaPXhv_VIUBYw.webp' } ],
+		img: 'teenie_movie_01_normal_princess.webp' } ],
 	2: [ { name: '프린세스', partner: '머메이드 하츄핑', first: '', grade: 'royal',
-		img: 'https://i.namu.wiki/i/t72OYnbtzw2utZchzxssWIDvWKsU7Kraa9wUbWqS8NCSzm70Ndvy8Uml3lvn7gXBJDitAdRozt_lZ6UPwj0qJT8W_XwgLLiMYqB5WAyJ0Uf3Pzi7gZkCtl7n1tucNHXK0Jz6Cic-xVe4erBaw52qbg.webp' } ],
+		img: 'teenie_movie_02_royal_princess.webp' } ],
 	3: []
 };

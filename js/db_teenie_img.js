@@ -257,8 +257,8 @@ function _teenieImgUrl(src) {
  
 // 반환: [{ label, src, fallback }] 또는 ''
 //  - src      : img 폴더 파일 (있으면 우선)
-//  - fallback : 나무위키 주소 (src 로딩 실패 시 사용)
-function getTeenieImg(...keys) {
+//  - fallback : url 주소 (src 로딩 실패 시 사용)
+/* function getTeenieImg(...keys) {
 	const namuAll = (typeof teenieImagesNamu !== 'undefined') ? teenieImagesNamu : {};
 	for (const k of keys) {
 		if (!k) continue;
@@ -277,6 +277,16 @@ function getTeenieImg(...keys) {
 				fallback: (lSrc && mSrc && lSrc !== mSrc) ? mSrc : ''
 			});
 		}
+		if (out.length) return out;
+	}
+	return '';
+}*/
+function getTeenieImg(...keys) {
+	for (const k of keys) {
+		if (!k) continue;
+		const out = _teenieImgList(teenieImages[k])
+			.map(x => ({ label: x.label || '', src: _teenieImgUrl(x.src) }))
+			.filter(x => x.src);
 		if (out.length) return out;
 	}
 	return '';
