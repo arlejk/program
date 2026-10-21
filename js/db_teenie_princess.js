@@ -87,7 +87,7 @@ const teeniePrincess = [
 		img: 'teenie_06_princess_legend_princess_darkness.webp' },
 
 	// ---------- 7기 ----------
-	{ season: 7, name: '프린세스 비바하트', partner: '??? 하츄핑', keys: ['??? 하츄핑'],
+	{ season: 7, name: '프린세스 비바하트', partner: '비바 하츄핑', keys: ['비바 하츄핑'],
 		img: 'teenie_07_jewelstar_royal_princess_vivaheart.webp' },
 	{ season: 7, name: '프린세스 브릴란테', partner: '레몬핑', keys: ['레몬핑'],
 		img: 'teenie_07_jewelstar_royal_princess_brillante.webp' },
