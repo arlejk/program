@@ -196,7 +196,7 @@ const teenieImages = {
 	'젠틀핑': 'teenie_06_prince_normal_henry.webp',
 	
 	// 7기 쥬얼스타 티니핑
-	'??? 하츄핑': [
+	'비바 하츄핑': [
 		{ label: '데일리', src: 'teenie_07_jewelstar_royal_heart_daily.webp' },
 		{ label: '스테이지', src: 'teenie_07_jewelstar_royal_heart_stage.webp' }
 	],
