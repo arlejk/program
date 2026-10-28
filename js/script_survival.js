@@ -1004,6 +1004,18 @@ const programData = {
 			rowClass: "table-warning"
 		},
 		{
+			name: "보드게임 동호회",
+			link: "",
+			year: "2024~",
+			sortYear: "2024-07",
+			broadcaster: "유튜브 카더정원",
+			ottName: "유튜브 카더정원",
+			ottLink: "https://www.youtube.com/playlist?list=PL8SYC1RvK4AzNaZ3uqThUCv2fgt6238Ut",
+			keywords: ["게임", "전략"],
+			note: "",
+			rowClass: ""
+		},
+		{
 			name: "기억을 잊는 밤",
 			link: "",
 			year: "2024",
@@ -1015,6 +1027,7 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
+		/*
 		{
 			name: "더 블랙 오닉스 THE BLACK ONYX",
 			link: "",
@@ -1030,7 +1043,8 @@ const programData = {
 			],
 			note: "",
 			rowClass: ""
-		},		
+		},
+		*/
 		{
 			name: "금수저 전쟁",
 			link: "https://m.kinolights.com/title/138553",
@@ -1047,6 +1061,7 @@ const programData = {
 			note: "웨이브, 왓챠에서도 시청가능",
 			rowClass: ""
 		},
+		/*
 		{
 			name: "챠니즈플랜",
 			link: "",
@@ -1063,6 +1078,7 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
+		*/
 		{
 			name: "라이프스 게임 Life's Game",
 			link: "https://m.kinolights.com/title/144601",
@@ -1124,6 +1140,7 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
+		/*
 		{
 			name: "더 로직",
 			link: "https://m.kinolights.com/season/149628",
@@ -1143,7 +1160,6 @@ const programData = {
 			note: "",
 			rowClass: ""
 		},
-		/*
 		{
 			name: "딜레마게임",
 			link: "",
