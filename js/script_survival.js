@@ -391,10 +391,10 @@ const programData = {
 			rowClass: ""
 		},
 		{
-			name: "대탈출 새 시즌",
+			name: "대탈출: 도시괴담",
 			link: "",
 			year: "2026 예정",
-			sortYear: "",
+			sortYear: "2026-12",
 			broadcaster: "TVING",
 			ottName: "",
 			ottLink: "",
